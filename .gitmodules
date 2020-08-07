@@ -1,3 +1,6 @@
 [submodule "themes/reveal-hugo"]
 	path = themes/reveal-hugo
 	url = git@github.com:dzello/reveal-hugo.git
+[submodule "themes/techdoc"]
+	path = themes/techdoc
+	url = git@github.com:thingsym/hugo-theme-techdoc.git

@@ -7,6 +7,6 @@ title: Home
 description: Home page
 ---
 
-# Welcome
+# Welcome!
 
-Select a chapter from the menu on the left.
+This is a book in progress. Select a chapter from the menu on the left.

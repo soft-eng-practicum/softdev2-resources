@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/about/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/tags/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/chapter-test/</loc>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/chapter-test/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/chapter-test/test/</loc>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/chapter-test/test/</loc>
   </url>
   
 </urlset>

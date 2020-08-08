@@ -9,4 +9,4 @@ description: Home page
 
 # Welcome!
 
-This is a book in progress. Select a chapter from the menu on the left.
+We are still adding materials. Select a chapter from the menu on the left.

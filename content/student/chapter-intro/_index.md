@@ -75,3 +75,50 @@ Also quickly introduce yourself now in class!
 - Major/Year
 - Interest/experience in programming
 {{% /fragment %}}
+
+---
+
+### What's happening?
+
+Welcome Soft Dev 1 students
+
+- Projects, working with external clients (mostly GGC faculty/students)
+- 3 phases of project work, **peer review** in each with dire consequences...
+- 2 **take-home exams** about project work and many **pop-up quizzes** for textbook/slides knowledge
+- Few small assignments
+- Few team presentations
+- Individual presentations for team role, article, and/or software tool
+
+---
+
+### Tool/article presentations
+
+Throughout semester I'll let you research topics so we all learn more about options out there:
+
+- Each student will pick one item in any of the topics by a given deadline
+- You will give a presentation in class and post your summary
+- After everyone presents for one topic, we discuss in class
+
+{{% fragment %}}
+Topics will be posted later, but will include:
+
+- **Tools:** Web frameworks (MEAN, .Net, JSP/JSF, PHP, …), Frontend frameworks (jQuery, Bootstrap, …), IDEs, Version control software (git, mercurial, …) and online portals (Github, Bitbucket, Gitlab, …), Project tracking tools (JIRA, Trello, Pivotal Tracker, Rally, Version One, …), Database engines (MySQL, PostGreSQL, MS SQL Server, Oracle, …)
+- **Articles:** Influential articles, novel technologies, arguments, career topics, etc.
+{{% /fragment %}}
+
+---
+
+### Syllabus and hands on work
+
+- Let's look through the syllabus 
+{{% fragment %}} 
+- Message in a bottle for you 
+{{% /fragment %}}
+
+{{% fragment %}}
+Time to work on:
+
+- Register for Discord, Github(+Bitbucket), and Reddit
+- Respond to resume on Reddit
+- Respond to Github account on Reddit
+{{% /fragment %}}

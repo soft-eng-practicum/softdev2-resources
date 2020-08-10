@@ -110,6 +110,8 @@ isHTML = true
     notAlternative = true
 
 [params.reveal_hugo]
+    width = 1280
+    height = 720
     #theme = "moon"
     custom_theme = "reveal-hugo/themes/robot-lung.css"
     history = true

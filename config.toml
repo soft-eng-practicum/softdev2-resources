@@ -109,6 +109,14 @@ isHTML = true
     isPlainText = true
     notAlternative = true
 
+[params.reveal_hugo]
+    #theme = "moon"
+    custom_theme = "reveal-hugo/themes/robot-lung.css"
+    history = true
+    slide_number = true
+    #transition = 'zoom'
+    #transition_speed = 'fast'
+
 [params.algolia]
     vars = [
         "title",

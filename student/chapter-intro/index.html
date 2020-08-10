@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Re-introduction to Software Engineering</title>
+<meta name="description" content="Lectures and other resources for teaching and learning about software development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reveal.css"><link rel="stylesheet" href="/softdev2-resources/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/softdev2-resources/highlight-js/default.min.css">
+    
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h3 id="re-introduction-to-software-engineering">Re-introduction to Software Engineering</h3>
+<h4 id="itec-3870-software-development-ii-br-anca-doloc-mihu-and-cengiz-günay">ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay</h4>
+<p>(Some slides courtesy of Joan Smith, Eugene Agichstein, and the Internets.
+License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
+<figure>
+    <img src="/softdev2-resources/images/dilbert-plan-software.png"/> 
+</figure>
+
+</section><section>
+<h2 id="welcome">Welcome</h2>
+<ul>
+<li>What&rsquo;s better than to start the semester with a <strong>quiz</strong>?</li>
+</ul>
+
+
+<span class='fragment '
+  >
+  <p>Logistics heads-up:</p>
+<ul>
+<li>Using Reddit/Piazza for forum discussion and Q&amp;A support</li>
+<li>Sections 1 &amp; 2 are separate, but follow same content</li>
+<li>Using Discord and Github organizations with previous members</li>
+<li>Everything online this semester, will meet on live video on Discord</li>
+</ul>
+
+</span>
+
+
+<span class='fragment '
+  >
+  <p>Meaning:</p>
+<ul>
+<li>Bigger community, can see what others are doing</li>
+<li>Can see results of their research, answers to questions</li>
+<li>Can even collaborate with projects?</li>
+<li>Any problems, potential issues?</li>
+</ul>
+
+</span>
+</section><section>
+<h3 id="meet-your-instructor">Meet your instructor</h3>
+<p>Instructor: <a href="http://www.ggc.edu/about-ggc/directory/cengiz-gunay">Dr. Cengiz Gunay</a></p>
+<p><a href="https://soft-eng-practicum.github.io/">Soft-Eng-Practicum Github Organization</a></p>
+<p>Email: <a href="mailto:cgunay@ggc.edu">cgunay@ggc.edu</a></p>
+<p>Office: Virtual and W-2117 (by <a href="https://cgunay.youcanbook.me/">appointment</a>)</p>
+<p>Phone: 678-951-9621 (also GroupMe)</p>
+</section><section>
+<h3 id="about-the-instructor-dr-cengiz-gunay">About the instructor: Dr Cengiz Gunay</h3>
+<ul>
+<li>Self-taught programmer</li>
+<li>In elementary school, started programming with an <a href="http://www.atarimuseum.com/computers/8BITS/XL/800xl/800xl.htm">Atari 800XL</a> <img src="/softdev2-resources/images/Atari_800XL_System.jpg" width="100px" style="float: right;"></li>
+<li>In high school, won programming competition with word puzzle game</li>
+<li>In college (&lsquo;96), published PC video game called <a href="http://www.stillpsycho.net/%C4%B0stanbul_Efsaneleri_%28Legends_of_Istanbul%29">“Legends of Istanbul”</a> <img src="/softdev2-resources/images/ist-efs-menu.jpg" width="100px" style="float: right;"></li>
+<li>In 2003, got a PhD in Computer Science on neural networks</li>
+<li>2004–15, worked as <a href="http://www.biology.emory.edu/research/Prinz/Cengiz/">post-doctoral fellow</a> at Emory Univ. on simulating models of biological neurons and large-scale biological data mining (e.g., SQL, neural nets, genetic algos)</li>
+<li>2012–15, Visiting Faculty teaching at Emory Univ., Math &amp; CS Dept.</li>
+<li>Fall 2015–present, IT faculty at GGC with Soft Dev focus and also helped start a Data Science and Analytics major</li>
+</ul>
+</section><section>
+<h3 id="your-turn">Your turn!</h3>
+<ul>
+<li>Login/register on discussion and respond to the “Introductions” topic; <strong>create an inline resume</strong></li>
+</ul>
+
+
+<span class='fragment '
+  >
+  <p>Also quickly introduce yourself now in class!</p>
+<ul>
+<li>Name</li>
+<li>Major/Year</li>
+<li>Interest/experience in programming</li>
+</ul>
+
+</span>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/softdev2-resources/reveal-hugo/object-assign.js></script>
+
+<a href="/softdev2-resources/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","height":720,"history":true,"slide_number":true,"width":1280}</script>
+<script type="application/json" id="reveal-hugo-page-params">null</script>
+
+<script src="/softdev2-resources/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+  </body>
+</html>

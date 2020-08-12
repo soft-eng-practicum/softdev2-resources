@@ -118,7 +118,6 @@ Topics will be posted later, but will include:
 {{% fragment %}}
 Time to work on:
 
-- Register for Discord, Github(+Bitbucket), and Reddit
-- Respond to resume on Reddit
-- Respond to Github account on Reddit
+1. Register for Discord, Github, and Reddit
+1. Respond to resume on Reddit
 {{% /fragment %}}

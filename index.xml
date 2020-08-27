@@ -21,15 +21,5 @@
 Materials are used for the ITEC 3870 Software Development II course taught at Georgia Gwinnett College . They were developed by Cengiz Gunay and Anca Doloc-Mihu , supported by an Affordable Learning Georgia grant in 2019-2020.</description>
     </item>
     
-    <item>
-      <title>Test Chapter Section</title>
-      <link>https://soft-eng-practicum.github.io/softdev2-resources/chapter-test/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://soft-eng-practicum.github.io/softdev2-resources/chapter-test/test/</guid>
-      <description>Test Chapter Section This is my first slide.
- And a second slide </description>
-    </item>
-    
   </channel>
 </rss>

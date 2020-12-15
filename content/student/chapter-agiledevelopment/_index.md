@@ -15,10 +15,12 @@ outputs = ["Reveal"]
 
 ## Agile Process
 
-- **The current standard for software development**
+**The current standard for software development**
+
+
 
 {{% fragment %}}
-_Waterfall_** = sequential assembly line                      
+**_Waterfall_** = sequential assembly line                      
 {{% /fragment %}}
 
 {{% fragment %}} - What is wrong with Waterfall? {{% /fragment %}}

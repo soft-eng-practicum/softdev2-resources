@@ -25,7 +25,7 @@ outputs = ["Reveal"]
 
 {{% fragment %}} - What is wrong with Waterfall? {{% /fragment %}}
 
-{{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced ... {{% fragment %}}
+{{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced {{% fragment %}}
 
 
 ---

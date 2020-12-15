@@ -17,11 +17,7 @@ outputs = ["Reveal"]
 
 **The current standard for software development**
 
-
-
-{{% fragment %}}
-**_Waterfall_** = sequential assembly line                      
-{{% /fragment %}}
+{{% fragment %}} **_Waterfall_** = sequential assembly line {{% /fragment %}}
 
 {{% fragment %}} - What is wrong with Waterfall? {{% /fragment %}}
 
@@ -35,7 +31,7 @@ outputs = ["Reveal"]
 **"We are uncovering better ways of developing software by doing it and helping others do it.  Through this work we have come to value:**
 
 * <span style="color:blue"> Individuals and interactions </span> over processes and tools 
-* Working software over comprehensive documentation 
+* <font color="red"> Working software </font> over comprehensive documentation 
 * Customer collaboration over contract negotiation 
 * Responding to change over following a plan 
 

@@ -25,13 +25,12 @@ outputs = ["Reveal"]
 
 {{% fragment %}} - What is wrong with Waterfall? {{% /fragment %}}
 
-{{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced {{% fragment %}}
-
+{{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced 
+**AGILE** {{% fragment %}}
 
 ---
 
 ### Manifesto for Agile Software Development 
-
 
 **"We are uncovering better ways of developing software by doing it and helping others do it.  Through this work we have come to value:**
 

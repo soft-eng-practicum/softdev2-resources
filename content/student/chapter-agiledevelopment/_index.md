@@ -17,9 +17,11 @@ outputs = ["Reveal"]
 
 **The current standard for software development**
 
-{{% fragment %}} **_Waterfall_** = sequential assembly line {{% /fragment %}}
+{{% fragment %}} **_Waterfall_** = sequential assembly line 
+{{% /fragment %}}
 
-{{% fragment %}} - What is wrong with Waterfall? {{% /fragment %}}
+{{% fragment %}} - What is wrong with Waterfall? 
+{{% /fragment %}}
 
 {{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced 
 **AGILE** {{% fragment %}}
@@ -30,7 +32,7 @@ outputs = ["Reveal"]
 
 **"We are uncovering better ways of developing software by doing it and helping others do it.  Through this work we have come to value:**
 
-* <span style="color:blue"> Individuals and interactions </span> over processes and tools 
+* <font color="blue"> Individuals and interactions </font> over processes and tools 
 * <font color="red"> Working software </font> over comprehensive documentation 
 * Customer collaboration over contract negotiation 
 * Responding to change over following a plan 

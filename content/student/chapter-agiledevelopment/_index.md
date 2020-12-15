@@ -18,12 +18,10 @@ outputs = ["Reveal"]
 - **The current standard for software development**
 
 {{% fragment %}}
-Waterfall - sequential assembly line                      
+_Waterfall_** = sequential assembly line                      
 {{% /fragment %}}
 
-{{% fragment %}}
-- What is wrong with Waterfall?
-{{% /fragment %}}
+{{% fragment %}} - What is wrong with Waterfall? {{% /fragment %}}
 
 ---
 

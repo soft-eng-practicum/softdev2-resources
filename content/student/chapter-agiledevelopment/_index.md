@@ -23,12 +23,10 @@ outputs = ["Reveal"]
 </p>
 {{% /fragment %}}
 
-{{% fragment %}} - What is wrong with Waterfall? 
-{{% /fragment %}}
+{{% fragment %}} - What is wrong with Waterfall?{{% /fragment %}}
 
 {{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced 
-**AGILE** 
-{{% fragment %}} 
+**AGILE**{{% fragment %}} 
 
 ---
 
@@ -44,13 +42,13 @@ outputs = ["Reveal"]
 **That is, while there is value in the items on the right, we value the items on the left more.”**
 
 
-[Kent Beck et al] (http://agilemanifesto.org/) 
+[Kent Beck et al](http://agilemanifesto.org/) 
 
 ---
 
 ### Agile Statistics
 
- [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+ [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
  {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
 
@@ -58,7 +56,7 @@ outputs = ["Reveal"]
 
 ### Agile Statistics
 
- [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+ [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
  {{< figure src="/softdev2-resources/images/agilestatus-toptechniques.png" width="600" >}}
  
@@ -66,7 +64,7 @@ outputs = ["Reveal"]
 
 ### Agile Statistics
 
- [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+ [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
  {{< figure src="/softdev2-resources/images/agilestatus-tool.png" width="600" >}}
  
@@ -74,7 +72,7 @@ outputs = ["Reveal"]
 
 ### Agile Statistics
 
- [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+ [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
  {{< figure src="/softdev2-resources/images/agilestatus-practices.png" width="600" >}}
  
@@ -82,7 +80,7 @@ outputs = ["Reveal"]
 
 ### Agile Statistics
 
- [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+ [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
  {{< figure src="/softdev2-resources/images/agilestatus-success.png" width="600" >}}
  

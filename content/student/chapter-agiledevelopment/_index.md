@@ -52,7 +52,7 @@ outputs = ["Reveal"]
 
 [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/) 
 
-{{< figure src="/softdev2-resources/images/dilbert-agile-programming.png" >}}
+{{< figure src="/softdev2-resources/images/agilestatus-methods.png" >}}
 
 
 ---

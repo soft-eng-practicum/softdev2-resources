@@ -12,6 +12,7 @@ outputs = ["Reveal"]
 {{< figure src="/softdev2-resources/images/dilbert-agile-programming.png" >}}
 
 ---
+class: left, middle
 
 ## Agile Process
 

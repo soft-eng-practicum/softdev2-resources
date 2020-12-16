@@ -63,3 +63,36 @@ outputs = ["Reveal"]
  {{< figure src="/softdev2-resources/images/agilestatus-toptechniques.png" width="600" >}}
  
 ---
+
+### Agile Statistics
+
+ [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+
+ {{< figure src="/softdev2-resources/images/agilestatus-tool.png" width="600" >}}
+ 
+---
+
+### Agile Statistics
+
+ [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+
+ {{< figure src="/softdev2-resources/images/agilestatus-toptechniques.png" width="600" >}}
+ 
+---
+
+### Agile Statistics
+
+ [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+
+ {{< figure src="/softdev2-resources/images/agilestatus-practices.png" width="600" >}}
+ 
+---
+
+### Agile Statistics
+
+ [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+
+ {{< figure src="/softdev2-resources/images/agilestatus-success.png" width="600" >}}
+ 
+---
+

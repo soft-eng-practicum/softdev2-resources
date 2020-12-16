@@ -53,5 +53,13 @@ outputs = ["Reveal"]
  [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
 
  {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+
+---
+
+### Agile Statistics
+
+ [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+
+ {{< figure src="/softdev2-resources/images/agilestatus-toptechniques.png" width="600" >}}
  
 ---

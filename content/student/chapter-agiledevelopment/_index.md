@@ -19,7 +19,7 @@ outputs = ["Reveal"]
 
 {{% fragment %}} 
 <p align='left'> 
-    <em> Waterfall </em> = sequential assembly line 
+    <b><em> Waterfall </em></b> = sequential assembly line 
 </p>
 {{% /fragment %}}
 
@@ -34,7 +34,7 @@ outputs = ["Reveal"]
 
 ### Manifesto for Agile Software Development 
 
-**"We are uncovering better ways of developing software by doing it and helping others do it.  Through this work we have come to value:**
+**"We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:**
 
 * <font color="blue"> Individuals and interactions </font> over processes and tools 
 * <font color="blue"> Working software </font> over comprehensive documentation 
@@ -45,3 +45,14 @@ outputs = ["Reveal"]
 
 
 [Kent Beck et al] (http://agilemanifesto.org/) 
+
+---
+
+### Agile Statistics
+
+[The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/) 
+
+{{< figure src="/softdev2-resources/images/dilbert-agile-programming.png" >}}
+
+
+---

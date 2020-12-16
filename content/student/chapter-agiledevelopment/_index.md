@@ -18,8 +18,8 @@ outputs = ["Reveal"]
 **The current standard for software development**
 
 {{% fragment %}} 
-<p align='right'> 
-    **_Waterfall_** = sequential assembly line 
+<p align='left'> 
+    <em> Waterfall </em> = sequential assembly line 
 </p>
 {{% /fragment %}}
 
@@ -36,7 +36,7 @@ outputs = ["Reveal"]
 
 **"We are uncovering better ways of developing software by doing it and helping others do it.  Through this work we have come to value:**
 
-* <font color="blue" size=12> Individuals and interactions </font> over processes and tools 
+* <font color="blue"> Individuals and interactions </font> over processes and tools 
 * <font color="blue"> Working software </font> over comprehensive documentation 
 * <font color="blue"> Customer collaboration </font> over contract negotiation 
 * <font color="blue"> Responding to change </font> over following a plan 

@@ -50,8 +50,8 @@ outputs = ["Reveal"]
 
 ### Agile Statistics
 
-{{< figure src="/softdev2-resources/images/agilestatus.png" width="100" >}} [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
+ [The 14th annual STATE of AGILE Report, 2020] (https://stateofagile.com/)
 
-{{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+{{< figure src="/softdev2-resources/images/agilestatus.png" width="100" >}} {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
 
 ---

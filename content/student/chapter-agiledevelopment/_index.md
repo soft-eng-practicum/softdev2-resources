@@ -54,7 +54,5 @@ outputs = ["Reveal"]
 
  {{%< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >%}}
  
- {{%< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >%}}
-
 
 ---

@@ -12,7 +12,6 @@ outputs = ["Reveal"]
 {{< figure src="/softdev2-resources/images/dilbert-agile-programming.png" >}}
 
 ---
-class: left, middle
 
 ## Agile Process
 
@@ -29,7 +28,7 @@ class: left, middle
 
 {{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced 
 **AGILE** 
-{{% fragment %}}
+{{% fragment %}} ---
 
 ---
 

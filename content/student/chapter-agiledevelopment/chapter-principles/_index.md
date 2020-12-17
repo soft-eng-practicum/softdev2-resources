@@ -23,7 +23,7 @@ outputs = ["Reveal"]
 
 {{% fragment %}} 
 <em> resulting in </em> 
-Rapid, incremental delivery of software
+**rapid, incremental delivery of software**
 {{% /fragment %}}
 
 ---

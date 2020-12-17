@@ -36,6 +36,27 @@ Advantages:
 
 ---
 
+### Teamwork on the same codebase: How?
+
+{{< frag class="fade-in-then-out" c="Seriously, how?" >}}
+
+---
+
+### Teamwork: No control? Overwrite chaos!
+
+
+---
+
+### Teamwork: Locking
+
+
+---
+
+### Teamwork: Merging
+
+
+---
+
 ## Credits
 
 - Opening comic from Return to Zero by EEworldonline.com

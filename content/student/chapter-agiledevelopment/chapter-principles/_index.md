@@ -22,29 +22,25 @@ outputs = ["Reveal"]
 {{% fragment %}} <p align='left'> The TEAM is in control of the work performed </p> {{% /fragment %}}
 
 {{% fragment %}} 
-<em> resulting in </em> <br/>
- **rapid, incremental delivery of software** 
+<em> resulting in </em>
+
+**rapid, incremental delivery of software** 
 {{% /fragment %}}
 
 ---
 
-### Manifesto for Agile Software Development 
+### Agile Process 
 
-**"We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:**
-
-* <font color="blue"> Individuals and interactions </font> over processes and tools 
-* <font color="blue"> Working software </font> over comprehensive documentation 
-* <font color="blue"> Customer collaboration </font> over contract negotiation 
-* <font color="blue"> Responding to change </font> over following a plan 
-
-**That is, while there is value in the items on the right, we value the items on the left more.”**
-
-
-[Kent Beck et al](http://agilemanifesto.org/) 
+{{% fragment %}} * **User Scenarios** are descriptions of what is required (requirements) and drive the entire production process{{% /fragment %}}
+{{% fragment %}} * Plans are short-lived and can change frequently{{% /fragment %}}
+{{% fragment %}} * Software is developed **iteratively** and is delivered after each iteration{{% /fragment %}}
+{{% fragment %}} * **Adapts** as changes occur{{% /fragment %}}
 
 ---
 
-### Agile Statistics
+### Agile is based on
+
+
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 

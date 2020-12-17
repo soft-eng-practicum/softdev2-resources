@@ -1,33 +1,26 @@
 +++
 title = "Agile Development"
 outputs = ["Reveal"]
-weight = 02 # chapter number
+weight = 03 # chapter number
 +++
 
-### Agile Development
+### Agile Principles
 
 #### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
 
 (License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
     
-{{< figure src="/softdev2-resources/images/dilbert-agile-programming.png" >}}
-
 ---
 
-## Agile Process
+## What is "AGILITY"?
 
-**The current standard for software development**
+{{% fragment %}} <p align='left'>Effective (rapid and adaptive) response to change </p> {{% /fragment %}}
 
-{{% fragment %}} 
-<p align='left'> 
-    <b><em> Waterfall </em></b> = sequential assembly line 
-</p>
-{{% /fragment %}}
+{{% fragment %}} <p align='left'> Effective (rapid and adaptive) communication among all stakeholders </p> {{% /fragment %}}
 
-{{% fragment %}} - What is wrong with Waterfall?{{% /fragment %}}
+{{% fragment %}} <p align='left'> The CLIENT is part of the TEAM </p> {{% /fragment %}}
 
-{{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced 
-**AGILE**{{% /fragment %}} 
+{{% fragment %}} <p align='left'> The TEAM is in control of the work performed </p> {{% /fragment %}}
 
 ---
 

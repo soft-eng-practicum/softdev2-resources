@@ -1,9 +1,9 @@
 +++
-title = "Technology Review"
+title = "Technology Overview"
 outputs = ["Reveal"]
 +++
 
-### Technology Review
+### Technology Overview
 
 #### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
 

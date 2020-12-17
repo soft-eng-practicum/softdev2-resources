@@ -1,6 +1,8 @@
 +++
 title = "Re-introduction to Software Engineering"
 outputs = ["Reveal"]
+# chapter number
+weight = 01
 +++
 
 ### Re-introduction to Software Engineering

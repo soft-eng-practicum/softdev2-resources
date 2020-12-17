@@ -1,6 +1,7 @@
 +++
 title = "Agile Development"
 outputs = ["Reveal"]
+weight = 02 # chapter number
 +++
 
 ### Agile Development

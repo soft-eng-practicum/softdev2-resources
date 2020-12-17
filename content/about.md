@@ -11,5 +11,7 @@ This site contains a collection of lectures, assignments, and instructor materia
 
 Materials are used for the [ITEC 3870 Software Development II course](https://soft-eng-practicum.github.io/) taught at [Georgia Gwinnett College](https://ggc.edu). They were developed by [Cengiz Gunay](https://www.ggc.edu/about-ggc/directory/cengiz-gunay) and [Anca Doloc-Mihu](https://www.ggc.edu/about-ggc/directory/anca-doloc-mihu), supported by an [Affordable Learning Georgia](https://www.affordablelearninggeorgia.org/) grant in 2019-2020.
 
+Some materials are courtesy of Joan Smith, Eugene Agichstein, and the Internets. Slides are offered with the license: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
+
 To modify and use these materials in your classes, fork the [Github repository]({{< param github_repository >}}) or use the edit link at the bottom right of each page.
 

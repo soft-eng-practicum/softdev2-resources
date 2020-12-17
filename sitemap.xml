@@ -19,10 +19,6 @@
   </url>
   
   <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-principles/</loc>
-  </url>
-  
-  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/</loc>
   </url>
   
@@ -39,6 +35,10 @@
   <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-principles/</loc>
   </url>
   
   <url>

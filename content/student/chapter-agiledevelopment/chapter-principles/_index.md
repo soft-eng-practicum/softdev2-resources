@@ -32,23 +32,27 @@ outputs = ["Reveal"]
 ### Agile Process 
 
 {{% fragment %}} * **User Scenarios** are descriptions of what is required (requirements) and drive the entire production process{{% /fragment %}}
+
 {{% fragment %}} * Plans are short-lived and can change frequently{{% /fragment %}}
+
 {{% fragment %}} * Software is developed **iteratively** and is delivered after each iteration{{% /fragment %}}
+
 {{% fragment %}} * **Adapts** as changes occur{{% /fragment %}}
 
 ---
 
 ### Agile is based on
 
+{{% fragment %}} * **4 values** and {{% /fragment %}}
 
+{{% fragment %}} * **12 principles** {{% /fragment %}}
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
-
- {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
 
 ---
 
-### Agile Statistics
+### Agile Values
+
+
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 

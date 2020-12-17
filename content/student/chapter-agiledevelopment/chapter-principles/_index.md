@@ -21,6 +21,11 @@ outputs = ["Reveal"]
 
 {{% fragment %}} <p align='left'> The TEAM is in control of the work performed </p> {{% /fragment %}}
 
+{{% fragment %}} 
+<em> resulting in </em> 
+Rapid, incremental delivery of software
+{{% /fragment %}}
+
 ---
 
 ### Manifesto for Agile Software Development 

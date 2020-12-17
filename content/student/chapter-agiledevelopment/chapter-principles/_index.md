@@ -22,8 +22,8 @@ outputs = ["Reveal"]
 {{% fragment %}} <p align='left'> The TEAM is in control of the work performed </p> {{% /fragment %}}
 
 {{% fragment %}} 
-<em> resulting in </em> 
-**rapid, incremental delivery of software**
+<em> resulting in </em> <br/>
+ **rapid, incremental delivery of software** 
 {{% /fragment %}}
 
 ---

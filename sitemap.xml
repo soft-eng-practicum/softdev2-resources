@@ -3,6 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/</loc>
+  </url>
+  
+  <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/</loc>
+  </url>
+  
+  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/about/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url>
@@ -18,15 +26,7 @@
   </url>
   
   <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/</loc>
-  </url>
-  
-  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/</loc>
   </url>
   
   <url>
@@ -34,7 +34,7 @@
   </url>
   
   <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-tech/</loc>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/chapter-tech/</loc>
   </url>
   
 </urlset>

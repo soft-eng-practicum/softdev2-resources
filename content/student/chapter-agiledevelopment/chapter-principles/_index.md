@@ -216,3 +216,40 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
 ---
 
+### Choose your Agile Flavor
+
+* Various Techniques with differing process maps
+* In Reality few people strictly adhere to one method
+
+{{< figure src="/softdev2-resources/images/extremeprogramming.png" >}}
+
+---
+
+### Our Agile Flavor
+
+* **Extreme Programming** with **Refactoring** adapted to class schedule
+* Tool - **Jira**
+* **Pair Programming** highly encouraged
+* 3 iterations with **Velocity chart** and **burdown chart** as restrospectives after each iteration
+* **Version Control (Git)** is a MUST
+* Branching and Tagging of Releases
+* **Unit Testing** Absolutely Vital
+* Communication & Released Software
+Weekly Stand-Ups (**Scrum**)
+Code needs to be frequently Deployed and Hand’s On
+Design Globally, Code Locally
+Acceptance Testing is important
+
+---
+
+### Criticisms of Agile Development
+
+{{% fragment %}}Are there any issues with Agile?{{% /fragment %}} 
+
+{{% fragment %}}<p align='left'> Feature focus obscures goals and infrastructure.</p> {{% /fragment %}} 
+{{% fragment %}}<p align='left'> Staffing and long term planning problems. </p> {{% /fragment %}} 
+{{% fragment %}}<p align='left'> A charismatic movement that generates certification or speaker fees. </p>{{% /fragment %}} 
+{{% fragment %}}<p align='left'> Works better for Senior Developers who can operate with more discretion. </p>{{% /fragment %}} 
+{{% fragment %}}<p align='left'> Higher Risk of Scope Creep. </p>{{% /fragment %}} 
+{{% fragment %}}<p align='left'> Inadequate handing of non-functional details. </p>{{% /fragment %}} 
+

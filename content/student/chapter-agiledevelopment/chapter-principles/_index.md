@@ -219,7 +219,7 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 ### Choose your Agile Flavor
 
 * Various Techniques with differing process maps
-* In Reality few people strictly adhere to one method
+* In reality few people strictly adhere to one method
 
 {{< figure src="/softdev2-resources/images/agileflavors.jpg" width=500 >}}
 

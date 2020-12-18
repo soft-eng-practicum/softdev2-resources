@@ -1,10 +1,9 @@
 +++
-title = "Agile Development"
+title = "Scrum"
 outputs = ["Reveal"]
-weight = 02 # chapter number
 +++
 
-### Agile Development
+### Scrum
 
 #### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
 

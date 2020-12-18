@@ -173,7 +173,7 @@ There are many Agile process models proposed by various groups...
 
 Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
-{{< figure src="/softdev2-resources/images/extremeprogramming.png" width=500 >}}
+{{< figure src="/softdev2-resources/images/agile/extremeprogramming.png" width=500 >}}
 
 ---
 
@@ -221,7 +221,7 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * Various Techniques with differing process maps
 * In reality few people strictly adhere to one method
 
-{{< figure src="/softdev2-resources/images/agileflavors.jpg" width=500 >}}
+{{< figure src="/softdev2-resources/images/agile/agileflavors.jpg" width=500 >}}
 
 ---
 

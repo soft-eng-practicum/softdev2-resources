@@ -142,3 +142,34 @@ At regular intervals, the team reflects on how to become more effective, then tu
 ### Agile means
 
 {{< figure src="/softdev2-resources/images/teamwork.jpg" >}}
+
+---
+
+### How to do Agile?
+
+**The process molds to the needs of the people and team**, not the other way around
+
+There are many Agile process models proposed by various groups...
+
+
+### Agile Modeling 
+
+{{% fragment %}} Originally proposed by Scott Ambler {{% /fragment %}} 
+
+{{% fragment %}} Suggests a set of agile modeling principles:
+
+* Model with a purpose
+* Use multiple models
+* Travel light – build only what has value
+* Content is more important than representation
+* Know the models and the tools you use to create them
+* Adapt locally to the needs of the agile team
+{{% /fragment %}} 
+
+---
+
+### Agile Modeling 
+
+The most widely used agile process, originally proposed by Kent Beck
+
+{{< figure src="/softdev2-resources/images/extremeprogramming.png" >}}

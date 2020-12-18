@@ -168,9 +168,9 @@ There are many Agile process models proposed by various groups...
 
 ---
 
-### Agile Modeling 
+### Extreme Programming (XP)
 
-The most widely used agile process, originally proposed by Kent Beck
+Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
 {{< figure src="/softdev2-resources/images/extremeprogramming.png" >}}
 
@@ -201,17 +201,17 @@ The most widely used agile process, originally proposed by Kent Beck
 
 ### Extreme Programming (XP)
 
-**Coding**
+{{% fragment %}}**Coding**
 
 * Recommends the **construction of a unit test** for a story **before coding** commences
 * Encourages **pair programming**
+{{% /fragment %}} 
 
-### Extreme Programming (XP)
-
-**Testing**
+{{% fragment %}}**Testing**
 
 * All **unit tests are executed daily**
 * **Acceptance tests** are defined by the customer and executed to assess customer visible functionality
+{{% /fragment %}} 
 
 ---
 

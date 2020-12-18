@@ -221,7 +221,7 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * Various Techniques with differing process maps
 * In Reality few people strictly adhere to one method
 
-{{< figure src="/softdev2-resources/images/agileflavors.jpg" width=700 >}}
+{{< figure src="/softdev2-resources/images/agileflavors.jpg" width=500 >}}
 
 ---
 
@@ -235,10 +235,11 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * Branching and Tagging of Releases
 * **Unit Testing** Absolutely Vital
 * Communication - Weekly Stand-Ups (**Scrum**)
-* Released Software:
-        * Code needs to be frequently deployed 
-        * Design Globally, Code Locally
-        * Acceptance Testing is important
+* **Quality** of Released Software:
+    * Code needs to be frequently deployed 
+    * All code must be tested before deployment
+    * Design Globally, Code Locally
+    * Acceptance Testing is important
 
 ---
 

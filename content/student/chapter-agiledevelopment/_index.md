@@ -10,7 +10,7 @@ weight = 02 # chapter number
 
 (License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
     
-{{< figure src="/softdev2-resources/images/dilbert-agile-programming.png" >}}
+{{< figure src="/softdev2-resources/images/comics/dilbert-agile-programming.png" >}}
 
 ---
 
@@ -51,7 +51,7 @@ weight = 02 # chapter number
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-methods.png" width="600" >}}
 
 ---
 
@@ -59,7 +59,7 @@ weight = 02 # chapter number
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agilestatus-toptechniques.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-toptechniques.png" width="600" >}}
  
 ---
 
@@ -67,7 +67,7 @@ weight = 02 # chapter number
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agilestatus-tool.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-tool.png" width="600" >}}
  
 ---
 
@@ -75,7 +75,7 @@ weight = 02 # chapter number
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agilestatus-practices.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-practices.png" width="600" >}}
  
 ---
 
@@ -83,7 +83,7 @@ weight = 02 # chapter number
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agilestatus-success.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-success.png" width="600" >}}
  
 ---
 

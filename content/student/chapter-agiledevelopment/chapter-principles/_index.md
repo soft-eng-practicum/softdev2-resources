@@ -31,13 +31,13 @@ outputs = ["Reveal"]
 
 ### Agile Process 
 
-{{% fragment %}} <p align='left'> * **User Scenarios** are descriptions of what is required (requirements) and drive the entire production process </p> {{% /fragment %}}
+{{% fragment %}} - **User Scenarios** are descriptions of what is required (requirements) and drive the entire production process {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * Plans are short-lived and can change frequently </p> {{% /fragment %}}
+{{% fragment %}} - Plans are short-lived and can change frequently {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * Software is developed **iteratively** and is delivered after each iteration </p> {{% /fragment %}}
+{{% fragment %}} - Software is developed **iteratively** and is delivered after each iteration {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * **Adapts** as changes occur </p> {{% /fragment %}}
+{{% fragment %}} - **Adapts** as changes occur {{% /fragment %}}
 
 ---
 
@@ -52,13 +52,13 @@ outputs = ["Reveal"]
 
 ### Agile Values
 
-{{% fragment %}}<p align='left'> 1. **Individuals and interactions** over processes and tools </p>{{% /fragment %}}
+{{% fragment %}} 1. **Individuals and interactions** over processes and tools{{% /fragment %}}
 
-{{% fragment %}}<p align='left'> 2. **Working software** over comprehensive documentation </p>{{% /fragment %}} 
+{{% fragment %}} 2. **Working software** over comprehensive documentation{{% /fragment %}} 
 
-{{% fragment %}}<p align='left'> 3. **Customer collaboration** over contract negotiation </p>{{% /fragment %}} 
+{{% fragment %}} 3. **Customer collaboration** over contract negotiation{{% /fragment %}} 
 
-{{% fragment %}}<p align='left'> 4. **Responding to change** over following a plan </p>{{% /fragment %}}
+{{% fragment %}} 4. **Responding to change** over following a plan{{% /fragment %}}
  
 ---
 
@@ -221,7 +221,7 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * Various Techniques with differing process maps
 * In Reality few people strictly adhere to one method
 
-{{< figure src="/softdev2-resources/images/extremeprogramming.png" >}}
+{{< figure src="/softdev2-resources/images/agileflavors.png" >}}
 
 ---
 
@@ -230,15 +230,15 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * **Extreme Programming** with **Refactoring** adapted to class schedule
 * Tool - **Jira**
 * **Pair Programming** highly encouraged
-* 3 iterations with **Velocity chart** and **burdown chart** as restrospectives after each iteration
+* 3 iterations with **Velocity chart** and **Burdown chart** as restrospectives after each iteration
 * **Version Control (Git)** is a MUST
 * Branching and Tagging of Releases
 * **Unit Testing** Absolutely Vital
-* Communication & Released Software
-Weekly Stand-Ups (**Scrum**)
-Code needs to be frequently Deployed and Hand’s On
-Design Globally, Code Locally
-Acceptance Testing is important
+* Communication & Released Software:
+..* Weekly Stand-Ups (**Scrum**)
+..* Code needs to be frequently Deployed and Hand’s On
+..* Design Globally, Code Locally
+..* Acceptance Testing is important
 
 ---
 

@@ -31,13 +31,13 @@ outputs = ["Reveal"]
 
 ### Agile Process 
 
-{{% fragment %}} * **User Scenarios** are descriptions of what is required (requirements) and drive the entire production process{{% /fragment %}}
+{{% fragment %}} <p align='left'> * **User Scenarios** are descriptions of what is required (requirements) and drive the entire production process </p> {{% /fragment %}}
 
-{{% fragment %}} * Plans are short-lived and can change frequently{{% /fragment %}}
+{{% fragment %}} <p align='left'> * Plans are short-lived and can change frequently </p> {{% /fragment %}}
 
-{{% fragment %}} * Software is developed **iteratively** and is delivered after each iteration{{% /fragment %}}
+{{% fragment %}} <p align='left'> * Software is developed **iteratively** and is delivered after each iteration </p> {{% /fragment %}}
 
-{{% fragment %}} * **Adapts** as changes occur{{% /fragment %}}
+{{% fragment %}} <p align='left'> * **Adapts** as changes occur </p> {{% /fragment %}}
 
 ---
 
@@ -52,13 +52,13 @@ outputs = ["Reveal"]
 
 ### Agile Values
 
-{{% fragment %}} 1. **Individuals and interactions** over processes and tools {{% /fragment %}}
+{{% fragment %}}<p align='left'> 1. **Individuals and interactions** over processes and tools </p>{{% /fragment %}}
 
-{{% fragment %}} 2. **Working software** over comprehensive documentation {{% /fragment %}} 
+{{% fragment %}}<p align='left'> 2. **Working software** over comprehensive documentation </p>{{% /fragment %}} 
 
-{{% fragment %}} 3. **Customer collaboration** over contract negotiation {{% /fragment %}} 
+{{% fragment %}}<p align='left'> 3. **Customer collaboration** over contract negotiation </p>{{% /fragment %}} 
 
-{{% fragment %}} 4. **Responding to change** over following a plan {{% /fragment %}}
+{{% fragment %}}<p align='left'> 4. **Responding to change** over following a plan </p>{{% /fragment %}}
  
 ---
 
@@ -173,7 +173,7 @@ There are many Agile process models proposed by various groups...
 
 Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
-{{< figure src="/softdev2-resources/images/extremeprogramming.png" width=600 >}}
+{{< figure src="/softdev2-resources/images/extremeprogramming.png" width=500 >}}
 
 ---
 

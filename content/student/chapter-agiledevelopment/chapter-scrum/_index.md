@@ -44,14 +44,14 @@ See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scr
 
 {{% fragment %}} **Scrum is the most popular agile framework.**
 
- {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+{{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
 {{% /fragment %}}
 
 ---
 
 ### Scrum Definition
 
-**Scrum: An [agile] framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value. **
+**Scrum: An [agile] framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.**
 
 {{% fragment %}} Scrum refers to a lightweight framework that is used in every industry to deliver complex, innovative products and services that truly delight customers. It is **simple to understand, but difficult to master**.{{% /fragment %}}
 

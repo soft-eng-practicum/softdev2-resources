@@ -151,6 +151,7 @@ At regular intervals, the team reflects on how to become more effective, then tu
 
 There are many Agile process models proposed by various groups...
 
+---
 
 ### Agile Modeling 
 
@@ -172,7 +173,7 @@ There are many Agile process models proposed by various groups...
 
 Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
-{{< figure src="/softdev2-resources/images/extremeprogramming.png" >}}
+{{< figure src="/softdev2-resources/images/extremeprogramming.png" width=600 >}}
 
 ---
 
@@ -201,11 +202,11 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
 ### Extreme Programming (XP)
 
-{{% fragment %}}**Coding**
+**Coding**
 
 * Recommends the **construction of a unit test** for a story **before coding** commences
 * Encourages **pair programming**
-{{% /fragment %}} 
+
 
 {{% fragment %}}**Testing**
 

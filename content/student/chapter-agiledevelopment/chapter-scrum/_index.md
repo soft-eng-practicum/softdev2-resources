@@ -38,20 +38,32 @@ See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scr
 
 ---
 
-### Agile Statistics
+### Scrum and Agile
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+{{% fragment %}} Scrum is one of several agile frameworks.{{% /fragment %}}
+
+{{% fragment %}} **Scrum is the most popular agile framework.**
 
  {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+{{% /fragment %}}
 
 ---
 
-### Agile Statistics
+### Scrum Definition
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+**Scrum: An [agile] framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value. **
 
- {{< figure src="/softdev2-resources/images/agilestatus-toptechniques.png" width="600" >}}
+{{% fragment %}} Scrum refers to a lightweight framework that is used in every industry to deliver complex, innovative products and services that truly delight customers. It is **simple to understand, but difficult to master**.{{% /fragment %}}
+
+{{% fragment %}} Scrum fulfils the vision of the Agile Manifesto by helping individuals and businesses organize their work to 
+* maximize collaboration, 
+* minimize errors, 
+* deliver frequently, and 
+* create multiple opportunities to inspect and adapt.
+{{% /fragment %}}
  
+[Scrum Guide, November 2017 version](https://www.scrumalliance.org/about-scrum/definition)
+
 ---
 
 ### Agile Statistics

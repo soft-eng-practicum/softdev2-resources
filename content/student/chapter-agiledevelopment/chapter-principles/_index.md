@@ -141,4 +141,4 @@ At regular intervals, the team reflects on how to become more effective, then tu
 
 ### Agile means
 
-
+{{< figure src="/softdev2-resources/images/teamwork.jpg" >}}

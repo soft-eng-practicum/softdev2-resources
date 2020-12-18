@@ -14,7 +14,7 @@ weight = 02 # chapter number
 
 ---
 
-## Agile Process
+### Agile Process
 
 **The current standard for software development**
 

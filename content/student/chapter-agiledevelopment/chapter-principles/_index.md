@@ -173,3 +173,45 @@ There are many Agile process models proposed by various groups...
 The most widely used agile process, originally proposed by Kent Beck
 
 {{< figure src="/softdev2-resources/images/extremeprogramming.png" >}}
+
+---
+
+### Extreme Programming (XP)
+
+**Planning**
+
+* Begins with the creation of **user stories**
+* Agile team assesses each story and assigns a **cost**
+* Stories are grouped to for a **deliverable increment**
+* A **commitment** is made on delivery date
+* After the first increment **project velocity** is used to help define subsequent delivery dates for other increments
+
+---
+
+### Extreme Programming (XP)
+
+**Design**
+
+* Follows the **KIS principle** (KIS = keep it simple)
+* Encourage the use of **CRC cards**
+* For difficult design problems, suggests the creation of **spike solutions** —a design prototype
+* Encourages **refactoring** —an iterative refinement of the internal program design
+
+---
+
+### Extreme Programming (XP)
+
+**Coding**
+
+* Recommends the **construction of a unit test** for a story **before coding** commences
+* Encourages **pair programming**
+
+### Extreme Programming (XP)
+
+**Testing**
+
+* All **unit tests are executed daily**
+* **Acceptance tests** are defined by the customer and executed to assess customer visible functionality
+
+---
+

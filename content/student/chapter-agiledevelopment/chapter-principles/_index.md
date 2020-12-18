@@ -43,9 +43,9 @@ outputs = ["Reveal"]
 
 ### Agile is based on
 
-{{% fragment %}} * **4 values** and {{% /fragment %}}
+{{% fragment %}} **4 values** and {{% /fragment %}}
 
-{{% fragment %}} * **12 principles** {{% /fragment %}}
+{{% fragment %}} **12 principles** {{% /fragment %}}
 
 
 ---
@@ -79,6 +79,11 @@ Welcome changing requirements, even late in development. Agile processes harness
 Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
 {{% /fragment %}} 
 
+
+---
+
+### Agile Principles
+
 {{% fragment %}} 4. **Work Together** 
 
 Business people and developers must work together daily throughout the project (one team).
@@ -94,6 +99,10 @@ Build projects around motivated individuals. Give them the environment and suppo
 The most efficient and effective method of conveying information to and within a development team is face–to–face conversation.
 {{% /fragment %}} 
 
+---
+
+### Agile Principles
+
 {{% fragment %}} 7. **Working Solutions** 
 
 Working software solutions are the primary measure of progress. 
@@ -108,6 +117,10 @@ Agile processes promote sustainable development. The sponsors, developers, and u
 
 Continuous attention to technical excellence and good design enhances agility (quality). 
 {{% /fragment %}}
+
+---
+
+### Agile Principles
 
 {{% fragment %}} 10. **Simplicity is Essential** 
 
@@ -125,3 +138,7 @@ At regular intervals, the team reflects on how to become more effective, then tu
 {{% /fragment %}}
  
 ---
+
+### Agile means
+
+

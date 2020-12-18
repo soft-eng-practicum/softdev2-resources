@@ -9,7 +9,7 @@ outputs = ["Reveal"]
 
 (License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
     
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" >}}
+{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=600>}}
 
 ---
 
@@ -21,7 +21,7 @@ outputs = ["Reveal"]
 
 {{% fragment %}} <p align='left'> * Takeuchi and Nonaka compare high-performing, cross-functional teams to the scrum formation used by Rugby teams. </p> {{% /fragment %}} 
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" >}}
+{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400>}}
 
 ---
 
@@ -32,7 +32,7 @@ outputs = ["Reveal"]
 {{% fragment %}} <p align='left'> * It requires complete team work, hard work, and strength. That meaning translates to software development </p> {{% /fragment %}}
 
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" >}}
+{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400>}}
 
 See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scrum) 
 

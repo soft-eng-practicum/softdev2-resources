@@ -221,7 +221,7 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * Various Techniques with differing process maps
 * In Reality few people strictly adhere to one method
 
-{{< figure src="/softdev2-resources/images/agileflavors.png" >}}
+{{< figure src="/softdev2-resources/images/agileflavors.jpg" >}}
 
 ---
 
@@ -245,7 +245,6 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 ### Criticisms of Agile Development
 
 {{% fragment %}}Are there any issues with Agile?{{% /fragment %}} 
-
 {{% fragment %}}<p align='left'> Feature focus obscures goals and infrastructure.</p> {{% /fragment %}} 
 {{% fragment %}}<p align='left'> Staffing and long term planning problems. </p> {{% /fragment %}} 
 {{% fragment %}}<p align='left'> A charismatic movement that generates certification or speaker fees. </p>{{% /fragment %}} 

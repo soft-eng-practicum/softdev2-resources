@@ -192,7 +192,9 @@ Scrum Master starts the meeting. Makes sure everyone talks in order from left to
 ### Now ... Scrum
 
 Bonus scrum meeting [Sillicon Valey]: 
+<div style="width: 50%">
 {{< youtube Ps4nSgyieIw >}}
+</div>
 
 ---
 

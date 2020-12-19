@@ -66,19 +66,27 @@ See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scr
 
 ---
 
-### Agile Statistics
+### How Scrum works
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+**Scrum works by delivering large projects in small chunks of the product that a team can begin and complete in one, short timeboxed iteration called sprint.**
 
- {{< figure src="/softdev2-resources/images/agilestatus-tool.png" width="600" >}}
+{{% fragment %}} Scrum is also both **iterative** and **incremental**.{{% /fragment %}}
  
 ---
 
-### Agile Statistics
+### Scrum Framework
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+**People are the focus of Scrum.**
 
- {{< figure src="/softdev2-resources/images/agilestatus-practices.png" width="600" >}}
+{{% fragment %}} **Scrum Teams** include people with diverse skillsets; each team has all of the capabilities necessary to deliver a piece of functionality from idea to delivery. {{% /fragment %}}
+
+{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. {{% /fragment %}}
+
+{{% fragment %}} * Each sprint begins with a plan followed by building and then testing the code, and ends with a review of the work completed and an additional review of the way in which the team worked together (retrospectives). {{% /fragment %}}
+
+{{% fragment %}} * During each sprint, the team completes one or more increments of the project. Each completed increment must be fully tested and fully approved by the end of the sprint (potentially deliverable).{{% /fragment %}}
+
+ {{< figure src="/softdev2-resources/images/scrum/sprint.png" >}}
  
 ---
 

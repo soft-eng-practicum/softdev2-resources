@@ -85,13 +85,28 @@ Advantages:
 
 ---
 
-<section data-background-image="/softdev2-resources/images/version-control/version-control-dist.png"
+<section data-background-image="/softdev2-resources/images/version-control/github-linguist-log.png"
     data-background-position="center"
     data-background-size="auto 100%"
     data-background-opacity=1>
 
+</section>
 
+---
 
+<section data-background-image="/softdev2-resources/images/version-control/github-linguist-network.png"
+    data-background-position="center"
+    data-background-size="auto 100%"
+    data-background-opacity=1>
+
+</section>
+
+---
+
+<section data-background-image="/softdev2-resources/images/version-control/github-linguist-contrib.png"
+    data-background-position="center"
+    data-background-size="auto 100%"
+    data-background-opacity=1>
 
 </section>
 
@@ -115,7 +130,7 @@ Common usage scenario:
     data-background-size="auto 50%"
     data-background-opacity=0.5>
 
-### Some useful commands: Investigating the past
+### Useful commands: Investigating the past
 
 - `git diff` **shows your changes** from last repo version
 - `git log [filename]` **lists all commits**, optionally those touching a `filename`
@@ -162,8 +177,18 @@ Removing already deleted files from your repo:
 Highly recommended **visual** interface:
 
 - SourceTree
+- Visual Studio Code plugin for Git
 
 {{% /fragment %}}
+
+---
+
+### Git Resources
+
+- [Download](https://git-scm.com/)
+- [A simple Git guide](http://rogerdudler.github.io/git-guide/)
+- [The Pro Git book](https://git-scm.com/book/en/v2)
+- [Learn Git branching](https://learngitbranching.js.org/)
 
 ---
 

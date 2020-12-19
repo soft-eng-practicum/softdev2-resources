@@ -51,47 +51,7 @@ outputs = ["Reveal"]
 
 ### Kanban work flow
 
-{{< figure src="/softdev2-resources/images/kanban/kanbanflow1.jpg" width=600 >}}
-
-Work flow: cards moving from left to right
-
----
-
-### Kanban work flow
-
-{{< figure src="/softdev2-resources/images/kanban/kanbanflow2.jpg" width=600 >}}
-
-Work flow: cards moving from left to right
-
----
-
-### Kanban work flow
-
-{{< figure src="/softdev2-resources/images/kanban/kanbanflow3.jpg" width=600 >}}
-
-Work flow: cards moving from left to right
-
----
-
-### Kanban work flow
-
-{{< figure src="/softdev2-resources/images/kanban/kanbanflow4.jpg" width=600 >}}
-
-Work flow: cards moving from left to right
-
----
-
-### Kanban work flow
-
-{{< figure src="/softdev2-resources/images/kanban/kanbanflow5.jpg" width=600 >}}
-
-Work flow: cards moving from left to right
-
----
-
-### Kanban work flow
-
-{{< figure src="/softdev2-resources/images/kanban/kanbanflow6.jpg" width=600 >}}
+{{< figure src="/softdev2-resources/images/kanban/kanbanworkflow.gif" width=600 >}}
 
 Work flow: cards moving from left to right
 
@@ -115,6 +75,4 @@ Work flow: cards moving from left to right
 **lead time** = the time it takes a card to move from the backlog to finish on the board
 
 In agile, if values are combined with Kanban characteristics, the outcome would be Agile Kanban. This practice is gaining popularity in Software Developmement, and it means that  the Agile iteration approach and Kanban value stream focus are combined.
-
----
 

@@ -175,7 +175,9 @@ Members stand up in circle facing everyone. Also, someone else just "observing".
 Scrum Master starts the meeting. Makes sure everyone talks in order from left to right. 
 {{% /fragment %}}
 
-{{% fragment %}} * Each member answers to **3 questions** regarding meeting the sprint goal: {{% /fragment %}}
+{{% fragment %}} * Each member answers to **3 questions** regarding meeting the sprint goal: 
+{{% /fragment %}}
+
 {{% fragment %}}       1. **What did I worked on since last meeting?** {{% /fragment %}}
 {{% fragment %}}       2. **What I am working on now?** {{% /fragment %}}
 {{% fragment %}}       3. **Do I see any impediments?** {{% /fragment %}}
@@ -184,11 +186,12 @@ Scrum Master starts the meeting. Makes sure everyone talks in order from left to
 
 ### Now ... Scrum
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
-
 {{% fragment %}} Bonus scrum meeting [Sillicon Valey]: 
 {{< youtube Ps4nSgyieIw >}}
 {{% /fragment %}}
 
 
+### Now ... Scrum
+
+{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
 

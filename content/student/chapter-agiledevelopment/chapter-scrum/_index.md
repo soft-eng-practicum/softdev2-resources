@@ -171,22 +171,5 @@ What do you see in the clip?
 Members stand up in circle facing everyone. Also, someone else just "observing". Meeting is less than 15 minutes long. 
 {{% /fragment %}} 
 
-{{% fragment %}} * **Scrum Master** 
-Scrum Master starts the meeting. Makes sure everyone talks in order from left to right. 
-{{% /fragment %}}
 
-{{% fragment %}} * Each member answers to **3 questions** regarding meeting the sprint goal: {{% /fragment %}}
-{{% fragment %}}       1. **What did I worked on since last meeting?** {{% /fragment %}}
-{{% fragment %}}       2. **What I am working on now?** {{% /fragment %}}
-{{% fragment %}}       3. **Do I see any impediments?** {{% /fragment %}}
-
----
-
-### Now ... Scrum
-
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
-
-{{% fragment %}} Bonus scrum meeting [Sillicon Valey]: 
-{{< youtube Ps4nSgyieIw width=700 >}}
-{{% /fragment %}}
 

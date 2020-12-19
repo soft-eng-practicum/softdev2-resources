@@ -167,13 +167,17 @@ As the work progresses, the amount of work remaining should steadily decrease an
 
 What do you see in the clip?
 
-{{% fragment %}} * **Scrum Team** {{% /fragment %}} 
+{{% fragment %}} * **Scrum Team** 
+{{% /fragment %}} 
 
-{{% fragment %}} Members stand up in circle facing everyone. Also, someone else just "observing". Meeting is less than 15 minutes long. {{% /fragment %}} 
+{{% fragment %}} Members stand up in circle facing everyone. Also, someone else just "observing". Meeting is less than 15 minutes long. 
+{{% /fragment %}} 
 
-{{% fragment %}} * **Scrum Master** {{% /fragment %}}
+{{% fragment %}} * **Scrum Master** 
+{{% /fragment %}}
 
-{{% fragment %}} Scrum Master starts the meeting. Makes sure everyone talks in order from left to right. {{% /fragment %}}
+{{% fragment %}} Scrum Master starts the meeting. Makes sure everyone talks in order from left to right. 
+{{% /fragment %}}
 
 {{% fragment %}} * Each member answers to **3 questions** regarding meeting the sprint goal: {{% /fragment %}}
 {{% fragment %}}       1. **What did I worked on since last meeting?** {{% /fragment %}}

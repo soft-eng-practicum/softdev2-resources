@@ -117,25 +117,33 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
 
 ### Scrum Values
 
-{{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. {{% /fragment %}}
+{{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. 
+{{% /fragment %}}
 
-{{% fragment %}} **Courage**: Scrum teams must feel safe enough to say no, to ask for help, and to try new things. {{% /fragment %}}
+{{% fragment %}} **Courage**: Scrum teams must feel safe enough to say no, to ask for help, and to try new things. 
+{{% /fragment %}}
 
-{{% fragment %}} **Focus**: It means that whatever Scrum teams start they finish. {{% /fragment %}}
+{{% fragment %}} **Focus**: It means that whatever Scrum teams start they finish. 
+{{% /fragment %}}
 
-{{% fragment %}} **Openness**: Scrum teams consistently seek out new ideas and opportunities to learn. {{% /fragment %}}
+{{% fragment %}} **Openness**: Scrum teams consistently seek out new ideas and opportunities to learn. 
+{{% /fragment %}}
 
-{{% fragment %}} **Respect**: Scrum team members respect each other’s ideas, give each other permission to have a bad day once in a while, and recognize each other’s accomplishments. They show respect to one another, to the product owner, to stakeholders, and to the ScrumMaster. {{% /fragment %}}
+{{% fragment %}} **Respect**: Scrum team members respect each other’s ideas, give each other permission to have a bad day once in a while, and recognize each other’s accomplishments. They show respect to one another, to the product owner, to stakeholders, and to the ScrumMaster. 
+{{% /fragment %}}
 
 ---
 
 ### Scrum Artifacts
 
-{{% fragment %}} The **Product Backlog** is an ordered list of everything that is known to be needed in a product. {{% /fragment %}}
+{{% fragment %}} The **Product Backlog** is an ordered list of everything that is known to be needed in a product. 
+{{% /fragment %}}
 
-{{% fragment %}} The **Sprint Backlog** is a list of everything that the team commits to achieve in a given Sprint. Once created, no one can add to the Sprint Backlog except the Development Team. If an item needs to be dropped from the Sprint Backlog, they must negotiate it with the Product Owner. {{% /fragment %}}
+{{% fragment %}} The **Sprint Backlog** is a list of everything that the team commits to achieve in a given Sprint. Once created, no one can add to the Sprint Backlog except the Development Team. If an item needs to be dropped from the Sprint Backlog, they must negotiate it with the Product Owner. 
+{{% /fragment %}}
 
-{{% fragment %}} At the end of every Sprint, the team must complete a **potentially releasable product increment** meaning that it is done as agreed upon. {{% /fragment %}}
+{{% fragment %}} At the end of every Sprint, the team must complete a **potentially releasable product increment** meaning that it is done as agreed upon. 
+{{% /fragment %}}
 
 ---
 

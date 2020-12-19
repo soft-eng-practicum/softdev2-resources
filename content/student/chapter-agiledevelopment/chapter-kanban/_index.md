@@ -11,76 +11,64 @@ outputs = ["Reveal"]
     
 ---
 
-## Agile Process
+## Kanban
 
-**The current standard for software development**
+**Kanban is a management method helping teams to visualize their work to understand it better, which helps to identify and eliminate bottlenecks, and maximise efficiency (flow).**
+*It is the Japanesse word for visual signal. The original author of Kanban was Taiichi Ohno and it was used by Toyota for the first time.*
 
-{{% fragment %}} 
-<p align='left'> 
-    <b><em> Waterfall </em></b> = sequential assembly line 
-</p>
+{{% fragment %}} A **Kanban Board** keeps everyone in the team on the same page.
 {{% /fragment %}}
 
-{{% fragment %}} - What is wrong with Waterfall?{{% /fragment %}}
+{{% fragment %}} Teams build a Kanban board filled with **Kanban cards** and set up a **work flow** limit.
 
-{{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced 
-**AGILE**{{% /fragment %}} 
-
----
-
-### Manifesto for Agile Software Development 
-
-**"We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:**
-
-* <font color="blue"> Individuals and interactions </font> over processes and tools 
-* <font color="blue"> Working software </font> over comprehensive documentation 
-* <font color="blue"> Customer collaboration </font> over contract negotiation 
-* <font color="blue"> Responding to change </font> over following a plan 
-
-**That is, while there is value in the items on the right, we value the items on the left more.”**
-
-
-[Kent Beck et al](http://agilemanifesto.org/) 
+{{< figure src="/softdev2-resources/images/kanban/kanbansimpleboard.jpg" >}}
+{{% /fragment %}}
 
 ---
 
-### Agile Statistics
+### Kanban cards
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+**One Kanban card per user story**, which means one card per work item. 
 
- {{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+{{% fragment %}} The size of the work item should not be either too small or too big. {{% /fragment %}}
+
+{{% fragment %}} Cards should have:
+* title,
+* description,
+* owner,
+* any other helpful information like due date
+{{% /fragment %}}
+
+{{% fragment %}} As card moves on the board from left to right on the stage of the workflow, the card gets some history (i.e., messages from the teammates)
+Kanban cards should be small enough such that team makes progress on them in a reasonable amount of time. 
+{{% /fragment %}}
 
 ---
 
-### Agile Statistics
+### Kanban work flow
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+ (make animation)
 
- {{< figure src="/softdev2-resources/images/agilestatus-toptechniques.png" width="600" >}}
- 
 ---
 
-### Agile Statistics
+### Benefits of Kanban board
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+{{% fragment %}} - reveals bottlenecks in workflow (cards not moving forward)
+{{% /fragment %}}
 
- {{< figure src="/softdev2-resources/images/agilestatus-tool.png" width="600" >}}
- 
+{{% fragment %}} - get a sense of the size of the cards team can move forward in a timely matter
+{{% /fragment %}}
+
+{{% fragment %}} - a visual assurance that the work is done
+{{% /fragment %}}
+
 ---
 
-### Agile Statistics
+### Measuring workflow
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+**lead time** = the time it takes a card to move from the backlog to finish on the board
 
- {{< figure src="/softdev2-resources/images/agilestatus-practices.png" width="600" >}}
- 
----
+In agile, if values are combined with Kanban characteristics, the outcome would be Agile Kanban. This practice is gaining popularity in Software Development wherein the Agile iteration approach and Kanban value stream focus are combined.
 
-### Agile Statistics
-
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
-
- {{< figure src="/softdev2-resources/images/agilestatus-success.png" width="600" >}}
- 
 ---
 

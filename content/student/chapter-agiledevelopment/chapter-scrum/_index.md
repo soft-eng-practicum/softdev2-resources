@@ -157,4 +157,26 @@ As the work progresses, the amount of work remaining should steadily decrease an
 
 ---
 
+### Daily Scrum
+
+{{< youtube id="v=kKIc1NFO-AU" >}}
+
+---
+
+### Daily Scrum
+
+What do you see in the clip?
+
+{{% fragment %}} * **Scrum Team** {{% /fragment %}} 
+{{% fragment %}} Members stand up in circle facing everyone. Also, someone else just "observing". {{% /fragment %}} 
+
+{{% fragment %}} * **Scrum Master** {{% /fragment %}}
+{{% fragment %}} Scrum Master starts the meeting. Makes sure everyone talks in order from left to right. {{% /fragment %}}
+
+{{% fragment %}} * Each member answers to **3 questions**: {{% /fragment %}}
+{{% fragment %}}       1. **What did I worked on since last meeting?** {{% /fragment %}}
+{{% fragment %}}       2. **What I am working on now?** If encounter issues, ask others. {{% /fragment %}}
+{{% fragment %}}       3. **What I will work on next?**: {{% /fragment %}}
+
+---
 

@@ -153,7 +153,6 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
 As the work progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint. 
 
 {{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" width=500 >}} {{% /fragment %}}
-
 {{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" width=500 >}} {{% /fragment %}}
 
 ---

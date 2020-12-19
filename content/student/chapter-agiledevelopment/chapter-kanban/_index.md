@@ -51,7 +51,47 @@ outputs = ["Reveal"]
 
 ### Kanban work flow
 
-{{< figure src="/softdev2-resources/images/kanban/kanbanworkflow.gif" width=600 >}}
+{{< figure src="/softdev2-resources/images/kanban/kanbanflow1.jpg" width=600 >}}
+
+Work flow: cards moving from left to right
+
+---
+
+### Kanban work flow
+
+{{< figure src="/softdev2-resources/images/kanban/kanbanflow2.jpg" width=600 >}}
+
+Work flow: cards moving from left to right
+
+---
+
+### Kanban work flow
+
+{{< figure src="/softdev2-resources/images/kanban/kanbanflow3.jpg" width=600 >}}
+
+Work flow: cards moving from left to right
+
+---
+
+### Kanban work flow
+
+{{< figure src="/softdev2-resources/images/kanban/kanbanflow4.jpg" width=600 >}}
+
+Work flow: cards moving from left to right
+
+---
+
+### Kanban work flow
+
+{{< figure src="/softdev2-resources/images/kanban/kanbanflow5.jpg" width=600 >}}
+
+Work flow: cards moving from left to right
+
+---
+
+### Kanban work flow
+
+{{< figure src="/softdev2-resources/images/kanban/kanbanflow6.jpg" width=600 >}}
 
 Work flow: cards moving from left to right
 

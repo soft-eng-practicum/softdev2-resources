@@ -112,12 +112,83 @@
 <p>Common usage scenario:</p>
 <ol>
 <li><code>git clone</code> gets <strong>working copy</strong> from repo</li>
-<li>Make local changes in working copy</li>
-<li><code>git add &lt;files...&gt;</code> to select your changed files</li>
-<li><code>git commit</code> saves your changes into the version control history with a comment (Wash, rinse, and repeat step 2. Commit often!)</li>
-<li><code>git push</code> published your previous commits to remote repository (Github)</li>
-<li><code>git pull</code> gets latest changes from repo to <strong>sync</strong></li>
+<li><strong>Make changes</strong> in local working copy</li>
+<li><code>git add &lt;files...&gt;</code> to <strong>select</strong> your changed files</li>
+<li><code>git commit</code> <strong>saves</strong> your changes into the version control history with a comment (Wash, rinse, and repeat step 2. Commit often!)</li>
+<li><code>git push</code> <strong>publishes</strong> your previous commits to remote repository (Github)</li>
+<li><code>git pull</code> <strong>receives</strong> latest changes from repo to <strong>sync</strong></li>
 </ol>
+</section><section>
+<p><slide data-background-image="/softdev2-resources/images/version-control/sherlock.jpg"
+data-background-position="right"
+data-background-size="auto 50%"
+data-background-opacity=0.5></p>
+<h3 id="some-useful-commands-investigating-the-past">Some useful commands: Investigating the past</h3>
+<ul>
+<li><code>git diff</code> <strong>shows your changes</strong> from last repo version</li>
+<li><code>git log [filename]</code> <strong>lists all commits</strong>, optionally those touching a <code>filename</code></li>
+<li><code>git diff &lt;commit&gt;</code> shows changes in version <strong>labeled</strong> as <code>&lt;commit&gt;</code></li>
+<li><code>git checkout &lt;commit&gt;</code> <strong>rewinds</strong> all files back to a version</li>
+</ul>
+
+
+<span class='fragment '
+  >
+  <h4 id="challenge-how-to-find-a-bug">Challenge: How to find a bug</h4>
+<ol>
+<li>You have been messing with the code</li>
+<li>Suddenly you realized you broke the program</li>
+<li>How do you find <strong>when</strong> was the bug introduced?</li>
+</ol>
+
+</span>
+
+
+<span class='fragment '
+  >
+  <blockquote>
+<p>Hint: use <code>git checkout &lt;commit&gt;</code></p>
+</blockquote>
+
+</span>
+</slide>
+</section><section>
+<h3 id="common-issues-with-git">Common issues with Git</h3>
+<p>Avoiding bloating and conflict hell:</p>
+<ul>
+<li>The <code>.gitignore</code> file: Add lines of file patterns to be kept out of your repo.</li>
+</ul>
+
+
+<span class='fragment '
+  >
+  <p>Mac vs PC guy: different line endings:</p>
+<ul>
+<li>Can create a lot of trouble when sending/receiving files between Mac/Linux and Windows</li>
+<li>Git has settings for it: <a href="https://help.github.com/articles/dealing-with-line-endings/"><code>core.autocrlf</code></a> will automatically convert for you!</li>
+</ul>
+
+</span>
+
+
+<span class='fragment '
+  >
+  <p>Removing already deleted files from your repo:</p>
+<ul>
+<li><code>git add -u files...</code></li>
+</ul>
+
+</span>
+
+
+<span class='fragment '
+  >
+  <p>Highly recommended <strong>visual</strong> interface:</p>
+<ul>
+<li>SourceTree</li>
+</ul>
+
+</span>
 </section><section>
 <h2 id="credits">Credits</h2>
 <ul>

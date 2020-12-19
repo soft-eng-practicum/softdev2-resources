@@ -80,21 +80,38 @@ See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scr
 
 {{% fragment %}} **Scrum Teams** include people with diverse skillsets; each team has all of the capabilities necessary to deliver a piece of functionality from idea to delivery. {{% /fragment %}}
 
-{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. {{% /fragment %}}
+{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
+{{% /fragment %}}
 
-{{% fragment %}} * Each sprint begins with a plan followed by building and then testing the code, and ends with a review of the work completed and an additional review of the way in which the team worked together (retrospectives). {{% /fragment %}}
+---
+
+### Scrum Team
+
+Scrum Team includes three roles: **ScrumMaster, Product Owner, and Development Team**. 
+
+{{% fragment %}} The **ScrumMaster** helps the Scrum Team perform at their highest level. They also protect the team from both internal and external distractions. Scrum Masters hold the Scrum Team accountable to their working agreements, Scrum values, and to the Scrum framework itself.
+{{% /fragment %}}
+
+{{% fragment %}} The **Product Owner defines** the what--as in what the product will look like and what features it should contain. Product Owner helps build and clarify the product backlog and ensures that everyone knows the priorities.
+{{% /fragment %}}
+
+{{% fragment %}} The **Development Team** decides how to accomplish the work set forth by the Product Owner. Development Teams are structured and empowered to organize and manage their own work.
+{{% /fragment %}}
+ 
+---
+
+### Sprint
+
+{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
+{{% /fragment %}}
+
+{{% fragment %}} * Each sprint begins with a plan followed by building and then testing the code, and ends with a review of the work completed and an additional review of the way in which the team worked together (retrospectives). 
+{{% /fragment %}}
 
 {{% fragment %}} * During each sprint, the team completes one or more increments of the project. Each completed increment must be fully tested and fully approved by the end of the sprint (potentially deliverable).{{% /fragment %}}
 
  {{< figure src="/softdev2-resources/images/scrum/sprint.png" >}}
  
----
-
-### Agile Statistics
-
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
-
- {{< figure src="/softdev2-resources/images/agilestatus-success.png" width="600" >}}
  
 ---
 

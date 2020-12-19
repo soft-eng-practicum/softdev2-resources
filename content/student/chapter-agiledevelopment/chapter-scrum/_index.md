@@ -159,7 +159,7 @@ As the work progresses, the amount of work remaining should steadily decrease an
 
 ### Daily Scrum
 
-{{< youtube id="v=kKIc1NFO-AU" >}}
+{{< youtube kKIc1NFO-AU >}}
 
 ---
 

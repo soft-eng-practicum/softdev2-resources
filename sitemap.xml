@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/intellectual-property/</loc>
+  </url>
+  
+  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/</loc>
   </url>
   
@@ -11,7 +15,19 @@
   </url>
   
   <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/licensing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/github-social-computing/</loc>
+  </url>
+  
+  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/</loc>
+  </url>
+  
+  <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/</loc>
   </url>
   
   <url>

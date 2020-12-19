@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Licensing</title>
+<meta name="description" content="Lectures and other resources for teaching and learning about software development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reveal.css"><link rel="stylesheet" href="/softdev2-resources/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/softdev2-resources/highlight-js/default.min.css">
+    <style>
+  .reveal strong {
+    color: blue;
+  }
+</style>
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h3 id="licensing">Licensing</h3>
+<h4 id="itec-3870-software-development-ii-br-anca-doloc-mihu-and-cengiz-günay">ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay</h4>
+<p>Licensed with <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/softdev2-resources/reveal-hugo/object-assign.js></script>
+
+<a href="/softdev2-resources/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","height":720,"history":true,"slide_number":true,"width":1280}</script>
+<script type="application/json" id="reveal-hugo-page-params">null</script>
+
+<script src="/softdev2-resources/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+  </body>
+</html>

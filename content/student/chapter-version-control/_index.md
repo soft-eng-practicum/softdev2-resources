@@ -102,11 +102,68 @@ Advantages:
 Common usage scenario:
 
 1. `git clone` gets **working copy** from repo
-2. Make local changes in working copy
-2. `git add <files...>` to select your changed files
-3. `git commit` saves your changes into the version control history with a comment (Wash, rinse, and repeat step 2. Commit often!)
-4. `git push` published your previous commits to remote repository (Github)
-5. `git pull` gets latest changes from repo to **sync**
+2. **Make changes** in local working copy
+2. `git add <files...>` to **select** your changed files
+3. `git commit` **saves** your changes into the version control history with a comment (Wash, rinse, and repeat step 2. Commit often!)
+4. `git push` **publishes** your previous commits to remote repository (Github)
+5. `git pull` **receives** latest changes from repo to **sync**
+
+---
+
+<slide data-background-image="/softdev2-resources/images/version-control/sherlock.jpg"
+    data-background-position="right"
+    data-background-size="auto 50%"
+    data-background-opacity=0.5>
+
+### Some useful commands: Investigating the past
+
+- `git diff` **shows your changes** from last repo version
+- `git log [filename]` **lists all commits**, optionally those touching a `filename`
+- `git diff <commit>` shows changes in version **labeled** as `<commit>`
+- `git checkout <commit>` **rewinds** all files back to a version 
+
+{{% fragment %}}
+
+#### Challenge: How to find a bug
+
+1. You have been messing with the code
+2. Suddenly you realized you broke the program
+3. How do you find **when** was the bug introduced?
+{{% /fragment %}} 
+
+{{% fragment %}}
+> Hint: use `git checkout <commit>`
+{{% /fragment %}}
+
+</slide>
+
+---
+
+### Common issues with Git
+
+Avoiding bloating and conflict hell:
+
+- The `.gitignore` file: Add lines of file patterns to be kept out of your repo.
+
+{{% fragment %}}
+Mac vs PC guy: different line endings:
+
+- Can create a lot of trouble when sending/receiving files between Mac/Linux and Windows
+- Git has settings for it: [`core.autocrlf`](https://help.github.com/articles/dealing-with-line-endings/) will automatically convert for you!
+{{% /fragment %}}
+
+{{% fragment %}}
+Removing already deleted files from your repo:
+
+- `git add -u files...`
+{{% /fragment %}}
+
+{{% fragment %}}
+Highly recommended **visual** interface:
+
+- SourceTree
+
+{{% /fragment %}}
 
 ---
 

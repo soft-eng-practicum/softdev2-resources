@@ -1,9 +1,9 @@
 +++
-title = "Scrum"
+title = "Teamwork"
 outputs = ["Reveal"]
 +++
 
-### Scrum
+### Teamwork
 
 #### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
 
@@ -13,7 +13,7 @@ outputs = ["Reveal"]
 
 ---
 
-## Scrum
+## Teamwork
 
 {{% fragment %}} <p align='left'> * Originally proposed by Jeff Sutherland in 90s, then improved by Schwaber and Beedle </p> {{% /fragment %}}
 

@@ -18,6 +18,8 @@ Instructions:
 
 * Total points 50 (100%).
 
+* There are Bonus points included for students who want to answer to these questions. 
+
 --- 
 
 ### Q1: Agile Methodology (10 pts)
@@ -25,14 +27,12 @@ Instructions:
 **During the last decade, Agile Methodology has become a very popular software process model, which is supported by the State of the Agile report.**
 
 **Part A (5pts):** 
-
 A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
 
 A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
 
 
 **Part B (5pts):**
-
 B1. (2pts) Explain why you think Agile is (or is not) an appropriate process model for your class team project. Construct a convincing argument that includes whether stand-up meetings, sprint planning, user stories, and retrospectives are useful, and whether other Agile features are useful for your team.
 
 B2. (3pts) Create two semester-long development plans for your current project: one using a Waterfall model, and another one using an Agile model, and then compare the two. 
@@ -51,22 +51,15 @@ Choose one OO design pattern from [OO Design Patterns Card](/softdev2-resources/
 
 ---
 
-### Q3: Agile Methodology (10 pts)
+### Q3: Version Control (10 pts)
 
-**During the last decade, Agile Methodology has become a very popular software process model, which is supported by the State of the Agile report.**
+**Answer BOTH of these questions:**
 
-**Part A (5pts):** 
+**Part A (4pts):** 
+Describe 4 key features of version control systems that make them useful, and explain why they are indispensable in today's software development. 
 
-A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
-
-A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
-
-
-**Part B (5pts):**
-
-B1. (2pts) Explain why you think Agile is (or is not) an appropriate process model for your class team project. Construct a convincing argument that includes whether stand-up meetings, sprint planning, user stories, and retrospectives are useful, and whether other Agile features are useful for your team.
-
-B2. (3pts) Create two semester-long development plans for your current project: one using a Waterfall model, and another one using an Agile model, and then compare the two. 
+**Part B (6pts):**
+You are given a repo called *HelloSD*. This repo includes a *Readme.md* and a file *check.sh*. You are working on this repo with a team of people. The team is working in parallel on this repo to complete some task. List all the steps you need to do to add your changes to the *check.sh* file correctly to the repo (on the master/ branch). Chose the best strategy for full points (hint: make your own branch and name it with your first name). At each step provide the command line code necessary to complete the step, followed by a brief description. Missing command line or description will result in losing points.
 
 ---
 

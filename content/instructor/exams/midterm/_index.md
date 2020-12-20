@@ -14,6 +14,8 @@ Instructions:
 
 * Recommended work time 180 minutes. 
 
+* Recommended Period: one week
+
 * Students can leave the work, save it, and return later to pick up where they left.
 
 * Total points 50 (100%).

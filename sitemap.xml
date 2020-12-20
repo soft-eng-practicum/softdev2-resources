@@ -82,10 +82,6 @@
   </url>
   
   <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-userstories/</loc>
-  </url>
-  
-  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/tags/</loc>
   </url>
   
@@ -95,6 +91,10 @@
   
   <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/chapter-tech/</loc>
+  </url>
+  
+  <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-userstories/</loc>
   </url>
   
 </urlset>

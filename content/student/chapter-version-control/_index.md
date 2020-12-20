@@ -189,7 +189,7 @@ Highly recommended **visual** interface:
 - [A simple Git guide](http://rogerdudler.github.io/git-guide/)
 - [The Pro Git book](https://git-scm.com/book/en/v2)
 - [Learn Git branching](https://learngitbranching.js.org/)
-
+- [More learning tutorials](http://try.github.io/)
 ---
 
 ## Credits

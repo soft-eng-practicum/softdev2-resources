@@ -11,7 +11,7 @@ weight: 1
 
 <div class="content">
   <table class="schedule-table">
-    <tr><th>#</th><th>On day</th><th>Module</th><th>Setup</th><th>Topic</th><th>Hands-on</th><th>Assignment</th></tr>
+    <tr><th>Week#</th><th>Module</th><th>Setup</th><th>Topic</th><th>Hands-on</th><th>Assignment</th></tr>
   </table>
 </div>
 
@@ -35,9 +35,34 @@ weight: 1
      assignment: "Post team roles in Markdown README and Git branching homework. Read about Agile. Sign release waivers.", days: 7},
     {name: "Agile development, user stories, JIRA",
      setup: "post 1st iteration presentation deadline, and two JIRA assignments. Invitations for registering into JIRA, create JIRA project for practice assignment and one for each team. Add team managers as admin and tell them to add the rest of their teammates",
-     topic: "JIRA, Trello, Zenhub. Estimation, burndown",
-     handson: "register into JIRA and start homework.", module: 1, 
-     assignment: "JIRA practice and entering project user stories. Prepare 1st iteration presentations.", days: 7}
+     topic: "JIRA, Trello, Zenhub. Estimation, burndown charts.",
+     handson: "Register into JIRA and start homework. Stand up meeting practice.", module: 1, 
+     assignment: "JIRA practice and entering project user stories. Prepare 1st iteration presentations.", days: 14},
+    {name: "Requirements phase presentations",
+     setup: "Post midterm",
+     topic: "Object-oriented programming patterns, software licensing and intellectual property",
+     handson: "Class presentations", module: 1, 
+     assignment: "Take-home midterm, voting and feedback for recorded presentations", days: 7},
+    {name: "Register for semester-end symposium, presentation schedule",
+     setup: "Close sprints in JIRA. Post article and tool topics to select from.",
+     topic: "Coding workshops and guest speakers. Mid-term exam review.",
+     handson: "", module: 1, 
+     assignment: "Project summary, select individual presentation topic", days: 14},
+    {name: "Github social computing",
+     setup: "Post individual presentation schedule",
+     topic: "Git branching and workflows",
+     handson: "", module: 1, 
+     assignment: "Mid-term evaluation, burndown chart, license and intellectual property agreement draft", days: 7},
+    {name: "Client checkpoint phase deadline",
+     setup: "",
+     topic: "Individual article and tool presentations",
+     handson: "", module: 1, 
+     assignment: "Partially functional demo to client", days: 7*4},
+    {name: "Final stretch phase deadline",
+     setup: "Post flyers and project descriptions on website and on symposium site. Ask final feedback from clients.",
+     topic: "Final technical presentations in class and user testing sessions in symposium",
+     handson: "Symposium attendance", module: 1, 
+     assignment: "Take-home final exam", days: 7}
     ];
 	      
     // Read JSON and print out schedule table
@@ -47,14 +72,15 @@ weight: 1
       var row = document.createElement("tr");
 
       if (item.special) {
-        row.innerHTML = "<td></td><td>"
-          + startDay + "</td><td>"
+        row.innerHTML = "<td>"
+          + (startDay/7 + 1) + "</td><td>"
           + item.special + "</td><td></td><td></td><td></td><td></td>";
       } else {
         moduleNum = moduleNum + item.module;
-        row.innerHTML = "<td>" + (item.module?moduleNum:"") + "</td><td>"
-		  + startDay + "</td><td>"
-		  + item.name + "</td>"
+        row.innerHTML = 
+          "<td>"
+		  + ( startDay/7 + 1) + "</td><td>"
+		  + item.name + "</td><td>"
           + item.setup + "</td><td>"
           + item.topic + "</td>" +
 		  "<td>" + item.handson + "</td>" +

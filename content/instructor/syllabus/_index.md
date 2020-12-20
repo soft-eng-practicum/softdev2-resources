@@ -16,6 +16,8 @@ Example Syllabus which includes learning outcomes, textbook, schedule and detail
 Parts that instructor needs to change to his/her own data are emphasized in yellow.
 
 [Download pdf of Syllabus here.](/softdev2-resources/docs/syllabus.pdf)
-<a href="https://github.com/soft-eng-practicum/softdev2-resources/edit/master/content/docs/syllabus.pdf">Download pdf of Syllabus here.</a>
+
+<a href="https://github.com/soft-eng-practicum/softdev2-resources/edit/master/content/docs/syllabus.pdf">Download pdf of SSyllabus here.</a>
+
 Download word doc of Syllabus here.
 

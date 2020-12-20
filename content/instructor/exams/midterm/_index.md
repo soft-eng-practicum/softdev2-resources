@@ -6,7 +6,6 @@ publishdate: 2019-11-23T15:26:15Z
 title: Midterm
 description: Midterm
 
-weight: 2
 ---
 
 ## Midterm
@@ -32,6 +31,7 @@ Instructions:
 {{% /fragment %}}
 
 {{% fragment %}} A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest State of the Agile Survey by Version One that you can find under Contents>Resources->Agile (read 14th version). 
+{{% /fragment %}}
 
 {{% fragment %}} **Part (B) (5pts)**
 {{% /fragment %}}

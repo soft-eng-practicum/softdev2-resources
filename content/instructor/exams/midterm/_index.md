@@ -47,7 +47,7 @@ B2. (3pts) Create two semester-long development plans for your current project: 
 What is the main purpose of object-oriented (OO) design and programming, and why did it become so popular in the software world? Is that popularity fading? Do some research and discuss about its weaknesses. Discuss when it is proper to use full-fledged OO design versus when it is excessive. Give examples of popular languages, frameworks, or use-cases that are not object-oriented. Give references to your sources. 
 
 **Part B (5pts):**
-Choose one OO design pattern from [OO Design Patterns Card](), describe its meaning and usage. Then, describe a real-world program example that employs it. Be detailed.
+Choose one OO design pattern from [OO Design Patterns Card](/softdev2-resources/docs/designpatternscard.pdf), describe its meaning and usage. Then, describe a real-world program example that employs it. Be detailed.
 
 ---
 

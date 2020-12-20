@@ -15,7 +15,7 @@ Example Syllabus which includes learning outcomes, textbook, schedule and detail
 
 Parts that instructor needs to change to his/her own data are emphasized in yellow.
 
-[Download pdf of Syllabus here.](/content/instructor/syllabus/syllabus.pdf)
+[Download pdf of Syllabus here.](https://soft-eng-practicum.github.io/content/instructor/syllabus/syllabus.pdf)
 
 Download word doc of Syllabus here.
 

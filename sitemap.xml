@@ -3,11 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/schedule/</loc>
+    <lastmod>2020-12-20T15:26:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/</loc>
+    <lastmod>2020-12-20T15:26:15+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/intellectual-property/</loc>
   </url>
   
   <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/</loc>
+  </url>
+  
+  <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/</loc>
+    <lastmod>2020-12-20T15:26:15+00:00</lastmod>
   </url>
   
   <url>
@@ -45,11 +60,6 @@
   
   <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/</loc>
-    <lastmod>2019-10-26T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url>
   

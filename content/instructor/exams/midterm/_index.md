@@ -24,14 +24,11 @@ Instructions:
 
 **During the last decade, Agile Methodology has become a very popular software process model, which is supported by the State of the Agile report.**
 
-{{% fragment %}} **Part (A) (5pts)** 
-{{% /fragment %}}
+**Part (A) (5pts)** 
 
-{{% fragment %}} A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
-{{% /fragment %}}
+A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
 
-{{% fragment %}} A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
-{{% /fragment %}}
+A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
 
 {{% fragment %}} **Part (B) (5pts)**
 {{% /fragment %}}

@@ -1,6 +1,7 @@
 +++
 title = "Requirements in Agile"
 outputs = ["Reveal"]
+weight = 03
 +++
 
 ### Requirements in Agile

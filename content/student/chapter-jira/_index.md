@@ -1,6 +1,7 @@
 +++
-title = "Jira"
+title = "Project Management with JIRA"
 outputs = ["Reveal"]
+weight = 05
 +++
 
 ### Jira

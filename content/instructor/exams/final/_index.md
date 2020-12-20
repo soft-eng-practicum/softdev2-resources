@@ -12,92 +12,125 @@ description: Final
 
 Instructions:
 
-* Recommended work time 180 minutes. 
+* Recommended work time 240 minutes. 
+
+* Recommended Period: one week
 
 * Students can leave the work, save it, and return later to pick up where they left.
 
-* Total points 50 (100%).
-
-* There are Bonus points included for students who want to answer to these questions. 
+* Total points 100 (100%).
 
 --- 
 
-### Q1: Agile Methodology (10 pts)
+### Q1: Team Process (20 pts)
 
-**During the last decade, Agile Methodology has become a very popular software process model, which is supported by the State of the Agile report.**
+**Write an insightful analysis of the software process your team used during the project throughout the semester by answering the following questions:**
+
+**Part A (10pts):** 
+Identify 3 *positive* principles about teamwork and approach to software development that you observed and followed in your semester-long experience. Explain why it worked well and why. They must be specific to your team project, otherwise you do not get full points.
+
+**Part B (10pts):**
+Explain 3 issues that *went wrong* with your team project, and how you would modify the process if you had to do it all over again. I'm not asking about small technical problems you encountered, but about the whole semester-long experience. Examples of issues would be on sprint planning, team roles, estimation and assignment of tasks, communication, etc. 
+
+---
+
+### Q2: Personal Role (15 pts)
+
+**Each team member had a specific role to play in the project, which changed over time. Please answer the following questions about your personal role(s):**
 
 **Part A (5pts):** 
-
-A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
-
-A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
-
+What were your roles in the each of the iterations this semester? Explain what was your strategy for selecting your initial role(s). Describe the duties (tasks) expected of and product outcomes specific to your role(s). How did your role change over iterations, and what were the reasons?
 
 **Part B (5pts):**
+What were the biggest challenges you faced in accomplishing those duties? In what ways do you feel you did a good job in your role? If you had the same role for another project beginning next week, what would you do differently? 
 
-B1. (2pts) Explain why you think Agile is (or is not) an appropriate process model for your class team project. Construct a convincing argument that includes whether stand-up meetings, sprint planning, user stories, and retrospectives are useful, and whether other Agile features are useful for your team.
-
-B2. (3pts) Create two semester-long development plans for your current project: one using a Waterfall model, and another one using an Agile model, and then compare the two. 
-
----
-
-### Q2: Object-oriented Design (10 pts)
-
-**Answer BOTH of these questions based on information from multiple sources:**
-
-**Part A (5pts):** 
-What is the main purpose of object-oriented (OO) design and programming, and why did it become so popular in the software world? Is that popularity fading? Do some research and discuss about its weaknesses. Discuss when it is proper to use full-fledged OO design versus when it is excessive. Give examples of popular languages, frameworks, or use-cases that are not object-oriented. Give references to your sources. 
-
-**Part B (5pts):**
-Choose one OO design pattern from [OO Design Patterns Card](/softdev2-resources/docs/designpatternscard.pdf), describe its meaning and usage. Then, describe a real-world program example that employs it. Be detailed.
+**Part C (5pts):**
+Do you feel your role was harder, easier, or equivalent to other roles in the project? Compare it to each of the other roles in your team, and give each role a score between 1 (easiest) to 5 (hardest). Note that this is not the peer review for your teammates, which is coming later. Were any new roles missing from your team?
 
 ---
 
-### Q3: Version Control (10 pts)
-
-**Answer BOTH of these questions:**
-
-**Part A (4pts):** 
-Describe 4 key features of version control systems that make them useful, and explain why they are indispensable in today's software development. 
-
-**Part B (6pts):**
-You are given a repo called *HelloSD*. This repo includes a *Readme.md* and a file *check.sh*. You are working on this repo with a team of people. The team is working in parallel on this repo to complete some task. List all the steps you need to do to add your changes to the *check.sh* file correctly to the repo (on the master/ branch). Chose the best strategy for full points (hint: make your own branch and name it with your first name). At each step provide the command line code necessary to complete the step, followed by a brief description. Missing command line or description will result in losing points.
-
-**BONUS (2pts)** What are 4 key differences between version control systems that are centralized (e.g., Subversion, CVS) versus distributed (e.g., Git, Mercurial)
-
----
-
-### Q4: Project Role (10 pts)
+### Q3: Security in Software Development (10 pts)
 
 **Answer BOTH of these questions:**
 
 **Part A (5pts):** 
-Explain your primary role in your project team. How did you affect your teammates' work on the project so far? What accomplishments are you proud about and what mistakes did you make? Then, for each of your teammates, assign them a score between 0 (lowest, troll) and 3 (highest, super). Justify this number by explaining their role and work products so far in the project. Don't hesitate to cut some points because it is not the only information I use to calculate effort scores. It's always good to let your teammates know whether you're happy with their work ethic and contributions (5 pts for your contribution, the average of your teammates scores for you will be reflected in the requirements phase project grading). Missing scores (in numbers) will be penalized (2 pts) for this question. 
-
+We did not get the chance this semester to talk about security issues as it directly pertains to software development. Go to the [OWASP Top Ten](https://owasp.org/www-project-top-ten/) page, open the PDF for the 2017 report, and select two items from the top 10 list. Describe in your words what these items mean and how they relate to issues in your past projects or public incidents that you know about. 
 
 **Part B (5pts):**
-Explain the difficulty estimate scale that you decided with your team. Given an account of the user stories and subtasks that were assigned to you. List the total estimated difficulty and hours that you logged for your tasks. What were your work products that resulted from this role so far? How long did they take (based on what was logged)? What is left to go? How much are you planning to take on in the next iteration? How does this compare to your teammates? 
+Choose another item from the [OWASP Top Ten](https://owasp.org/www-project-top-ten/) list that can be implemented in your project this semester. Explain how this vulnerability can be exploited in your project, and what steps would you or did you take to avoid it. Be specific.
 
 ---
 
-### Q5: Article Discussion (10 pts)
+### Q4: SD Knowledge (15 pts)
 
-**Answer ONLY ONE of the following questions. Each requires reading a short article by Joel Spolsky, and then discussing it. Write at least a paragraph, but don't exceed one page.**
+**Answer below questions based on the knowledge and client requirements provided.**
 
-1. In [Things You Should Never Do, Part I](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/), Joel Spolsky argues against rewriting code from scratch. Study his arguments and provide two counter-arguments to his points (i.e. supporting rewriting code from scratch).
-2. In [The Iceberg Secret, Revealed](https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/), what's wrong with Joel's customers? Add a new argument that supports his hypothesis from your interaction so far with your own client.
-3. In [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/), Joel describes several examples of abstractions gone bad. Based on his examples, provide a new example from your own past experience that matches with this pattern.
-4. In [The Perils of JavaSchools](https://www.joelonsoftware.com/2005/12/29/the-perils-of-javaschools-2/), Joel complains about teaching Java in computer science/IT curriculums. As a student in such a school, argue for or against his points based on your personal experience and knowledge among peers.
+Knowledge:
+* Application server is a monthly-subscription service where you can run a back-end web service
+* Database server is a monthly-subscription service that allows accessing a database with an IP address
+* Github Pages is a free web publication service that can serve static content (including dynamic Javascript content, such as in Angular, React, or Vue.js)
+* MongoDB is a noSQL database software that serves JSON documents
+* AtlasDB is an online service that offers a MongoDB instance for free up to 500MB
+* Javascript can be used to access AtlasDB
+* MySQL is a free, open source DBMS software helping to host a database server that needs to run an application/database server
+* Altervista is an free, online service for MySQL databases that can only be accessed locally from the provided PHP back-end to host web applications
+* Mobile applications can be downloaded from online markets for free, only with a one-time, small submission fee
+* Mobile apps are not easily updated (users resist too frequent updates)
+* Mobile apps larger than 100MB are not easily installed by users
+* Web pages can be viewed on mobile device browsers if they use responsive design
+* Client-side Javascript code can be hosted without the need for an application server
 
+Client requirements (select 3):
+            a) Wants mobile access
+            b) Can't afford application or database server
+            c) Can only pay to develop one app (either a web app, iOS, or Android)
+            d) Client has more data than 500MB
+            e) Client wants cheapest solution
+            f) Wants to reach users irrespective of browser, computer, or phone ownership (Android, iOS, etc)
 
+**Questions:**
 
-## Syllabus
+**Part A:**
+List your chosen client requirements.
 
-Example Syllabus which includes learning outcomes, textbook, schedule and details about the course organization. 
+**Part B (9pts):** 
+List up to three potential technological solutions for this client that satisfy the requirements above (mandatory and those you selected). List the back-end, front-end, and database solutions, and how they will work together to satisfy the client needs for each solution.
 
-Parts that instructor needs to change to his/her own data are emphasized in yellow.
+**Part C (6pts):**
+What three changes in requirements will have an impact on the solution provided? List each of the changes and briefly explain how the solution changes for each. 
 
-[Download pdf of Syllabus here.](/softdev2-resources/docs/syllabus.pdf)
+---
 
-[Download word doc of Syllabus here.](/softdev2-resources/docs/syllabus.docx)
+### Q5: Metrics (25 pts)
+
+**We talked about measuring software project development performance during the course. Answer the following:**
+
+**Part A (10pts):**
+Explain what we mean by software process metrics (for measuring both team and product performance), and why they are important in software engineering projects. Research, and give multiple specific examples for metrics. Cite your sources. 
+
+**Part B (10pts):** 
+Look back at your own progress in the project and summarize your weekly velocity for a specific period in at least 2 iterations. Cite the exactly JIRA items where you logged your progress. Then, explain how and why your velocity changed throughout the semester. Based on this data, give me an example of a task you can do in a specified amount of time, trying to be as accurate as you can.
+
+**Part C (5pts):**
+Look at your user testing data (from App Factory presentations at CREATE Symposium or earlier user testing) and explain what's the most important outcome for the success of your project. How did you personally contribute to this outcome? What weaknesses were reported by your testers? How could they have been addressed?
+
+---
+
+## Q6: Communication (10 pts)
+
+**One of the most important tools in software engineering projects is communication. Knowing that you, your team, and the client do not work in the same office 40 hours per week, answer all of the following.**
+
+**Part A (5pts):**
+Describe how you and your team members communicated about the project tasking using the Discord, Slack, GroupMe, email, texting, etc. By the end of the semester, how would you characterize your group dynamics on this communication channel? Was it ideal? How would you improve it? How did your activity on the productivity software (task and user story discussion and state tracking) contribute to your communications?
+
+**Part B (5pts):**
+Describe your communications with your client, who was supposed to be part of your team based on the Agile philosophy. Include how often you personally contacted them, how the team made sure they are aware of your progress, and whether the team received the required feedback from them. How would you rate your client and how could you have improved your communications with them?
+
+---
+
+## Q7: Peer Review (5 pts)
+
+**Consider the latest phase of your project since March 31st. For each of your teammates, write a paragraph with the information below:**
+Give name, performance on scale from 0 (troll) to 3 (awesome), and explain contribution to the project. The score is used in combination with other activity metrics to scale your teammates project score. A low score here may not mean they will lose all points, so don't be afraid to cut points. It may be important for them to get the feedback and improve themselves in the future. Potentially, you can leave a message for them that I can deliver anonymously.
+
 

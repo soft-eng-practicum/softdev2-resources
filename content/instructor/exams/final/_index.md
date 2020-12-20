@@ -81,11 +81,17 @@ Knowledge:
 * Client-side Javascript code can be hosted without the need for an application server
 
 Client requirements (select 3):
+
             a) Wants mobile access
+            
             b) Can't afford application or database server
+            
             c) Can only pay to develop one app (either a web app, iOS, or Android)
+            
             d) Client has more data than 500MB
+            
             e) Client wants cheapest solution
+            
             f) Wants to reach users irrespective of browser, computer, or phone ownership (Android, iOS, etc)
 
 **Questions:**
@@ -131,6 +137,7 @@ Describe your communications with your client, who was supposed to be part of yo
 ## Q7: Peer Review (5 pts)
 
 **Consider the latest phase of your project since March 31st. For each of your teammates, write a paragraph with the information below:**
+
 Give name, performance on scale from 0 (troll) to 3 (awesome), and explain contribution to the project. The score is used in combination with other activity metrics to scale your teammates project score. A low score here may not mean they will lose all points, so don't be afraid to cut points. It may be important for them to get the feedback and improve themselves in the future. Potentially, you can leave a message for them that I can deliver anonymously.
 
 

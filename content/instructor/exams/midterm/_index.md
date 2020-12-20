@@ -27,10 +27,10 @@ Instructions:
 {{% fragment %}} **Part (A) (5pts)** 
 {{% /fragment %}}
 
-{{% fragment %}} A1. (3pts) Based on the data in this report (read 14th version), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
+{{% fragment %}} A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
 {{% /fragment %}}
 
-{{% fragment %}} A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest State of the Agile Survey by Version One that you can find under Contents>Resources->Agile (read 14th version). 
+{{% fragment %}} A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
 {{% /fragment %}}
 
 {{% fragment %}} **Part (B) (5pts)**

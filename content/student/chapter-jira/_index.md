@@ -1,9 +1,9 @@
 +++
-title = "Scrum"
+title = "Jira"
 outputs = ["Reveal"]
 +++
 
-### Scrum
+### Jira
 
 #### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
 
@@ -13,7 +13,7 @@ outputs = ["Reveal"]
 
 ---
 
-## Scrum
+## Jira
 
 {{% fragment %}} <p align='left'> * Originally proposed by Jeff Sutherland in 90s, then improved by Schwaber and Beedle </p> {{% /fragment %}}
 

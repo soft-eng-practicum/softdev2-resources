@@ -18,7 +18,7 @@ description: Assgn 7
 **JSON Quiz**
 
 Submit your JSON results obtained by taking the JSON quiz at the link below. To get full points you need to score at least 70% on the quiz at the point. 
-You can take several quizzes and submit your best score.
+You can take several quizzes and submit your best score. Note: you need to create a free account to access these materials.
 
 [JSON quiz](https://courses.edx.org/login?next=/courses/course-v1%3AStanfordOnline%2BSOE.YDB-SSD0001%2B2T2020/courseware/ch-json_data/seq-quiz-json/%3Factivate_block_id%3Dblock-v1%253AStanfordOnline%252BSOE.YDB-SSD0001%252B2T2020%252Btype%2540sequential%252Bblock%2540seq-quiz-json)
 

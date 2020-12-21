@@ -3,9 +3,12 @@ date: 2020-10-19T15:26:15Z
 lastmod: 2020-12-20T15:26:15Z 
 publishdate: 2019-11-23T15:26:15Z
 
+title: Assgn 1
+description: Assgn 1
+
 ---
 
-## Assn 1a: Class Introductions
+## Assgn 1a: Class Introductions
 
 **Instructor Instructions**: 
 * This assignment should be posted on the class platform to allow all students to see each other entries. This will help them know their teammates and their working times.

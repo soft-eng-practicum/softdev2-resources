@@ -3,91 +3,49 @@ date: 2020-10-19T15:26:15Z
 lastmod: 2020-12-20T15:26:15Z 
 publishdate: 2019-11-23T15:26:15Z
 
-title: Midterm
-description: Midterm
+title: Assgn 5a
+description: Assgn 5a
 
 ---
 
-## Midterm
+## Assgn 5a (individual): Jira practice
 
-Instructions:
+**Instructor Instructions**: 
+* Students will submit directly on Jira server. Instructor must provide students a Jira project link where they will practice on the server.
+* Suggested time: 7 days
 
-* Recommended work time 180 minutes. 
+**Posting for Students**:
 
-* Recommended Period: one week
+# Practice assignment for Agile progress tracking in JIRA 
 
-* Students can leave the work, save it, and return later to pick up where they left.
+This is a practice assignment, **do not put your actual project user stories here**. We will create mock versions of sprints, epics, user stories, and subtasks.
 
-* Total points 50 (100%).
+Even though JIRA is not your progress tracking tool of your choice this semester, we will use it to practice Agile concepts. Look into the Atlassian documentation for JIRA [here](https://confluence.atlassian.com/jira064/jira-documentation-720411693.html) to get started or if you get stuck in any of the following steps.
 
-* There are Bonus points included for students who want to answer to these questions. 
+## Steps
+1. Look in your GGC email for an invitation from me into your JIRA account.
+2. Log into JIRA using the link on the course page.
+3. Under the *Projects* menu, click *View all projects* and find project title given in the assignment post. Select the Backlog from the left side menu - it is the default screen when you open a project.
+4. If noone in your team has done it yet, create a new _Epic_ **name** "team name/project name" with the **summary** "a team (team name) of students can develop (project name)", where you replace "team name" and "project name" with the respective names from your currently assigned team project. To create the Epic, click on the _Create_ button on top of the screen and select the appropriate options.
+5. Under your team Epic, create one User Story for yourself. In the Epic detail view, click on the "+" sign on the _Issues_ section. Alternatively, use can still use the _Create_ button, but make sure you select the Epic to link at the bottom of the form. The story should explain your role in the project, such as "Developer (name) will (your role in project) such that (reason for selecting role)". **Assign** this story to yourself. 
+6. Drag your personal story from the backlog list into the current Sprint. Add a difficulty estimate to it. 
+7. Under your personal Story, create 3 subtasks about: taking this course, selecting your team, and completing the project. 
+    i. Before you change anything, select _Active sprints_ from the left side bar. Find your story and tasks and take a screenshot of it, and post it as a "before" attachment in your story.
+    ii. Click on each Task to go to its detail screen. Under the menu _More_, select _Log Work_ and assign some random amount of time that you spent for each task.
+    iii. Assign each task to a different member of your team.
+    iv. Mark each of three tasks' progress differently, as _TODO_, _In progress_, and _Done_ in their detail screen. Alternatively, in the _Active sprints_ screen, you can drag stories and tasks across the three columns that correspond to their status.
+    v. Put a comment under at least one of _someone else's_ user stories in your epic. Then put a comment under _your_ story telling me under whom did you comment.
+8. Mark your story as _In Progress_.
+9. Take another screenshot once you're done and post it as an "after" attachment in your story.
+10. Create a new sub-task in your story titled "Grade me!" and assign it to your instructor to finish the assignment.
 
---- 
+**Jira login**: jira.ggc.edu (after accepting the invitation send to your ggc.edu email) 
 
-### Q1: Agile Methodology (10 pts)
+Post questions/problems/suggestions for improvement below.
 
-**During the last decade, Agile Methodology has become a very popular software process model, which is supported by the State of the Agile report.**
+There's a dark theme for JIRA if you prefer, by following these instructions:
 
-**Part A (5pts):** 
+This is an extension for Chrome users, didn't look to see if it works on Firefox or other browsers. For those of you who find the JIRA interface to be an eyesore and prefer a darker scheme, here's a website where you are able to change the look of it:  https://userstyles.org/
 
-A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
-
-A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
-
-
-**Part B (5pts):**
-
-B1. (2pts) Explain why you think Agile is (or is not) an appropriate process model for your class team project. Construct a convincing argument that includes whether stand-up meetings, sprint planning, user stories, and retrospectives are useful, and whether other Agile features are useful for your team.
-
-B2. (3pts) Create two semester-long development plans for your current project: one using a Waterfall model, and another one using an Agile model, and then compare the two. 
-
----
-
-### Q2: Object-oriented Design (10 pts)
-
-**Answer BOTH of these questions based on information from multiple sources:**
-
-**Part A (5pts):** 
-What is the main purpose of object-oriented (OO) design and programming, and why did it become so popular in the software world? Is that popularity fading? Do some research and discuss about its weaknesses. Discuss when it is proper to use full-fledged OO design versus when it is excessive. Give examples of popular languages, frameworks, or use-cases that are not object-oriented. Give references to your sources. 
-
-**Part B (5pts):**
-Choose one OO design pattern from [OO Design Patterns Card](/softdev2-resources/docs/designpatternscard.pdf), describe its meaning and usage. Then, describe a real-world program example that employs it. Be detailed.
-
----
-
-### Q3: Version Control (10 pts)
-
-**Answer BOTH of these questions:**
-
-**Part A (4pts):** 
-Describe 4 key features of version control systems that make them useful, and explain why they are indispensable in today's software development. 
-
-**Part B (6pts):**
-You are given a repo called *HelloSD*. This repo includes a *Readme.md* and a file *check.sh*. You are working on this repo with a team of people. The team is working in parallel on this repo to complete some task. List all the steps you need to do to add your changes to the *check.sh* file correctly to the repo (on the master/ branch). Chose the best strategy for full points (hint: make your own branch and name it with your first name). At each step provide the command line code necessary to complete the step, followed by a brief description. Missing command line or description will result in losing points.
-
-**BONUS (2pts)** What are 4 key differences between version control systems that are centralized (e.g., Subversion, CVS) versus distributed (e.g., Git, Mercurial)
-
----
-
-### Q4: Project Role (10 pts)
-
-**Answer BOTH of these questions:**
-
-**Part A (5pts):** 
-Explain your primary role in your project team. How did you affect your teammates' work on the project so far? What accomplishments are you proud about and what mistakes did you make? Then, for each of your teammates, assign them a score between 0 (lowest, troll) and 3 (highest, super). Justify this number by explaining their role and work products so far in the project. Don't hesitate to cut some points because it is not the only information I use to calculate effort scores. It's always good to let your teammates know whether you're happy with their work ethic and contributions (5 pts for your contribution, the average of your teammates scores for you will be reflected in the requirements phase project grading). Missing scores (in numbers) will be penalized (2 pts) for this question. 
-
-
-**Part B (5pts):**
-Explain the difficulty estimate scale that you decided with your team. Given an account of the user stories and subtasks that were assigned to you. List the total estimated difficulty and hours that you logged for your tasks. What were your work products that resulted from this role so far? How long did they take (based on what was logged)? What is left to go? How much are you planning to take on in the next iteration? How does this compare to your teammates? 
-
----
-
-### Q5: Article Discussion (10 pts)
-
-**Answer ONLY ONE of the following questions. Each requires reading a short article by Joel Spolsky, and then discussing it. Write at least a paragraph, but don't exceed one page.**
-
-1. In [Things You Should Never Do, Part I](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/), Joel Spolsky argues against rewriting code from scratch. Study his arguments and provide two counter-arguments to his points (i.e. supporting rewriting code from scratch).
-2. In [The Iceberg Secret, Revealed](https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/), what's wrong with Joel's customers? Add a new argument that supports his hypothesis from your interaction so far with your own client.
-3. In [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/), Joel describes several examples of abstractions gone bad. Based on his examples, provide a new example from your own past experience that matches with this pattern.
-4. In [The Perils of JavaSchools](https://www.joelonsoftware.com/2005/12/29/the-perils-of-javaschools-2/), Joel complains about teaching Java in computer science/IT curriculums. As a student in such a school, argue for or against his points based on your personal experience and knowledge among peers.
+After clicking that link, type JIRA into the search bar. I recommend Jira Dark Flat, it seems to work the best. Click the download button and it should install the extension automatically and the theme.  Once the extension is installed, click the extension icon and click on the 3 dot menu and go to manage all styles.  Click on the edit button of the theme.  At the bottom, you should see the "applies to" where you have to specify the site. Add one where it will be URL's starting with: and include http://itec-gunay.duckdns.org
 

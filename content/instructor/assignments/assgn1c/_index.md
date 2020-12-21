@@ -24,6 +24,6 @@ Next class, we will have a class discussion on Software Development vs Software 
 
 Articles:
 
-* [Software Development versus Software Engineering](/softdev2-resources/docs/sdvsse.pdf)
+* [Software Development versus Software Engineering](/softdev2-resources/docs/sdversusse.pdf)
 
 * [Dr Dobbs: Engineering not Computer Science](/softdev2-resources/docs/drdobbsengnotcs.pdf)

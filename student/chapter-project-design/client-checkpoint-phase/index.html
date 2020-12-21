@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Client Checkpoint Phase - Intermediate Agile Software Development</title>
+<meta name="description" content="Client Checkpoint Phase">
+<meta name="generator" content="Hugo 0.79.1" />
+<link href="https://soft-eng-practicum.github.io/softdev2-resources//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/client-checkpoint-phase/">
+<link rel="stylesheet" href="https://soft-eng-practicum.github.io/softdev2-resources/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://soft-eng-practicum.github.io/softdev2-resources/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://soft-eng-practicum.github.io/softdev2-resources/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Client Checkpoint Phase" />
+<meta property="og:description" content="Client Checkpoint Phase" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/client-checkpoint-phase/" />
+<meta property="og:image" content="https://soft-eng-practicum.github.io/softdev2-resources/images/og-image.png"/>
+<meta property="og:updated_time" content="2020-12-20T15:26:15+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://soft-eng-practicum.github.io/softdev2-resources/images/og-image.png"/>
+
+<meta name="twitter:title" content="Client Checkpoint Phase"/>
+<meta name="twitter:description" content="Client Checkpoint Phase"/>
+<meta itemprop="name" content="Client Checkpoint Phase">
+<meta itemprop="description" content="Client Checkpoint Phase">
+</head>
+<body><div class="container"><header>
+<h1>Intermediate Agile Software Development</h1>
+
+ <span class="version">Version 0.1.1</span>
+<a href="https://github.com/cengique/softdev2-resources" class="github"><i class="fab fa-github"></i></a>
+<p class="description">Lectures and other resources for teaching and learning about software development</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/softdev2-resources/">Home</a></li>
+<li><a href="/softdev2-resources/about">About</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Client Checkpoint Phase</h1><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: 'Lato', sans-serif;">
+<h2 id="wiki_grading_criteria">Grading Criteria</h2>
+<table>
+<thead>
+<tr>
+<th align="right"><strong>Max Pts</strong></th>
+<th align="left"><strong>Grade item</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">100</td>
+<td align="left">Total student grade w/o bonus</td>
+</tr>
+<tr>
+<td align="right">125.33</td>
+<td align="left">Total student grade w bonus</td>
+</tr>
+</tbody>
+</table>
+<p>Team scores will be posted below. Individual grades will be submitted privately in the D2L grades section. They are calculated the same way as in <a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=2088528&amp;type=content&amp;rcode=usgq-14785837" target="_self">Requirements Phase</a>:</p>
+<blockquote>
+<p><strong>total individual grade</strong> = <strong>base grade</strong> + <strong>team score</strong> &times; <strong>individual effort percent</strong></p>
+</blockquote>
+<table style="width: 701px; height: 316px;">
+<thead>
+<tr style="height: 36px;">
+<th style="width: 23px; height: 36px;" align="right"><strong>30</strong></th>
+<th style="width: 210px; height: 36px;" align="left"><strong>Base points</strong></th>
+<th style="width: 23px; height: 36px;" align="right"><strong>30</strong></th>
+<th style="width: 198px; height: 36px;" align="left"><strong>Individual effort multiplier</strong></th>
+<th style="width: 23px; height: 36px;" align="right"><strong>70</strong></th>
+<th style="width: 224px; height: 36px;" align="left"><strong>Team presentation/work</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 210px; height: 18px;" align="left">Selected tool/article</td>
+<td style="width: 23px; height: 18px;" align="right">10</td>
+<td style="width: 198px; height: 18px;" align="left">Git commits</td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">Client partially functional demo</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 23px; height: 36px;" align="right">10</td>
+<td style="width: 210px; height: 36px;" align="left">US and tasks progress updated</td>
+<td style="width: 23px; height: 36px;" align="right">5</td>
+<td style="width: 198px; height: 36px;" align="left">Process tool activity</td>
+<td style="width: 23px; height: 36px;" align="right">5</td>
+<td style="width: 224px; height: 36px;" align="left">Screencast of demo</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right">10</td>
+<td style="width: 210px; height: 18px;" align="left">Coding contribution</td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 198px; height: 18px;" align="left">Other comm</td>
+<td style="width: 23px; height: 18px;" align="right">10</td>
+<td style="width: 224px; height: 18px;" align="left">Project and code progress</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 210px; height: 18px;" align="left">Time logging</td>
+<td style="width: 23px; height: 18px;" align="right">10</td>
+<td style="width: 198px; height: 18px;" align="left">Peer review</td>
+<td style="width: 23px; height: 18px;" align="right">10</td>
+<td style="width: 224px; height: 18px;" align="left">Iterations and USs updated</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 210px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 198px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right">10</td>
+<td style="width: 224px; height: 18px;" align="left">Client communication</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right"><strong>10</strong></td>
+<td style="width: 210px; height: 18px;" align="left"><strong>Base bonus</strong></td>
+<td style="width: 23px; height: 18px;" align="right"><strong>2</strong></td>
+<td style="width: 198px; height: 18px;" align="left"><strong>Bonus effort</strong></td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">Iteration plan validated</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 210px; height: 18px;" align="left">Testing contribution</td>
+<td style="width: 23px; height: 18px;" align="right">2</td>
+<td style="width: 198px; height: 18px;" align="left">Extra effort</td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">Client satisfaction</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 210px; height: 18px;" align="left">Documentation contribution</td>
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 198px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">License/IP</td>
+</tr>
+<tr>
+<td style="width: 23px;"></td>
+<td style="width: 210px;"></td>
+<td style="width: 23px;"></td>
+<td style="width: 198px;"></td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">Burndown</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;"></td>
+<td style="width: 210px; height: 18px;"></td>
+<td style="width: 23px; height: 18px;"></td>
+<td style="width: 198px; height: 18px;"></td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">CREATE abstract</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 23px; height: 36px;"></td>
+<td style="width: 210px; height: 36px;"></td>
+<td style="width: 23px; height: 36px;"></td>
+<td style="width: 198px; height: 36px;"></td>
+<td style="width: 23px; height: 36px;" align="right">5</td>
+<td style="width: 224px; height: 36px;" align="left">Demo aligned with requirements</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 23px; height: 10px;"></td>
+<td style="width: 210px; height: 10px;"></td>
+<td style="width: 23px; height: 10px;"></td>
+<td style="width: 198px; height: 10px;"></td>
+<td style="width: 23px; height: 10px;"></td>
+<td style="width: 224px; height: 10px;"></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 210px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 198px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right"><strong>10</strong></td>
+<td style="width: 224px; height: 18px;" align="left"><strong>Bonus project score</strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 210px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 198px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">README with up-to-date links</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 210px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right"></td>
+<td style="width: 198px; height: 18px;" align="left"></td>
+<td style="width: 23px; height: 18px;" align="right">5</td>
+<td style="width: 224px; height: 18px;" align="left">Other</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</body>
+</html>
+<div class="edit-meta">
+Last updated on 20 Dec 2020
+
+
+<br>
+Published on 23 Nov 2019
+<br><a href="https://github.com/cengique/softdev2-resources/edit/master/content/student/chapter-project-design/client-checkpoint-phase/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/requirements-phase/" title="Requirements Phase"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Requirements Phase</a>
+<a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/last-stretch-phase/" title="The Last Stretch Phase">Next - The Last Stretch Phase <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="open-menu">
+<ul>
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/">Home</a></li>
+
+<li class="parent"><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/">Student Materials</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/">Re-introduction to Software Engineering</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/career-advice-technologies/"></a></li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/chapter-tech/">Technology Overview</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/">Agile Development</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-principles/">Agile Principles</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-kanban/">Kanban</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-scrum/">Scrum</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/">Requirements in Agile</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-client/">Client Meeting</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-communication/">Communication</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-teamwork/">Teamwork</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-userstories/">User Stories</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/">Version Control</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/github-social-computing/">Github Social Computing</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-jira/">Project Management with JIRA</a>
+  
+</li>
+
+<li class="parent"><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/">Project Design and Management</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/requirements-phase/">Requirements Phase</a>
+  
+</li>
+
+<li class="parent active"><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/client-checkpoint-phase/">Client Checkpoint Phase</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/last-stretch-phase/">The Last Stretch Phase</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/">Software Protection</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/intellectual-property/">Intellectual Property</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/licensing/">Licensing</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/">Instructor Materials</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/schedule/">Schedule</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/">Assignments</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn1a/">Assgn 1a</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn1b/">Assgn 1b</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn1c/">Assgn 1c</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn2a/">Assgn 2a</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn2b/">Assgn 2b</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn3a/">Assgn 3a</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn3b/">Assgn 3b</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn4a/">Assgn 4a</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn4b/">Assgn 4b</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn5a/">Assgn 5a</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn5b/">Assgn 5b</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn6a/">Assgn 6a</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn6b/">Assgn 6b</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn7/">Assgn 7</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/presentations/">Presentations</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/exams/">Exams</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/exams/final/">Final</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/exams/midterm/">Midterm</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/gradebook/">Gradebook</a>
+  
+</li>
+
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/instructor/syllabus/">Syllabus</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

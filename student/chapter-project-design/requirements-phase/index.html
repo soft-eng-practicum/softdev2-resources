@@ -3,11 +3,11 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Home - Intermediate Agile Software Development</title>
-<meta name="description" content="Home page">
+<title>Requirements Phase - Intermediate Agile Software Development</title>
+<meta name="description" content="Requirements Phase">
 <meta name="generator" content="Hugo 0.79.1" />
 <link href="https://soft-eng-practicum.github.io/softdev2-resources//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://soft-eng-practicum.github.io/softdev2-resources/">
+<link rel="canonical" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/requirements-phase/">
 <link rel="stylesheet" href="https://soft-eng-practicum.github.io/softdev2-resources/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://soft-eng-practicum.github.io/softdev2-resources/css/chroma.min.css">
@@ -16,19 +16,19 @@
 <script src="https://soft-eng-practicum.github.io/softdev2-resources/js/bundle.js"></script><style>
 :root {}
 </style>
-<meta property="og:title" content="Home" />
-<meta property="og:description" content="Home page" />
+<meta property="og:title" content="Requirements Phase" />
+<meta property="og:description" content="Requirements Phase" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://soft-eng-practicum.github.io/softdev2-resources/" />
+<meta property="og:url" content="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/requirements-phase/" />
 <meta property="og:image" content="https://soft-eng-practicum.github.io/softdev2-resources/images/og-image.png"/>
-<meta property="og:updated_time" content="2019-10-26T15:26:15+00:00" />
+<meta property="og:updated_time" content="2020-12-20T15:26:15+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://soft-eng-practicum.github.io/softdev2-resources/images/og-image.png"/>
 
-<meta name="twitter:title" content="Home"/>
-<meta name="twitter:description" content="Home page"/>
-<meta itemprop="name" content="Home">
-<meta itemprop="description" content="Home page">
+<meta name="twitter:title" content="Requirements Phase"/>
+<meta name="twitter:description" content="Requirements Phase"/>
+<meta itemprop="name" content="Requirements Phase">
+<meta itemprop="description" content="Requirements Phase">
 </head>
 <body><div class="container"><header>
 <h1>Intermediate Agile Software Development</h1>
@@ -46,24 +46,171 @@
 </nav>
 </div>
 <div class="content-container">
-<main><h1 id="welcome">Welcome!</h1>
-<p>We are still adding materials. Select a chapter from the menu on the left.</p>
-<nav class="pagination"><a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/student/" title="Student Materials">Next - Student Materials <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-</nav><div class="edit-meta">
-Last updated on 26 Oct 2019
+<main><h1>Requirements Phase</h1><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: 'Lato', sans-serif;">
+<h2 id="wiki_grading_criteria">Grading Criteria</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Max Pts</strong></th>
+<th><strong>Grade item</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>Total student grade</td>
+</tr>
+<tr>
+<td>130</td>
+<td>Total student grade with bonus</td>
+</tr>
+</tbody>
+</table>
+<p>Individual grades and its bonus sum together, and the team points are MULTIPLIED by effort percent of the individual. They will be submitted privately in the D2L grades section. They are calculated <em>tentatively</em> as follows:</p>
+<blockquote>
+<p><strong>total individual grade</strong> = <strong>base grade</strong> + <strong>team score</strong> &times; <strong>individual effort percent</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="right"><strong>50</strong></th>
+<th align="left"><strong>Base points</strong></th>
+<th align="right"><strong>25</strong></th>
+<th align="left"><strong>Individual effort multiplier</strong></th>
+<th align="right"><strong>50</strong></th>
+<th align="left"><strong>Team score</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">10</td>
+<td align="left">Role markdown</td>
+<td align="right">10</td>
+<td align="left">Peer review</td>
+<td align="right">5</td>
+<td align="left">Meeting summary in repo and validated by client</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="left">2x role presentations</td>
+<td align="right">5</td>
+<td align="left">Github commits</td>
+<td align="right">2</td>
+<td align="left">Team name</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">Release waivers</td>
+<td align="right">5</td>
+<td align="left">Task tracking</td>
+<td align="right">5</td>
+<td align="left">Team markdown</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="left">Feedback for presentations</td>
+<td align="right">5</td>
+<td align="left">Communication (Slack/Discord)</td>
+<td align="right">5</td>
+<td align="left">Client feedback for mockup</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="left">User story (estimate, tasks, assigned)</td>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right">5</td>
+<td align="left">Client communications</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>&nbsp;</strong></td>
+<td><strong>&nbsp;</strong></td>
+<td>&nbsp; 8</td>
+<td>1st iteration plans tracked</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right"><strong>2</strong></td>
+<td align="left"><strong>Bonus effort</strong></td>
+<td align="right">5</td>
+<td align="left">User stories in backlog</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right">2</td>
+<td align="left">Extra effort</td>
+<td align="right">12</td>
+<td align="left">All role presentations</td>
+</tr>
+<tr>
+<td align="right"><strong>10</strong></td>
+<td align="left"><strong>Base bonus</strong></td>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right">3</td>
+<td align="left">Vlogs/presentations submitted</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">Voting for best presentations</td>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">Comments in tasks</td>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right"><strong>10</strong></td>
+<td align="left"><strong>Bonus project score</strong></td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right">5</td>
+<td align="left">(bonus) for best project(s)</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right">5</td>
+<td align="left">extra stuff</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+<div class="edit-meta">
+Last updated on 20 Dec 2020
 
 
 <br>
-Published on 23 Nov 2018
-<br><a href="https://github.com/cengique/softdev2-resources/edit/master/content/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+Published on 23 Nov 2019
+<br><a href="https://github.com/cengique/softdev2-resources/edit/master/content/student/chapter-project-design/requirements-phase/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/" title="Project Design and Management"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Project Design and Management</a>
+<a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/client-checkpoint-phase/" title="Client Checkpoint Phase">Next - Client Checkpoint Phase <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
 
 <nav class="open-menu">
 <ul>
-<li class="active"><a href="https://soft-eng-practicum.github.io/softdev2-resources/">Home</a></li>
+<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/">Home</a></li>
 
-<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/">Student Materials</a>
+<li class="parent"><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/">Student Materials</a>
   
 <ul class="sub-menu">
 
@@ -136,11 +283,11 @@ Published on 23 Nov 2018
   
 </li>
 
-<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/">Project Design and Management</a>
+<li class="parent"><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/">Project Design and Management</a>
   
 <ul class="sub-menu">
 
-<li class=""><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/requirements-phase/">Requirements Phase</a>
+<li class="parent active"><a href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/requirements-phase/">Requirements Phase</a>
   
 </li>
 

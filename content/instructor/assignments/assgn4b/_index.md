@@ -37,7 +37,7 @@ Note that all roles are mandatory and each person in the team may need more than
 * Each person must pick one or more roles from the list above.
 * Each team must have all of the roles distributed among its members.
 * Access your team repo and edit the README.md file
-* Follow the generic Markdown language help or one of GIthub markdown/Bitbucket markdown flavors
+* Follow the [generic Markdown language help](https://daringfireball.net/projects/markdown/) or [GIthub Markdown](https://guides.github.com/features/mastering-markdown/) markdown flavors
 * You must use formatting such as heading, bold, italic, and one emoji to improve readability.
 * Format your README.md file to have the following information:
   1. Team/project names

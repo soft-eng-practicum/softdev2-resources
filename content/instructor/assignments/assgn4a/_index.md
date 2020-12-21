@@ -44,6 +44,7 @@ Note that all roles are mandatory and each person in the team may need more than
 * Each person must post his/her roles as a follow up below.
 
 Example role posting:
+
 Chris Chris - Team ABC
 * 1st Role: Code Architecture/Lead Programmer 60%
 * 2nd Role: Team Manager 40%

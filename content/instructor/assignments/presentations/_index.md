@@ -3,91 +3,141 @@ date: 2020-10-19T15:26:15Z
 lastmod: 2020-12-20T15:26:15Z 
 publishdate: 2019-11-23T15:26:15Z
 
-title: Midterm
-description: Midterm
+title: Presentations
+description: Presentations
 
 ---
 
-## Midterm
+## Presentations (individual): Tools and Articles
 
-Instructions:
+**Instructor Instructions**: 
+* This assignment should be posted on the class platform to allow all students to see each other entries. This will help them learn from their teammates presentations.
+* Suggested time: after midterm till end of semester
+* Presentation Time: 20 min/ student
 
-* Recommended work time 180 minutes. 
+**Posting for Students**:
 
-* Recommended Period: one week
+**Tools and Articles - presentations guidelines**
 
-* Students can leave the work, save it, and return later to pick up where they left.
+### Each of you must either pick an article or one of the tools in any of the below topics during this semester. 
 
-* Total points 50 (100%).
+**You must do all of the following:**
 
-* There are Bonus points included for students who want to answer to these questions. 
+* select your tool/article and post its name below as a followup, along with the date you prefer to present it
 
---- 
+* submit a presentation file before the presentation time as a followup below; if you present a tool and show a demo then you also must submit your code files in a zip
 
-### Q1: Agile Methodology (10 pts)
+* present for 10-15 minutes in class 
 
-**During the last decade, Agile Methodology has become a very popular software process model, which is supported by the State of the Agile report.**
+**Important**: when you're picking a tool/article, give me 2-3 dates when you can present it, so I can schedule the presentation. Last class you can schedule your presentation is Nov 5th, 2020.
 
-**Part A (5pts):** 
+**Two types of TOOL** presentations are allowed:
 
-A1. (3pts) Based on the data in this report (read [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)), what are the top 3 features of Agile that are different from the traditional software engineering approach and make it so popular? Justify your selections by giving reasons.
+1. In-depth look at a tool with new information (has to be distinct from previous presentations on the same topic and must refer to them). Include your code demo of how it works on 2-3 tasks, show, and explain code.
 
-A2. (2pts) Research and list 3 weaknesses of Agile you think makes it less desirable. Your answers must cite numbers/info in the latest report [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/). 
+2. Comparison of several tools using tool presentations from previous semesters to recommend one for a use case. Include your demo of how they work on 1-2 tasks, show, and explain code in all the tools you selected. Make your comparison point(s) via the code.
+ 
+The **in-depth** look presentations will be graded based on the existence of the following information:
+
+1. Basic description of the tool. You can include live demos or online videos. Make sure everyone can get a grasp of the basic principles. Refer to and compare with info from previous presentations.
+2. Who uses it? Which companies are known to use this?
+3. How is it useful for us? Would you use it?
+4. How does it compare with other tools in the same category? What are its distinguishing features? What are its weaknesses?
+5. Submitting your presentation file here.
+6. Include your demo of how it works on 2-3 tasks, show, and explain code.
+8. Submitting your demo code files as a zip here.
+ 
+The **comparison** presentations will be graded based on:
+
+1. The basic explanation of the concept
+2. List of tools available and their differences
+3. Which tool is best for which type of application?
+4. Summary of the best or a recommendation for the class or current project
+5. Submitting your presentation file here.
+6. Include your demo of how they work on 1-2 tasks, show, and explain code in all the tools you selected. Make your comparison point(s) via code.
+7. Submitting your demo code files as a zip here.
+ 
+
+**Semester topics you can pick from (all will be posted here):**
+
+What	
+1.	Programming languages: C++, C#, JavaScript, Python, Ruby, Elixir	
+2.	Process tools or coding frameworks: ReactJS, Angular, Vue, Flutter, MERN, MEAN, Ruby on Rails, jQuery, Flask, Bootstrap, ASP.NET, Ionic	
+3.	No SQL Databases: MongoDB and mLAB, CouchDB, PouchDB, Cassandra, Firebase	
+4.	Testing frameworks: jUnit, Karma, Travis CI	
+5.	Build tools	
+6.	Software technology news	
+ 
+**Articles:**
+
+1. TESTING SOFTWARE: 2 OPTIONS. There are two articles to choose from (choose only one). 
+  * The first one, from the Testing Geek website, covers Software Testing of User Stories which is particularly useful for our agile project methods. [Cached Version](http://www.mathcs.emory.edu/~cengiz/cs540-485-soft-eng-fa14/resources/testingUserStories.pdf). 
+  * The second option is an article/interview featuring Martin Fowler, who has contributed in many areas of Computer Science. [Test Driven Development](https://www.artima.com/intv/testdriven.html) is a mantra for many of the best developers. [Cached Version](http://www.mathcs.emory.edu/~cengiz/cs540-485-soft-eng-fa14/resources/testDrivenDev.pdf).
+
+2. SOFTWARE ESTIMATION: 2 OPTIONS. Two articles are also available for this topic (choose one). 
+  * The first is by Steve McConnell, who is perhaps best known for his book "Code Complete". [Lessons in Software Estimation](http://www.mathcs.emory.edu/~cengiz/cs540-485-soft-eng-fa14/resources/buildingFort.pdf) looks at the kinds of issues that arise in any kind of project planning, not just software planning. The second article is by Joel Spolsky and introduces the idea of [Evidence-Based Scheduling](https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/), which builds on personal statistics gathered over time. [Cached Version](http://www.mathcs.emory.edu/~cengiz/cs540-485-soft-eng-fa14/resources/evidenceSched.pdf).
+
+3. [ACM DevOps article:](https://queue.acm.org/detail.cfm?id=3338532)
+
+4. [It's time we talk about object-oriented Javascript](https://medium.com/madhash/its-time-we-talk-about-object-oriented-javascript-81b4b9b70981)
+
+5. [Death of continuous integration](https://www.infoq.com/presentations/death-continuous-integration/)
+
+6. [Githubflow](https://githubflow.github.io/)
+
+7. [Diginomica: Agile has failed - a rebuttal](https://diginomica.com/agile-has-failed-rebuttal)
+
+8. [The end of PHP](https://medium.com/better-programming/the-end-of-php-18ba209dbc6d)
+
+9. [React animated tutorial](https://jstutorial.medium.com/react-animated-tutorial-7a46fa3c2b96)
+
+10. [Prototypal object-oriented programming using javascript](https://alistapart.com/article/prototypal-object-oriented-programming-using-javascript/)
+
+11. [A practical intro to test driven development](https://www.hackernoon.com/a-practical-intro-to-test-driven-development-hb63i319u)
+
+12. [12 STEPS TO BETTER CODE](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) Joel Spolsky has kept a lively, interesting blog. The 12 Steps Joel recommends are an interesting way to measure both your own performance as well as that of your organization.
+
+13. REQUIREMENTS ENGINEERING: WHEN TELEPATHY WON'T DO Even though Karl Wieger's article is old, it still offers valuable insight into the process of understanding what customers want. [When Telepathy Won't Do](https://www.processimpact.com/articles/telepathy.pdf) applies to web development as much as it does to traditional software development. (Cached Copy).
+
+14. Agile:
+
+  * [Diginomica: Agile has failed - a rebuttal](https://diginomica.com/agile-has-failed-rebuttal)
+
+  * [How Many Stories Per Sprint? Rules of Thumb](https://www.leadingagile.com/2015/05/how-many-user-stories-per-sprint-rules-of-thumb/)
+
+  * [Planning Poker: An Agile Estimating and Planning Technique](https://www.mountaingoatsoftware.com/agile/planning-poker)
+
+  * [Agile Planning](https://monday.com/blog/project-management/agile-planning/)
+
+15. JavaScript:
+
+  * [It's time we talk about object-oriented Javascript](https://medium.com/madhash/its-time-we-talk-about-object-oriented-javascript-81b4b9b70981)
+  * [Prototypal object-oriented programming using javascript](https://alistapart.com/article/prototypal-object-oriented-programming-using-javascript/)
+  * [The typescript tax](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
+  * [Type study](http://earlbarr.com/publications/typestudy.pdf)
+  * [What is a higher order observable](https://dev.to/angular/what-is-a-higher-order-observable-4k52)
+  * [React animated tutorial](https://jstutorial.medium.com/react-animated-tutorial-7a46fa3c2b96)
+  * [How to escape async/await hell](https://medium.com/free-code-camp/avoiding-the-async-await-hell-c77a0fb71c4c)
+  * [11 JavaScript Utility Libraries you Should Know in 2019](https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade)
+  * [The Most In-Demand JavaScript Frameworks for Developers in 2019](https://blog.bitsrc.io/the-most-in-demand-javascript-frameworks-for-developers-in-2019-39bba192d8dc)
+  * [How to stop using console.log() and start using your browser’s debugger](https://medium.com/datadriveninvestor/stopping-using-console-log-and-start-using-your-browsers-debugger-62bc893d93ff)
+  * [Service workers: the little heroes behind Progressive Web Apps](https://medium.com/free-code-camp/service-workers-the-little-heroes-behind-progressive-web-apps-431cc22d0f16)
 
 
-**Part B (5pts):**
+**Article presentation requirements:**
 
-B1. (2pts) Explain why you think Agile is (or is not) an appropriate process model for your class team project. Construct a convincing argument that includes whether stand-up meetings, sprint planning, user stories, and retrospectives are useful, and whether other Agile features are useful for your team.
+Submit your **presentation materials** (slides, a PDF, or other written overview) by the beginning of class by replying to your post here. The point is both to convey what the author says as well as to offer a thoughtful analysis. Your presentation must cover the following 4 items:
+1. Summary
 
-B2. (3pts) Create two semester-long development plans for your current project: one using a Waterfall model, and another one using an Agile model, and then compare the two. 
+2. Supporting Points
 
----
+3. Points Against
 
-### Q2: Object-oriented Design (10 pts)
+4. Reader's Opinion (for or against)
 
-**Answer BOTH of these questions based on information from multiple sources:**
+5. Your own view of the subject
 
-**Part A (5pts):** 
-What is the main purpose of object-oriented (OO) design and programming, and why did it become so popular in the software world? Is that popularity fading? Do some research and discuss about its weaknesses. Discuss when it is proper to use full-fledged OO design versus when it is excessive. Give examples of popular languages, frameworks, or use-cases that are not object-oriented. Give references to your sources. 
+The reader's opinion should be supported by observations, personal experience, or other rational explanations. Late submissions up to one week will receive a penalty. No later submissions will be accepted. An exceptional report may be awarded extra points.
 
-**Part B (5pts):**
-Choose one OO design pattern from [OO Design Patterns Card](/softdev2-resources/docs/designpatternscard.pdf), describe its meaning and usage. Then, describe a real-world program example that employs it. Be detailed.
-
----
-
-### Q3: Version Control (10 pts)
-
-**Answer BOTH of these questions:**
-
-**Part A (4pts):** 
-Describe 4 key features of version control systems that make them useful, and explain why they are indispensable in today's software development. 
-
-**Part B (6pts):**
-You are given a repo called *HelloSD*. This repo includes a *Readme.md* and a file *check.sh*. You are working on this repo with a team of people. The team is working in parallel on this repo to complete some task. List all the steps you need to do to add your changes to the *check.sh* file correctly to the repo (on the master/ branch). Chose the best strategy for full points (hint: make your own branch and name it with your first name). At each step provide the command line code necessary to complete the step, followed by a brief description. Missing command line or description will result in losing points.
-
-**BONUS (2pts)** What are 4 key differences between version control systems that are centralized (e.g., Subversion, CVS) versus distributed (e.g., Git, Mercurial)
-
----
-
-### Q4: Project Role (10 pts)
-
-**Answer BOTH of these questions:**
-
-**Part A (5pts):** 
-Explain your primary role in your project team. How did you affect your teammates' work on the project so far? What accomplishments are you proud about and what mistakes did you make? Then, for each of your teammates, assign them a score between 0 (lowest, troll) and 3 (highest, super). Justify this number by explaining their role and work products so far in the project. Don't hesitate to cut some points because it is not the only information I use to calculate effort scores. It's always good to let your teammates know whether you're happy with their work ethic and contributions (5 pts for your contribution, the average of your teammates scores for you will be reflected in the requirements phase project grading). Missing scores (in numbers) will be penalized (2 pts) for this question. 
-
-
-**Part B (5pts):**
-Explain the difficulty estimate scale that you decided with your team. Given an account of the user stories and subtasks that were assigned to you. List the total estimated difficulty and hours that you logged for your tasks. What were your work products that resulted from this role so far? How long did they take (based on what was logged)? What is left to go? How much are you planning to take on in the next iteration? How does this compare to your teammates? 
-
----
-
-### Q5: Article Discussion (10 pts)
-
-**Answer ONLY ONE of the following questions. Each requires reading a short article by Joel Spolsky, and then discussing it. Write at least a paragraph, but don't exceed one page.**
-
-1. In [Things You Should Never Do, Part I](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/), Joel Spolsky argues against rewriting code from scratch. Study his arguments and provide two counter-arguments to his points (i.e. supporting rewriting code from scratch).
-2. In [The Iceberg Secret, Revealed](https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/), what's wrong with Joel's customers? Add a new argument that supports his hypothesis from your interaction so far with your own client.
-3. In [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/), Joel describes several examples of abstractions gone bad. Based on his examples, provide a new example from your own past experience that matches with this pattern.
-4. In [The Perils of JavaSchools](https://www.joelonsoftware.com/2005/12/29/the-perils-of-javaschools-2/), Joel complains about teaching Java in computer science/IT curriculums. As a student in such a school, argue for or against his points based on your personal experience and knowledge among peers.
+NOTE: There will be extra points given to people responding to the followups with good arguments. The original presentation can also get extra points if they respond with a good answer.
 

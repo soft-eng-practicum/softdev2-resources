@@ -37,5 +37,5 @@ description: Assgn 5b
 * Continuous tracking of your hours as you work on it
 * Been assigned to a person
  
-**Make sure that user stories are substantial.** Some tasks can be added as chores instead of user stories.** User stories must be from the perspective of the user, and NOT from the perspective of the developer.** Eg., "adding color/button for login to interface" is not a user story; it can be added as a subtask of a user story or as a chore.
+**Make sure that user stories are substantial.** Some tasks can be added as chores instead of user stories. **User stories must be from the perspective of the user, and NOT from the perspective of the developer.** Eg., "adding color/button for login to interface" is not a user story; it can be added as a subtask of a user story or as a chore.
 

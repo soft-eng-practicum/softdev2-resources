@@ -41,4 +41,4 @@ As part of our Software Development II course with Dr. Cengiz Gunay, we have bee
 
 As part of our Software Development II course with Dr. Cengiz Gunay, we have been working on ChemXplosion. In ChemXplosion, the player is given a puzzle and given the task of collecting the right element and correctly putting them in the equation right. The game contains many levels and varying difficulties to help the player learn basic concepts of Stoichiometry. 
 
-Details on the schedule and the rooms will be announced in March.
+Details on the schedule and the rooms will be announced later.

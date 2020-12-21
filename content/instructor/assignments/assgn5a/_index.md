@@ -30,11 +30,17 @@ Even though JIRA is not your progress tracking tool of your choice this semester
 5. Under your team Epic, create one User Story for yourself. In the Epic detail view, click on the "+" sign on the _Issues_ section. Alternatively, use can still use the _Create_ button, but make sure you select the Epic to link at the bottom of the form. The story should explain your role in the project, such as "Developer (name) will (your role in project) such that (reason for selecting role)". **Assign** this story to yourself. 
 6. Drag your personal story from the backlog list into the current Sprint. Add a difficulty estimate to it. 
 7. Under your personal Story, create 3 subtasks about: taking this course, selecting your team, and completing the project. 
+
     i. Before you change anything, select _Active sprints_ from the left side bar. Find your story and tasks and take a screenshot of it, and post it as a "before" attachment in your story.
+    
     ii. Click on each Task to go to its detail screen. Under the menu _More_, select _Log Work_ and assign some random amount of time that you spent for each task.
+    
     iii. Assign each task to a different member of your team.
+    
     iv. Mark each of three tasks' progress differently, as _TODO_, _In progress_, and _Done_ in their detail screen. Alternatively, in the _Active sprints_ screen, you can drag stories and tasks across the three columns that correspond to their status.
+    
     v. Put a comment under at least one of _someone else's_ user stories in your epic. Then put a comment under _your_ story telling me under whom did you comment.
+
 8. Mark your story as _In Progress_.
 9. Take another screenshot once you're done and post it as an "after" attachment in your story.
 10. Create a new sub-task in your story titled "Grade me!" and assign it to your instructor to finish the assignment.

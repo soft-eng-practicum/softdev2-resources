@@ -9,7 +9,7 @@ outputs = ["Reveal"]
 
 (License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
     
-{{< figure src="/softdev2-resources/images/kanbanflow6.jpg" width=400 >}}
+{{< figure src="/softdev2-resources/images/kanban/kanbanflow6.jpg" width=400 >}}
 
 ---
 
@@ -43,9 +43,9 @@ outputs = ["Reveal"]
 
 {{% fragment %}} <p align='left'> * Coding: Recommends the construction of a <b>unit test</b> for a story before coding starts </p> {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * A commitment is made on a <b>delivery date</> for all the stories of the deliverable increment </p> {{% /fragment %}}
+{{% fragment %}} <p align='left'> * A commitment is made on a <b>delivery date</b> for all the stories of the deliverable increment </p> {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * User stories should be recorded in virtual or physical <b>cards</> placed on the team's working board </p> {{% /fragment %}}
+{{% fragment %}} <p align='left'> * User stories should be recorded in virtual or physical <b>cards</b> placed on the team's working board </p> {{% /fragment %}}
 
 ---
 
@@ -55,7 +55,9 @@ outputs = ["Reveal"]
 | ------------- |:-------------:|
 | {{< figure src="/softdev2-resources/images/userstoryex3.png" width=200 >}}     | {{< figure src="/softdev2-resources/images/userstoryex4.png" width=200 >}} | 
 
+
 Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
+
 
 ---
 
@@ -77,13 +79,15 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 
 * Then, team must select a way to record the story using these criteria
 
-{{% fragment %}} Example: **I.N.V.E.S.T.**
-**I** – independent, not requiring other features
-**N** – negotiable, can be excluded, revised, etc
-**V** – valuable, clearly contributing to product usefulness
-**E** – estimable, reasonable development estimates can be made from the story
-**S** – small, stories that are too big tend to be vague and miss some points
-**T** – testable, stories need to have a means of verifying functionality
+{{% fragment %}} <p align='left'> Example: **I.N.V.E.S.T.**
+    
+<b>I</b> – independent, not requiring other features
+<b>N</b> – negotiable, can be excluded, revised, etc
+<b>V</b> – valuable, clearly contributing to product usefulness
+<b>E</b> – estimable, reasonable development estimates can be made from the story
+<b>S</b> – small, stories that are too big tend to be vague and miss some points
+<b>T</b> – testable, stories need to have a means of verifying functionality
+</p> 
 {{% /fragment %}}
 
 ---
@@ -106,5 +110,3 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 {{< youtube kKIc1NFO-AU >}}
 </div>
     
----
-

@@ -81,11 +81,11 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 
 {{% fragment %}} <p align='left'> Example: **I.N.V.E.S.T.**
     
-<b>I</b> – independent, not requiring other features
-<b>N</b> – negotiable, can be excluded, revised, etc
-<b>V</b> – valuable, clearly contributing to product usefulness
-<b>E</b> – estimable, reasonable development estimates can be made from the story
-<b>S</b> – small, stories that are too big tend to be vague and miss some points
+<b>I</b> – independent, not requiring other features<br>
+<b>N</b> – negotiable, can be excluded, revised, etc<br>
+<b>V</b> – valuable, clearly contributing to product usefulness<br>
+<b>E</b> – estimable, reasonable development estimates can be made from the story<br>
+<b>S</b> – small, stories that are too big tend to be vague and miss some points<br>
 <b>T</b> – testable, stories need to have a means of verifying functionality
 </p> 
 {{% /fragment %}}

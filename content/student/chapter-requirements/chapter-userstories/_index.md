@@ -51,9 +51,9 @@ outputs = ["Reveal"]
 
 ### Examples of User Story
 
-| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex1.png" width=200 >}}      | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex2.png" width=200 >}}        |
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex1.png" width=300 >}}      | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex2.png" width=300 >}}        |
 | ------------- |:-------------:|
-| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex3.png" width=200 >}}     | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex4.png" width=200 >}} | 
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex3.png" width=300 >}}     | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex4.png" width=300 >}} | 
 
 
 Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
@@ -63,13 +63,9 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 
 ### User Story might get history during the development
 
-**Initial:**
-{{< figure src="/softdev2-resources/images/requirements/userstory/userstoryinitial.png" width=400 >}}
-
-
-**Final**
-{{< figure src="/softdev2-resources/images/requirements/userstory/userstoryfinal.png" width=400 >}}
-
+| Initial | Final |
+| ------------- |:-------------:|
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryinitial.png" width=300 >}} | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryfinal.png" width=300 >}} |
 
 ---
 

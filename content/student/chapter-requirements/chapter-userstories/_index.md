@@ -51,9 +51,9 @@ outputs = ["Reveal"]
 
 ### Examples of User Story
 
-| {{< figure src="/softdev2-resources/images/userstoryex1.png" width=200 >}}      | {{< figure src="/softdev2-resources/images/userstoryex2.png" width=200 >}}        |
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex1.png" width=200 >}}      | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex2.png" width=200 >}}        |
 | ------------- |:-------------:|
-| {{< figure src="/softdev2-resources/images/userstoryex3.png" width=200 >}}     | {{< figure src="/softdev2-resources/images/userstoryex4.png" width=200 >}} | 
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex3.png" width=200 >}}     | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex4.png" width=200 >}} | 
 
 
 Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
@@ -64,11 +64,11 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 ### User Story might get history during the development
 
 **Initial:**
-{{< figure src="/softdev2-resources/images/userstoryinitial.png" width=400 >}}
+{{< figure src="/softdev2-resources/images/requirements/userstory/userstoryinitial.png" width=400 >}}
 
 
 **Final**
-{{< figure src="/softdev2-resources/images/userstoryfinal.png" width=400 >}}
+{{< figure src="/softdev2-resources/images/requirements/userstory/userstoryfinal.png" width=400 >}}
 
 
 ---
@@ -79,14 +79,13 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 
 * Then, team must select a way to record the story using these criteria
 
-{{% fragment %}} <p align='left'> Example: **I.N.V.E.S.T.**
-    
-<b>I</b> – independent, not requiring other features<br>
-<b>N</b> – negotiable, can be excluded, revised, etc<br>
-<b>V</b> – valuable, clearly contributing to product usefulness<br>
-<b>E</b> – estimable, reasonable development estimates can be made from the story<br>
-<b>S</b> – small, stories that are too big tend to be vague and miss some points<br>
-<b>T</b> – testable, stories need to have a means of verifying functionality
+{{% fragment %}} <p align='left'> Example: <b>I.N.V.E.S.T.</b><br> 
+    <b>I</b> – independent, not requiring other features<br>
+    <b>N</b> – negotiable, can be excluded, revised, etc<br>
+    <b>V</b> – valuable, clearly contributing to product usefulness<br>
+    <b>E</b> – estimable, reasonable development estimates can be made from the story<br>
+    <b>S</b> – small, stories that are too big tend to be vague and miss some points<br>
+    <b>T</b> – testable, stories need to have a means of verifying functionality
 </p> 
 {{% /fragment %}}
 

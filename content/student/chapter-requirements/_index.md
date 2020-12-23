@@ -156,8 +156,8 @@ A registered user on the academic jobs website should be able to add a new posit
 
 {{% fragment %}}  <p align='left'> <em> Example: If sales for current month are below target sales, then report is to be printed unless difference between target sales and actual sales is less than half of difference between target sales and actual sales in previous month, or if difference between target sales and actual sales for the current month is less than 5%. </em></p> {{% /fragment %}}
 
-{{% fragment %}} <p align='left'>Problems: </p> {{% /fragment %}}
-{{% fragment %}}  * Difficult to read * Ambiguity: 5% of what? * Incomplete: what if sales are above target sales? {{% /fragment %}}
+{{% fragment %}}Problems: {{% /fragment %}}
+{{% fragment %}} * Difficult to read * Ambiguity: 5% of what? * Incomplete: what if sales are above target sales? {{% /fragment %}}
 
 ---
 

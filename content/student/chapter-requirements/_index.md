@@ -110,31 +110,6 @@ A registered user on the academic jobs website should be able to add a new posit
 
 ---
 
-### Types of requirements
-
-{{% fragment %}} <p align='left'> <b> Functional requirements </b><br>
-* Services the system should provide <br>
-* What the system should do or not do in reaction to particular situations <br></p>
-{{% /fragment %}}
-
-
-{{% fragment %}} <p align='left'> <b> Non-functional requirements  </b><br>
-* Constraints on the services or functions offered by the system <br>
-* Examples: Timing constraints (e.g., one semester), constraints on the development process (CASE, language, development method…), standards etc<br></p>
-{{% /fragment %}}
-    
-    
-{{% fragment %}} <p align='left'> <b>  Domain requirements </b><br>
-* From the application domain of the system <br>
-* May be functional or non-functional <br>
-Examples: Medicine, library, physics, chemistry <br></p>
-{{% /fragment %}}
-    
-{{% fragment %}} Note: You can have all of user/system functional/nonfunctional requirements. 
-{{% /fragment %}}
- 
----
-
 ### Problems with user requirements
 
 *Can you think of any issues?*
@@ -183,10 +158,34 @@ Examples: Medicine, library, physics, chemistry <br></p>
 </p> {{% /fragment %}}
 
 {{% fragment %}}  <p align='left'>Problems: </p> {{% /fragment %}}
-
-{{% fragment %}}  <p align='left'> * Difficult to read * Ambiguity: sales and actual sales, 5% of what? Incomplete: what if sales are above target sales?
+{{% fragment %}}  <p align='left'> * Difficult to read * Ambiguity: 5% of what? Incomplete: what if sales are above target sales?
 </p> {{% /fragment %}}
 
+---
+
+### Types of requirements
+
+{{% fragment %}} <p align='left'> <b> Functional requirements </b><br>
+* Services the system should provide <br>
+* What the system should do or not do in reaction to particular situations <br></p>
+{{% /fragment %}}
+
+
+{{% fragment %}} <p align='left'> <b> Non-functional requirements  </b><br>
+* Constraints on the services or functions offered by the system <br>
+* Examples: Timing constraints (e.g., one semester), constraints on the development process (CASE, language, development method…), standards etc<br></p>
+{{% /fragment %}}
+    
+    
+{{% fragment %}} <p align='left'> <b>  Domain requirements </b><br>
+* From the application domain of the system <br>
+* May be functional or non-functional <br>
+Examples: Medicine, library, physics, chemistry <br></p>
+{{% /fragment %}}
+    
+{{% fragment %}} Note: You can have all of user/system functional/nonfunctional requirements. 
+{{% /fragment %}}
+ 
 ---
 
 ### Example 

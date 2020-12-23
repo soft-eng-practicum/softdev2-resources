@@ -198,7 +198,8 @@ Example: Timing, performance, memory, reliability, portability, usability
 Example: Process requirements, implementation requirements, delivery requirements
 
 <b>External requirements</b> related to factors externals to the system and the development process<br>
-Example: Interoperability, legislation, ethics </p>
+Example: Interoperability, legislation, ethics 
+</p>
 
 {{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=400 >}} {{% /fragment %}}
 

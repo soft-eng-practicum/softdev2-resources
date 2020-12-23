@@ -191,19 +191,16 @@ Examples: Medicine, library, physics, chemistry <br></p>
 
 ### Non-functional requirements categories
 
-**Product requirements** - related to product behavior
-
+<p align='left'> <b> Product requirements</b> - related to product behavior <br>
 Example: Timing, performance, memory, reliability, portability, usability
 
-**Organizational requirements** related to policies and procedures in the customer’s and developer’s organizations
-
+<b>Organizational requirements</b> related to policies and procedures in the customer’s and developer’s organizations<br>
 Example: Process requirements, implementation requirements, delivery requirements
 
-**External requirements** related to factors externals to the system and the development process
+<b>External requirements</b> related to factors externals to the system and the development process<br>
+Example: Interoperability, legislation, ethics </p>
 
-Example: Interoperability, legislation, ethics
-
-{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=300 >}} {{% /fragment %}}
+{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=400 >}} {{% /fragment %}}
 
 ---
 

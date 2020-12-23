@@ -156,7 +156,8 @@ A registered user on the academic jobs website should be able to add a new posit
 
 {{% fragment %}}  <p align='left'> * Forms/templates and logic are used to bring some rigor, but make sure everyone understands them </p> {{% /fragment %}}
 
-{{% fragment %}}  <p align='left'> <em> Example: If sales for current month are below target sales, then report is to be printed unless difference between target sales and actual sales is less than half of difference between target sales and actual sales in previous month, or if difference between target sales and actual sales for the current month is less than 5%. </em></p> {{% /fragment %}}
+{{% fragment %}}  <p align='left'> <em> Example: If sales for current month are below target sales, then report is to be printed unless difference between target sales and actual sales is less than half of difference between target sales and actual sales in previous month, or if difference between target sales and actual sales for the current month is less than 5%. </em></p> 
+{{% /fragment %}}
 
 {{% fragment %}}Problems: * Difficult to read * Ambiguity: 5% of what? * Incomplete: what if sales are above target sales? 
 {{% /fragment %}}
@@ -171,7 +172,7 @@ A registered user on the academic jobs website should be able to add a new posit
 {{% /fragment %}}
 
 
-{{% fragment %}} <p align='left'> <b> Non-functional requirements  </b><br>
+{{% fragment %}} <p align='left'> <b> Non-functional requirements  </b> - might be more critical than functional ones <br>
 * Constraints on the services or functions offered by the system <br>
 * Examples: Timing constraints (e.g., one semester), constraints on the development process (CASE, language, development method…), standards etc<br></p>
 {{% /fragment %}}
@@ -188,13 +189,21 @@ Examples: Medicine, library, physics, chemistry <br></p>
  
 ---
 
-### Example 
+### Non-functional requirements categories
 
-**Burndown Chart** Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.
-As the work progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint. 
+**Product requirements** - related to product behavior
 
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" width=300 >}} {{% /fragment %}}
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" width=300 >}} {{% /fragment %}}
+Example: Timing, performance, memory, reliability, portability, usability
+
+**Organizational requirements** related to policies and procedures in the customer’s and developer’s organizations
+
+Example: Process requirements, implementation requirements, delivery requirements
+
+**External requirements** related to factors externals to the system and the development process
+
+Example: Interoperability, legislation, ethics
+
+{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=300 >}} {{% /fragment %}}
 
 ---
 

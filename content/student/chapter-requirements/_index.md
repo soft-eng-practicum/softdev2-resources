@@ -45,14 +45,16 @@ weight = 03
 
 ### Costs of changing the requirements
 
-{{% fragment %}} 3 x as much during the design phase {{% /fragment %}}
+{{% fragment %}} <p align='left'>  3 x as much during the design phase </p>
+{{% /fragment %}}
 
-{{% fragment %}} 5-10 x as much during implementation {{% /fragment %}}
+{{% fragment %}} <p align='left'> 5-10 x as much during implementation </p>
+{{% /fragment %}}
 
-{{% fragment %}} 10-100 x as much after release {{% /fragment %}}
+{{% fragment %}} <p align='left'> 10-100 x as much after release </p>
 
 [Code Complete, p30](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
-
+{{% /fragment %}}
 
 ---
 
@@ -60,15 +62,18 @@ weight = 03
 
 **A careful requirements process doesn’t mean there will be no changes later**
 
-{{% fragment %}} Average project experiences about 25% changes in the requirements {{% /fragment %}}
+{{% fragment %}} Average project experiences about 25% changes in the requirements 
+{{% /fragment %}}
 
 {{% fragment %}} This accounts for 70-80% if the rework of the project 
 [Code Complete, p40](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
 {{% /fragment %}}
 
-{{% fragment %}} Important to plan for requirements changes {{% /fragment %}}
+{{% fragment %}} Important to plan for requirements changes 
+{{% /fragment %}}
 
-{{% fragment %}} Example: the case of critical applications {{% /fragment %}}
+{{% fragment %}} Example: the case of critical applications 
+{{% /fragment %}}
 
 ---
 

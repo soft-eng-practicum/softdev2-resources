@@ -153,37 +153,45 @@ Examples: Medicine, library, physics, chemistry <br></p>
 
 ### Guideline to minimize issues with user requirements
 
-{{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. 
-{{% /fragment %}}
+{{% fragment %}}  <p align='left'> * separate functional and non-functional requirements </p> {{% /fragment %}}
 
-{{% fragment %}} **Courage**: Scrum teams must feel safe enough to say no, to ask for help, and to try new things. 
-{{% /fragment %}}
+{{% fragment %}}  <p align='left'> * requirements must be clearly identified by a number </p> {{% /fragment %}}
 
-{{% fragment %}} **Focus**: It means that whatever Scrum teams start they finish. 
-{{% /fragment %}}
+{{% fragment %}}  <p align='left'> * Include a rationale for each requirement – this helps clarify reasoning behind the requirements and may be useful for evaluating potential changes in the requirements</p> {{% /fragment %}}
 
-{{% fragment %}} **Openness**: Scrum teams consistently seek out new ideas and opportunities to learn. 
-{{% /fragment %}}
+{{% fragment %}}  <p align='left'> * Team should decide to use a standard form/template </p> {{% /fragment %}}
 
-{{% fragment %}} **Respect**: Scrum team members respect each other’s ideas, give each other permission to have a bad day once in a while, and recognize each other’s accomplishments. They show respect to one another, to the product owner, to stakeholders, and to the ScrumMaster. 
-{{% /fragment %}}
+{{% fragment %}}  <p align='left'> * Have a clear way to establish and distinguish requirements priorities </p> {{% /fragment %}}
 
----
+{{% fragment %}}  <p align='left'> * Write test cases; requirements must be testable </p> {{% /fragment %}}
 
-### Scrum Artifacts
-
-{{% fragment %}} The **Product Backlog** is an ordered list of everything that is known to be needed in a product. 
-{{% /fragment %}}
-
-{{% fragment %}} The **Sprint Backlog** is a list of everything that the team commits to achieve in a given Sprint. Once created, no one can add to the Sprint Backlog except the Development Team. If an item needs to be dropped from the Sprint Backlog, they must negotiate it with the Product Owner. 
-{{% /fragment %}}
-
-{{% fragment %}} At the end of every Sprint, the team must complete a **potentially releasable product increment** meaning that it is done as agreed upon. 
-{{% /fragment %}}
+{{% fragment %}}  <p align='left'> * Deliverables </p> {{% /fragment %}}
 
 ---
 
-### Tracking Progress
+### System requirements
+
+{{% fragment %}}  <p align='left'> * Elaborate the user requirements to get a precise, detailed and complete version of them </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Used by designers and developers </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Write system requirements using natural language </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Forms/templates and logic are used to bring some rigor, but make sure everyone understands them </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> <em> Example: If sales for current month are below target sales, then report is to be printed unless difference between target sales and actual sales is less than half of difference between target sales and actual sales in previous month, or if difference between target sales and actual sales for the current month is less than 5%. </em>
+</p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'>Problems: </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Difficult to read <br>
+* Ambiguity: sales and actual sales, 5% of what? <br>
+* Incomplete: what if sales are above target sales?
+</p> {{% /fragment %}}
+
+---
+
+### Example 
 
 **Burndown Chart** Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.
 As the work progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint. 

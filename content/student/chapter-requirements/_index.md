@@ -205,11 +205,11 @@ Example: Interoperability, legislation, ethics
 
 ---
 
-### Daily Scrum
+### How to test non-functional requirements
 
-<div style="width: 50%">
-{{< youtube kKIc1NFO-AU >}}
-</div>
+**It is important to be able to test/verify/check nonfunctional requirements**
+
+{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctreqtest.png" width=400 >}} {{% /fragment %}}
     
 ---
 

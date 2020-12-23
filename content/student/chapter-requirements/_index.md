@@ -72,7 +72,7 @@ weight = 03
 {{% fragment %}} Important to plan for requirements changes 
 {{% /fragment %}}
 
-{{% fragment %}} Example: the case of critical applications 
+{{% fragment %}} <p align='left'> Example: the case of critical applications </p>
 {{% /fragment %}}
 
 ---
@@ -105,22 +105,32 @@ As a user who found a new job announcement, I want to add a new position to the 
 </p> {{% /fragment %}}
 
 {{% fragment %}} <p align='left'> <em>Example of System requirement:</em> <br>
-A registered user on the academic jobs website should be able to add a new position listing with the name of the school and academic unit, date of posting, date of expiry, application deadline, and contact and application details. The interaction fails if: the position is already listed, the application deadline is in the past, position announcement is expired, or the contact information is missing. If fails, point mistakes to user and ask the user to fix and resubmit.
+A registered user on the academic jobs website should be able to add a new position listing with the name of the school and academic unit, date of posting, date of expiry, application deadline, and contact and application details. The interaction fails if: the position is already listed, the application deadline is in the past, position announcement is expired, or the contact information is missing. If fails, point mistakes to user and ask the user to fix and resubmit. </p>
 {{% /fragment %}}
 
 ---
 
 ### Types of requirements
 
-Scrum Team includes three roles: **Scrum Master, Product Owner, and Development Team**. 
-
-{{% fragment %}} The **Scrum Master** helps the Scrum Team perform at their highest level. They also protect the team from both internal and external distractions. Scrum Masters hold the Scrum Team accountable to their working agreements, Scrum values, and to the Scrum framework itself.
+{{% fragment %}} <p align='left'> <em> Functional requirements </em><br>
+* Services the system should provide <br>
+* What the system should do or not in reaction to particular situations <br></p>
 {{% /fragment %}}
 
-{{% fragment %}} The **Product Owner** defines the what--as in what the product will look like and what features it should contain. Product Owner helps build and clarify the product backlog and ensures that everyone knows the priorities.
-{{% /fragment %}}
 
-{{% fragment %}} The **Development Team** decides how to accomplish the work set forth by the Product Owner. Development Teams are structured and empowered to organize and manage their own work.
+{{% fragment %}} <p align='left'> <em> Non-functional requirements  </em><br>
+* Constraints on the services or functions offered by the system <br>
+* Examples: Timing constraints (e.g., one semester), constraints on the development process (CASE, language, development method…), standards etc<br></p>
+{{% /fragment %}}
+    
+    
+{{% fragment %}} <p align='left'> <em>  Domain requirements </em><br>
+* From the application domain of the system <br>
+* May be functional or non-functional <br>
+Examples: Medicine, library, physics, chemistry <br></p>
+{{% /fragment %}}
+    
+{{% fragment %}} Note: You can have all of user/system functional/nonfunctional requirements. 
 {{% /fragment %}}
  
 ---

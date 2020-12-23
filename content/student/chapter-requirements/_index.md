@@ -10,83 +10,102 @@ weight = 03
 
 (License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
     
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=500 >}}
+{{< figure src="/softdev2-resources/images/requirements/requirements.png" width=500 >}}
 
 ---
 
-## Requirements in Agile
+## What is a Requirement? 
 
-{{% fragment %}} <p align='left'> * Originally proposed by Jeff Sutherland in 90s, then improved by Schwaber and Beedle </p> {{% /fragment %}}
+{{% fragment %}} **Requirements are the descriptions of the services provided by a system and its operational constraints** {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * In 1993, J. Sutherland borrowed term ‘scrum’ from Takeuchi and Nonaka, “The New Product Development Game”, Havard Business  Review, 1986 </p> {{% /fragment %}}
+{{% fragment %}} <p align='left'> * It is about <b>WHAT</b> not HOW </p> {{% /fragment %}}
+ 
+{{% fragment %}} <p align='left'> * It varies greatly. It may range from a high level abstract statement to a detailed mathematical specification </p> {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * Takeuchi and Nonaka compare high-performing, cross-functional teams to the scrum formation used by Rugby teams. </p> {{% /fragment %}} 
-
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
-
----
-
-### Scrum
-
-{{% fragment %}} <p align='left'> * In rugby scrum is the power struggle between two teams to advance on the field </p> {{% /fragment %}}
-
-{{% fragment %}} <p align='left'> * It requires complete team work, hard work, and strength. That meaning translates to software development </p> {{% /fragment %}}
+{{% fragment %}} <p align='left'> * It may be as complex as a 500 pages of description </p> {{% /fragment %}}
 
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
-
-See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scrum) 
+{{< figure src="/softdev2-resources/images/requirements/requirements2.png" width=400 >}}
 
 ---
 
-### Scrum and Agile
+### Why we need requirements?
 
-{{% fragment %}} Scrum is one of several agile frameworks.{{% /fragment %}}
+**Advantages of a complete set of documented requirements**
 
-{{% fragment %}} **Scrum is the most popular agile framework.**
+{{% fragment %}} <p align='left'> * Ensures the user (not the developer) drives system functionalities </p> {{% /fragment %}}
 
-{{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+{{% fragment %}} <p align='left'> * Helps avoiding confusion and arguments </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * Helps minimizing the changes which reduces the cost </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> <b>Changes in requirements are expensive.</b> </p> {{% /fragment %}}
+
+---
+
+### Costs of changing the requirements
+
+{{% fragment %}} 3 x as much during the design phase {{% /fragment %}}
+
+{{% fragment %}} 5-10 x as much during implementation {{% /fragment %}}
+
+{{% fragment %}} 10-100 x as much after release {{% /fragment %}}
+
+[Code Complete, p30](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
+
+
+---
+
+### Requirements help reduce errors
+
+**A careful requirements process doesn’t mean there will be no changes later**
+
+{{% fragment %}} Average project experiences about 25% changes in the requirements {{% /fragment %}}
+
+{{% fragment %}} This accounts for 70-80% if the rework of the project 
+[Code Complete, p40](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
 {{% /fragment %}}
 
+{{% fragment %}} Important to plan for requirements changes {{% /fragment %}}
+
+{{% fragment %}} Example: the case of critical applications {{% /fragment %}}
+
 ---
 
-### Scrum Definition
+### Different levels of abstraction
 
-**Scrum: An [agile] framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.**
+**Abstract level: User requirements**
 
-{{% fragment %}} Scrum refers to a lightweight framework that is used in every industry to deliver complex, innovative products and services that truly delight customers. It is **simple to understand, but difficult to master**.{{% /fragment %}}
+{{% fragment %}} <p align='left'> * Usually the first attempt for the description of the requirements <br>
+* Includes services and constraints of the system <br>
+* Given in natural language or diagrams <br>
+* Readable by everybody <br>
+* Serve business objectives <br>
+</p> {{% /fragment %}}
 
-{{% fragment %}} Scrum fulfils the vision of the Agile Manifesto by helping individuals and businesses organize their work to 
-* maximize collaboration, 
-* minimize errors, 
-* deliver frequently, and 
-* create multiple opportunities to inspect and adapt.
+{{% fragment %}} <p align='left'> <em>Example of User requirement:</em> <br>
+As a user who found a new job announcement, I want to add a new position to the website so s/he can start working on doing the initial research and apply to it.
 {{% /fragment %}}
  
-[Scrum Guide, November 2017 version](https://www.scrumalliance.org/about-scrum/definition)
-
 ---
 
-### How Scrum works
+### Different levels of abstraction
 
-**Scrum works by delivering large projects in small chunks of the product that a team can begin and complete in one, short timeboxed iteration called sprint.**
+**Not abstract level: System requirements**
 
-{{% fragment %}} Scrum is also both **iterative** and **incremental**.{{% /fragment %}}
- 
----
+{{% fragment %}} <p align='left'> * Includes services and constraints of the system in detail <br>
+* Useful for the design and development <br>
+* Precise and cover all cases <br>
+* Structured presentation <br>
+</p> {{% /fragment %}}
 
-### Scrum Framework
-
-**People are the focus of Scrum.**
-
-{{% fragment %}} **Scrum Teams** include people with diverse skillsets; each team has all of the capabilities necessary to deliver a piece of functionality from idea to delivery. {{% /fragment %}}
-
-{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
+{{% fragment %}} <p align='left'> <em>Example of System requirement:</em> <br>
+A registered user on the academic jobs website should be able to add a new position listing with the name of the school and academic unit, date of posting, date of expiry, application deadline, and contact and application details. The interaction fails if: the position is already listed, the application deadline is in the past, position announcement is expired, or the contact information is missing. If fails, point mistakes to user and ask the user to fix and resubmit.
 {{% /fragment %}}
 
 ---
 
-### Scrum Team
+### Types of requirements
 
 Scrum Team includes three roles: **Scrum Master, Product Owner, and Development Team**. 
 
@@ -201,7 +220,9 @@ Bonus scrum meeting [Sillicon Valey]:
 
 ---
 
-### Now ... Scrum
+### Collecting Requirements
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
+## The Client Meeting 
+**next**
+{{< figure src="/softdev2-resources/images/requirements/clientmeeting.jpg" width=700 >}}
 

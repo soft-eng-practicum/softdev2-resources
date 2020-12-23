@@ -158,8 +158,8 @@ A registered user on the academic jobs website should be able to add a new posit
 </p> {{% /fragment %}}
 
 {{% fragment %}}  <p align='left'>Problems: </p> {{% /fragment %}}
-{{% fragment %}}  <p align='left'> * Difficult to read * Ambiguity: 5% of what? Incomplete: what if sales are above target sales?
-</p> {{% /fragment %}}
+{{% fragment %}}  * Difficult to read * Ambiguity: 5% of what? * Incomplete: what if sales are above target sales?
+{{% /fragment %}}
 
 ---
 

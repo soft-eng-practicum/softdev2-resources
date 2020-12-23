@@ -153,9 +153,9 @@ Examples: Medicine, library, physics, chemistry <br></p>
 
 ### Guideline to minimize issues with user requirements
 
-{{% fragment %}}  <p align='left'> * separate functional and non-functional requirements </p> {{% /fragment %}}
+{{% fragment %}}  <p align='left'> * Separate functional and non-functional requirements </p> {{% /fragment %}}
 
-{{% fragment %}}  <p align='left'> * requirements must be clearly identified by a number </p> {{% /fragment %}}
+{{% fragment %}}  <p align='left'> * Requirements must be clearly identified by a number </p> {{% /fragment %}}
 
 {{% fragment %}}  <p align='left'> * Include a rationale for each requirement – this helps clarify reasoning behind the requirements and may be useful for evaluating potential changes in the requirements</p> {{% /fragment %}}
 
@@ -184,9 +184,7 @@ Examples: Medicine, library, physics, chemistry <br></p>
 
 {{% fragment %}}  <p align='left'>Problems: </p> {{% /fragment %}}
 
-{{% fragment %}}  <p align='left'> * Difficult to read <br>
-* Ambiguity: sales and actual sales, 5% of what? <br>
-* Incomplete: what if sales are above target sales?
+{{% fragment %}}  <p align='left'> * Difficult to read * Ambiguity: sales and actual sales, 5% of what? Incomplete: what if sales are above target sales?
 </p> {{% /fragment %}}
 
 ---

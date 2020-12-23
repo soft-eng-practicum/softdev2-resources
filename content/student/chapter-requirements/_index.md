@@ -84,12 +84,12 @@ weight = 03
 {{% fragment %}} <p align='left'> * Usually the first attempt for the description of the requirements <br>
 * Includes services and constraints of the system <br>
 * Given in natural language or diagrams <br>
-* Readable by everybody <br>
+* Readable by everybody, i.e. understandable by the user <br>
 * Serve business objectives <br>
 </p> {{% /fragment %}}
 
 {{% fragment %}} <p align='left'> <em>Example of User requirement:</em> <br>
-As a user who found a new job announcement, I want to add a new position to the website so s/he can start working on doing the initial research and apply to it.
+As a user who found a new job announcement, I want to add a new position to the website so s/he can start working on doing the initial research and apply to it.</p>
 {{% /fragment %}}
  
 ---
@@ -112,19 +112,19 @@ A registered user on the academic jobs website should be able to add a new posit
 
 ### Types of requirements
 
-{{% fragment %}} <p align='left'> <em> Functional requirements </em><br>
+{{% fragment %}} <p align='left'> <b> Functional requirements </b><br>
 * Services the system should provide <br>
-* What the system should do or not in reaction to particular situations <br></p>
+* What the system should do or not do in reaction to particular situations <br></p>
 {{% /fragment %}}
 
 
-{{% fragment %}} <p align='left'> <em> Non-functional requirements  </em><br>
+{{% fragment %}} <p align='left'> <b> Non-functional requirements  </b><br>
 * Constraints on the services or functions offered by the system <br>
 * Examples: Timing constraints (e.g., one semester), constraints on the development process (CASE, language, development method…), standards etc<br></p>
 {{% /fragment %}}
     
     
-{{% fragment %}} <p align='left'> <em>  Domain requirements </em><br>
+{{% fragment %}} <p align='left'> <b>  Domain requirements </b><br>
 * From the application domain of the system <br>
 * May be functional or non-functional <br>
 Examples: Medicine, library, physics, chemistry <br></p>
@@ -135,22 +135,23 @@ Examples: Medicine, library, physics, chemistry <br></p>
  
 ---
 
-### Sprint
+### Problems with user requirements
 
-{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
-{{% /fragment %}}
+*Can you think of any issues?*
 
-{{% fragment %}} * Each sprint begins with a plan followed by building and then testing the code, and ends with a review of the work completed and an additional review of the way in which the team worked together (retrospectives). 
-{{% /fragment %}}
+{{% fragment %}} <p align='left'> * Lack of clarity - ambiguous language </p> {{% /fragment %}}
 
-{{% fragment %}} * During each sprint, the team completes one or more increments of the project. Each completed increment must be fully tested and fully approved by the end of the sprint (potentially deliverable).{{% /fragment %}}
+{{% fragment %}} <p align='left'> * Confusion - design information are not distinguished between functional and non-functional requirements  </p> {{% /fragment %}}
+    
+{{% fragment %}} <p align='left'> * Several requirements are defined as a single one </p> {{% /fragment %}}
+    
+{{% fragment %}} <p align='left'> * Incompleteness – requirements may be missing </p> {{% /fragment %}}
 
- {{< figure src="/softdev2-resources/images/scrum/sprint.png" width=500 >}}
- 
+{{% fragment %}} <p align='left'> * Inconsistency – requirements may contradict themselves </p> {{% /fragment %}}
  
 ---
 
-### Scrum Values
+### Guideline to minimize issues with user requirements
 
 {{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. 
 {{% /fragment %}}

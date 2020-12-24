@@ -279,5 +279,25 @@ and more
 
 {{< figure src="/softdev2-resources/images/comics/requirementsuserstory.jpg" width=700 >}}
 
-Next
+---
 
+### From requirements to user stories
+
+{{< figure src="/softdev2-resources/images/requirements/reqtousecase.png" width=700 >}}
+
+---
+
+
+### Use-case Diagram
+
+{{< figure src="/softdev2-resources/images/requirements/usecase.png" width=700 >}}
+
+---
+
+### From a “use case” to “user stories”
+
+{{% fragment %}} <p align='left'> * Use case diagram shows <b>all things an actor can do </b> </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * Can be broken down to individual <b> user stories</b> </p> {{% /fragment %}}
+    
+   

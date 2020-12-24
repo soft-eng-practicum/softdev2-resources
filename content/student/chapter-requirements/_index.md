@@ -229,8 +229,9 @@ Example: Interoperability, legislation, ethics
 
 How to do the study
 
-... * Consult information sources: managers, software engineers, end users…
-... * Collect information from interviews, surveys, questionnaires…
+* Consult information sources: managers, software engineers, end users…
+
+* Collect information from interviews, surveys, questionnaires…
 
 Should be short (2-3 weeks)
 
@@ -274,5 +275,9 @@ and more
 
 ---
 
+### Requirements as user stories
 
+{{< figure src="/softdev2-resources/images/comics/requirementsuserstory.png" width=700 >}}
+
+Next
 

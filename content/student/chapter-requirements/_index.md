@@ -207,50 +207,71 @@ Example: Interoperability, legislation, ethics
 
 ### How to test non-functional requirements
 
-**It is important to be able to test/verify/check nonfunctional requirements**
+**It is important to be able to test/verify/check non-functional requirements**
 
-{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctreqtest.png" width=400 >}} {{% /fragment %}}
+{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctreqtest.png" width=500 >}} {{% /fragment %}}
     
 ---
 
-### Daily Scrum
+### Requirement engineering
 
-What do you see in the clip?
-
-{{% fragment %}} * **Scrum Team** 
-Members stand up in circle facing everyone. Also, someone else just "observing". Meeting is less than 15 minutes long. 
-{{% /fragment %}} 
-
-{{% fragment %}} * **Scrum Master** 
-Scrum Master starts the meeting. Makes sure everyone talks in order from left to right. 
-{{% /fragment %}}
-
-{{% fragment %}} * Each member answers to **3 questions** regarding meeting the sprint goal: 
-{{% /fragment %}}
-
-{{% fragment %}}       1. What did I worked on since last meeting? 
-{{% /fragment %}}
-
-{{% fragment %}}       2. What I am working on now? 
-{{% /fragment %}}
-
-{{% fragment %}}       3. Do I see any impediments? 
-{{% /fragment %}}
+{{< figure src="/softdev2-resources/images/requirements/reqengineering.png" width=700 >}}
 
 ---
 
-### Now ... Scrum
+### Feasibility study
 
-Bonus scrum meeting [Sillicon Valey]: 
-<div style="width: 70%">
-{{< youtube Ps4nSgyieIw >}}
-</div>
+* It is done at first to decide whether or not the project is worthwhile
+
+* Look at different perspectives: market analysis, financial, schedule, technical, resource, legal…
+
+* Target is to make you aware of the risks
+
+How to do the study
+...* Consult information sources: managers, software engineers, end users…
+...* Collect information from interviews, surveys, questionnaires…
+
+Should be short (2-3 weeks)
 
 ---
 
-### Collecting Requirements
+### Feasibility study
 
-## The Client Meeting 
-**next**
-{{< figure src="/softdev2-resources/images/requirements/clientmeeting.jpg" width=700 >}}
+* What if the system wasn’t implemented?
+
+* What are current process problems?
+
+* Do technical resources exist?
+
+* What is the risk associated with the technology?
+
+* Is new technology needed? What skills?
+
+* How will the proposed project help?
+
+* How does the proposed project contribute to the overall objectives of the organization?
+
+* Have the benefits identified with the system being identified clearly?
+
+---
+
+### Feasibility study
+
+* What will be the integration problems?
+
+* What facilities must be supported by the system?
+
+* What is the risk associated with cost and schedule?
+
+* What are the potential disadvantages/advantages?
+
+* Are there legal issues?
+
+* Are there issues linked with the fact that this is an offshore project?
+
+and more
+
+---
+
+
 

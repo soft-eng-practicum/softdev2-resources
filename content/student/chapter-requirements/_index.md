@@ -277,7 +277,7 @@ and more
 
 ### Requirements as user stories
 
-{{< figure src="/softdev2-resources/images/comics/requirementsuserstory.png" width=700 >}}
+{{< figure src="/softdev2-resources/images/comics/requirementsuserstory.jpg" width=700 >}}
 
 Next
 

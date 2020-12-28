@@ -13,9 +13,9 @@ outputs = ["Reveal"]
 
 ---
 
-## Agile Principles lead to Teamwork
+### Agile Principles lead to Teamwork
 
-**The agile process molds to the needs of the people and team, not the other way around **
+**The agile process molds to the needs of the people and team, not the other way around**
 
 {{% fragment %}} 4. Work Together
 

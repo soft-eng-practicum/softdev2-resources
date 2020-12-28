@@ -15,27 +15,17 @@ outputs = ["Reveal"]
 
 ### Agile Principles lead to Teamwork
 
-**The agile process molds to the needs of the people and team, not the other way around**
+**The agile process molds to the needs of the people and team**
 
-{{% fragment %}} 4. Work Together
+{{% fragment %}} **4. Work Together.** Business people and developers must work together daily throughout the project (one team). {{% /fragment %}}
 
-Business people and developers must work together daily throughout the project (one team). {{% /fragment %}}
+{{% fragment %}} **5. Empower & Trust.** Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done. {{% /fragment %}}
 
-{{% fragment %}} 5. Empower & Trust
+{{% fragment %}} **6. Face to Face Conversations.** The most efficient and effective method of conveying information to and within a development team is face–to–face conversation. {{% /fragment %}}
 
-Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done. {{% /fragment %}}
+{{% fragment %}} **11. Self-organizing Teams.** The best architectures, requirements, and designs emerge from self–organizing teams. {{% /fragment %}}
 
-{{% fragment %}} 6. Face to Face Conversations
-
-The most efficient and effective method of conveying information to and within a development team is face–to–face conversation. {{% /fragment %}}
-
-{{% fragment %}} 11. Self-organizing Teams
-
-The best architectures, requirements, and designs emerge from self–organizing teams. {{% /fragment %}}
-
-{{% fragment %}} 12. Reflect & Adjust
-
-At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly. {{% /fragment %}}
+{{% fragment %}} **12. Reflect & Adjust.** At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly. {{% /fragment %}}
 
 ---
 

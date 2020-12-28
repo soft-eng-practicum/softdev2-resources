@@ -9,78 +9,61 @@ outputs = ["Reveal"]
 
 (License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
     
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=500 >}}
+{{< figure src="/softdev2-resources/images/teamwork.jpg" width=500 >}}
 
 ---
 
-## Teamwork
+## Agile Principles lead to Teamwork
 
-{{% fragment %}} <p align='left'> * Originally proposed by Jeff Sutherland in 90s, then improved by Schwaber and Beedle </p> {{% /fragment %}}
+**The agile process molds to the needs of the people and team, not the other way around **
 
-{{% fragment %}} <p align='left'> * In 1993, J. Sutherland borrowed term ‘scrum’ from Takeuchi and Nonaka, “The New Product Development Game”, Havard Business  Review, 1986 </p> {{% /fragment %}}
+{{% fragment %}} 4. Work Together
 
-{{% fragment %}} <p align='left'> * Takeuchi and Nonaka compare high-performing, cross-functional teams to the scrum formation used by Rugby teams. </p> {{% /fragment %}} 
+Business people and developers must work together daily throughout the project (one team). {{% /fragment %}}
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
+{{% fragment %}} 5. Empower & Trust
 
----
+Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done. {{% /fragment %}}
 
-### Scrum
+{{% fragment %}} 6. Face to Face Conversations
 
-{{% fragment %}} <p align='left'> * In rugby scrum is the power struggle between two teams to advance on the field </p> {{% /fragment %}}
+The most efficient and effective method of conveying information to and within a development team is face–to–face conversation. {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * It requires complete team work, hard work, and strength. That meaning translates to software development </p> {{% /fragment %}}
+{{% fragment %}} 11. Self-organizing Teams
 
+The best architectures, requirements, and designs emerge from self–organizing teams. {{% /fragment %}}
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
+{{% fragment %}} 12. Reflect & Adjust
 
-See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scrum) 
+At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly. {{% /fragment %}}
 
 ---
 
 ### Scrum and Agile
 
-{{% fragment %}} Scrum is one of several agile frameworks.{{% /fragment %}}
-
-{{% fragment %}} **Scrum is the most popular agile framework.**
-
-{{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
-{{% /fragment %}}
-
----
-
-### Client Meeting
-
-**Scrum: An [agile] framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.**
-
-{{% fragment %}} Scrum refers to a lightweight framework that is used in every industry to deliver complex, innovative products and services that truly delight customers. It is **simple to understand, but difficult to master**.{{% /fragment %}}
+**Scrum is the most popular agile framework.**
 
 {{% fragment %}} Scrum fulfils the vision of the Agile Manifesto by helping individuals and businesses organize their work to 
-* maximize collaboration, 
+* **maximize collaboration**, 
 * minimize errors, 
 * deliver frequently, and 
 * create multiple opportunities to inspect and adapt.
 {{% /fragment %}}
- 
-[Scrum Guide, November 2017 version](https://www.scrumalliance.org/about-scrum/definition)
 
 ---
 
-### How Scrum works
-
-**Scrum works by delivering large projects in small chunks of the product that a team can begin and complete in one, short timeboxed iteration called sprint.**
-
-{{% fragment %}} Scrum is also both **iterative** and **incremental**.{{% /fragment %}}
- 
----
-
-### Communication
+### Scrum Team
 
 **People are the focus of Scrum.**
 
 {{% fragment %}} **Scrum Teams** include people with diverse skillsets; each team has all of the capabilities necessary to deliver a piece of functionality from idea to delivery. {{% /fragment %}}
 
-{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
+{{% fragment %}}
+The CLIENT is part of the TEAM
+{{% /fragment %}}
+
+{{% fragment %}}
+The TEAM is in control of the work performed
 {{% /fragment %}}
 
 ---
@@ -100,30 +83,80 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
  
 ---
 
-### Sprint
+### Our Scrum Team
 
-{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
-{{% /fragment %}}
+Our Scrum Team includes three roles:
 
-{{% fragment %}} * Each sprint begins with a plan followed by building and then testing the code, and ends with a review of the work completed and an additional review of the way in which the team worked together (retrospectives). 
-{{% /fragment %}}
+{{% fragment %}} **Scrum Master/ Project Manager** {{% /fragment %}}
 
-{{% fragment %}} * During each sprint, the team completes one or more increments of the project. Each completed increment must be fully tested and fully approved by the end of the sprint (potentially deliverable).{{% /fragment %}}
+{{% fragment %}} In our classroom setting, the **Scrum Master** role is assigned to the **Project Manager** (PM). {{% /fragment %}}
 
- {{< figure src="/softdev2-resources/images/scrum/sprint.png" width=500 >}}
- 
- 
----
+{{% fragment %}} **Product Owner/ Client** {{% /fragment %}}
 
-### Tracking Progress
+{{% fragment %}} In our classroom setting, the **Product Owner** role is assigned to the **Client**. Note that in our class setting, Product Owner does not necessarily means that the person owns the product. Students must look at the project history and check with the instructor to find out the real owner of the project. Usually, there are several parts included. {{% /fragment %}}
 
-**Burndown Chart** Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.
-As the work progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint. 
+{{% fragment %}} **Development Team**. {{% /fragment %}}
 
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" width=300 >}} {{% /fragment %}}
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" width=300 >}} {{% /fragment %}}
+{{% fragment %}} In our classroom setting, each person in the team has the role of **code developer**. In addition, each team member has one or two more roles of the following:  lead programmer, UI design, data modeler, client liason, documentation lead, test lead, project manager. {{% /fragment %}}
 
 ---
+
+### Scrum Values
+
+{{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. 
+{{% /fragment %}}
+
+{{% fragment %}} **Courage**: Scrum teams must feel safe enough to say no, to ask for help, and to try new things. 
+{{% /fragment %}}
+
+{{% fragment %}} **Focus**: It means that whatever Scrum teams start they finish. 
+{{% /fragment %}}
+
+{{% fragment %}} **Openness**: Scrum teams consistently seek out new ideas and opportunities to learn. 
+{{% /fragment %}}
+
+{{% fragment %}} **Respect**: Scrum team members respect each other’s ideas, give each other permission to have a bad day once in a while, and recognize each other’s accomplishments. They show respect to one another, to the product owner, to stakeholders, and to the ScrumMaster. 
+{{% /fragment %}}
+
+---
+
+### How does the Team do it?
+
+All team members **collaborate** and **work together** to achieve maximum results possible.
+
+Permanent **Communication** is the key factor for a scrum team.
+
+Who is communicating? 
+
+* team communicates with the client at least 1-2 times every sprint. This usually happens during the client meeting.
+
+* team has daily scrum meetings to communicate face-to-face with each other
+
+* team has tools available to communicate fast and easy with each other when needed - we have Discord 
+
+* also, in our class setting, the instrucotr is part of the team, who is available during class time and on team channels
+
+---
+
+### Client Meeting
+
+
+---
+
+### Communication
+
+In our class settings, communication happens via several venues set up by the instructor:
+
+* Piazza/ Reddit - for postings of assignments, announcements, clarifications, etc
+
+* Discord - for fast Q&As between all team members, and available ouside the class time
+
+* Scrums - during class time, once a week for 15 minutes
+
+* Client meeting - this must be set up by each team outside the class time, and at a time convenient for team and the client. Instructor might or might not participate at this meeting.
+
+---
+
 
 ### Daily Scrum
 

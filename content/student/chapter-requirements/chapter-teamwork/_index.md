@@ -147,13 +147,17 @@ Our Scrum Team includes three roles:
 {{% fragment %}} **Client Meeting** is a business meeting during which the TEAM presents a version of the product to the client for feedback and input.
 {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> <b>Client meetings:</b>
+---
 
-* happen at least once per sprint
+### Client Meeting
 
-* are initiated by the team via the "client liason" at a time that is convenient for both the client and the team
+{{% fragment %}} <p align='left'> 
 
-* vary from very formal to casual depending on the client, and from 30 minutes to more than an hour long
+* happens at least once per sprint
+
+* is initiated by the team via the "client liason" at a time that is convenient for both the client and the team
+
+* varies from very formal to casual depending on the client, and from 30 minutes to more than an hour long
 
 * in our classroom setting, although not required, it is best if the entire team participate to the client meeting
 

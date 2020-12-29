@@ -122,7 +122,7 @@ Our Scrum Team includes three roles:
 {{% fragment %}} Permanent **Communication** is the key factor for a scrum team.
 {{% /fragment %}}
 
-{{% fragment %}} Who is communicating? 
+{{% fragment %}} <p align='left'> <em>Who is communicating?</em>
 
 * team communicates with the client at least 1-2 times every sprint. This usually happens during the client meeting.
 
@@ -130,7 +130,7 @@ Our Scrum Team includes three roles:
 
 * team has tools available to communicate fast and easy with each other when needed - we have Discord 
 
-* also, in our class setting, the instrucotr is part of the team, who is available during class time and on team channels
+* also, in our class setting, the instrucotr is part of the team, who is available during class time and on team channels </p>
 {{% /fragment %}}
 
 

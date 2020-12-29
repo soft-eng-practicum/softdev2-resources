@@ -64,6 +64,10 @@
   </url>
   
   <url>
+    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-userstories/</loc>
+  </url>
+  
+  <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/last-stretch-phase/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
   </url>
@@ -218,10 +222,6 @@
   
   <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/chapter-tech/</loc>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-userstories/</loc>
   </url>
   
 </urlset>

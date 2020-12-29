@@ -138,6 +138,31 @@ Our Scrum Team includes three roles:
 
 ### Client Meeting
 
+{{% fragment %}} The CLIENT is part of the TEAM.
+{{% /fragment %}}
+
+{{% fragment %}} TEAM communicates with the CLIENT mosltly via **Client Meeting(s)**.
+{{% /fragment %}}
+
+{{% fragment %}} **Client Meeting** is a business meeting during which the TEAM presents a version of the product to the client for feedback and input.
+{{% /fragment %}}
+
+{{% fragment %}} <p align='left'> <b>Client meetings:</b>
+
+* happen at least once per sprint
+
+* are initiated by the team via the "client liason" at a time that is convenient for both the client and the team
+
+* vary from very formal to casual depending on the client, and from 30 minutes to more than an hour long
+
+* in our classroom setting, although not required, it is best if the entire team participate to the client meeting
+
+* during the meeting the team must take notes for later
+
+* team MUST be on time to the client meeting
+
+* team must be prepared for the client meeting. How? </p>
+{{% /fragment %}}
 
 ---
 

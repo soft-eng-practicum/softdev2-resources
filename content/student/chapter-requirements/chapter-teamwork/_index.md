@@ -84,11 +84,13 @@ Our Scrum Team includes three roles:
 
 {{% fragment %}} **Scrum Master/ Project Manager** {{% /fragment %}}
 
-{{% fragment %}} In our classroom setting, the **Scrum Master** role is assigned to the **Project Manager** (PM). {{% /fragment %}}
+{{% fragment %}} In our classroom setting, the **Scrum Master** role is assigned to the **Project Manager** (PM). 
+{{% /fragment %}}
 
 {{% fragment %}} **Product Owner/ Client** {{% /fragment %}}
 
-{{% fragment %}} In our classroom setting, the **Product Owner** role is assigned to the **Client**. Note that in our class setting, Product Owner does not necessarily means that the person owns the product. Students must look at the project history and check with the instructor to find out the real owner of the project. Usually, there are several parts included. {{% /fragment %}}
+{{% fragment %}} In our classroom setting, the **Product Owner** role is assigned to the **Client**. Note that in our class setting, Product Owner does not necessarily means that the person owns the product. Students must look at the project history and check with the instructor to find out the real owner of the project. Usually, there are several parts included. 
+{{% /fragment %}}
 
 {{% fragment %}} **Development Team**. {{% /fragment %}}
 

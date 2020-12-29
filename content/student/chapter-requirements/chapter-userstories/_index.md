@@ -1,6 +1,8 @@
 +++
 title = "User Stories"
 outputs = ["Reveal"]
+weight = 2
+
 +++
 
 ### User Stories

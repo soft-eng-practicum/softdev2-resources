@@ -1,6 +1,8 @@
 +++
 title = "Teamwork"
 outputs = ["Reveal"]
+weight = 3
+
 +++
 
 ### Teamwork

@@ -114,11 +114,13 @@ Our Scrum Team includes three roles:
 
 ### How does the Team do it?
 
-All team members **collaborate** and **work together** to achieve maximum results possible.
+{{% fragment %}} All team members **collaborate** and **work together** to achieve maximum results possible.
+{{% /fragment %}}
 
-Permanent **Communication** is the key factor for a scrum team.
+{{% fragment %}} Permanent **Communication** is the key factor for a scrum team.
+{{% /fragment %}}
 
-Who is communicating? 
+{{% fragment %}} Who is communicating? 
 
 * team communicates with the client at least 1-2 times every sprint. This usually happens during the client meeting.
 
@@ -127,6 +129,8 @@ Who is communicating?
 * team has tools available to communicate fast and easy with each other when needed - we have Discord 
 
 * also, in our class setting, the instrucotr is part of the team, who is available during class time and on team channels
+{{% /fragment %}}
+
 
 ---
 

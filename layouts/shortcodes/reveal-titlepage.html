@@ -1,4 +1,72 @@
+{{- $currentNode := $.Page -}}
 <h3 id="re-introduction-to-software-engineering">{{ $.Page.Params.title }}</h3>
 
 <h4 id="itec-3870-software-development-ii-br-anca-doloc-mihu-and-cengiz-günay">ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay</h4>
 <p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
+
+{{- if .Get "figure" -}}
+
+<!-- image -->
+<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+    {{ with .Get "link"}}<a href="{{.}}">{{ end }}
+ <img src="{{ .Get "figure" }}" height={{ with (.Get "height") }}"{{ . }}"{{else}}"300px"{{end}} {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
+    {{ if .Get "link"}}</a>{{ end }}
+    {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+    <figcaption>{{ if isset .Params "title" }}
+        <h4>{{ .Get "title" }}</h4>{{ end }}
+        {{ if or (.Get "caption") (.Get "attr")}}<p>
+        {{ .Get "caption" }}
+        {{ with .Get "attrlink"}}<a href="{{.}}"> {{ end }}
+            {{ .Get "attr" }}
+        {{ if .Get "attrlink"}}</a> {{ end }}
+        </p> {{ end }}
+    </figcaption>
+    {{ end }}
+</figure>
+<!-- image -->
+
+{{- end -}}
+
+<p>
+  {{- template "pagination" dict "menu" $.Page.Site.Home "currentnode" $currentNode "menu_exclusion" $.Page.Site.Params.menu_exclusion -}}
+  {{- with ($currentNode.Scratch.Get "prevPage") -}}
+  <a class="nav nav-prev" href="{{ .Permalink }}" title="{{ .Title }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - {{ .Title }}</a>, <span></span>
+  {{- end -}}
+  {{- with ($currentNode.Scratch.Get "nextPage")  -}} 
+  <a class="nav nav-next" href="{{ .Permalink }}" title="{{ .Title }}">Next - {{ .Title }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  {{- end -}}
+</p>
+
+{{- define "pagination" -}}
+{{- $currentNode := .currentnode -}}
+{{- $menu_exclusion := .menu_exclusion -}}
+
+{{- if hasPrefix $currentNode.Permalink .menu.Permalink -}}
+  {{- $currentNode.Scratch.Set "NextPageOK" "OK" -}}
+  {{- if .menu.IsHome -}}
+    {{- $currentNode.Scratch.Set "prevPage" "" -}}
+  {{- else -}}
+    {{- $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") -}}
+  {{- end -}}
+{{- else -}}
+  {{- if eq ($currentNode.Scratch.Get "NextPageOK") "OK" -}}
+    {{- $currentNode.Scratch.Set "NextPageOK" nil -}}
+    {{ if in $menu_exclusion .menu.Section }}
+    {{- else -}}
+      {{- $currentNode.Scratch.Set "nextPage" .menu -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $currentNode.Scratch.Set "prevPageTmp" .menu -}}
+{{- $currentNode.Scratch.Set "pages" .menu.Pages -}}
+{{- if .menu.IsHome -}}
+  {{- $currentNode.Scratch.Set "pages" .menu.Sections -}}
+{{- else if .menu.Sections -}}
+  {{- $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) -}}
+{{- end -}}
+{{- $pages := ($currentNode.Scratch.Get "pages") -}}
+{{- range $pages.ByWeight -}}
+  {{- template "pagination" dict "menu" . "currentnode" $currentNode "menu_exclusion" $menu_exclusion -}}
+{{- end -}}
+{{- end -}}

@@ -4,9 +4,7 @@ outputs = ["Reveal"]
 weight = 02 # chapter number
 +++
 
-{{% reveal-titlepage %}}
-    
-{{< figure src="/softdev2-resources/images/comics/dilbert-agile-programming.png" >}}
+{{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-agile-programming.png" %}}
 
 ---
 

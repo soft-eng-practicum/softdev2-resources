@@ -197,5 +197,5 @@ In our class settings, communication happens via several venues set up by the in
 
 ### Scrum
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=600 >}} {{< figure src="/softdev2-resources/images/scrum/teamsscrums.JPG" width=600 >}}
+{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=550 >}} {{< figure src="/softdev2-resources/images/scrum/teamsscrums.JPG" width=550 >}}
 

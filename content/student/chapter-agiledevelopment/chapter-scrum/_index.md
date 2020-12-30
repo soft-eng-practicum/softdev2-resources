@@ -147,6 +147,8 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
 
 ---
 
+{{< slide class="side-by-side" >}}
+
 ### Tracking Progress
 
 **Burndown Chart** Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.

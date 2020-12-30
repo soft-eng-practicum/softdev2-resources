@@ -193,7 +193,9 @@ In our class settings, communication happens via several venues set up by the in
 
 ---
 
+{{< slide class="side-by-side" >}}
+
 ### Scrum
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
+{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=500 >}} {{< figure src="/softdev2-resources/images/scrum/teamsscrums.JPG" width=500 >}}
 

@@ -4,6 +4,7 @@ DefaultContentLanguage = "en"
 
 title = "Intermediate Agile Software Development"
 theme = ["techdoc", "reveal-hugo"]
+googleAnalytics = "G-K4SBB2EN2W"     # Different for Hugo's internal template?
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
@@ -34,7 +35,6 @@ isHTML = true
 
     # Analytic section
     google_analytics_id = "G-K4SBB2EN2W" # Your Google Analytics tracking id
-    GoogleAnalytics = "G-K4SBB2EN2W"     # Different for Hugo's internal template?
     tag_manager_container_id = "" # Your Google Tag Manager container id
     google_site_verification = "" # Your Google Site Verification for Search Console
 

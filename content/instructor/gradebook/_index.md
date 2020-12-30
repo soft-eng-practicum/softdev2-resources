@@ -6,7 +6,7 @@ publishdate: 2019-11-23T15:26:15Z
 title: Gradebook
 description: Gradebook
 
-weight: 2
+weight: 3
 ---
 
 ## Grading overview

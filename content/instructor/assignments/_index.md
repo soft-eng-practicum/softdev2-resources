@@ -6,7 +6,7 @@ publishdate: 2019-11-23T15:26:15Z
 title: Assignments
 description: Assignments
 
-weight: 2
+weight: 5
 ---
 
 This section includes all the small assignments for the course.

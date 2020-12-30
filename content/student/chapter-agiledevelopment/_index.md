@@ -4,11 +4,7 @@ outputs = ["Reveal"]
 weight = 02 # chapter number
 +++
 
-### Agile Development
-
-#### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
-
-(License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+{{% reveal-titlepage %}}
     
 {{< figure src="/softdev2-resources/images/comics/dilbert-agile-programming.png" >}}
 

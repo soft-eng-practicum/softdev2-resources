@@ -1,6 +1,8 @@
 +++
 title = "Agile Principles"
 outputs = ["Reveal"]
+weight = 2
+
 +++
 
 ### Agile Principles

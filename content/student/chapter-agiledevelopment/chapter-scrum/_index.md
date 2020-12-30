@@ -1,6 +1,8 @@
 +++
 title = "Scrum"
 outputs = ["Reveal"]
+weight = 3
+
 +++
 
 ### Scrum
@@ -147,19 +149,21 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
 
 ---
 
+{{< slide class="side-by-side" >}}
+
 ### Tracking Progress
 
 **Burndown Chart** Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.
 As the work progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint. 
 
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" width=300 >}} {{% /fragment %}}
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" width=300 >}} {{% /fragment %}}
+{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" height=270 >}} 
+ {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height=270 >}} {{% /fragment %}}
 
 ---
 
 ### Daily Scrum
 
-<div style="width: 50%">
+<div style="width: 50%; margin-left: auto; margin-right: auto;">
 {{< youtube kKIc1NFO-AU >}}
 </div>
     
@@ -194,7 +198,7 @@ Scrum Master starts the meeting. Makes sure everyone talks in order from left to
 ### Now ... Scrum
 
 Bonus scrum meeting [Sillicon Valey]: 
-<div style="width: 70%">
+<div style="width: 70%; margin-left: auto; margin-right: auto;">
 {{< youtube Ps4nSgyieIw >}}
 </div>
 

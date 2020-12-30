@@ -10,198 +10,294 @@ weight = 03
 
 (License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
     
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=500 >}}
+{{< figure src="/softdev2-resources/images/requirements/requirements.png" width=500 >}}
+
+Some slides courtesy of Joan Smith, Eugene Agichstein, and the Internets.
 
 ---
 
-## Requirements in Agile
+## What is a Requirement? 
 
-{{% fragment %}} <p align='left'> * Originally proposed by Jeff Sutherland in 90s, then improved by Schwaber and Beedle </p> {{% /fragment %}}
+{{% fragment %}} **Requirements are the descriptions of the services provided by a system and its operational constraints** {{% /fragment %}}
 
-{{% fragment %}} <p align='left'> * In 1993, J. Sutherland borrowed term ‘scrum’ from Takeuchi and Nonaka, “The New Product Development Game”, Havard Business  Review, 1986 </p> {{% /fragment %}}
-
-{{% fragment %}} <p align='left'> * Takeuchi and Nonaka compare high-performing, cross-functional teams to the scrum formation used by Rugby teams. </p> {{% /fragment %}} 
-
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
-
----
-
-### Scrum
-
-{{% fragment %}} <p align='left'> * In rugby scrum is the power struggle between two teams to advance on the field </p> {{% /fragment %}}
-
-{{% fragment %}} <p align='left'> * It requires complete team work, hard work, and strength. That meaning translates to software development </p> {{% /fragment %}}
-
-
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
-
-See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scrum) 
-
----
-
-### Scrum and Agile
-
-{{% fragment %}} Scrum is one of several agile frameworks.{{% /fragment %}}
-
-{{% fragment %}} **Scrum is the most popular agile framework.**
-
-{{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
-{{% /fragment %}}
-
----
-
-### Scrum Definition
-
-**Scrum: An [agile] framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.**
-
-{{% fragment %}} Scrum refers to a lightweight framework that is used in every industry to deliver complex, innovative products and services that truly delight customers. It is **simple to understand, but difficult to master**.{{% /fragment %}}
-
-{{% fragment %}} Scrum fulfils the vision of the Agile Manifesto by helping individuals and businesses organize their work to 
-* maximize collaboration, 
-* minimize errors, 
-* deliver frequently, and 
-* create multiple opportunities to inspect and adapt.
-{{% /fragment %}}
+{{% fragment %}} <p align='left'> * It is about <b>WHAT</b> not HOW </p> {{% /fragment %}}
  
-[Scrum Guide, November 2017 version](https://www.scrumalliance.org/about-scrum/definition)
+{{% fragment %}} <p align='left'> * It varies greatly. It may range from a high level abstract statement to a detailed mathematical specification </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * It may be as complex as a 500 pages of description </p> {{% /fragment %}}
+
+
+{{< figure src="/softdev2-resources/images/requirements/requirements2.png" width=400 >}}
 
 ---
 
-### How Scrum works
+### Why we need requirements?
 
-**Scrum works by delivering large projects in small chunks of the product that a team can begin and complete in one, short timeboxed iteration called sprint.**
+**Advantages of a complete set of documented requirements**
 
-{{% fragment %}} Scrum is also both **iterative** and **incremental**.{{% /fragment %}}
- 
+{{% fragment %}} <p align='left'> * Ensures the user (not the developer) drives system functionalities </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * Helps avoiding confusion and arguments </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * Helps minimizing the changes which reduces the cost </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> <b>Changes in requirements are expensive.</b> </p> {{% /fragment %}}
+
 ---
 
-### Scrum Framework
+### Costs of changing the requirements
 
-**People are the focus of Scrum.**
+{{% fragment %}} <p align='left'>  3 x as much during the design phase </p>
+{{% /fragment %}}
 
-{{% fragment %}} **Scrum Teams** include people with diverse skillsets; each team has all of the capabilities necessary to deliver a piece of functionality from idea to delivery. {{% /fragment %}}
+{{% fragment %}} <p align='left'> 5-10 x as much during implementation </p>
+{{% /fragment %}}
 
-{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
+{{% fragment %}} <p align='left'> 10-100 x as much after release </p>
+
+[Code Complete, p30](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
 {{% /fragment %}}
 
 ---
 
-### Scrum Team
+### Requirements help reduce errors
 
-Scrum Team includes three roles: **Scrum Master, Product Owner, and Development Team**. 
+**A careful requirements process doesn’t mean there will be no changes later**
 
-{{% fragment %}} The **Scrum Master** helps the Scrum Team perform at their highest level. They also protect the team from both internal and external distractions. Scrum Masters hold the Scrum Team accountable to their working agreements, Scrum values, and to the Scrum framework itself.
+{{% fragment %}} Average project experiences about 25% changes in the requirements 
 {{% /fragment %}}
 
-{{% fragment %}} The **Product Owner** defines the what--as in what the product will look like and what features it should contain. Product Owner helps build and clarify the product backlog and ensures that everyone knows the priorities.
+{{% fragment %}} This accounts for 70-80% if the rework of the project 
+[Code Complete, p40](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
 {{% /fragment %}}
 
-{{% fragment %}} The **Development Team** decides how to accomplish the work set forth by the Product Owner. Development Teams are structured and empowered to organize and manage their own work.
+{{% fragment %}} Important to plan for requirements changes 
+{{% /fragment %}}
+
+{{% fragment %}} <p align='left'> Example: the case of critical applications </p>
+{{% /fragment %}}
+
+---
+
+### Different levels of abstraction
+
+**Abstract level: User requirements**
+
+{{% fragment %}} <p align='left'> * Usually the first attempt for the description of the requirements <br>
+* Includes services and constraints of the system <br>
+* Given in natural language or diagrams <br>
+* Readable by everybody, i.e. understandable by the user <br>
+* Serve business objectives <br>
+</p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> <em>Example of User requirement:</em> <br>
+As a user who found a new job announcement, I want to add a new position to the website so s/he can start working on doing the initial research and apply to it.</p>
 {{% /fragment %}}
  
 ---
 
-### Sprint
+### Different levels of abstraction
 
-{{% fragment %}} **Sprint** is a short (one to four weeks long) timeframe during which the team works on some chunks of the product. 
+**Not abstract level: System requirements**
+
+{{% fragment %}} <p align='left'> * Includes services and constraints of the system in detail <br>
+* Useful for the design and development <br>
+* Precise and cover all cases <br>
+* Structured presentation <br>
+</p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> <em>Example of System requirement:</em> <br>
+A registered user on the academic jobs website should be able to add a new position listing with the name of the school and academic unit, date of posting, date of expiry, application deadline, and contact and application details. The interaction fails if: the position is already listed, the application deadline is in the past, position announcement is expired, or the contact information is missing. If fails, point mistakes to user and ask the user to fix and resubmit. </p>
 {{% /fragment %}}
 
-{{% fragment %}} * Each sprint begins with a plan followed by building and then testing the code, and ends with a review of the work completed and an additional review of the way in which the team worked together (retrospectives). 
-{{% /fragment %}}
+---
 
-{{% fragment %}} * During each sprint, the team completes one or more increments of the project. Each completed increment must be fully tested and fully approved by the end of the sprint (potentially deliverable).{{% /fragment %}}
+### Problems with user requirements
 
- {{< figure src="/softdev2-resources/images/scrum/sprint.png" width=500 >}}
+*Can you think of any issues?*
+
+{{% fragment %}} <p align='left'> * Lack of clarity - ambiguous language </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * Confusion - design information are not distinguished between functional and non-functional requirements  </p> {{% /fragment %}}
+    
+{{% fragment %}} <p align='left'> * Several requirements are defined as a single one </p> {{% /fragment %}}
+    
+{{% fragment %}} <p align='left'> * Incompleteness – requirements may be missing </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * Inconsistency – requirements may contradict themselves </p> {{% /fragment %}}
  
+---
+
+### Guideline to minimize issues with user requirements
+
+{{% fragment %}}  <p align='left'> * Separate functional and non-functional requirements </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Requirements must be clearly identified by a number </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Include a rationale for each requirement – this helps clarify reasoning behind the requirements and may be useful for evaluating potential changes in the requirements</p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Team should decide to use a standard form/template </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Have a clear way to establish and distinguish requirements priorities </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Write test cases; requirements must be testable </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Deliverables </p> {{% /fragment %}}
+
+---
+
+### System requirements
+
+{{% fragment %}}  <p align='left'> * Elaborate the user requirements to get a precise, detailed and complete version of them </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Used by designers and developers </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Write system requirements using natural language </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> * Forms/templates and logic are used to bring some rigor, but make sure everyone understands them </p> {{% /fragment %}}
+
+{{% fragment %}}  <p align='left'> <em> Example: If sales for current month are below target sales, then report is to be printed unless difference between target sales and actual sales is less than half of difference between target sales and actual sales in previous month, or if difference between target sales and actual sales for the current month is less than 5%. </em></p> 
+{{% /fragment %}}
+
+{{% fragment %}}Problems: * Difficult to read * Ambiguity: 5% of what? * Incomplete: what if sales are above target sales? 
+{{% /fragment %}}
+
+---
+
+### Types of requirements
+
+{{% fragment %}} <p align='left'> <b> Functional requirements </b><br>
+* Services the system should provide <br>
+* What the system should do or not do in reaction to particular situations <br></p>
+{{% /fragment %}}
+
+
+{{% fragment %}} <p align='left'> <b> Non-functional requirements  </b> - might be more critical than functional ones <br>
+* Constraints on the services or functions offered by the system <br>
+* Examples: Timing constraints (e.g., one semester), constraints on the development process (CASE, language, development method…), standards etc<br></p>
+{{% /fragment %}}
+    
+    
+{{% fragment %}} <p align='left'> <b>  Domain requirements </b><br>
+* From the application domain of the system <br>
+* May be functional or non-functional <br>
+Examples: Medicine, library, physics, chemistry <br></p>
+{{% /fragment %}}
+    
+{{% fragment %}} Note: You can have all of user/system functional/nonfunctional requirements. 
+{{% /fragment %}}
  
 ---
 
-### Scrum Values
+### Non-functional requirements categories
 
-{{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. 
-{{% /fragment %}}
+<p align='left'> <b> Product requirements</b> - related to product behavior <br>
+Example: Timing, performance, memory, reliability, portability, usability
 
-{{% fragment %}} **Courage**: Scrum teams must feel safe enough to say no, to ask for help, and to try new things. 
-{{% /fragment %}}
+<b>Organizational requirements</b> related to policies and procedures in the customer’s and developer’s organizations<br>
+Example: Process requirements, implementation requirements, delivery requirements
 
-{{% fragment %}} **Focus**: It means that whatever Scrum teams start they finish. 
-{{% /fragment %}}
+<b>External requirements</b> related to factors externals to the system and the development process<br>
+Example: Interoperability, legislation, ethics 
+</p>
 
-{{% fragment %}} **Openness**: Scrum teams consistently seek out new ideas and opportunities to learn. 
-{{% /fragment %}}
-
-{{% fragment %}} **Respect**: Scrum team members respect each other’s ideas, give each other permission to have a bad day once in a while, and recognize each other’s accomplishments. They show respect to one another, to the product owner, to stakeholders, and to the ScrumMaster. 
-{{% /fragment %}}
+{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=400 >}} {{% /fragment %}}
 
 ---
 
-### Scrum Artifacts
+### How to test non-functional requirements
 
-{{% fragment %}} The **Product Backlog** is an ordered list of everything that is known to be needed in a product. 
-{{% /fragment %}}
+**It is important to be able to test/verify/check non-functional requirements**
 
-{{% fragment %}} The **Sprint Backlog** is a list of everything that the team commits to achieve in a given Sprint. Once created, no one can add to the Sprint Backlog except the Development Team. If an item needs to be dropped from the Sprint Backlog, they must negotiate it with the Product Owner. 
-{{% /fragment %}}
-
-{{% fragment %}} At the end of every Sprint, the team must complete a **potentially releasable product increment** meaning that it is done as agreed upon. 
-{{% /fragment %}}
-
----
-
-### Tracking Progress
-
-**Burndown Chart** Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.
-As the work progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint. 
-
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" width=300 >}} {{% /fragment %}}
-{{% fragment %}} {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" width=300 >}} {{% /fragment %}}
-
----
-
-### Daily Scrum
-
-<div style="width: 50%">
-{{< youtube kKIc1NFO-AU >}}
-</div>
+{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctreqtest.png" width=500 >}} {{% /fragment %}}
     
 ---
 
-### Daily Scrum
+### Requirement engineering
 
-What do you see in the clip?
-
-{{% fragment %}} * **Scrum Team** 
-Members stand up in circle facing everyone. Also, someone else just "observing". Meeting is less than 15 minutes long. 
-{{% /fragment %}} 
-
-{{% fragment %}} * **Scrum Master** 
-Scrum Master starts the meeting. Makes sure everyone talks in order from left to right. 
-{{% /fragment %}}
-
-{{% fragment %}} * Each member answers to **3 questions** regarding meeting the sprint goal: 
-{{% /fragment %}}
-
-{{% fragment %}}       1. What did I worked on since last meeting? 
-{{% /fragment %}}
-
-{{% fragment %}}       2. What I am working on now? 
-{{% /fragment %}}
-
-{{% fragment %}}       3. Do I see any impediments? 
-{{% /fragment %}}
+{{< figure src="/softdev2-resources/images/requirements/reqengineering.png" width=700 >}}
 
 ---
 
-### Now ... Scrum
+### Feasibility study
 
-Bonus scrum meeting [Sillicon Valey]: 
-<div style="width: 70%">
-{{< youtube Ps4nSgyieIw >}}
-</div>
+* It is done at first to decide whether or not the project is worthwhile
+
+* Look at different perspectives: market analysis, financial, schedule, technical, resource, legal…
+
+* Target is to make you aware of the risks
+
+How to do the study
+
+* Consult information sources: managers, software engineers, end users…
+
+* Collect information from interviews, surveys, questionnaires…
+
+Should be short (2-3 weeks)
 
 ---
 
-### Now ... Scrum
+### Feasibility study
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
+* What if the system wasn’t implemented?
 
+* What are current process problems?
+
+* Do technical resources exist?
+
+* What is the risk associated with the technology?
+
+* Is new technology needed? What skills?
+
+* How will the proposed project help?
+
+* How does the proposed project contribute to the overall objectives of the organization?
+
+* Have the benefits identified with the system being identified clearly?
+
+---
+
+### Feasibility study
+
+* What will be the integration problems?
+
+* What facilities must be supported by the system?
+
+* What is the risk associated with cost and schedule?
+
+* What are the potential disadvantages/advantages?
+
+* Are there legal issues?
+
+* Are there issues linked with the fact that this is an offshore project?
+
+and more
+
+---
+
+### Requirements as user stories
+
+{{< figure src="/softdev2-resources/images/comics/requirementsuserstory.jpg" width=700 >}}
+
+---
+
+### From requirements to user stories
+
+{{< figure src="/softdev2-resources/images/requirements/reqtousecase.png" width=700 >}}
+
+---
+
+
+### Use-case Diagram
+
+{{< figure src="/softdev2-resources/images/requirements/usecase.png" width=700 >}}
+
+---
+
+### From a “use case” to “user stories”
+
+{{% fragment %}} <p align='left'> * Use case diagram shows <b>all things an actor can do </b> </p> {{% /fragment %}}
+
+{{% fragment %}} <p align='left'> * Can be broken down to individual <b> user stories</b> </p> {{% /fragment %}}
+    
+   

@@ -1,6 +1,8 @@
 +++
 title = "Kanban"
 outputs = ["Reveal"]
+weight = 4
+
 +++
 
 ### Kanban

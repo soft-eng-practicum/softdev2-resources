@@ -161,7 +161,7 @@ As the work progresses, the amount of work remaining should steadily decrease an
 
 ### Daily Scrum
 
-<div style="width: 50%">
+<div style="width: 50%; margin-left: auto; margin-right: auto;">
 {{< youtube kKIc1NFO-AU >}}
 </div>
     
@@ -196,7 +196,7 @@ Scrum Master starts the meeting. Makes sure everyone talks in order from left to
 ### Now ... Scrum
 
 Bonus scrum meeting [Sillicon Valey]: 
-<div style="width: 70%">
+<div style="width: 70%; margin-left: auto; margin-right: auto;">
 {{< youtube Ps4nSgyieIw >}}
 </div>
 

@@ -34,7 +34,7 @@ isHTML = true
 
     # Analytic section
     google_analytics_id = "G-K4SBB2EN2W" # Your Google Analytics tracking id
-    googleAnalytics = "G-K4SBB2EN2W"
+    GoogleAnalytics = "G-K4SBB2EN2W"     # Different for Hugo's internal template?
     tag_manager_container_id = "" # Your Google Tag Manager container id
     google_site_verification = "" # Your Google Site Verification for Search Console
 

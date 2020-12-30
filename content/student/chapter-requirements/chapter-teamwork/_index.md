@@ -146,7 +146,7 @@ Our Scrum Team includes three roles:
 Our [TEAM] highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 {{% /fragment %}}
 
-{{% fragment %}} TEAM communicates with the CLIENT mosltly via **Client Meeting(s)**.
+{{% fragment %}} TEAM communicates with the CLIENT mostly via **Client Meeting(s)**.
 {{% /fragment %}}
 
 {{% fragment %}} **Client Meeting** is a business meeting during which the TEAM presents a version of the product to the client for feedback and input.
@@ -162,7 +162,7 @@ Our [TEAM] highest priority is to satisfy the customer through early and continu
 
 * happens at least once per sprint
 
-* is initiated by the team via the "client liason" at a time that is convenient for both the client and the team
+* is initiated by the team via the "client liaison" at a time that is convenient for both the client and the team
 
 * varies from very formal to casual depending on the client, and from 30 minutes to more than an hour long
 
@@ -197,5 +197,5 @@ In our class settings, communication happens via several venues set up by the in
 
 ### Scrum
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=500 >}} {{< figure src="/softdev2-resources/images/scrum/teamsscrums.JPG" width=500 >}}
+{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=600 >}} {{< figure src="/softdev2-resources/images/scrum/teamsscrums.JPG" width=600 >}}
 

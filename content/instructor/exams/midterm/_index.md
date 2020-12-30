@@ -5,8 +5,7 @@ publishdate: 2019-11-23T15:26:15Z
 
 title: Midterm
 description: Midterm
-weight = 4
-
+weight: 4
 ---
 
 ## Midterm

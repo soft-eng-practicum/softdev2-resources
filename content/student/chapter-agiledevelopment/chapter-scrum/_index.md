@@ -1,6 +1,8 @@
 +++
 title = "Scrum"
 outputs = ["Reveal"]
+weight = 3
+
 +++
 
 ### Scrum

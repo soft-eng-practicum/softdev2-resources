@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 weight = 05
 +++
 
-### Jira
+### Project Management with Jira
 
 #### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
 

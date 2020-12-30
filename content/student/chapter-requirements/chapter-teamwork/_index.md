@@ -141,11 +141,18 @@ Our Scrum Team includes three roles:
 {{% fragment %}} The CLIENT is part of the TEAM.
 {{% /fragment %}}
 
+{{% fragment %}} Agile principle #1 is **Satisfy the Customer** 
+
+Our [TEAM] highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+{{% /fragment %}}
+
 {{% fragment %}} TEAM communicates with the CLIENT mosltly via **Client Meeting(s)**.
 {{% /fragment %}}
 
 {{% fragment %}} **Client Meeting** is a business meeting during which the TEAM presents a version of the product to the client for feedback and input.
 {{% /fragment %}}
+
+{{< figure src="/softdev2-resources/images/requirements/clientmeeting.jpg" width=500 >}}
 
 ---
 
@@ -159,7 +166,7 @@ Our Scrum Team includes three roles:
 
 * varies from very formal to casual depending on the client, and from 30 minutes to more than an hour long
 
-* in our classroom setting, although not required, it is best if the entire team participate to the client meeting
+* in our class setting, although not required, it is best if the entire team participate to the client meeting
 
 * during the meeting the team must take notes for later
 
@@ -182,18 +189,11 @@ In our class settings, communication happens via several venues set up by the in
 
 * Client meeting - this must be set up by each team outside the class time, and at a time convenient for team and the client. Instructor might or might not participate at this meeting.
 
+* Code communication - via meaningful comments on code and commits on the project's repo on Github
+
 ---
 
-
-### Daily Scrum
-
-<div style="width: 50%">
-{{< youtube kKIc1NFO-AU >}}
-</div>
-    
----
-
-### Now ... Scrum
+### Scrum
 
 {{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
 

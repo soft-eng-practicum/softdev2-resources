@@ -11,7 +11,7 @@ provided for students.
 
 ## Publishing technology
 
-This textbook is rendered using a static site generator
+The content is rendered and published using a static site generator
 (or [Jamstack](https://jamstack.org/)) system
 called [Hugo](https://gohugo.io/). It is primarily built by combining
 two Hugo

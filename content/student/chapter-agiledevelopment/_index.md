@@ -11,7 +11,7 @@ weight = 02 # chapter number
 
 What is AGILITY? 
 
-{{< figure src="/softdev2-resources/images/agile/agility.jpg" height="500" >}}
+{{< figure src="/softdev2-resources/images/agile/agility.jpg" height="250" >}}
 
 What does it mean to be AGILE?
 

@@ -1,8 +1,7 @@
 +++
 title = "Re-introduction to Software Engineering"
 outputs = ["Reveal"]
-# chapter number
-weight = 01
+weight = 01 # chapter number
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-plan-software.png" %}}

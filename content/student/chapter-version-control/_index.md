@@ -5,13 +5,7 @@ outputs = ["Reveal"]
 weight = 04
 +++
 
-### Version Control
-
-#### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
-
-Licensed with [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-    
-[{{< figure src="/softdev2-resources/images/comics/version-control-comic-return-to-zero.png" >}}](https://www.eeworldonline.com/return-to-zero-binary-programming/)
+{{% reveal-titlepage figure="/softdev2-resources/images/comics/version-control-comic-return-to-zero.png" %}}
 
 ---
 

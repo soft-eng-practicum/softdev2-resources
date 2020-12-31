@@ -5,8 +5,6 @@ outputs = ["Reveal"]
 weight = 03
 +++
 
-### Github Social Computing
+{{% reveal-titlepage figure="/softdev2-resources/images/version-control/githubsocial.jpg" %}}
 
-#### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
-
-Licensed with [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+---

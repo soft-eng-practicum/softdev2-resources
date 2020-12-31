@@ -9,6 +9,8 @@ students. Course preparation materials are provided for the instructor
 and class presentation slides, assignments, and take-home exams are
 provided for students.
 
+However, instructor could email the authors (cgunay or adolocm at gmail.com) to get access to hidden materials such as quizzes.
+
 ## Publishing technology
 
 The content is rendered and published using a static site generator

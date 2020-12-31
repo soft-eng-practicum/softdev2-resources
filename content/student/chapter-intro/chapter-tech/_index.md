@@ -3,11 +3,7 @@ title = "Technology Overview"
 outputs = ["Reveal"]
 +++
 
-### Technology Overview
-
-#### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
-
-(License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+{{% reveal-titlepage figure="/softdev2-resources/images/technology.jpg" %}}
 
 ---
 

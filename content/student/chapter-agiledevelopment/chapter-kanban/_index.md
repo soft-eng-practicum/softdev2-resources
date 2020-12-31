@@ -5,14 +5,8 @@ weight = 4
 
 +++
 
-### Kanban
+{{% reveal-titlepage figure="/softdev2-resources/images/kanban/kanbanstudents.png" %}}
 
-#### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
-
-(License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
-
-{{< figure src="/softdev2-resources/images/kanban/kanbanstudents.png" width=600 >}}
-    
 ---
 
 ## Kanban

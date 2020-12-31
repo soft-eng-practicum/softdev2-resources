@@ -7,6 +7,15 @@ weight = 02 # chapter number
 {{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-agile-programming.png" %}}
 
 ---
+### Agility
+
+What is AGILITY? 
+
+{{< figure src="/softdev2-resources/images/agile/agility.jpg" width="600" >}}
+
+What does it mean to be AGILE?
+
+---
 
 ### Agile Process
 

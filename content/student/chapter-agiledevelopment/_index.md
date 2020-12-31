@@ -4,7 +4,8 @@ outputs = ["Reveal"]
 weight = 02 # chapter number
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-agile-programming.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-agile-programming.png" 
+    link="https://dilbert.com/strip/2007-11-26"%}}
 
 ---
 ### What is AGILITY? 

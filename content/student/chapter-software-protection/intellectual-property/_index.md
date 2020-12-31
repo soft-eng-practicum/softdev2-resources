@@ -5,8 +5,7 @@ outputs = ["Reveal"]
 weight = 01
 +++
 
-### Intellectual Property
+{{% reveal-titlepage figure="/softdev2-resources/images/intelproperty.png" %}}
 
-#### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
+---
 
-Licensed with [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)

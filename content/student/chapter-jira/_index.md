@@ -4,13 +4,7 @@ outputs = ["Reveal"]
 weight = 05
 +++
 
-### Project Management with Jira
-
-#### ITEC 3870 Software Development II, <br> Anca Doloc-Mihu and Cengiz Günay
-
-(License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
-    
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=500 >}}
+{{% reveal-titlepage figure="/softdev2-resources/images/scrum/scrumrugby.jpg" %}}
 
 ---
 

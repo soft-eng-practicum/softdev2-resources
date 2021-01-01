@@ -57,8 +57,10 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-
-{{- $currentNode.Scratch.Set "prevPageTmp" .menu -}}
+{{/* only if it's a Reveal page */}}
+{{- if  (in (printf "%s" (.menu.Params.outputs)) "reveal") -}}
+  {{- $currentNode.Scratch.Set "prevPageTmp" .menu -}}
+{{- end -}}
 {{- $currentNode.Scratch.Set "pages" .menu.Pages -}}
 {{- if .menu.IsHome -}}
   {{- $currentNode.Scratch.Set "pages" .menu.Sections -}}

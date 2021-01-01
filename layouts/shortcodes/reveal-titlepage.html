@@ -30,7 +30,8 @@
 <p>
   {{- template "pagination" dict "menu" $.Page.Site.Home "currentnode" $currentNode "menu_exclusion" $.Page.Site.Params.menu_exclusion -}}
   {{- with ($currentNode.Scratch.Get "prevPage") -}}
-  <a class="nav nav-prev" href="{{ .Permalink }}" title="{{ .Title }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - {{ .Title }}</a>, <span></span>
+  <a class="nav nav-prev" href="{{ .Permalink }}" title="{{ .Title }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - {{ .Title }}</a>
+  {{- if $currentNode.Scratch.Get "nextPage" -}}, <span></span>{{- end -}}
   {{- end -}}
   {{- with ($currentNode.Scratch.Get "nextPage")  -}} 
   <a class="nav nav-next" href="{{ .Permalink }}" title="{{ .Title }}">Next - {{ .Title }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -43,13 +44,14 @@
 
 {{- if hasPrefix $currentNode.Permalink .menu.Permalink -}}
   {{- $currentNode.Scratch.Set "NextPageOK" "OK" -}}
+  {{- $currentNode.Scratch.Set "nextPage" nil -}}
   {{- if .menu.IsHome -}}
     {{- $currentNode.Scratch.Set "prevPage" "" -}}
   {{- else -}}
     {{- $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") -}}
   {{- end -}}
 {{- else -}}
-  {{- if eq ($currentNode.Scratch.Get "NextPageOK") "OK" -}}
+  {{- if and (eq ($currentNode.Scratch.Get "NextPageOK") "OK") (in (printf "%s" .menu.Params.outputs) "reveal") -}}
     {{- $currentNode.Scratch.Set "NextPageOK" nil -}}
     {{ if in $menu_exclusion .menu.Section }}
     {{- else -}}

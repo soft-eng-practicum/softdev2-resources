@@ -6,7 +6,7 @@ publishdate: 2019-11-23T15:26:15Z
 title: Instructor Materials
 description: Instructor Materials
 
-weight: 2
+weight: 3
 ---
 
 Select a chapter from the menu.

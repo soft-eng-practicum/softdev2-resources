@@ -1,6 +1,5 @@
 +++
 title = "Git Workshops"
-outputs = ["Reveal"]
 weight = 01 # chapter number
 +++
 
@@ -13,14 +12,13 @@ weight = 01 # chapter number
 
 - What's better than to watch some workshops videos?
 
-{{% fragment %}}
-Work in progress ...
-{{% /fragment %}}
 
-{{% fragment %}}
-Meaning:
+Work in progress ...
+
+
+
 We will also add slides of the workshops...
-{{% /fragment %}}
+
 
 
 ---

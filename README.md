@@ -34,32 +34,38 @@ feature. You can see it in action in
 
 ## How to adopt this book and customize for your class
 
-You can fork this repository and customize the chapters and
+You can _fork_ this repository on Github and customize the chapters and
 slides. See the links above to learn more about the different
 technologies used.
 
-## How to set up Github Pages and Github Actions for automatic deployment
-
 Once you fork this repository, Github will carry over the Github
-Actions, but you would need to click on the "Actions" tab and enable
-them again in the fork. After this, you should see the "Hugo" action
-listed, which will be executed after each of your commits. The action
-will run Hugo and write its output to the root of the `gh-pages`
-branch.
+Actions instructions needed for automatic deployment, but you would
+need to click on the "Actions" tab and enable them again in the
+fork. After this, you should see the "Hugo" action listed, which will
+be executed after each of your commits. The action will run Hugo and
+write its output to the root of the `gh-pages` branch.
 
 To enable Github Pages render this output, you need to go to the
 Settings tab, scroll down and select to produce the pages from the
 root folder of the `gh-pages` branch.
 
-## Custom Reveal-Hugo shortcodes
+Don't forget to edit the `config.toml` file for changing variables
+such as `baseURL`, `github_repository`, `github_doc_repository`,
+`author`, `course`, and `google_analytics_id`.
 
-In the class presentations, you can use the following
+## Reveal-Hugo customizations
+
+In the class presentations, the `author` and `course` front-matter
+variables will take precendence over the values in the `config.toml`
+file. They are used in the following
 custom
 [Hugo shortcodes](https://gohugo.io/content-management/shortcodes/)
 that we defined:
 
-- `reveal-titlepage`: Puts the chapter title, course name, authors, and links to
-  previous and next chapters, with an option to display a cover
+- `reveal-titlepage`: Puts the chapter title, course name (`course` 
+  parameter in page or in `config.toml` file), authors (`author` 
+  parameter), and links to previous and next chapters (automatically 
+  determined), with an option to display a cover
   image. The default format for the title page and its contents, such
   as authors can be changed in
   `layouts/shortcodes/reveal-titlepage.html`. It accepts the following

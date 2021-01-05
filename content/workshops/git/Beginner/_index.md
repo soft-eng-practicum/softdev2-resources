@@ -1,5 +1,5 @@
 +++
-title = "Git beginner"
+title = "Git Beginner"
 outputs = ["Reveal"]
 weight = 01 # chapter number
 +++

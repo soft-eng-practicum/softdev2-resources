@@ -6,7 +6,7 @@ publishdate: 2021-1-5T15:26:15Z
 title: Workshops
 description: Workshops Slides and Videos
 
-weight: 1
+weight: 0
 ---
 
 Select a chapter from the menu.

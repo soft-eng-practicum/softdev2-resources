@@ -26,12 +26,12 @@ isHTML = true
 
     # Source Code repository section
     description = "Lectures and other resources for teaching and learning about software development"
-    github_repository = "https://github.com/cengique/softdev2-resources"
+    github_repository = "https://ggc-sd.github.io/softdev2-resources"
     version = "0.1.1"
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
-    github_doc_repository = "https://github.com/cengique/softdev2-resources"
+    github_doc_repository = "https://ggc-sd.github.io/softdev2-resources"
 
     # Analytic section
     google_analytics_id = "G-K4SBB2EN2W" # Your Google Analytics tracking id

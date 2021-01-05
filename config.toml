@@ -29,6 +29,10 @@ isHTML = true
     github_repository = "https://ggc-sd.github.io/softdev2-resources"
     version = "0.1.1"
 
+    # Settings special to the textbook
+    author = "Anca Doloc-Mihu and Cengiz Günay"
+    course = "ITEC 3870 Software Development II"
+
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
     github_doc_repository = "https://ggc-sd.github.io/softdev2-resources"

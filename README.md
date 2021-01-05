@@ -34,11 +34,22 @@ feature. You can see it in action in
 
 ## How to adopt this book and customize for your class
 
-You can fork this repository and customize the chapters and slides.
+You can fork this repository and customize the chapters and
+slides. See the links above to learn more about the different
+technologies used.
 
 ## How to set up Github Pages and Github Actions for automatic deployment
 
-TBD
+Once you fork this repository, Github will carry over the Github
+Actions, but you would need to click on the "Actions" tab and enable
+them again in the fork. After this, you should see the "Hugo" action
+listed, which will be executed after each of your commits. The action
+will run Hugo and write its output to the root of the `gh-pages`
+branch.
+
+To enable Github Pages render this output, you need to go to the
+Settings tab, scroll down and select to produce the pages from the
+root folder of the `gh-pages` branch.
 
 ## Custom Reveal-Hugo shortcodes
 

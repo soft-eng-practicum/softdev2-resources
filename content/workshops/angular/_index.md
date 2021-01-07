@@ -1,6 +1,6 @@
 +++
-title = "Git Workshops"
-weight = 01 # chapter number
+title = "Angular Workshops"
+weight = 02 # chapter number
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-plan-software.png" 
@@ -10,7 +10,7 @@ weight = 01 # chapter number
 
 ## Welcome
 
-- What's better than to watch some workshops videos?
+- this will be an angular workshop for beginner and intermediate.
 
 
 Work in progress ...

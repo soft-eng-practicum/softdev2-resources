@@ -5,7 +5,7 @@ outputs = ["Reveal"]
 weight = 01
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/intelproperty.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/protection/intelproperty.png" %}}
 
 ---
 

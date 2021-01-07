@@ -43,6 +43,8 @@ Two major forms of IP protection for software:
 
 ---
 
+<section>
+
 #### Copyright Law
 
 Copyright is a form of IP protection that 
@@ -142,3 +144,5 @@ If you want official recognition:
 - And apply at the US Copyright Office
 
 {{% /fragment %}}
+
+</section>

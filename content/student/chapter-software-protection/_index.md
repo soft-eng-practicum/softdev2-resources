@@ -142,6 +142,7 @@ the non-literal element B in Software BB, then copyright infringement
 If you want official recognition:
 - You can also noterize copies
 - And apply at the US Copyright Office
+- Learn more [here](https://ggc-sd.github.io/LegalSoftDevApps/paper_ch3.html)
 
 {{% /fragment %}}
 

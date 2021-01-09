@@ -32,6 +32,17 @@ weight = 01
 - Best to decide as you finalize your project this semester
 - Submit an IP agreement that determines contributions between team, your client, and your professor.
 
+---
+
+#### More Resources
+
+- We now have a website with many resources for software protection and licensing:
+  https://ggc-sd.github.io/LegalSoftDevApps/index.html
+- Contains:
+  - Example Forms
+  - Explanations
+  - Guidance
+
 {{% reveal-prevnext-links %}}
 
 

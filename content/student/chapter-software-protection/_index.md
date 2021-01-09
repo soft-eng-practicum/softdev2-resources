@@ -315,6 +315,8 @@ Patents are granted to limited categories:
 - Energy, magnetism _per se_
 - Process that manipulates abstract ideas, concepts or pure numbers without any practical real world application
 
+</section>
+
 ---
 
 #### Resources
@@ -331,4 +333,3 @@ https://www.ipwatchdog.com/
 
 {{% reveal-prevnext-links %}}
 
-</section>

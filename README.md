@@ -62,12 +62,11 @@ custom
 [Hugo shortcodes](https://gohugo.io/content-management/shortcodes/)
 that we defined:
 
-- `reveal-titlepage`: Puts the chapter title, course name (`course` 
-  parameter in page or in `config.toml` file), authors (`author` 
-  parameter), and links to previous and next chapters (automatically 
-  determined), with an option to display a cover
-  image. The default format for the title page and its contents, such
-  as authors can be changed in
+- `reveal-titlepage`: Puts the chapter title, course name (`course`
+  parameter in page or in `config.toml` file), authors (`author`
+  parameter), and inserts the `reveal-prevnext-links` at the bottom,
+  with an option to display a cover image. The default format for the
+  title page and its contents, such as authors can be changed in
   `layouts/shortcodes/reveal-titlepage.html`. It accepts the following
   optional parameters with the regular HTML syntax `param="value"`:
   - `figure`: Displays the cover image specified at given
@@ -82,3 +81,7 @@ that we defined:
   - `caption`: Set `alt` and also write it under the `figcaption`.
   - `attr`: Attribution text, shows up after caption.
   - `attrlink`: Link for the attribution.
+
+- `reveal-prevnext-links`: Inserts links to previous and next Reveal
+  chapters, which are automatically determined by following the pages
+  in the folders. It has no additional options.

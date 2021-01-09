@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Intermediate Agile Software Development</title>
-    <link>https://soft-eng-practicum.github.io/softdev2-resources/tags/</link>
+    <link>https://ggc-sd.github.io/softdev2-resources/tags/</link>
     <description>Recent content in Tags on Intermediate Agile Software Development</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://soft-eng-practicum.github.io/softdev2-resources/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ggc-sd.github.io/softdev2-resources/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

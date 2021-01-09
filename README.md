@@ -64,9 +64,9 @@ that we defined:
 
 - `reveal-titlepage`: Puts the chapter title, course name (`course`
   parameter in page or in `config.toml` file), authors (`author`
-  parameter), and inserts the `reveal-prevnext-links` at the bottom,
-  with an option to display a cover image. The default format for the
-  title page and its contents, such as authors can be changed in
+  parameter), with an option to display a cover image, followed by the
+  `reveal-prevnext-links` shortcode. The default format for the title
+  page and its contents, such as authors can be changed in
   `layouts/shortcodes/reveal-titlepage.html`. It accepts the following
   optional parameters with the regular HTML syntax `param="value"`:
   - `figure`: Displays the cover image specified at given

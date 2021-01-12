@@ -1,4 +1,4 @@
-baseURL = "https://ggc-sd.github.io/softdev2-resources/"
+baseURL = "https://soft-eng-practicum.github.io/softdev2-resources/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
@@ -26,7 +26,7 @@ isHTML = true
 
     # Source Code repository section
     description = "Lectures and other resources for teaching and learning about software development"
-    github_repository = "https://github.com/GGC-SD/softdev2-resources"
+    github_repository = "https://github.com/soft-eng-practicum/softdev2-resources"
     version = "0.1.1"
 
     # Settings special to the textbook
@@ -35,7 +35,7 @@ isHTML = true
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
-    github_doc_repository = "https://github.com/GGC-SD/softdev2-resources"
+    github_doc_repository = "https://github.com/soft-eng-practicum/softdev2-resources"
 
     # Analytic section
     google_analytics_id = "G-K4SBB2EN2W" # Your Google Analytics tracking id

@@ -35,11 +35,9 @@ Each goal or sub-set of goals should be matched to the tasks required to accompl
 ---
 ### Project Step 3: Determine and verify resource requirements
 
-{{% fragment %}}  Resources are those things which are needed to accomplish the project goals, like people, time, money, space, computers, software, etc.{{% /fragment %}}
+{{% fragment %}} **The most important here is to be realistic**, meaning to determine what resources you need (like people, time, money, space, computers, software, etc.) to get the job done correctly, on time, and on budget. {{% /fragment %}}
 
-{{% fragment %}} **The most important here is to be realistic**, meaning to determine what you need to get the job done correctly, on time, and on budget. {{% /fragment %}}
-
-{{% fragment %}} Most common mistake is to underestimate the amount and type of resources required, which leads to projects that run over budget and fall behind schedule. 
+{{% fragment %}} * Most common mistake is to underestimate the amount and type of resources required, which leads to projects that run over budget and fall behind schedule. 
 
 DO NOT:
   • Squeeze a project into a shorter time frame to please your boss
@@ -47,9 +45,9 @@ DO NOT:
   • Plan on a best-case basis, i.e. "If everything goes correctly, we will finish on time." 
 {{% /fragment %}}
 
-{{% fragment %}} A good idea is to build in a safety margin of 20% in terms of time and budget, which will give additional time to deal with unexpected occurrences.{{% /fragment %}}
+{{% fragment %}} * A good idea is to build in a safety margin of 20% in terms of time and budget, which will give additional time to deal with unexpected occurrences.{{% /fragment %}}
 
-{{% fragment %}} Once the requirements have been set, it is important to make sure that the team has access to them to minimize risk.{{% /fragment %}}
+{{% fragment %}} * Once the requirements have been set, it is important to make sure that the team has access to them to minimize risk.{{% /fragment %}}
 
 ---
 ## Jira

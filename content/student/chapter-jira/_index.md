@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 weight = 05
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/scrum/scrumrugby.jpg" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-pm.gif" %}}
 
 ---
 

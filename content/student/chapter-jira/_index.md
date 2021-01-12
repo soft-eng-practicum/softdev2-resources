@@ -7,6 +7,15 @@ weight = 05
 {{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-pm.png" %}}
 
 ---
+### Project Management (PM)
+
+What is Project Management?
+
+{{% fragment %}} **Project management** is the process of matching a project's goals, tasks, and resources to accomplish a goal considering also constrains like limited time, money, and resources (people and tools) with which to accomplish the goal. {{% /fragment %}}
+
+{{% fragment %}} {{< figure src="/softdev2-resources/images/pm/projectpm.png" width=400 >}} {{% /fragment %}}
+
+---
 
 ## Jira
 

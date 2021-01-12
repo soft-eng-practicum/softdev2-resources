@@ -28,11 +28,9 @@ iteration and improvement on a goal which has been sufficiently accomplished.
 ---
 ### Project Step 2: Define project tasks/activities
 
-Each goal or sub-set of goals should be matched to the tasks required to accomplish them. 
+Each goal or sub-set of goals should be matched to the tasks required to accomplish them. Team should agree on the respective tasks that will define the success of the goal.
 
 {{< figure src="/softdev2-resources/images/pm/goaltasks.png" height=400 >}}
-
-Team should agree on the respective tasks that will define the success of the goal.
 
 ---
 ## Jira

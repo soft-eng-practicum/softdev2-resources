@@ -30,7 +30,7 @@ iteration and improvement on a goal which has been sufficiently accomplished.
 
 Each goal or sub-set of goals should be matched to the tasks required to accomplish them. 
 
-{{< figure src="/softdev2-resources/images/pm/goaltasks.png" height=700 >}}
+{{< figure src="/softdev2-resources/images/pm/goaltasks.png" height=400 >}}
 
 Team should agree on the respective tasks that will define the success of the goal.
 

@@ -13,10 +13,28 @@ What is Project Management?
 
 {{% fragment %}} **Project management** is the process of matching a project's goals, tasks, and resources to accomplish a goal considering also constrains like limited time, money, and resources (people and tools) with which to accomplish the goal. {{% /fragment %}}
 
-{{% fragment %}} {{< figure src="/softdev2-resources/images/pm/projectpm.png" width=400 >}} {{% /fragment %}}
+{{% fragment %}} {{< figure src="/softdev2-resources/images/pm/projectpm.png" width=600 >}} {{% /fragment %}}
 
 ---
+### Project Step 1: Defining the goals of the project
 
+- entire team must participate
+- each team member must understand these goals
+- step ends with a list of goals and a statement of success
+
+Defining success is necessary to make sure there is no ambiguity as to whether the goal has been accomplished or not. It also prevents teams from performing unnecessary
+iteration and improvement on a goal which has been sufficiently accomplished.
+
+---
+### Project Step 2: Define project tasks/activities
+
+Each goal or sub-set of goals should be matched to the tasks required to accomplish them. 
+
+{{< figure src="/softdev2-resources/images/pm/goaltasks.png" height=700 >}}
+
+Team should agree on the respective tasks that will define the success of the goal.
+
+---
 ## Jira
 
 {{% fragment %}} <p align='left'> * Originally proposed by Jeff Sutherland in 90s, then improved by Schwaber and Beedle </p> {{% /fragment %}}
@@ -25,7 +43,7 @@ What is Project Management?
 
 {{% fragment %}} <p align='left'> * Takeuchi and Nonaka compare high-performing, cross-functional teams to the scrum formation used by Rugby teams. </p> {{% /fragment %}} 
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
+{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" height=400 >}}
 
 ---
 

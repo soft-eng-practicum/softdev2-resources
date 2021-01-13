@@ -52,17 +52,16 @@ DO NOT:
 ---
 ### Project Step 4: Identify risks and develop backup plans
 
-{{% fragment %}} Projects always involve an amount of uncertainty (risk) that may lead to problems and surprises during the project development. {{% /fragment %}} 
+{{% fragment %}} Projects always involve an **amount of uncertainty (risk)** that may lead to problems and surprises during the project development. {{% /fragment %}} 
 {{% fragment %}} As a professional you will be required to help get the job done. You must learn how to deal with surprises and adversity, and not be pushed around by them. {{% /fragment %}}
 
 {{% fragment %}} Risk management is important as it helps the team accomplish the project with as little trouble as possible, and could be very complex.{{% /fragment %}}
-{{% fragment %}} One simple idea is to identify the risks for each task and build a backup plan to help keep you on schedule.
 
-{{< figure src="/softdev2-resources/images/pm/taskrisk.png" height=200 >}}
+{{% fragment %}} One simple idea is to identify the risks for each task and build a backup plan to help keep you on schedule.
+{{< figure src="/softdev2-resources/images/pm/taskrisk.png" height=150 >}}
 {{% /fragment %}}
 
 ---
-
 {{% slide notes="As an AGILE TEAM MEMBER, if you are waiting on a team member to accomplish a task and they are behind, it is your responsibility to help them in any way you can. If you cannot help them, you must make sure they get the help to accomplish their task. Any excuse makes you look like you are not a team player." %}}
 
 ---

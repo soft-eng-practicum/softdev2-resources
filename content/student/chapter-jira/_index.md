@@ -61,12 +61,46 @@ DO NOT:
 {{< figure src="/softdev2-resources/images/pm/taskrisk.png" height=150 >}}
 {{% /fragment %}}
 
-{{% note %}}
-- You found the **speaker notes**!
-{{% /note %}}
-
 ---
 {{% slide notes="As an AGILE TEAM MEMBER, if you are waiting on a team member to accomplish a task and they are behind, it is your responsibility to help them in any way you can. If you cannot help them, you must make sure they get the help to accomplish their task. Any excuse makes you look like you are not a team player." %}}
+
+---
+### Project Step 5: Develop a schedule
+
+Develop a schedule that includes the tasks, people responsible for these tasks, and a timeline.
+
+{{< figure src="/softdev2-resources/images/pm/gantt-schedule.png" height=300 >}}
+
+---
+### Project Step 6: Execute the schedule
+
+During this stage, the project manager is responsible for coordinating, though group members should communicate among themselves as required. 
+
+Each team member should document their activities during this step. 
+
+---
+### Project Step 7: Finish the project and assessing performance 
+
+After the goals have been achieved, it is good practice to evaluate the performance of the project team. We call this **retrospective session**.
+
+{{% fragment %}} To review the team's performance we will use **Burndown** ([see](../chapter-agiledevelopment/chapter-scrum/#/11)) and **Velocity** charts. {{% /fragment %}}
+
+{{% fragment %}} Velocity is the amount of work a team can handle during a set period of time (sprint). {{% /fragment %}}
+{{% fragment %}} The velocity chart is a visual representation of the project’s progress. {{% /fragment %}}
+
+{{% fragment %}} Managers use velocity to measure the rate at which an Agile development team delivers value to a business.
+{{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height=200 >}}
+{{% /fragment %}}
+
+---
+### Project Management in Our Case
+
+{{% fragment %}} * We are using AGILE during the semester, with the project being split int 3 main phases ([see](../chapter-project-design/) for details on each phase). Thus, Steps 1-7 need to be implemented for each of these phases. {{% /fragment %}}
+
+{{% fragment %}} * To help the project management process and the team build up a schedule and keep track of the tasks, we will be using a project management tool called [Jira](https://www.atlassian.com/software/jira) 
+
+{{< figure src="/softdev2-resources/images/pm/jira.png" height=300 >}}
+{{% /fragment %}}
 
 ---
 ## Jira

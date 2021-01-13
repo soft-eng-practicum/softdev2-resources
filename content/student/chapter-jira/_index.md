@@ -87,6 +87,7 @@ After the goals have been achieved, it is good practice to evaluate the performa
 
 {{% fragment %}} Velocity is the amount of work a team can handle during a set period of time (sprint). {{% /fragment %}}
 {{% fragment %}} The velocity chart is a visual representation of the project’s progress. {{% /fragment %}}
+
 {{% fragment %}} Managers use velocity to measure the rate at which an Agile development team delivers value to a business.
 {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height=200 >}}
 {{% /fragment %}}
@@ -94,7 +95,7 @@ After the goals have been achieved, it is good practice to evaluate the performa
 ---
 ### Project Management in Our Case
 
-{{% fragment %}} * We are using AGILE during the semester, with the project being split int 3 main phases [see](../chapter-project-design/) for details on each phase. So, Steps 1-7 need to be implemented for each of these phases. {{% /fragment %}}
+{{% fragment %}} * We are using AGILE during the semester, with the project being split int 3 main phases ([see](../chapter-project-design/) for details on each phase). Thus, Steps 1-7 need to be implemented for each of these phases. {{% /fragment %}}
 
 {{% fragment %}} * To help the project management process and the team build up a schedule and keep track of the tasks, we will be using a project management tool called [Jira](https://www.atlassian.com/software/jira) 
 

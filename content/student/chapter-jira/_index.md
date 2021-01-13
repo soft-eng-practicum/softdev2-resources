@@ -87,8 +87,7 @@ After the goals have been achieved, it is good practice to evaluate the performa
 {{% fragment %}} We suggest using **Burndown charts** (see Agile Development/Schum p.12) and **Velocity Charts** to review the performance of the team. {{% /fragment %}}
 
 {{% fragment %}} Managers use velocity to measure the rate at which an Agile development team delivers value to a business. {{% /fragment %}}
-{{% fragment %}} Velocity is the amount of work a team can handle in a set period of time (sprint). The velocity chart is a visual representation of the project’s progress that highlights the overall status of the project and the team’s agility during sprint phases.{{% /fragment %}}
-
+{{% fragment %}} Velocity is the amount of work a team can handle in a set period of time (sprint). The velocity chart is a visual representation of the project’s progress that highlights the overall status of the project and the team’s agility during sprint phases.
 
 {{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height=400 >}}
 {{% /fragment %}}

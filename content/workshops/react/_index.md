@@ -13,8 +13,9 @@ weight = 03 # chapter number
 - this will be a react workshop for beginner and intermediate levels.
 
 
-Work in progress ...
-
+### React Js 
+**-A JavaScript library for building user interfaces-**
+For web as well as mobile applications
 
 
 We will also add slides of the workshops...

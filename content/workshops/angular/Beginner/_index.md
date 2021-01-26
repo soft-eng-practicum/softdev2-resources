@@ -16,8 +16,9 @@ by Christopher Martinez
  
 ---
 ## First things first! download content
+- git clone (link here)
 
- <h4>Command Prompt</h4>
+ - <h2>Command Prompt</h2>
  <ul>
  <li>cd Desktop/demo/SID</li>
  <li>code .</li>

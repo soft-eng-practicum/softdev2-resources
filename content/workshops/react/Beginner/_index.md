@@ -15,7 +15,7 @@ weight = 01 # chapter number
 
 
 ---
-### What is React?
+### What is React Js?
 
  <h4>A JavaScript library for building user interfaces</h4>
  <h6>For web as well as mobile applications</h6>
@@ -24,13 +24,17 @@ weight = 01 # chapter number
 ---
   
 ### 
-<p>It is an open-source, reusable component based front-end library</p>
-<p>In a model view controller architecture, react is the "view" which is responsible for how 
-  the app looks and feels"</p>
-<p>Currently one of the most popular libraries for building Javascript libraries"</p>
-
+<ul>
+<li>It is an open-source, reusable component based front-end library</li>
+<li>In a model view controller architecture, react is the "view" which is responsible for how 
+  the app looks and feels"</li>
+<li>Currently one of the most popular libraries for building Javascript libraries"</li>
+</ul>
 
 ---
 
-### Slide 4
-Work in progress...
+### Components
+<h2>A piece of the Ui</h2>
+<p>Independent, isolated, and reuable components, which become the building blocks to 
+a more complex user interface.</p>
+

@@ -8,7 +8,7 @@ weight = 01 # chapter number
   
 ---
 
-## Welcome to the React for beginners course
+### Welcome to the React for beginners course
 
 
  

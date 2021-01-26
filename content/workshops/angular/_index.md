@@ -10,17 +10,8 @@ weight = 01 # chapter number
   
 ---
 
-## Welcome
+## Angular Services
 
-- Angular workshop for beginners and Intermediate.
-
-
-Work in progress ...
-
-
-
-We will also add slides of the workshops...
-
-
+- Christopher Martinez
 
 ---

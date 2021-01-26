@@ -15,17 +15,19 @@ weight = 01 # chapter number
 
 
 ---
-## What is React?
+### What is React?
 
  <h4>A JavaScript library for building user interfaces</h4>
- <h5>For web as well as mobile applications<h5>
+ <h6>For web as well as mobile applications</h6>
  <p>Developed by a team at Facebook in 2011</p>
+  
 ---
   
-## Getting Started
-
- <h4>Command Prompt</h4>
- - cd Deskop/demo/SID
+### 
+<p>It is an open-source, reusable component based front-end library</p>
+<p>In a model view controller architecture, react is the "view" which is responsible for how 
+  the app looks and feels"</p>
+<p>Currently one of the most popular libraries for building Javascript libraries"</p>
 
 
 ---

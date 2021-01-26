@@ -16,7 +16,7 @@ by Christopher Martinez
  
 ---
 ## First things first! download content
- git clone (link here)
+ git clone (link here)<br>
  use the command prompt
  <ul>
  <li>cd Desktop/demo/SID</li>

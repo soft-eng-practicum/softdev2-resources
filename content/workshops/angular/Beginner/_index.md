@@ -2,7 +2,7 @@
 title = "Angular for Beginners"
 outputs = ["Reveal"]
 weight = 01 # chapter number
-author = "Chris Martinez"
+author = "Christopher Martinez"
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" >}}
@@ -11,14 +11,13 @@ author = "Chris Martinez"
 
 ## Welcome to Angular for beginners!!!
 
- <img class="fragment" src="/softdev2-resources/images/angular/angular-icon-logo.png" width="200" height="200">
+ <img src="/softdev2-resources/images/angular/angular-icon-logo.png" width="200" height="200">
 by Christopher Martinez
  
 ---
 ## First things first! download content
 - git clone (link here)
-
- - <h2>Command Prompt</h2>
+- use the command prompt
  <ul>
  <li>cd Desktop/demo/SID</li>
  <li>code .</li>

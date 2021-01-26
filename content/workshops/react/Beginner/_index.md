@@ -17,8 +17,8 @@ weight = 01 # chapter number
 ---
 ### What is React Js?
 
- <h4>A JavaScript library for building user interfaces</h4>
- <h6>For web as well as mobile applications</h6>
+ <h4>-A JavaScript library for building user interfaces-</h4>
+ <h6>-For web as well as mobile applications-</h6>
  <p>Developed by a team at Facebook in 2011</p>
   
 ---
@@ -34,7 +34,11 @@ weight = 01 # chapter number
 ---
 
 ### Components
-<h2>A piece of the Ui</h2>
+<h2>-A piece of the Ui-</h2>
 <p>Independent, isolated, and reuable components, which become the building blocks to 
 a more complex user interface.</p>
+
+---
+### App
+<h2>-Root Component-</h2>
 

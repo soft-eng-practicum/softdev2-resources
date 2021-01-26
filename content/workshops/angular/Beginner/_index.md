@@ -16,9 +16,9 @@ by Christopher Martinez
  
 ---
 ## First things first! download content
-<ul> git clone (link here)<br><br>
+<ul> - git clone (link here)<br>
  
- use the command prompt to install the node package manager on your computer<br>
+ - use the command prompt to install the node package manager on your computer<br><br>
  
  <ul>
     <li>cd Desktop/demo/SID</li>

@@ -17,8 +17,9 @@ by Christopher Martinez
 ---
 ## First things first! download content
 
- <h2>Command Prompt</h2>
- command prompt
+ <h4>Command Prompt</h4>
+ cd Deskop/demo/SID
+ code .
 
 
 ---

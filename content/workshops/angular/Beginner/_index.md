@@ -40,7 +40,8 @@ the code works!! but not efficient...<br><br>
       <li>Making copies of code</li>
       <li>Revisiting multiple classes for the same code</li>
     </ul>
+  <br><br>
   <li>Modeling - grabbing and manupulation of data</li>
-    <ul>This is where we interact with the database/communicates with controller</ul>
+    <ul><li>This is where we interact with the database/communicates with controller<li></ul>
 </ul>
 

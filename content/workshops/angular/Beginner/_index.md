@@ -18,7 +18,7 @@ by Christopher Martinez
 ## First things first! download content
 <ul> <li>git clone (link here)</li> <br>
  
-  <li>use the command prompt to install the node package manager on your computer</li> <br><br>
+  <li>use the command prompt to install the node package manager on your computer</li> <br>
  
  <ul>
     <li>cd Desktop/demo/SID</li>
@@ -34,5 +34,13 @@ by Christopher Martinez
 
 ### Why is this code wrong?
 the code works!! but not efficient...<br><br>
-- DRY - Don't Repeat Yourself!
+<ul> 
+  <li>DRY - Don't Repeat Yourself!</li>
+    <ul>
+      <li>Making copies of code</li>
+      <li>Revisiting multiple classes for the same code</li>
+    </ul>
+  <li>Modeling - grabbing and manupulation of data</li>
+    <ul>This is where we interact with the database/communicates with controller</ul>
+</ul>
 

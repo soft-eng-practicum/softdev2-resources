@@ -4,8 +4,8 @@ outputs = ["Reveal"]
 weight = 01 # chapter number
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="10" height="10"
-link="https://dilbert.com/strip/1998-11-10"  author="Chris Martinez">}}
+{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100"
+ author="Chris Martinez">}}
   
 ---
 

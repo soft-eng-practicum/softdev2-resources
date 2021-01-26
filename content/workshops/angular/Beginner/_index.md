@@ -19,7 +19,6 @@ by Christopher Martinez
 
  <h4>Command Prompt</h4>
  - cd Deskop/demo/SID
- - code .
 
 
 ---

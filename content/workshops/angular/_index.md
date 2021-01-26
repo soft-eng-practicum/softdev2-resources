@@ -3,9 +3,9 @@ title = "Angular Workshops"
 weight = 01 # chapter number
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="10" height="10" author="Chris Martinez">}}
+{{< reveal-titlepage author="Chris Martinez">}}
 
-<img class="fragment" src="/softdev2-resources/images/angular/angular-icon-logo.png" width="10" height="10">
+<img class="fragment" src="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100">
   
 ---
 

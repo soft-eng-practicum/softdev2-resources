@@ -19,9 +19,10 @@ by Christopher Martinez
 
  <h4>Command Prompt</h4>
  <ul>
- <li>a</li>
- <li>b</li>
- <li>c</li>
+ <li>cd Desktop/demo/SID</li>
+ <li>code .</li>
+ <li>npm install -g npm</li>
+ <li>ng serve -o</li>
  </ul>
 
 

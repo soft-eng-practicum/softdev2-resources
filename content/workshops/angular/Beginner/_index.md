@@ -42,6 +42,11 @@ the code works!! but not efficient...<br><br>
     </ul>
   <br><br>
   <li>Modeling - grabbing and manupulation of data</li>
-    <ul><li>This is where we interact with the database/communicates with controller<li></ul>
+    <ul><li>This is where we interact with the database/communicates with controller</li></ul>
 </ul>
+
+
+---
+
+
 

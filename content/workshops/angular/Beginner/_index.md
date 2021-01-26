@@ -18,9 +18,11 @@ by Christopher Martinez
 ## First things first! download content
 
  <h4>Command Prompt</h4>
- - cd Deskop/demo/SID
- 
- - test
+ <ul>
+ <li>a</li>
+ <li>b</li>
+ <li>c</li>
+ </ul>
 
 
 ---

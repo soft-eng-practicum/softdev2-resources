@@ -16,10 +16,9 @@ by Christopher Martinez
  
 ---
 ## First things first! download content
- <textarea data-template>
+
  <h2>Command Prompt</h2>
  command prompt
- </textarea>
 
 
 ---

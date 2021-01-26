@@ -16,17 +16,23 @@ by Christopher Martinez
  
 ---
 ## First things first! download content
- git clone (link here)<br>
- use the command prompt
+<ul> git clone (link here)<br><br>
+ 
+ use the command prompt to install the node package manager on your computer<br>\
+ 
  <ul>
- <li>cd Desktop/demo/SID</li>
- <li>code .</li>
- <li>npm install -g npm</li>
- <li>ng serve -o</li>
+    <li>cd Desktop/demo/SID</li>
+    <li>code .</li>
+    <li>npm install -g npm</li>
+    <li>ng serve -o</li>
  </ul>
+</ul>
 
+<br>(still need picture...)
 
 ---
 
-### Slide 4
-Work in progress...
+### Why is this code wrong?
+the code works!! but not efficient...<br><br>
+- DRY - Don't Repeat Yourself!
+

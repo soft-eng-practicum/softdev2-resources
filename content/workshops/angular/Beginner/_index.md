@@ -18,8 +18,8 @@ by Christopher Martinez
 ## First things first! download content
 
  <h4>Command Prompt</h4>
- cd Deskop/demo/SID
- code .
+ - cd Deskop/demo/SID
+ - code .
 
 
 ---

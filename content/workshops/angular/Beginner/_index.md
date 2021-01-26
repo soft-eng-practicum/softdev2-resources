@@ -11,12 +11,18 @@ weight = 01 # chapter number
 
 ## Welcome to Angular for beginners!!!
 
-Work in progress...
-
+ <img class="fragment" src="/softdev2-resources/images/angular/angular-icon-logo.png" width="200" height="200">
+by Christopher Martinez
+ 
 ---
-## Slide 3
+## First things first! download content
+- git clone (link)
+-Command prompt
+ -cd Desktop/demo/SID
+ -code .
+ -npm install -g npm
+ -ng serve -o
 
-Work in progress...
 
 ---
 

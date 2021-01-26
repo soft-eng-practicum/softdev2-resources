@@ -16,12 +16,10 @@ by Christopher Martinez
  
 ---
 ## First things first! download content
-- git clone (link)
--Command prompt
- -cd Desktop/demo/SID
- -code .
- -npm install -g npm
- -ng serve -o
+ <textarea data-template>
+ <h2>Command Prompt</h2>
+ command prompt
+ </textarea>
 
 
 ---

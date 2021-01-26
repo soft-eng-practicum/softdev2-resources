@@ -1,5 +1,5 @@
 +++
-title = "Angular for Beginners"
+title = "React for Beginners"
 outputs = ["Reveal"]
 weight = 01 # chapter number
 +++

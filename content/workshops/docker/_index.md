@@ -1,0 +1,171 @@
++++
+date = "2021-01-5T12:00:00Z"
+lastmod = "2021-01-5T12:00:00Z"
+publishdate = "2021-01-5T12:00:00Z"
+
+title = "Docker Workshop"
+description = "This workshop will cover the basics of Docker"
+author = "Ryan Cosentino"
+
+weight = -5
+
+outputs = ["Reveal"]
++++
+
+{{< slide background="#0ea5e6" >}}
+
+## Welcome to the Docker Workshop
+
+*(Work in Progress)*
+
+Ryan Cosentino
+
+<img src="/softdev2-resources/images/docker/docker.png" alt="Docker Logo" width="400"/>
+
+---
+
+{{< slide background="#0ea5e6" >}}
+
+## What is Docker?
+
+Docker is an OS-level virtualization software that is used to build and run isolated software environments called containers.
+
+{{% fragment %}}
+#### What does containerization mean?
+
+With virtual machines that you get from VirtualBox, entire operating systems are virtualized. While this allows for greater flexibility, it comes with a considerable performance cost. On the other hand, containerization (which is a type of OS-level virtualization) involves isolating running processes at the OS level, meaning that while processes are in a way isolated from one another, they still share the same underlying operating system with the host.
+{{% /fragment %}}
+
+---
+
+{{< slide background="#0ea5e6" >}}
+
+<img src="/softdev2-resources/images/docker/container-vs-vm.jpg" alt="container vs vm" width="800"/>
+
+[(Image Source)](https://www.weave.works/blog/a-practical-guide-to-choosing-between-docker-containers-and-vms)
+
+In a way Docker is similar to virtual desktops in Windows or macOS where you can isolate open windows into different desktops. Although the windows in one desktop are isolated from those in another, they are still ordinary programs and not at all "virtualized" in the virtual machine sense. In this example different windows are isolated with help from the window manager, however with Docker processes are isolated at the kernel level. The specific technologies that make this possible will be summarized at the end.
+
+---
+
+{{< slide background="#0ea5e6" >}}
+
+## Installing Docker
+
+First download and install [Docker Desktop](https://www.docker.com/products/docker-desktop).
+
+In order to use the Docker command line client, Docker Desktop must be running. To verify that Docker is installed and running, execute the following in your terminal:
+```sh
+$ docker version
+```
+
+The output should contain a section for
+- Client: Docker Engine - Community, and
+- Server: Docker Engine - Community
+
+---
+
+## Images and Containers
+
+**Images** are read only templates containing libraries, programs, data etc. that are used to create docker containers. A **container** is a runnable instance of an image. To use an OOP analogy, you can think of images as classes and containers as instances.
+
+{{% fragment %}}
+[Docker Hub](https://hub.docker.com/) is the largest public registry of Docker images and contains images ranging from Linux distributions like Ubuntu or Debian to collections of prepackaged software like MySQL or PostgreSQL. Images can be tagged such as
+- `python:3.9.1` aka Python version 3.9.1
+- `python:3.9.1-buster` based on the Debian 10 (Buster) Linux distribution
+- `python:3.9.1-alpine` based on the minimal Linux distribution Alpine
+
+If a tag isn't supplied, Docker will use the `:latest` tag.
+{{% /fragment %}}
+
+---
+
+## First Container
+
+First we'll create and run an Ubuntu container:
+
+```sh
+$ docker run -it --rm ubuntu bash
+```
+where
+- `-it` is short for `--interactive --tty` and starts the container in interactive mode
+- `--rm` deletes the container after it exits (but not the image)
+- `ubuntu` is the name of the image
+- `bash` is the command executed when the container starts<br>
+(technically bash is already the default entrypoint for the Ubuntu image and is only used here to showcase the [COMMAND] argument)
+
+---
+
+## First Container
+
+If this is your first time using the Ubuntu image Docker will first download it from Docker Hub. If everything has gone according to plan, you should see a new prompt similar to
+```sh
+root@a5d9a7a5232c:/#
+```
+
+{{% fragment %}}
+You can try running commands like `ls` to list files and folders:
+```sh
+$ ls
+bin  boot  dev  etc  home  lib  ...  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+```
+
+or `ps aux` to list running processes:
+```sh
+$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  1.0  0.1   4112  3492 pts/0    Ss   17:13   0:00 /bin/bash
+root        10  0.0  0.1   5900  3024 pts/0    R+   17:13   0:00 ps aux
+```
+
+---
+
+## First Container
+
+To quit, run the command `exit`. Since `bash` (PID 1) was the initial process used to start the container, once it exits, the container stops.
+
+Because we used the `--rm` option, Docker should delete the container once it exits which you can verify by typing
+```sh
+$ docker container ls -a
+```
+however the Ubuntu image should still be saved locally:
+```sh
+$ docker image ls
+```
+
+You could also try running Python instead of bash:
+```sh
+docker run -it --rm python:slim python
+```
+{{% /fragment %}}
+
+---
+
+## Dockerfiles
+
+Say you'd like to slightly customize an image available on Docker Hub. If your trying to run a Python application you could start off with the image `python:slim`, add your application, and install any dependencies to create an image specific to your app. This is done using a Dockerfile.
+
+(I'm sure you've seen plenty in GitHub repositories before).
+
+---
+
+## Dockerfiles
+
+work in progress
+
+---
+
+## How Docker Works
+
+On Linux, Docker utilizes two technologies of the Linux kernel to achieve this isolation:
+- [Namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) are used to isolate kernel resources such as mounted file systems, hostnames, process IDs, and user IDs. A single container will have a namespace for each of these resources.
+
+- [cgroups](https://en.wikipedia.org/wiki/Cgroups) (control groups) are used to isolate system resources such as CPU, memory, disk I/O, and networking.
+
+---
+
+## How Docker Works
+
+Essentially, whenever a process tries to access kernel resources, the kernel uses the process's allocated namespace to determine which resource to provide. For example, in a container's PID namespace Apache might be running with process ID 1, but it might have process ID 650 in the initial ("root") PID namespace that was created when the computer started. From the root PID namespace's perspective, Apache is just another process along with all the other processes running on the operating system, however from Apache's perspective, it looks like it's running alone with possibly a few additional processes used in the container. Other resources can also be containerized in this way. In one container the path `/bin/bash` could point to the Bourne Again Shell executable while in another container the file might not exist. This determination is made at the kernel level and completely transparent to the processes running inside the container.
+
+While a technical understanding of technologies mentioned above isn't necessary to effectively use Docker, it often helps in understanding the "why" aspect of many components of Docker. For more details on how container can be implemented, check out this [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) where a simple version of Docker is implemented in Go.

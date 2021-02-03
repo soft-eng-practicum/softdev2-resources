@@ -18,6 +18,7 @@ by Christopher Martinez
 ## Prerequisite
 <ul>
   <li>Install <a href="https://nodejs.org/en/">NodeJS</a></li>
+  <br>
   <li>Command Prompt/Terminal</li>
     <ul>
       <li>Check node version using the <b><em>node –v</em></b> command</li>
@@ -25,16 +26,17 @@ by Christopher Martinez
       <li><b><em>npm install -g @angular/cli</b></em> to install Angular CLI</li>
       <li>Type <b><em>ng version</b></em> to check the version of Angular CLI</li>
     </ul>
+  <br>
   <li>We will use <a href="https://code.visualstudio.com/download">VSCode</a> and 
     <a href="https://git-scm.com/downloads">Gitbash</a> for this workshop</li>
 </ul>
 
 ---
 ## Download content 
-<ul> <li>git clone (link here)</li> <br>
- 
-  <li>Command Prompt/Terminal: </li> <br>
- 
+<ul> <li>git clone (link here)</li> 
+ <br>
+  <li>Command Prompt/Terminal: </li> 
+ <br>
  <ul>
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
@@ -50,7 +52,7 @@ by Christopher Martinez
 
 ---
 
-### Why is this code wrong?
+## Why is this code wrong?
 the code works!! but not efficient...<br><br>
 <ul> 
   <li>DRY - Don't Repeat Yourself!</li>
@@ -65,6 +67,24 @@ the code works!! but not efficient...<br><br>
 
 
 ---
+## Picture of components
 
+(to be added soon...)
 
+---
 
+## Angular Service Information
+<ul>
+  <li>It is a category that focus a value or feature an application needs.</li>
+   <li>It can be used:</li>
+    <ul>
+      <li>to share data through many components at once.</li>
+      <li>as a backend in angular to test code.</li>
+      <li>to connect to a database.</li>
+    </ul>
+</ul>
+
+---
+
+## Let get started
+ 

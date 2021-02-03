@@ -15,7 +15,14 @@ author = "Christopher Martinez"
 by Christopher Martinez
  
 ---
-## First things first! download content
+## Prerequisite
+<ul>
+  <li>Install <a href="https://nodejs.org/en/">NodeJS</a></li>
+
+</ul>
+
+---
+## Download content 
 <ul> <li>git clone (link here)</li> <br>
  
   <li>use the command prompt to install the node package manager on your computer</li> <br>

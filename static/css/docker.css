@@ -1,0 +1,37 @@
+::selection {
+	color: inherit;
+	background: lightskyblue;
+}
+
+.slide {
+	background-color: lightblue;
+}
+
+.reveal a,
+.home-link {
+	color: blue;
+}
+.reveal a:hover,
+.home-link:hover {
+	color: dodgerblue;
+}
+
+.home-link {
+	font-family: "Roboto Slab", serif;
+	text-decoration: none;
+}
+
+.reveal .controls {
+	color: darkblue;
+}
+
+.reveal .progress {
+	color: cadetblue;
+}
+
+/* Make code blocks round + shadow */
+div.highlight pre {
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 10px;
+}

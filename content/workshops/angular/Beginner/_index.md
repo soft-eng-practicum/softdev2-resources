@@ -87,4 +87,31 @@ the code works!! but not efficient...<br><br>
 ---
 
 ## Let get started
+<ul>
+<li>Make a student.service.ts file</li>
+  <ul><li>In order to provide the student data we need the service to handle that aspect of the code (picture here...)</li></ul>
+<br>
+<li>Make a “Server” using a Http Request and an observable</li>
+  <ul><li>Get  an http request to the “server” to then return as an observable to student.service.ts and to the list and details.</li></ul>
+</ul>
+
+(Picture here...)
+
+
+
+
+---
+
+## Http Client
+<ul>
+  <li>Add import <b><em>{ HttpClientModule } from '@angular/common/http';</em></b>in the <em>app.module.ts</em> </li>
+  <li>Add <b><em>HttpClientModule</em><b> under <em>imports</em> </li>
+  <li>Add <b><em>StudentService</em><b> under <em>providers</em></li>
+</ul>
+
+(picture here...)
+
+
+---
+
  

@@ -104,9 +104,9 @@ the code works!! but not efficient...<br><br>
 
 ## Http Client
 <ul>
-  <li>Add import <b><em>{ HttpClientModule } from '@angular/common/http';</em></b>in the <em>app.module.ts</em> </li>
-  <li>Add <b><em>HttpClientModule</em><b> under <em>imports</em> </li>
-  <li>Add <b><em>StudentService</em><b> under <em>providers</em></li>
+  <li>Add import <b><em>{ HttpClientModule } from '@angular/common/http';</em></b> in the <em>app.module.ts</em> </li>
+  <li>Add <b><em>HttpClientModule</em></b> under <em>imports</em> </li>
+  <li>Add <b><em>StudentService</em></b> under <em>providers</em></li>
 </ul>
 
 (picture here...)

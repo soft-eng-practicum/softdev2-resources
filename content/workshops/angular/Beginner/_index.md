@@ -33,7 +33,7 @@ by Christopher Martinez
 
 ---
 ## Download content 
-<ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
+<ul> <li>git clone</li> 
  <br>
   <li>Command Prompt/Terminal: </li> 
  <br>

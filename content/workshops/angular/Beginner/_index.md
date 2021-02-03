@@ -52,3 +52,18 @@ by Christopher Martinez
 
 ---
 
+## Why is this code wrong?
+the code works!! but not efficient...<br><br>
+<ul> 
+  <li>DRY - Don't Repeat Yourself!</li>
+    <ul>
+      <li>Making copies of code</li>
+      <li>Revisiting multiple classes for the same code</li>
+    </ul>
+  <br><br>
+  <li>Modeling - grabbing and manupulation of data</li>
+    <ul><li>This is where we interact with the database/communicates with controller</li></ul>
+</ul>
+
+
+---

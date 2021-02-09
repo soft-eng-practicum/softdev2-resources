@@ -42,7 +42,7 @@ by Christopher Martinez
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
       <ul><li>NOTE:this command is to open VSCode through the command line/terminal</li></ul>
-    <li>npm install the npm install -g npm</li>
+    <li><b><em>npm install</b></em> then <b><em>npm install -g npm</b></em></li>
        <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repositoty</li></ul>
     <li>ng serve -o</li>
        <ul><li>NOTE:this command is to open the html to the browser</li></ul>
@@ -52,4 +52,16 @@ by Christopher Martinez
 <br>(still need picture...)
 
 ---
+## Why is this code wrong?
+<ul>
+  <li>D.R.Y. - Don't Repeat Yourself</li>
+    <ul>
+      <li>Making copies of the code can use up a lot of memory</li>
+      <li>Revisiting multiple classes to change the same code can be time consuming</li>
+    </ul>
+  <li>Modeling - grabbing and Manipulation of Data</li>
+    <ul>
+      <li>Thhis is where we interact with the database/communicate with the controller</li>
+    </ul>
+</ul>
 

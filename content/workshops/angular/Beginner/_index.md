@@ -90,3 +90,24 @@ by Christopher Martinez
           an observable to <em>student.service.ts</em> and to the list <br> 
           and details components.</li></ul>
 </ul>
+
+(picture needed...)
+
+
+---
+## HTTP
+<ul>
+  <li>add <b>import { HttpClientModule } from '@angular/common/http';</b></li>
+  <li>Add <b>HttpClientModule</b> under <em>imports</em></li>
+  <li>Add <b>StudentService</b> under <em>providers</em></li>
+</ul>
+
+<br><br>
+(picture needed...)
+
+
+---
+## Declaring Dependencies for Service
+
+
+---

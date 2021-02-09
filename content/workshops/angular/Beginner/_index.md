@@ -141,3 +141,31 @@ by Christopher Martinez
 
 ---
 ## Make a URL
+<ul>
+  <li>Making this URL will direct it to the JSON file in the data folder</li>
+  
+</ul>
+
+
+---
+## Observable
+<ul>
+  <li>if you hover over the get() method it returns an observable so we need to be<br>
+      casted to match an array of students format in order for it to work. </li>
+  <ul><li>create an interface named <b>student.ts</b> and add the code below.</li></ul>
+</ul>
+<br>
+export interface StuInterface {<br>
+    id: number;<br>
+    name: string;<br>
+    age: number;<br>
+}<br>
+
+<ul>
+<li>going back to the <b>student.service.ts</b> add the <b>StuInterface[]</b> to the <br>
+    get and the <b>getStudents()</b> </li>
+</ul>
+
+
+---
+## Subscribe

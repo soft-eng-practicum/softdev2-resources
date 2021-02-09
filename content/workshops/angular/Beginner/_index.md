@@ -108,6 +108,36 @@ by Christopher Martinez
 
 ---
 ## Declaring Dependencies for Service
-
+<ul>
+  <li>in the <em>student.service.ts</em> under the constructor's parameter, type<br>
+      <b>private http: HttpClient</b> and the import.</li>
+      <ul><li>This uses the local variable http to reference the HttpClient</li></ul>
+  <li>Make a get request</li>
+       <ul><li>This will help when having a URL to get the data from the database. Since we <br>
+               don't have a server we will make one in Angualr using JSON.</ul></li>
+</ul>
+<br><br>
+(Picture here...)
 
 ---
+## Data Folder
+<ul>
+  <li>Under <b>asset</b> make a <b>data</b> folder and make a JSON file name <b>students.json</b></li>
+  <li>After that copy and paste the data below and delete the one from <br>
+      student-list & student-details</li>
+  [
+  {"id": 1, "name": "Chris", "age": 21},
+  {"id": 2, "name": "Denzel", "age": 21},
+  {"id": 3, "name": "David", "age": 21},
+  {"id": 4, "name": "Danielle", "age": 21},
+  {"id": 5, "name": "Josh", "age": 21},
+  {"id": 6, "name": "Anne", "age": 21},
+  {"id": 7, "name": "Anca", "age": 21},
+  {"id": 8, "name": "John", "age": 21}
+]
+</ul>
+
+(picture here...)
+
+---
+## Make a URL

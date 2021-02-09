@@ -163,9 +163,27 @@ export interface StuInterface {<br>
 
 <ul>
 <li>going back to the <b>student.service.ts</b> add the <b>StuInterface[]</b> to the <br>
-    get and the <b>getStudents()</b> </li>
+    get and the <b>getStudents()</b> will return an observable of <b>Stuinterface[]</b>.</li>
 </ul>
-
-
+<br>
+(picture here...)
 ---
 ## Subscribe
+<ul>
+  <li>We need to subscribe to the data so that we can retrieve it.</li>
+  <ul><li>add <b>private _studentService: StudentService</b> in the constructor parameters</li>
+      <li>Add <b>this._studentService.getStudents().subscribe(data => this.students = data);</b><br>
+          in ngOnInit().</li>
+      <li>This goes for both <em>student-list</em> and <em>student-details</em> html.</li>
+  </ul>
+</ul>
+
+(Picture here....)
+
+---
+## Conclusion
+<ul><li>As we see if we add something to the json file, it should add it to both pages amd there<br>
+        is no need for repeating code.</li>
+</ul>
+     
+(Picture here...)

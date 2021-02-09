@@ -23,7 +23,8 @@ by Christopher Martinez
     <ul>
       <li>Check node version using the <b><em>node –v</em></b> command</li>
       <li>To check if you have npm run the <b><em>npm –v</b></em> to see if it is installed</li>
-      <li><b><em>npm install</b></em> then <b><em>npm install -g install</b></em> to install all dependancies</li>
+      <li><b><em>npm install -g @angular/cli</b></em> to install all Angular CLI</li>
+        <ul><li>NOTE: The command above installs all necessary dependancies </ul></li>
       <li>Type <b><em>ng version</b></em> to check the version of Angular CLI</li>
     </ul>
   <br>
@@ -41,8 +42,8 @@ by Christopher Martinez
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
       <ul><li>NOTE:this command is to open VSCode through the command line/terminal</li></ul>
-    <li>npm install</li>
-       <ul><li>NOTE:this command is to install npm into the folder you have cloned from the repositoty</li></ul>
+    <li>npm install the npm install -g npm</li>
+       <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repositoty</li></ul>
     <li>ng serve -o</li>
        <ul><li>NOTE:this command is to open the html to the browser</li></ul>
  </ul>

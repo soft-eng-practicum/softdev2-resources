@@ -65,3 +65,18 @@ by Christopher Martinez
     </ul>
 </ul>
 
+
+---
+## Angular Service Information
+<ul>
+   <li>It is a class that focuses on a specific purpose.</li>
+   <li>Its purpose is to: </li>
+      <ul>
+        <li>share data through many components at once.</li>
+        <li>use as a backend in angular to test code.</li>
+        <li>give the possibility to connect to a database if needed</li>
+      </ul>
+</ul>
+
+
+---

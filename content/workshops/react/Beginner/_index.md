@@ -41,11 +41,12 @@ a more complex user interface.</p>
 
 ---
 ###
- <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="200" height="200">
+ <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="600" height="600">
  
+ ---
 ###
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="200" height="200">
- <img src="/softdev2-resources/images/react/twitter-components.png" width="200" height="200">
+ <img src="/softdev2-resources/images/react/twitterpage.jpg" width="600" height="600">
+ <img src="/softdev2-resources/images/react/twitter-components.png" width="600" height="600">
 
 ---
 ### App

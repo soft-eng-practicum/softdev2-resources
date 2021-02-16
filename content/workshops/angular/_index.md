@@ -10,7 +10,7 @@ weight = 02 # chapter number
 
 ## Welcome
 
-- this will be an angular workshop for beginner and intermediate.
+- this will be an angular workshop for beginner and intermediate users.
 
 
 Work in progress ...

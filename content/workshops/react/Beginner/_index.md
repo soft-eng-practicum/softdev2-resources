@@ -45,7 +45,7 @@ a more complex user interface.</p>
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="300" height="300">
+ <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="100" height="300"/>
       </td>
     <td>
  <p>Here we see several components</p>
@@ -66,13 +66,14 @@ a more complex user interface.</p>
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="300" height="300">
+ <img src="/softdev2-resources/images/react/twitterpage.jpg" width="300" height="300"/>
       </td>
     <td>
- <img src="/softdev2-resources/images/react/twitter-components.png" width="300" height="300">
+ <img src="/softdev2-resources/images/react/twitter-components.png" width="300" height="300"/>
       </td>
 </tr>
 </table>
+
 ---
 ### App
 <h2>-Root Component-</h2>

@@ -58,11 +58,20 @@ a more complex user interface.</p>
       </td>
     </tr>
   </table>
+  
+  
  ---
 ###
+<table>
+  <tr>
+    <td>
  <img src="/softdev2-resources/images/react/twitterpage.jpg" width="600" height="600">
+      </td>
+    <td>
  <img src="/softdev2-resources/images/react/twitter-components.png" width="600" height="600">
-
+      </td>
+</tr>
+</table>
 ---
 ### App
 <h2>-Root Component-</h2>

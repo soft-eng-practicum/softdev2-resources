@@ -42,10 +42,10 @@ a more complex user interface.</p>
 ---
 
 ###
-<table>
+<table style ="padding: 0; margin: 0">
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="100" height="300"/>
+ <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="500" height="500"/>
       </td>
     <td>
  <p>Here we see several components</p>

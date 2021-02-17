@@ -42,7 +42,14 @@ a more complex user interface.</p>
 ---
 ###
  <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="600" height="600">
- 
+ <p>Here we see several components</p>
+ <ul>
+  <li>NavBar</li>
+  <li>Feed</li>
+  <li>Who to Follow</li>
+  <li>Profile dashboard</li>
+  <li>Trends</li>
+</ul>
  ---
 ###
  <img src="/softdev2-resources/images/react/twitterpage.jpg" width="600" height="600">

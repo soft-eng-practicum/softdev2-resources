@@ -41,7 +41,12 @@ a more complex user interface.</p>
 
 ---
 ###
+<table>
+  <tr>
+    <td>
  <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="600" height="600">
+      </td>
+    <td>
  <p>Here we see several components</p>
  <ul>
   <li>NavBar</li>
@@ -50,6 +55,9 @@ a more complex user interface.</p>
   <li>Profile dashboard</li>
   <li>Trends</li>
 </ul>
+      </td>
+    </tr>
+  </table>
  ---
 ###
  <img src="/softdev2-resources/images/react/twitterpage.jpg" width="600" height="600">

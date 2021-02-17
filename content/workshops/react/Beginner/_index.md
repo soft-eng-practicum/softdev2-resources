@@ -40,11 +40,12 @@ weight = 01 # chapter number
 a more complex user interface.</p>
 
 ---
+
 ###
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="600" height="600">
+ <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="300" height="300">
       </td>
     <td>
  <p>Here we see several components</p>
@@ -65,10 +66,10 @@ a more complex user interface.</p>
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="600" height="600">
+ <img src="/softdev2-resources/images/react/twitterpage.jpg" width="300" height="300">
       </td>
     <td>
- <img src="/softdev2-resources/images/react/twitter-components.png" width="600" height="600">
+ <img src="/softdev2-resources/images/react/twitter-components.png" width="300" height="300">
       </td>
 </tr>
 </table>

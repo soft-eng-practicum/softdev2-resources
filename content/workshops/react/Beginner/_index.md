@@ -34,8 +34,9 @@ a more complex user interface.</p>
 ---
 ### App
 <h2>-Root Component-</h2>
-<p>Every React application has atleast one component known as the Root Component (Mosy of the time named the App component)</p>
+<p>Every React application has atleast one component known as the Root Component (Most of the time named the App component)</p>
 <p>This component represents the entire application and is where aall the child componts are displayed</p>
+
 ---
 
 ###

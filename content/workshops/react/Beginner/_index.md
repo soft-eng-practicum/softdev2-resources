@@ -2,10 +2,11 @@
 title = "React for Beginners"
 outputs = ["Reveal"]
 weight = 01 # chapter number
-### Welcome to the React for beginners course
-<p>Created by Alex Abraham</p>
+author = "Alex Abraham"
 +++
 
+---
+### Welcome to the React for beginners course
 ---
 ### What is React Js?
 

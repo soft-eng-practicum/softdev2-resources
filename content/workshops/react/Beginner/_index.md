@@ -77,11 +77,14 @@ a more complex user interface.</p>
 </table>
 
 ---
+
 ###
-<h1>Setting up and Getting started!</h1>
+<h1>Getting started!</h1>
+<h6>Installation of NodeJs</h6>
 ---
 ###
-<h1>Install Js</h1>
+
+<h1>Install NodeJs</h1>
 <a href="https://nodejs.org/en/">NodeJS download site</a>
 <p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
 <p> Every time we use npm, we are using NodeJs's packager tool</p>

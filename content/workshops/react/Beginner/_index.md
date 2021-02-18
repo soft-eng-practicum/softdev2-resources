@@ -63,19 +63,35 @@ a more complex user interface.</p>
  ###
  <h2>Twitter Site</h2>
  <p>Take a look at all the <strong>components</strong> (which are all the rectangles with red borders)</p>
- <p><strong>The App (or root component) Component</strong> is the page that is the page itself that is displaying all the components</p>
+ <p><strong>The App (or root component) Component</strong> is the page itself that is displaying all the components</p>
 
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="400"/>
+ <img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350"/>
       </td>
     <td>
- <img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="400"/>
+ <img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350"/>
       </td>
 </tr>
 </table>
 
 ---
 ###
+<h1>Setting up and Getting started!</h1>
+---
+###
+<h1>Install Js</h1>
+<a href="https://nodejs.org/en/">NodeJS download site</a>
+<p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
+<p> Every time we use npm, we are using NodeJs's packager tool</p>
+---
+###
+<p>Open your command prompt/termianl prompt on Windows/Mac</p>
+<p>Type: <strong> node -v</strong></p>
+<p>This is to see our version of nodeJs on our device, if there's an error, nodeJs didnt succesfully download</p>
+<p>Type: <strong> npm i -g create-react-app</strong>(i= stands for install, and -g= stands for global)</p>
+<p>If it works, congrats you've created your very first react app</p>
 
+
+ 

@@ -35,8 +35,8 @@ a more complex user interface.</p>
 ---
 ### App
 <h2>-Root Component-</h2>
-<p>Every React application has atleast one component known as the Root Component (Most of the time named the App component)</p>
-<p>This component represents the entire application and is where aall the child componts are displayed</p>
+<p>Every React application has at least one component known as the Root Component (Most of the time named the App component)</p>
+<p>This component represents the entire application and is where all the child components are displayed</p>
 
 ---
 
@@ -60,14 +60,20 @@ a more complex user interface.</p>
   </table>
  
  ---
+ ###
+ <p>An excellent example webpage for use would be</p>
+ <h2>Twitter</h2>
+ <p>In the next slide, take a look at all the components (which are all the rectangles with red borders).</p>
+ <p>The App (or root component) is the page that is the page itself that is displaying all the components</p>
+ --
 ###
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="300" height="300"/>
+ <img src="/softdev2-resources/images/react/twitterpage.jpg" width="500" height="500"/>
       </td>
     <td>
- <img src="/softdev2-resources/images/react/twitter-components.png" width="300" height="300"/>
+ <img src="/softdev2-resources/images/react/twitter-components.png" width="500" height="500"/>
       </td>
 </tr>
 </table>

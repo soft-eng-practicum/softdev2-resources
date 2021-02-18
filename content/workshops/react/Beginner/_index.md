@@ -61,20 +61,21 @@ a more complex user interface.</p>
  
  ---
  ###
- <p>An excellent example webpage for use would be</p>
- <h2>Twitter</h2>
- <p>In the next slide, take a look at all the components (which are all the rectangles with red borders).</p>
- <p>The App (or root component) is the page that is the page itself that is displaying all the components</p>
- --
-###
+ <h2>Twitter Site</h2>
+ <p>Take a look at all the <strong>components</strong> (which are all the rectangles with red borders)</p>
+ <p><strong>The App (or root component) Component</strong> is the page that is the page itself that is displaying all the components</p>
+
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="500" height="500"/>
+ <img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="400"/>
       </td>
     <td>
- <img src="/softdev2-resources/images/react/twitter-components.png" width="500" height="500"/>
+ <img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="400"/>
       </td>
 </tr>
 </table>
+
+---
+###
 

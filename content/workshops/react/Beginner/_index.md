@@ -3,17 +3,7 @@ title = "React for Beginners"
 outputs = ["Reveal"]
 weight = 01 # chapter number
 ### Welcome to the React for beginners course
-<p>Alex Abraham</p>
-+++
-
-
-  
----
-
-
-
-
- 
+<p>Created by Alex Abraham</p>
 
 
 ---
@@ -66,9 +56,7 @@ a more complex user interface.</p>
       </td>
     </tr>
   </table>
-  ---
-  ###
-  Where do we 
+ 
  ---
 ###
 <table>

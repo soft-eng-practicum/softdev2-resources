@@ -78,11 +78,14 @@ a more complex user interface.</p>
 
 ---
 
-###Getting started!
+### 
+<h1>Getting started!</h1>
 <h4>Installation of NodeJs</h4>
 ---
-###Install NodeJs
-<a href="https://nodejs.org/en/">NodeJS download site</a>
+
+###
+<h1>Install NodeJs</h1>
+<a href="https://nodejs.org/en/" target="_blank">NodeJS download site</a>
 <p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
 <p> Every time we use npm, we are using NodeJs's packager tool</p>
 
@@ -91,7 +94,7 @@ a more complex user interface.</p>
 <p>Open your command prompt/termianl prompt on Windows/Mac</p>
 <p>Type: <strong> node -v</strong></p>
 <p>This is to see our version of nodeJs on our device, if there's an error, nodeJs didnt succesfully download</p>
-<p>Type: <strong> npm i -g create-react-app</strong>(i= stands for install, and -g= stands for global)</p>
+<p>Type: <strong> npm i -g create-react-app</strong> (i= stands for install, and -g= stands for global)</p>
 <p>If it works, congrats you've created your very first react app</p>
 
 

@@ -42,7 +42,7 @@ a more complex user interface.</p>
 ---
 
 ###
-<table style ="padding: 0; margin: 0">
+<table style ="padding: 0; margin: 0; border-spacing: 0px;">
   <tr>
     <td>
  <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="500" height="500"/>

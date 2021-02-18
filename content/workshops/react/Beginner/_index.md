@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 weight = 01 # chapter number
 ### Welcome to the React for beginners course
 <p>Created by Alex Abraham</p>
-
++++
 
 ---
 ### What is React Js?

@@ -78,13 +78,14 @@ a more complex user interface.</p>
 
 ---
 
-### <h1>Getting started!</h1>
-<h6>Installation of NodeJs</h6>
+###Getting started!
+<h4>Installation of NodeJs</h4>
 ---
-### <h1>Install NodeJs</h1>
+###Install NodeJs
 <a href="https://nodejs.org/en/">NodeJS download site</a>
 <p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
 <p> Every time we use npm, we are using NodeJs's packager tool</p>
+
 ---
 ###
 <p>Open your command prompt/termianl prompt on Windows/Mac</p>

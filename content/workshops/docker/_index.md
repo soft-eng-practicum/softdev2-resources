@@ -38,7 +38,7 @@ With virtual machines that you get from VirtualBox, entire operating systems are
 
 ---
 
-<img src="/softdev2-resources/images/docker/container-vs-vm.jpg" alt="container vs vm" width="800"/>
+<img src="/softdev2-resources/images/docker/container-vs-vm.jpg" alt="container vs vm" width="600"/>
 
 [(Image Source)](https://www.weave.works/blog/a-practical-guide-to-choosing-between-docker-containers-and-vms)
 
@@ -131,7 +131,10 @@ $ factor 12345678901010101010101010987654321
 12345678901010101010101010987654321: 19 853 32069 398053 465067 128312953569637
 ```
 
-{{% fragment %}}
+---
+
+## First Container
+
 or:
 ```sh
 $ yes Dr. Gunay is awesome
@@ -141,7 +144,6 @@ Dr. Gunay is awesome
 Dr. Gunay is awesome
 ...
 ```
-{{% /fragment %}}
 
 ---
 
@@ -160,17 +162,24 @@ REPOSITORY        TAG           IMAGE ID       CREATED       SIZE
 ubuntu            latest        f63181f19b2f   12 days ago   72.9MB
 ```
 
-{{% fragment %}}
-You could also try running Python instead of bash:
+---
+
+## Running Python
+
+As another example, you can also try running Python instead of bash:
 ```txt
 $ docker run -it --rm python:slim python
 
 Python 3.9.1 (default, Jan 12 2021, 16:56:42)
 [GCC 8.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>>
+>>> a = 5
+>>> print(a + 2)
+7
+>>> exit()
+
+$
 ```
-{{% /fragment %}}
 
 ---
 
@@ -206,8 +215,12 @@ You can read more about all the different commands [here](https://docs.docker.co
 
 Create the file `hello.py` somewhere on your computer with the following lines:
 ```py
+import os
+
 name = input('What is your name? ')
 print(f'Hello {name}!')
+
+print(os.environ.get('GOODBYE'))
 ```
 
 {{% fragment %}}
@@ -221,6 +234,8 @@ But what if you don't have Python installed? That's perfectly fine! With Docker 
 In the same folder as `hello.py`, create the file `Dockerfile` and add:
 ```Dockerfile
 FROM python:3.9-slim
+
+ENV GOODBYE=adios
 
 # You can also add comments :0
 COPY hello.py .
@@ -246,13 +261,14 @@ hello             latest        50b4f80bd32a   13 seconds ago   114MB
 ## Running Your Image
 
 Use the following command to run your image:
-```sh
+```txt
 $ docker run -it --rm hello
 What is your name? bob
 Hello bob!
+adios
 ```
 
-After entering your name, the container should print a greeting and exit. Because of the ` --rm` option, the container shold be deleted.
+After entering your name, the container should print a greeting, a closing, and then exit. Because of the ` --rm` option, the container should be deleted.
 
 ---
 
@@ -269,4 +285,8 @@ On Linux, Docker utilizes two technologies of the Linux kernel to achieve this c
 
 Essentially, whenever a process tries to access kernel resources, the kernel uses the process's allocated namespace to determine which resource to provide. For example, in a container's PID namespace Apache might be running with process ID 1, but it might have process ID 650 in the initial ("root") PID namespace that was created when the computer started. From the root PID namespace's perspective, Apache is just another process along with all the other processes running on the operating system, however from Apache's perspective, it looks like it's running alone with possibly a few additional processes used in the container. Other resources can also be containerized in this way. In one container the path `/bin/bash` could point to the Bourne Again Shell executable while in another container the file might not exist. This determination is made at the kernel level and completely transparent to the processes running inside the container.
 
-While a technical understanding of technologies mentioned above isn't necessary to effectively use Docker, it often helps in understanding the "why" aspect of many components of Docker. For more details on how container can be implemented, check out this [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) where a simple version of Docker is implemented in Go.
+---
+
+## How Docker Works (WIP)
+
+While a technical understanding of technologies mentioned above isn't necessary to effectively use Docker, it often helps in understanding the "why" aspect of many components of Docker. For more details on how containers can be implemented, check out this [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) where a simple version of Docker is implemented in Go.

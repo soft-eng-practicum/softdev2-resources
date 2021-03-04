@@ -39,7 +39,7 @@ and source code [here](https://github.com/jquery/jquery).
 
 While most features available in jQuery are also available with standard JavaScript, jQuery's methods are often easier to use and more concise.
 
-One additional benefit of using jQuery methods is that they take subtle browser differences into account. Specifically, a particular jQuery method might be implemented slightly differently on Chrome vs Internet Explorer 11 in order to achieve the same effect. If you use plain JavaScript you would need to take these browser differences into consideration yourself in order to achieve perfect cross browser compatibility.
+One additional benefit of using jQuery methods is that they take subtle browser differences into account. Specifically, a jQuery method might be implemented differently on Chrome vs Internet Explorer 11 in order to achieve the same effect. If you use plain JavaScript you would need to take these browser differences into account yourself in order to achieve the same level of cross browser compatibility.
 
 ---
 
@@ -101,7 +101,7 @@ creates a jQurey object that contains all paragraph elements. The following are 
 - `"table"` selects all `table` elements
 - `".warning"` selects all elements with the `warning` class
 - `"#nav"` selects the element with an id of `nav`
-- `"p.mt-2 > span[text-decoration=underline]"` selects all underlined `span`'s that are a direct child of a `p` with class `mt-2`.
+- `"p.mt-2 > img[alt^='cat']"` selects all images whose alt text begins with `cat` that are also the direct child of a `p` with class `mt-2`
 
 ---
 
@@ -115,7 +115,7 @@ This method sets the CSS property `propertyName` to `value` for all of the match
 
 In the w3schools HTML editor, under the line `// Your Code`, add the line
 ```js
-$("h1").css("font-family", "Fantasy");`
+$("h1").css("font-family", "Fantasy");
 ```
 After pressing "Run" the header should be displayed in a decorative and playful font.
 

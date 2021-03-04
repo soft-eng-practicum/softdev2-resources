@@ -53,6 +53,29 @@ Don't forget to edit the `config.toml` file for changing variables
 such as `baseURL`, `github_repository`, `github_doc_repository`,
 `author`, `course`, and `google_analytics_id`.
 
+## Installation
+
+Hugo's installation instructions can be found
+[here](https://gohugo.io/getting-started/installing).
+Hugo is available in most Linux package managers and homebrew, although the
+version found in package managers for Debian and Ubuntu is often outdated. The
+instructions also include a video for installing on Windows.
+
+The `Techdoc` and `reveal-hugo` themes are included in the repository as git
+submodules under the `/themes/` directory. After cloning the repo, you will need
+to run the following to download the submodules:
+```sh
+$ git submodule update --init --recursive
+```
+
+Then run the following to start the Hugo server:
+```sh
+$ hugo server
+```
+
+You should be prompted with a link to access the site in your browser. Hugo will
+automatically detect modified files, rebuild the site, and refresh your browser.
+
 ## Reveal-Hugo customizations
 
 In the class presentations, the `author` and `course` front-matter

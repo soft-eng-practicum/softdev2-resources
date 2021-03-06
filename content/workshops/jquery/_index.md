@@ -39,7 +39,7 @@ and source code [here](https://github.com/jquery/jquery).
 
 While most features available in jQuery are also available with standard JavaScript, jQuery's methods are often easier to use and more concise.
 
-One additional benefit of using jQuery methods is that they take subtle browser differences into account. Specifically, a jQuery method might be implemented differently on Chrome vs Internet Explorer 11 in order to achieve the same effect. If you use plain JavaScript you would need to take these browser differences into account yourself in order to achieve the same level of cross browser compatibility.
+One additional benefit of using jQuery methods is that they take subtle browser differences into account. Specifically, a jQuery method might be implemented differently on Chrome vs IE 11 in order to achieve the same effect. If you use plain JavaScript you would need to take these browser differences into account yourself in order to achieve the same level of cross browser compatibility.
 
 ---
 
@@ -84,7 +84,7 @@ While you can always access the function with the name `jQuery`, the single-char
 There is an important distinction between DOM elements and jQuery objects:
 
 - **DOM elements** reference elements on the page (`p`'s, `div`'s, etc.) and their exact implementations and APIs might differ slightly among different browsers.
-- **jQuery objects** act like a wrapper around DOM elements that you can call jQuery methods on. jQuery objects behave similarly to an array in that they have a `length` property and the wrapped DOM elements can be accessed via array `[n]` syntax where n ranges from `0` to `length-1`. When methods are called on a jQuery object the changes are applied to all of the underlying DOM elements unless specified otherwise.
+- **jQuery objects** act like a wrapper around DOM elements that you can call jQuery methods on. jQuery objects behave similarly to an array in that they have a `length` property and the wrapped DOM elements can be accessed via array `[n]` syntax where `n` ranges from `0` to `length-1`. When methods are called on a jQuery object the changes are applied to all of the underlying DOM elements unless specified otherwise.
 
 ---
 
@@ -186,15 +186,15 @@ Next, add the following JSON string to your script:
 </script>
 ```
 
-In JavaScript, strings enclosed with back ticks (e.g. \`hello\`) are called template literals. While template literals are usually used for embedded expressions, as we'll soon see, they're used here due to their multi-line support.
+In JavaScript, strings enclosed with backticks (e.g. \`hello\`) are called template literals. While template literals are usually used for embedded expressions, as we'll soon see, they're used here due to their multi-line support.
 
 ---
 
 ## Modifying the Page with JSON
 
-In most real world applications, JSON is fetched from a backend server using XMLHttpRequests or the Fetch API. But for our purposes using a hard-coded string will do.
+In most real world applications, JSON is fetched from a backend server using XMLHttpRequests or the Fetch API. But for our purposes a hard-coded string will do.
 
-Now we can link our table to a jQuery object and prepare to iterate over our JSON list. To deserialize our JSON string, we'll use the `JSON.parse` method which turns our string into an array:
+Now we can link our table to a jQuery object and prepare to iterate over our JSON list. To deserialize the JSON string, we'll use the `JSON.parse` method which turns our string into an array:
 
 ```js
 table = $("#courses");
@@ -209,7 +209,7 @@ The `for...of` syntax creates a loop that iterates over all elements in the arra
 
 ## Adding Rows to Our Table
 
-We only have one step left: add the course data to the table. To do this, we will use jQuery's `append(content)` method, which takes a string and adds it to the end of our matched element:
+We only have one step left: add the course data to the table. To do this, we will use jQuery's `append(content)` method which takes a string and adds it to the end of our matched element:
 
 ```js {hl_lines=["3-7"]}
 table = $("#courses");
@@ -223,7 +223,7 @@ for (var c of JSON.parse(courses)) {
 ```
 
 {{% fragment %}}
-As was mentioned before, template literals (strings with back ticks) can be used to concatenate stings with embedded expressions.
+As was mentioned before, template literals (strings with backticks) can be used to concatenate stings with embedded expressions.
 
 For example, `` `hello ${name}!` `` is equivalent to `"hello " + name + "!"`.
 {{% /fragment %}}
@@ -271,10 +271,10 @@ $("tr").eq(3).css("font-weight", "bold");
 ## DOM Traversal
 
 Other useful methods include
-- parent() gets the immediate parent of each of the originally matched elements.
-- prev() gets the immediately preceding sibling for each of the originally matched.
-- siblings() gets the siblings of each originally matched element.
-- find(selector) gets the descendants of each element in the current set of matched elements, filtered by a selector
+- `parent()` gets the immediate parents of each matched element.
+- `prev()` gets the immediately preceding siblings of each matched element.
+- `siblings()` gets the siblings of each matched element.
+- `find(selector)` gets the descendants of each matched element, filtered by a selector.
 
 ---
 
@@ -286,7 +286,7 @@ Even handling can be used to execute code when events are triggered, such as key
 <table id="courses">
 	<tr><th>Subject</th><th>Number</th><th>Title</th></tr>
 </table>
-<button id="btn">Press me!</button>tr>`);
+<button id="btn">Press me!</button>;
 ```
 
 and then add the bottom 3 lines to your script section:
@@ -303,7 +303,7 @@ $("#btn").click(function() {
 
 ## Even Handling
 
-The `.click(function)` method executes the function `function` whenever the selected elements are clicked. In our case, we're toggling the previously defined `lightgray` class on our table. Basically, if the table isn't assigned the class, then jQuery adds it, and if the table already has the class, jQuery removes it.
+The `.click(function)` method executes `function` whenever the selected elements are clicked. In our case, we're toggling the previously defined `lightgray` class on our table. Basically, if the table isn't assigned the class, then jQuery adds it, and if the table already has the class, jQuery removes it.
 
 After pressing the button, your table should turn gray, and pressing it again should restore the original background:
 

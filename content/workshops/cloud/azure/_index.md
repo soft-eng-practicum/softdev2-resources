@@ -27,7 +27,7 @@ outputs = ["Reveal"]
 
 {{% section %}}
 
-### First tutorial: create a virtual machine
+### Tutorial #1: create a virtual machine
 
 - We will create a Linux virtual machine
 - Optionally, you could also create Windows and Mac
@@ -50,16 +50,71 @@ outputs = ["Reveal"]
 
 {{% section %}}
 
-### Azure App Service: running without a VM
+### Tutorial #2 Azure App Service: 
+#### Running without a VM
 
 - Cloud systems are getting simpler
 - Virtual machines are heavy and require maintenance
 - App Service is available at all major cloud providers
 - Allows running a specific software stack without managing an underlying VM
+- All you have to do is push the source code
 - Can choose between Node, .Net, Java, Python, Ruby, and PHP on Azure
 
 ---
 
-### 
+### Node.js example on App Service
+
+- Start with instructions for [hosting a web application on App Service](https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service/)
+- But choose Node.js instead of .Net
+- Connect your Github account or simply initialize an empty project
+
+{{% /section %}}
+
+---
+
+{{% section %}}
+
+### Tutorial #3 Azure Static Web Apps: 
+#### free web hosting without a backend
+
+- Even lighter than App Service, this service does not even execute anything
+- Like [Github Pages](https://pages.github.com/) or [Netlify](https://www.netlify.com/)
+- Host any files on the web
+- But no backend service (such as Python, Java, .Net, etc)
+- Good for Javascript-based front-end frameworks (such as Angular, React, Vue, etc.)
+- Also known as single-page applications (SPA)
+- Or simply upload HTML files
+
+---
+
+### Publish a single-page application 
+
+- Follow [instructions](https://docs.microsoft.com/en-us/learn/modules/publish-app-service-static-web-app-api/) to set up Azure Static Web Apps
+- Select from Angular, React, Svelte, or Vue.JS
+- Can also push one of your current projects
+- For Angular, you can select one of [these examples](https://angular.io/guide/example-apps-list)
+
+{{% /section %}}
+
+---
+
+{{% section %}}
+
+### Tutorial #4: Azure Functions:
+#### Serverless computing
+
+- Static Web Apps miss benefits of backend computing and databases
+- Serverless computing is the answer to that
+- You can add simple functions that are executed on demand and which can access data
+- MongoDB or Firebase can be seen as a serverless solution
+
+---
+
+### Create a simple serverless backend for your static site
+
+- Go back to your static site, and add a call to a function so that you can calculate something dynamically
+- For instance, you can add a persistent counter to your website
+- Follow [instructions](https://docs.microsoft.com/en-us/learn/modules/create-serverless-logic-with-azure-functions/) to create your serverless function on Azure
+- Choose between Javascript or Powershell
 
 {{% /section %}}

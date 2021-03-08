@@ -32,6 +32,7 @@ outputs = ["Reveal"]
 - We will create a Linux virtual machine
 - Optionally, you could also create Windows and Mac
 - Follow [tutorial](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) to get started
+- Use Git Bash to run the `ssh -i` line
 - At the end of the tutorial, you will have a static site host
 
 ---
@@ -105,7 +106,7 @@ outputs = ["Reveal"]
 
 - Static Web Apps miss benefits of backend computing and databases
 - Serverless computing is the answer to that
-- You can add simple functions that are executed on demand and which can access data
+- Allows simple functions to execute on demand and access data
 - MongoDB or Firebase can be seen as a serverless solution
 
 ---

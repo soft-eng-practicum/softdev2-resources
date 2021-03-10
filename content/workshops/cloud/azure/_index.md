@@ -118,6 +118,10 @@ outputs = ["Reveal"]
 - Allows simple functions to execute on demand and access data
 - MongoDB or Firebase can be seen as a serverless solution
 
+{{% note %}}
+TODO: Connect this to tutorial #3
+{{% /note %}}
+
 ---
 
 ### Create a simple serverless backend for your static site

@@ -29,21 +29,30 @@ outputs = ["Reveal"]
 
 ### Tutorial #1: create a virtual machine
 
+- The most classic usage of cloud
+- Create a copy of a real computer, virtually
 - We will create a Linux virtual machine
 - Optionally, you could also create Windows and Mac
-- Follow [tutorial](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) to get started
-- Use Git Bash to run the `ssh -i` line
-- At the end of the tutorial, you will have a static site host
+- See tutorial on page below
 
 ---
 
 #### Installing a node-based web server
 
-- Log back into the server using `ssh`
+- You have an option to follow a full tutorial or create your own app
+- Skip to the next page for the latter
 - Follow instructions for [installing a MEAN stack application](https://docs.microsoft.com/en-us/learn/modules/build-a-web-app-with-mean-on-a-linux-vm/)
-- Skip the VM setup as we had already done it
-- You can also skip setting up MongoDB if you will not use it
-- Alternatively, use instructions for [Node.js and Express](https://docs.microsoft.com/en-us/learn/modules/build-web-api-nodejs-express/)
+- You can skip setting up MongoDB if you will not use it
+
+---
+
+#### Other uses of a VM: Node.js or your own project
+
+- To start a blank VM with a web server, you can follow this [tutorial](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) 
+- Use Git Bash to run the `ssh -i` line
+- At the end of the tutorial, you will have a static site host
+- Before going further, first [stop/uninstall nginx](https://phoenixnap.com/kb/nginx-start-stop-restart), which is hogging the web port 80
+- Then, follow instructions for [Node.js and Express](https://docs.microsoft.com/en-us/learn/modules/build-web-api-nodejs-express/) site
 
 {{% /section %}}
 

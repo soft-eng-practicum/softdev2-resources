@@ -44,7 +44,8 @@ author = "Christopher Martinez"
 </ul>
 
 <br>
-![alt text](softdev2-resources/static/images/angular/downloadContentSlide.PNG)
+
+<img src="softdev2-resources/static/images/angular/downloadContentSlide.PNG"  height="100" width="200">
 
 ---
 ## Why is this code wrong?

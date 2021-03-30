@@ -45,7 +45,7 @@ author = "Christopher Martinez"
 
 <br>
 
-<img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" width="500" height="500"/>
+<img src="softdev2-resources/images/angular/downloadContentSlide.PNG" width="500" height="500"/>
 
 ---
 ## Why is this code wrong?

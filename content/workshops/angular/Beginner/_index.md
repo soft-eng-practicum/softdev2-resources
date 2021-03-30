@@ -15,7 +15,7 @@ author = "Christopher Martinez"
   <br>
   <li>Command Prompt/Terminal</li>
     <ul>
-      <li>Check node version using the `node –v` command</li>
+      <li>Check node version using the ```node –v``` command</li>
       <li>To check if you have npm run the <b><em>npm –v</b></em> to see if it is installed</li>
       <li><b><em>npm install -g @angular/cli</b></em> to install all Angular CLI</li>
         <ul><li>NOTE: The command above installs all necessary dependancies </ul></li>

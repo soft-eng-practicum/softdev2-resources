@@ -28,7 +28,7 @@ author = "Christopher Martinez"
 
 ---
 ## Download content 
-<ul> <li>git clone https://github.com/KidLanz/SID.git</li>  <img src="softdev2-resources/static/images/angular/downloadContentSlide.PNG" width="300" height="300"/>
+<ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
  <br>
   <li>Command Prompt/Terminal: </li> 
  <br>

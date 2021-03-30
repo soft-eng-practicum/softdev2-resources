@@ -3,7 +3,7 @@ title = "React Workshops"
 weight = 03 # chapter number
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" >}}
+{{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" >}}
   
 ---
 

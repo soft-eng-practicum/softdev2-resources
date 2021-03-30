@@ -28,7 +28,7 @@ author = "Christopher Martinez"
 
 ---
 ## Download content 
-<ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
+<ul> <li>git clone https://github.com/KidLanz/SID.git</li>  <img src="softdev2-resources/static/images/angular/downloadContentSlide.PNG" width="300" height="300"/>
  <br>
   <li>Command Prompt/Terminal: </li> 
  <br>
@@ -45,7 +45,6 @@ author = "Christopher Martinez"
 
 <br>
 
-<img src="softdev2-resources/static/images/angular/downloadContentSlide.PNG" width="300" height="300"/>
 
 ---
 ## Why is this code wrong?

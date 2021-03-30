@@ -39,11 +39,11 @@ author = "Christopher Martinez"
     <li><b><em>npm install</b></em> then <b><em>npm install -g npm</b></em></li>
        <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repositoty</li></ul>
     <li>ng serve -o</li>
-       <ul><li>NOTE:this command is to open the html to the browser</li></ul>
+       <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
 </ul>
 
-<br> ![alt text]("/softdev2-resources/static/images/angular/downloadContentSlide.PNG")
+<br> ![alt text](/softdev2-resources/static/images/angular/downloadContentSlide.PNG)
 
 
 ---

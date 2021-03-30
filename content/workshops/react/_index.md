@@ -3,8 +3,7 @@ title = "React Workshops"
 weight = 03 # chapter number
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-plan-software.png" 
-    link="https://dilbert.com/strip/1998-11-10" >}}
+{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" >}}
   
 ---
 

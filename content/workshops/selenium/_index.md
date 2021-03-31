@@ -10,7 +10,7 @@ author = "Safiyullah Khan"
   
 ---
 
-## Python
+## Selenium
 
 - Safiyullah Khan
 

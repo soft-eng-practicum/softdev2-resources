@@ -32,7 +32,6 @@ author = "Christopher Martinez"
  <br>
   <li>Command Prompt/Terminal: </li> 
  <br>
-  ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
  <ul>
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
@@ -42,9 +41,9 @@ author = "Christopher Martinez"
     <li>ng serve -o</li>
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
-</ul>
+</ul>![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
 
-<br> 
+<br>.
 
 
 

@@ -41,9 +41,9 @@ author = "Christopher Martinez"
     <li>ng serve -o</li>
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
-</ul>![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
+</ul>
 
-<br>.
+<br> ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
 
 
 

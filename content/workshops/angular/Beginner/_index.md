@@ -32,6 +32,7 @@ author = "Christopher Martinez"
  <br>
   <li>Command Prompt/Terminal: </li> 
  <br>
+  ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
  <ul>
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
@@ -43,11 +44,8 @@ author = "Christopher Martinez"
  </ul>
 </ul>
 
-<br> ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
-<br>
-<br>
-<br>
-<br>
+<br> 
+
 
 
 ---

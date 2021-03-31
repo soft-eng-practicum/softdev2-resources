@@ -44,6 +44,10 @@ author = "Christopher Martinez"
 </ul>
 
 <br> ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
+<br>
+<br>
+<br>
+<br>
 
 
 ---

@@ -23,7 +23,7 @@ author = "Christopher Martinez"
     </ul>
   <br>
   <li>We will use <a href="https://code.visualstudio.com/download">VSCode</a> and 
-    <a href="https://git-scm.com/downloads">Gitbash</a> for this workshop</li>
+    <a href="https://git-scm.com/downloads">Git Bash</a> for this workshop</li>
 </ul>
 
 ---
@@ -37,7 +37,7 @@ author = "Christopher Martinez"
     <li>code .</li>
       <ul><li>NOTE:this command is to open VSCode through the command line/terminal</li></ul>
     <li><b><em>npm install</b></em> then <b><em>npm install -g npm</b></em></li>
-       <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repositoty</li></ul>
+       <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repository</li></ul>
     <li>ng serve -o</li>
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
@@ -121,7 +121,8 @@ author = "Christopher Martinez"
   <li>Under <b>asset</b> make a <b>data</b> folder and make a JSON file name <b>students.json</b></li>
   <li>After that copy and paste the data below and delete the one from <br>
       student-list & student-details</li>
-  [<br>
+  ```
+  [
   {"id": 1, "name": "Chris", "age": 21},<br>
   {"id": 2, "name": "Denzel", "age": 21},<br>
   {"id": 3, "name": "David", "age": 21},<br>
@@ -130,7 +131,8 @@ author = "Christopher Martinez"
   {"id": 6, "name": "Anne", "age": 21},<br>
   {"id": 7, "name": "Anca", "age": 21},<br>
   {"id": 8, "name": "John", "age": 21}<br>
-]
+  ]
+  ```
 </ul>
 
 (picture here...)

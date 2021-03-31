@@ -1,7 +1,7 @@
 +++
 title = "Python for Beginners"
 outputs = ["Reveal"]
-weight = 09 # chapter number
+weight = 07 # chapter number
 author = "Safiyullah Khan"
 +++
 

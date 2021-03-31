@@ -43,7 +43,7 @@ author = "Christopher Martinez"
  </ul>
 </ul>
 
-<br> ![alt text](/softdev2-resources/static/images/angular/downloadContentSlide.PNG)
+<br> ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
 
 
 ---

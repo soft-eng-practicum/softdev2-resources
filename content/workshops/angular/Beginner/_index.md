@@ -12,7 +12,7 @@ author = "Christopher Martinez"
 ## Welcome to Angular for beginners!!!
 
  <img src="/softdev2-resources/images/angular/angular-icon-logo.png" width="200" height="200">
-by Christopher Martinez
+by Christopher Martinezz
  
 ---
 

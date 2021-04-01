@@ -15,11 +15,11 @@ author = "Christopher Martinez"
   <br>
   <li>Command Prompt/Terminal</li>
     <ul>
-      <li>Check node version using the `node –v` command</li>
-      <li>To check if you have npm run the <b><em>npm –v</b></em> to see if it is installed</li>
-      <li><b><em>npm install -g @angular/cli</b></em> to install all Angular CLI</li>
+      <li>Check node version using the <pre><code data-line-numbers="3,8-10">node –v</code></pre> command</li>
+      <li>To check if you have npm run the `npm –v` to see if it is installed</li>
+      <li>`npm install -g @angular/cli` to install all Angular CLI</li>
         <ul><li>NOTE: The command above installs all necessary dependancies </ul></li>
-      <li>Type <b><em>ng version</b></em> to check the version of Angular CLI</li>
+      <li>Type `ng version` to check the version of Angular CLI</li>
     </ul>
   <br>
   <li>We will use <a href="https://code.visualstudio.com/download">VSCode</a> and 
@@ -36,9 +36,9 @@ author = "Christopher Martinez"
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
       <ul><li>NOTE:this command is to open VSCode through the command line/terminal</li></ul>
-    <li><b><em>npm install</b></em> then <b><em>npm install -g npm</b></em></li>
+    <li>`npm install` then `npm install -g npm`</li>
        <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repository</li></ul>
-    <li>ng serve -o</li>
+    <li>`ng serve -o`</li>
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
 </ul>

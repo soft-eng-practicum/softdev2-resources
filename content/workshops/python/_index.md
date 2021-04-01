@@ -1,7 +1,7 @@
 +++
 title = "Python Workshops"
 weight = 09 # chapter number
-author = "Safiyullah Khan
+author = "Safiyullah Khan"
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/python/python-logo.png" 

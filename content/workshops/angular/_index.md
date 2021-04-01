@@ -1,18 +1,24 @@
 +++
-title = "Angular Workshops"
+title = "Git Workshops"
 weight = 01 # chapter number
-author = "Christopher Martinez"
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" author="Chris Martinez">}}
-
-
+{{< reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-plan-software.png" 
+    link="https://dilbert.com/strip/1998-11-10" >}}
   
 ---
 
-## Angular Services
+## Welcome
 
-- Christopher Martinez
+- What's better than to watch some workshops videos?
+
+
+Work in progress ...
+
+
+
+We will also add slides of the workshops...
+
+
 
 ---
-

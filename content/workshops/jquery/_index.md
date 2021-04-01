@@ -278,9 +278,9 @@ Other useful methods include
 
 ---
 
-## Even Handling
+## Event Handling
 
-Even handling can be used to execute code when events are triggered, such as key presses or mouse movements. Add a button under the table in the body:
+Event handling can be used to execute code when events are triggered, such as key presses or mouse movements. Add a button under the table in the body:
 
 ```html {hl_lines=["4"]}
 <table id="courses">
@@ -301,7 +301,7 @@ $("#btn").click(function() {
 
 ---
 
-## Even Handling
+## Event Handling
 
 The `.click(function)` method executes `function` whenever the selected elements are clicked. In our case, we're toggling the previously defined `lightgray` class on our table. Basically, if the table isn't assigned the class, then jQuery adds it, and if the table already has the class, jQuery removes it.
 

@@ -121,8 +121,7 @@ author = "Christopher Martinez"
   <li>Under <b>asset</b> make a <b>data</b> folder and make a JSON file name <b>students.json</b></li>
   <li>After that copy and paste the data below and delete the one from <br>
       student-list & student-details</li>
-  ```
-  [
+  ```[
   {"id": 1, "name": "Chris", "age": 21},<br>
   {"id": 2, "name": "Denzel", "age": 21},<br>
   {"id": 3, "name": "David", "age": 21},<br>

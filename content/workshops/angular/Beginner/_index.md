@@ -107,14 +107,15 @@ by Christopher Martinezz
 
 ---
 ## HTTP
+<section>
 <ul>
   <li>add <b>import { HttpClientModule } from '@angular/common/http';</b></li>
   <li>Add <b>HttpClientModule</b> under <em>imports</em></li>
   <li>Add <b>StudentService</b> under <em>providers</em></li>
 </ul>
+<section>
+<section>How it works<br><img src="/softdev2-resources/images/angular/httpSlide.PNG" height="400" width="900"><br>
 
-<br><br>
-(picture needed...)
 
 
 ---

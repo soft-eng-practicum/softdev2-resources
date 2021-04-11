@@ -22,7 +22,7 @@ by Christopher Martinezz
   <br>
   <li>Command Prompt/Terminal</li>
     <ul>
-      <li>Check node version using the ```node –v``` command</li>
+      <li>Check node version using the <code>node –v</code> command</li>
       <li>To check if you have npm run the <em>npm –v</em> to see if it is installed</li>
       <li><em>npm install -g @angular/cli</em> to install all Angular CLI</li>
         <ul><li>NOTE: The command above installs all necessary dependancies </ul></li>

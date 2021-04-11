@@ -35,3 +35,22 @@ by Christopher Martinezz
 
 ---
  
+ ## Download content 
+<ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
+ <br>
+  <li>Command Prompt/Terminal: </li> 
+ <br>
+ <ul>
+    <li>cd Desktop/demo/SID</li>
+    <li>code .</li>
+      <ul><li>NOTE:this command is to open VSCode through the command line/terminal</li></ul>
+    <li>`npm install` then <em>npm install -g npm</em></li>
+       <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repository</li></ul>
+    <li>ng serve -o</li>
+       <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
+ </ul>
+</ul>
+
+<br> ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
+
+---

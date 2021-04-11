@@ -113,7 +113,7 @@ by Christopher Martinezz
   <li>Add <b>StudentService</b> under <em>providers</em></li>
 </ul>
 </section>
-<section>How it works<br><img src="/softdev2-resources/images/angular/httpSlide.PNG" height="400" width="900"><br>
+<section><b>How it works</b><br><img src="/softdev2-resources/images/angular/httpSlide.PNG" height="400" width="900"><br>
 </section>
 
 

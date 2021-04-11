@@ -54,7 +54,7 @@ by Christopher Martinezz
 </ul>
   </section>
 
-<section data-visibility="uncounted">![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
+<section data-visibility="uncounted"><img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" height="100" width="200">
 </section>
  
 

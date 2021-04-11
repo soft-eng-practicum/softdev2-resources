@@ -50,7 +50,8 @@ by Christopher Martinezz
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
 </ul>
-
-<br> ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
+ ![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
 
 ---
+
+

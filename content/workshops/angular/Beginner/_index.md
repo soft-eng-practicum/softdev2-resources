@@ -88,6 +88,7 @@ by Christopher Martinezz
 
 ---
 ## Lets get started 
+<section>
 <ul>
   <li>Making a student.service.ts file (picture needed...)</li>
   <ul><li>in order to provide the student data, we need the service to handle that<br>
@@ -97,8 +98,11 @@ by Christopher Martinezz
           an observable to <code>student.service.ts</code> and to the list <br> 
           and details components.</li></ul>
 </ul>
+  </section>
 
-(picture needed...)
+<section>Student.service.ts<img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" height="500" width="700"><br>
+         
+</section>
 
 
 ---

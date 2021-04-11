@@ -54,7 +54,7 @@ by Christopher Martinezz
 </ul>
   </section>
 
-<section data-visibility="uncounted"><img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" height="500" width="700">
+<section data-visibility="uncounted"><b>GitHub</b><br><img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" height="500" width="700">
 </section>
  
 

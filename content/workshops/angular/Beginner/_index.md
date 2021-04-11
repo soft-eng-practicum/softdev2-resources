@@ -100,7 +100,7 @@ by Christopher Martinezz
 </ul>
   </section>
 
-<section>How it works<img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900"><br>
+<section>How it works<br><img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900"><br>
          
 </section>
 

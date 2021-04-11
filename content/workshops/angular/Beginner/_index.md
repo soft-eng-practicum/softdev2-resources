@@ -100,8 +100,7 @@ by Christopher Martinezz
 </ul>
   </section>
 
-<section>How it works<br><img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900"><br>
-         
+<section>How it works<br><img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900"><br>     
 </section>
 
 
@@ -113,9 +112,9 @@ by Christopher Martinezz
   <li>Add <b>HttpClientModule</b> under <em>imports</em></li>
   <li>Add <b>StudentService</b> under <em>providers</em></li>
 </ul>
-<section>
+</section>
 <section>How it works<br><img src="/softdev2-resources/images/angular/httpSlide.PNG" height="400" width="900"><br>
-
+</section>
 
 
 ---

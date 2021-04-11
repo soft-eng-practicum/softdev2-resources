@@ -17,6 +17,7 @@ by Christopher Martinezz
 ---
 
 ## Prerequisite
+
 <ul>
   <li>Install <a href="https://nodejs.org/en/">NodeJS</a></li>
   <br>
@@ -36,7 +37,8 @@ by Christopher Martinezz
 ---
  
  ## Download content 
-<ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
+<section>
+  <ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
  <br>
   <li>Command Prompt/Terminal: </li> 
  <br>
@@ -50,6 +52,7 @@ by Christopher Martinezz
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
 </ul>
+  </section>
 
 <section data-visibility="uncounted">Slide 3</section>
  

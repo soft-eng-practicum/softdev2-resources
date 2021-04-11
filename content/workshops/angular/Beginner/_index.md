@@ -39,7 +39,6 @@ by Christopher Martinezz
 <ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
  <br>
   <li>Command Prompt/Terminal: </li> 
-<br>![alt text](/softdev2-resources/images/angular/downloadContentSlide.PNG)
  <br>
  <ul>
     <li>cd Desktop/demo/SID</li>
@@ -51,6 +50,8 @@ by Christopher Martinezz
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
 </ul>
+
+<section data-visibility="uncounted">Slide 3</section>
  
 
 ---

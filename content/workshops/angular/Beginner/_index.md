@@ -132,7 +132,9 @@ by Christopher Martinezz
   <li>Under <b>asset</b> make a <b>data</b> folder and make a JSON file name <b>students.json</b></li>
   <li>After that copy and paste the data below and delete the one from <br>
       student-list & student-details</li>
-  <code data-trim data-noescape>
+</ul>
+
+<code data-trim data-noescape>
     [
   {"id": 1, "name": "Chris", "age": 21},
   {"id": 2, "name": "Denzel", "age": 21},
@@ -145,9 +147,7 @@ by Christopher Martinezz
 ]
 </code>
 
-</ul>
-
-(picture here...)
+(picture here below...)
 
 ---
 ## Make a URL

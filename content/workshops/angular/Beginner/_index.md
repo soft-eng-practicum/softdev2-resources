@@ -16,5 +16,22 @@ by Christopher Martinezz
  
 ---
 
+## Prerequisite
+<ul>
+  <li>Install <a href="https://nodejs.org/en/">NodeJS</a></li>
+  <br>
+  <li>Command Prompt/Terminal</li>
+    <ul>
+      <li>Check node version using the <pre><code data-line-numbers="3,8-10">node –v</code></pre> command</li>
+      <li>To check if you have npm run the <em>npm –v</em> to see if it is installed</li>
+      <li><em>npm install -g @angular/cli</em> to install all Angular CLI</li>
+        <ul><li>NOTE: The command above installs all necessary dependancies </ul></li>
+      <li>Type <em>ng version</em> to check the version of Angular CLI</li>
+    </ul>
+  <br>
+  <li>We will use <a href="https://code.visualstudio.com/download">VSCode</a> and 
+    <a href="https://git-scm.com/downloads">Git Bash</a> for this workshop</li>
+</ul>
 
+---
  

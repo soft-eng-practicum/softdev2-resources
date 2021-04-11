@@ -54,7 +54,7 @@ by Christopher Martinezz
 </ul>
   </section>
 
-<section data-visibility="uncounted">Slide 3</section>
+<section data-visibility="uncounted">Slide 3.0</section>
  
 
 ---

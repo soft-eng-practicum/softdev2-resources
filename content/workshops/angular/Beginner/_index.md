@@ -27,7 +27,7 @@ by Christopher Martinezz
       <li>To check if you have npm run the <code>npm –v</code> to see if it is installed</li>
       <li><code>npm install -g @angular/cli</code> to install all Angular CLI</li>
         <ul><li>NOTE: The command above installs all necessary dependancies </ul></li>
-      <li>Type <em>ng version</em> to check the version of Angular CLI</li>
+      <li>Type <code>ng version</code> to check the version of Angular CLI</li>
     </ul>
   <br>
   <li>We will use <a href="https://code.visualstudio.com/download">VSCode</a> and 
@@ -41,14 +41,13 @@ by Christopher Martinezz
   <ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
  <br>
   <li>Command Prompt/Terminal: </li> 
- <br>
  <ul>
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
       <ul><li>NOTE:this command is to open VSCode through the command line/terminal</li></ul>
-    <li>`npm install` then <em>npm install -g npm</em></li>
+    <li>`npm install` then <code>npm install -g npm</code></li>
        <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repository</li></ul>
-    <li>ng serve -o</li>
+    <li><code>ng serve -o</code></li>
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>
  </ul>
 </ul>
@@ -69,7 +68,7 @@ by Christopher Martinezz
     </ul>
   <li>Modeling - grabbing and Manipulation of Data</li>
     <ul>
-      <li>Thhis is where we interact with the database/communicate with the controller</li>
+      <li>This is where we interact with the database/communicate with the controller</li>
     </ul>
 </ul>
 
@@ -95,7 +94,7 @@ by Christopher Martinezz
           aspect of the code.</li></ul>
   <li>Making a "Server" using the Http Request and an Obseervable</li>
   <ul><li>You will "get" an http request to the "server" to then return as <br>
-          an observable to <em>student.service.ts</em> and to the list <br> 
+          an observable to <code>student.service.ts</code> and to the list <br> 
           and details components.</li></ul>
 </ul>
 
@@ -133,6 +132,19 @@ by Christopher Martinezz
   <li>Under <b>asset</b> make a <b>data</b> folder and make a JSON file name <b>students.json</b></li>
   <li>After that copy and paste the data below and delete the one from <br>
       student-list & student-details</li>
+  <code>
+    [
+  {"id": 1, "name": "Chris", "age": 21},
+  {"id": 2, "name": "Denzel", "age": 21},
+  {"id": 3, "name": "David", "age": 21},
+  {"id": 4, "name": "Danielle", "age": 21},
+  {"id": 5, "name": "Josh", "age": 21},
+  {"id": 6, "name": "Anne", "age": 21},
+  {"id": 7, "name": "Anca", "age": 21},
+  {"id": 8, "name": "John", "age": 21}
+]
+</code>
+
 </ul>
 
 (picture here...)

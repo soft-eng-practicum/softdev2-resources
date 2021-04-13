@@ -14,18 +14,17 @@ author = "Alex Abraham"
  A JavaScript library for building user interfaces
   For web as well as mobile applications
  Developed by a team at Facebook in 2011
-  
----
-  
-### 
-<ul>
+ <ul>
 <li>It is an open-source, reusable component based front-end library</li>
 <li>In a model view controller architecture, react is the "view" which is responsible for how 
   the app looks and feels"</li>
 <li>Currently one of the most popular libraries for building Javascript libraries"</li>
 </ul>
 
+  
 ---
+  
+
 
 ### Components
 <h2>-A piece of the Ui-</h2>

@@ -18,8 +18,6 @@ margin = 0.1
 
 ## Welcome to the Docker Workshop
 
-*(Work in Progress)*
-
 Ryan Cosentino
 
 <img src="/softdev2-resources/images/docker/docker.png" alt="Docker Logo" width="400"/>

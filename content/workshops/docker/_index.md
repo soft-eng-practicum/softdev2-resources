@@ -185,7 +185,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ## Running Python 2.7
 
-You can create containers for different versions of Python:
+You can also create containers for different versions of Python:
 ```txt
 $ docker run -it --rm python:2.7-slim
 
@@ -204,7 +204,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ## Dockerfiles
 
-Say you'd like to slightly customize an image available on Docker Hub. If you're trying to run a Python application you could start off with the image `python:slim`, add your application, and install any dependencies to create an image specific to your app. This is done using a Dockerfile.
+Say you'd like to slightly customize an image available on Docker Hub. If you're trying to run a Python application you could start off with the image `python:slim`, add your application and install any dependencies to create an image specific to your app. This is done using a Dockerfile.
 
 {{% fragment %}}
 A Dockerfile is just a text file containing a list of commands used to build an image. The default filename is just `Dockerfile`. Dockerfiles must begin with a `FROM` instruction which specifies a parent image, such as `python:3.9` or `node:15.7`.
@@ -316,6 +316,6 @@ For example, in a container's PID namespace Apache might be running with process
 
 Other resources can also be containerized in this way. In one container the path `/bin/bash` could point to the Bourne Again Shell executable while in another container the file might not exist. This determination is made at the kernel level and completely transparent to the processes running inside the container.
 
-While a technical understanding of the technologies mentioned above isn't necessary to effectively use Docker, it often helps in understanding the "why" aspect of many components of Docker. For more details on how containers can be implemented, check out this [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) where a simple version of Docker is implemented in Go.
+While a technical understanding of the technologies mentioned above isn't necessary to effectively use Docker, it often helps in understanding the "why" component. For details on how containers can be implemented, check out this [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) where a simple version of Docker is written using Go.
 
 {{% /section %}}

@@ -88,6 +88,7 @@ a more complex user interface.</p>
 ---
 ###
 <p>Open your command prompt/termianl prompt on Windows/Mac</p>
+
 ```bash
  $ node -v
 ```

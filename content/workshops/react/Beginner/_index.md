@@ -89,7 +89,7 @@ a more complex user interface.</p>
 ###
 <p>Open your command prompt/termianl prompt on Windows/Mac</p>
 ```bash
- node -v
+ echo node -v
 ```
 <p>This is to see our version of nodeJs on our device, if there's an error, nodeJs didnt succesfully download</p>
 <p>Type: <strong> npm i -g create-react-app first-react-app</strong> (i= stands for install, and -g= stands for global, first-react-app is the name of our project)</p>

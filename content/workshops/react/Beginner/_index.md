@@ -46,7 +46,7 @@ a more complex user interface.</p>
     <td>
  <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="500" height="500"/>
       </td>
-    <td>
+    <td style="vertical-align: none;">
  <p>Here we see several components</p>
  <ul>
   <li>NavBar</li>

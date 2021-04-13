@@ -9,10 +9,10 @@ author = "Alex Abraham"
 ---
 ### Welcome to the React for beginners course
 ---
-# What is React Js?
+### What is React Js?
 
- ## A JavaScript library for building user interfaces
- # For web as well as mobile applications
+ A JavaScript library for building user interfaces
+  For web as well as mobile applications
  Developed by a team at Facebook in 2011
   
 ---

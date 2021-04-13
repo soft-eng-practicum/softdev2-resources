@@ -63,7 +63,7 @@ The output should contain a section for
 
 ## Images and Containers
 
-**Images** are read only templates containing libraries, programs, data etc. that are used to create docker containers. A **container** is a runnable instance of an image. To use an OOP analogy, you can think of an image as a class and a container as an instances.
+**Images** are read only templates containing libraries, programs, data etc. that are used to create docker containers. A **container** is a runnable instance of an image. To use an OOP analogy, you can think of an image as a class and a container as an instance.
 
 {{% fragment %}}
 [Docker Hub](https://hub.docker.com/) is the largest public registry of Docker images and contains images ranging from Linux distributions like Ubuntu or Debian to collections of prepackaged software like MySQL or PostgreSQL. Images can be tagged such as
@@ -84,7 +84,7 @@ First we'll create and run an Ubuntu container:
 $ docker run -it --rm ubuntu bash
 ```
 where
-- `-it` is short for `--interactive --tty` and starts the container in interactive mode
+- `-it` is short for `--interactive --tty` which starts the container in interactive mode and lets you enter text via the terminal
 - `--rm` deletes the container after it exits (but not the image)
 - `ubuntu` is the name of the image
 - `bash` is the command executed when the container starts<br>
@@ -125,15 +125,17 @@ root         1  1.0  0.1   4112  3492 pts/0    Ss   17:13   0:00 /bin/bash
 root        10  0.0  0.1   5900  3024 pts/0    R+   17:13   0:00 ps aux
 ```
 
-or factor very large numbers:
-```txt
-$ factor 12345678901010101010101010987654321
-12345678901010101010101010987654321: 19 853 32069 398053 465067 128312953569637
-```
+**Note:** If this were a virtual machine, you would see tens, possibly hundreds of running processes instead of a small list of isolated ones.
 
 ---
 
 ## First Container
+
+You can also try factoring very large numbers:
+```txt
+$ factor 12345678901010101010101010987654321
+12345678901010101010101010987654321: 19 853 32069 398053 465067 128312953569637
+```
 
 or:
 ```sh
@@ -168,17 +170,36 @@ ubuntu            latest        f63181f19b2f   12 days ago   72.9MB
 
 As another example, you can also try running Python instead of bash:
 ```txt
-$ docker run -it --rm python:slim python
+$ docker run -it --rm python:slim
 
 Python 3.9.1 (default, Jan 12 2021, 16:56:42)
 [GCC 8.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
+
 >>> a = 5
 >>> print(a + 2)
 7
->>> exit()
 
-$
+>>> exit()
+```
+
+---
+
+## Running Python 2.7
+
+You can create containers for different versions of Python:
+```txt
+$ docker run -it --rm python:2.7-slim
+
+Python 2.7.18 (default, Jan 12 2021, 16:56:42)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> a = 5
+>>> print a+2
+7
+
+>>> exit()
 ```
 
 ---
@@ -272,6 +293,8 @@ After entering your name, the container should print a greeting, a closing, and 
 
 ---
 
+{{% section %}}
+
 ## How Docker Works
 
 On Linux, Docker utilizes two technologies of the Linux kernel to achieve this containerization:
@@ -279,14 +302,22 @@ On Linux, Docker utilizes two technologies of the Linux kernel to achieve this c
 
 - [cgroups](https://en.wikipedia.org/wiki/Cgroups) (control groups) are used to isolate system resources such as CPU, memory, disk I/O, and networking.
 
----
-
-## How Docker Works (WIP)
-
-Essentially, whenever a process tries to access kernel resources, the kernel uses the process's allocated namespace to determine which resource to provide. For example, in a container's PID namespace Apache might be running with process ID 1, but it might have process ID 650 in the initial ("root") PID namespace that was created when the computer started. From the root PID namespace's perspective, Apache is just another process along with all the other processes running on the operating system, however from Apache's perspective, it looks like it's running alone with possibly a few additional processes used in the container. Other resources can also be containerized in this way. In one container the path `/bin/bash` could point to the Bourne Again Shell executable while in another container the file might not exist. This determination is made at the kernel level and completely transparent to the processes running inside the container.
+Click the down arrow for more information!
 
 ---
 
-## How Docker Works (WIP)
+## How Docker Works
 
-While a technical understanding of technologies mentioned above isn't necessary to effectively use Docker, it often helps in understanding the "why" aspect of many components of Docker. For more details on how containers can be implemented, check out this [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) where a simple version of Docker is implemented in Go.
+Essentially, whenever a process tries to access kernel resources, the kernel uses the process's allocated namespace to determine which resource to provide.
+
+For example, in a container's PID namespace Apache might be running with process ID 1, but it might have process ID 650 in the initial ("root") PID namespace that was created when the computer started. From the root PID namespace's perspective, Apache is just another process along with all the other processes running on the operating system, however from Apache's perspective, it looks like it's running alone with possibly a few additional processes used in the container.
+
+---
+
+## How Docker Works
+
+Other resources can also be containerized in this way. In one container the path `/bin/bash` could point to the Bourne Again Shell executable while in another container the file might not exist. This determination is made at the kernel level and completely transparent to the processes running inside the container.
+
+While a technical understanding of the technologies mentioned above isn't necessary to effectively use Docker, it often helps in understanding the "why" aspect of many components of Docker. For more details on how containers can be implemented, check out this [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) where a simple version of Docker is implemented in Go.
+
+{{% /section %}}

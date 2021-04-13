@@ -41,12 +41,12 @@ a more complex user interface.</p>
 ---
 
 ###
-<table style ="padding: 0; margin: 0; border-spacing: 0px; vertical-align: middle;">
+<table>
   <tr>
     <td>
  <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="500" height="500"/>
       </td>
-    <td>
+    <td style ="vertical-align: middle;">
  <p>Here we see several components</p>
  <ul>
   <li>NavBar</li>

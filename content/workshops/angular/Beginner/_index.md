@@ -149,7 +149,10 @@ by Christopher Martinezz
   {"id": 7, "name": "Anca", "age": 21},
   {"id": 8, "name": "John", "age": 21}
 ]
-</code>  
+</code> 
+    ```bash
+    $ blah
+    ```
   </li>
 </ul>
 

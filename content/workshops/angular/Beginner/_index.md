@@ -150,9 +150,6 @@ by Christopher Martinezz
   {"id": 8, "name": "John", "age": 21}
 ]
 </code> 
-    ```bash
-    $ blah
-    ```
   </li>
 </ul>
 

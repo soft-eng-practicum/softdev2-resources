@@ -129,7 +129,7 @@ by Christopher Martinezz
                don't have a server we will make one in Angualr using JSON.</ul></li>
 </ul>
 </section>
-<section><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="500" width="700"></section>
+<section><br><br><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="500" width="700"></section>
 
 ---
 ## Data Folder

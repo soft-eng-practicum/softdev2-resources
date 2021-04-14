@@ -138,6 +138,7 @@ by Christopher Martinezz
   <li>After that copy and paste the data below and delete the one from <br>
       student-list & student-details</li>
   <li>
+    
     <code data-trim data-noescape>
     [
   {"id": 1, "name": "Chris", "age": 21},
@@ -150,6 +151,7 @@ by Christopher Martinezz
   {"id": 8, "name": "John", "age": 21}
 ]
 </code> 
+
   </li>
 </ul>
 

@@ -100,7 +100,7 @@ by Christopher Martinezz
 </ul>
   </section>
 
-<section>How it works<br><img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900"><br>     
+<section><b>How it works</b><br><img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900"><br>     
 </section>
 
 
@@ -119,6 +119,7 @@ by Christopher Martinezz
 
 ---
 ## Declaring Dependencies for Service
+<section>
 <ul>
   <li>in the <em>student.service.ts</em> under the constructor's parameter, type<br>
       <b>private http: HttpClient</b> and the import.</li>
@@ -127,8 +128,8 @@ by Christopher Martinezz
        <ul><li>This will help when having a URL to get the data from the database. Since we <br>
                don't have a server we will make one in Angualr using JSON.</ul></li>
 </ul>
-<br><br>
-(Picture here...)
+</section>
+<section><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="500" width="700"></section>
 
 ---
 ## Data Folder

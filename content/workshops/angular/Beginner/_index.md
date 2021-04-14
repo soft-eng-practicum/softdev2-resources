@@ -139,18 +139,20 @@ by Christopher Martinezz
       student-list & student-details</li>
   <li>
     
-    <code data-trim data-noescape>
-    [
-  {"id": 1, "name": "Chris", "age": 21},
-  {"id": 2, "name": "Denzel", "age": 21},
-  {"id": 3, "name": "David", "age": 21},
-  {"id": 4, "name": "Danielle", "age": 21},
-  {"id": 5, "name": "Josh", "age": 21},
-  {"id": 6, "name": "Anne", "age": 21},
-  {"id": 7, "name": "Anca", "age": 21},
-  {"id": 8, "name": "John", "age": 21}
-]
-</code> 
+   
+   
+   ```js 
+ [
+    {"id": 1, "name": "Chris", "age": 21},
+    {"id": 2, "name": "Denzel", "age": 21},
+    {"id": 3, "name": "David", "age": 21},
+    {"id": 4, "name": "Danielle", "age": 21},
+    {"id": 5, "name": "Josh", "age": 21},
+    {"id": 6, "name": "Anne", "age": 21},
+    {"id": 7, "name": "Anca", "age": 21},
+    {"id": 8, "name": "John", "age": 21} 
+ ]
+```
 
   </li>
 </ul>

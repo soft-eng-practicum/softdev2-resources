@@ -93,7 +93,7 @@ by Christopher Martinezz
   <li>Making a student.service.ts file (picture needed...)</li>
   <ul><li>in order to provide the student data, we need the service to handle that<br>
           aspect of the code.</li></ul>
-  <li>Making a "Server" using the Http Request and an Obseervable</li>
+  <li>Making a "Server" using the Http Request and an Observable</li>
   <ul><li>You will "get" an http request to the "server" to then return as <br>
           an observable to <code>student.service.ts</code> and to the list <br> 
           and details components.</li></ul>

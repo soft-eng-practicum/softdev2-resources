@@ -213,7 +213,6 @@ export interface StuInterface {
 
 ---
 ## Conclusion
-<ul><li>As we see if we add something to the json file, it should add it to both pages amd there<br>
-        is no need for repeating code.</li>
+<ul><li>As we see if we add something to the json file, it should add it to both pages and there is no need for repeating code.</li>
 </ul>
 

@@ -81,9 +81,16 @@ a more complex user interface.</p>
 ### 
 <h1>Getting started!</h1>
 <h2>Install NodeJs</h2>
-<a href="https://nodejs.org/en/" target="_blank">NodeJS download site</a>
+<a href="https://nodejs.org/en/" target="_blank">NodeJS download link</a>
 <p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
 <p> Every time we use npm, we are using NodeJs's packager tool</p>
+
+---
+###
+<h1>Set up your environment (IDE)</h1>
+<p>Download <strong>Visual Studio Code</strong></p>
+<a href="https://code.visualstudio.com/download" target="_blank">Visual Studi Code download link</a>
+
 
 ---
 ###

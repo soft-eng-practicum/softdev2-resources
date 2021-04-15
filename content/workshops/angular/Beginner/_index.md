@@ -173,11 +173,15 @@ by Christopher Martinezz
   <ul><li>create an interface named <b>student.ts</b> and add the code below.</li></ul>
 </ul>
 <br>
+
+```js
 export interface StuInterface {<br>
     id: number;<br>
     name: string;<br>
     age: number;<br>
-}<br>
+}
+```
+<br>
 
 <ul>
 <li>going back to the <b>student.service.ts</b> add the <b>StuInterface[]</b> to the <br>

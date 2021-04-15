@@ -191,7 +191,7 @@ export interface StuInterface {
 </ul>
 <br>
 </section>
-<section><br><img src="/softdev2-resources/images/angular/observableSlide.PNG" height="400" width="900"><br>     
+<section><br><img src="/softdev2-resources/images/angular/observableSlide.PNG" height="400" width="500"><br>     
 </section>
 
 

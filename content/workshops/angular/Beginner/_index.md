@@ -45,7 +45,7 @@ by Christopher Martinezz
     <li>cd Desktop/demo/SID</li>
     <li>code .</li>
       <ul><li>NOTE:this command is to open VSCode through the command line/terminal</li></ul>
-    <li>`npm install` then <code>npm install -g npm</code></li>
+    <li><code>npm install</code> then <code>npm install -g npm</code></li>
        <ul><li>NOTE:this command is to install npm and get the latest version into the folder you have cloned from the repository</li></ul>
     <li><code>ng serve -o</code></li>
        <ul><li>NOTE:this command is to open the html to the browsers</li></ul>

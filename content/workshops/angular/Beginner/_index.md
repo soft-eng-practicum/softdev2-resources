@@ -167,6 +167,7 @@ by Christopher Martinezz
 
 ---
 ## Observable
+<section>
 <ul>
   <li>if you hover over the get() method it returns an observable so we need to be<br>
       casted to match an array of students format in order for it to work. </li>
@@ -188,7 +189,8 @@ export interface StuInterface {
     get and the <b>getStudents()</b> will return an observable of <b>Stuinterface[]</b>.</li>
 </ul>
 <br>
-(picture here...)
+</section>
+<section><b>observableSlide.PNG</b><img src="/softdev2-resources/images/angular/observableSlide.PNG" height="400" width="400"></section>
 
 
 ---

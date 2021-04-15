@@ -154,6 +154,7 @@ by Christopher Martinezz
 
 </ul>
 </section>
+
 <section><b>location to add the json data</b><br><img src="/softdev2-resources/images/angular/dataFolderSlide.PNG" height="400" width="400"></section>
 
 
@@ -190,7 +191,8 @@ export interface StuInterface {
 </ul>
 <br>
 </section>
-<section><b>observableSlide.PNG</b><img src="/softdev2-resources/images/angular/observableSlide.PNG" height="400" width="400"></section>
+<section><br><img src="/softdev2-resources/images/angular/observableSlide.PNG" height="400" width="900"><br>     
+</section>
 
 
 ---

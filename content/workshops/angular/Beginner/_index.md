@@ -154,7 +154,7 @@ by Christopher Martinezz
 
 </ul>
 </section>
-<section><b>location to add the json data</b><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="700" width="500"></section>
+<section><b>location to add the json data</b><br><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="400" width="600"></section>
 
 
 ---

@@ -133,14 +133,12 @@ by Christopher Martinezz
 
 ---
 ## Data Folder
+<section>
 <ul>
   <li>Under <b>asset</b> make a <b>data</b> folder and make a JSON file name <b>students.json</b></li>
   <li>After that copy and paste the data below and delete the one from <br>
       student-list & student-details</li>
-  <li>
-    
-   
-   
+  
    ```js 
  [
     {"id": 1, "name": "Chris", "age": 21},
@@ -154,10 +152,10 @@ by Christopher Martinezz
  ]
 ```
 
-  </li>
 </ul>
+</section>
+<section><b>location to add the json data</b><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="700" width="500"></section>
 
-(picture here below...)
 
 ---
 ## Make a URL

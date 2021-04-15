@@ -197,6 +197,7 @@ export interface StuInterface {
 
 ---
 ## Subscribe
+<section>
 <ul>
   <li>We need to subscribe to the data so that we can retrieve it.</li>
   <ul>
@@ -206,14 +207,13 @@ export interface StuInterface {
       <li>This goes for both <em>student-list</em> and <em>student-details</em> html.</li>
   </ul>
 </ul>
+<section>
+<section><br><img src="/softdev2-resources/images/angular/subscribeSlide.PNG" height="400" width="500"><br></section>
 
-(Picture here....)
 
 ---
 ## Conclusion
 <ul><li>As we see if we add something to the json file, it should add it to both pages amd there<br>
         is no need for repeating code.</li>
 </ul>
-     
-(Picture here...)
 

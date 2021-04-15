@@ -88,8 +88,7 @@ a more complex user interface.</p>
 ---
 ###
 <h1>Set up your environment (IDE)</h1>
-<a href="https://code.visualstudio.com/download" target="_blank">Visual Studi Code download link</a>
-<p>Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as Visual Studio IDE.</p>
+<a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code download link</a>
 
 
 

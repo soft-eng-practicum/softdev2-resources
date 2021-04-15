@@ -207,7 +207,7 @@ export interface StuInterface {
       <li>This goes for both <em>student-list</em> and <em>student-details</em> html.</li>
   </ul>
 </ul>
-<section>
+</section>
 <section><br><img src="/softdev2-resources/images/angular/subscribeSlide.PNG" height="400" width="500"><br></section>
 
 

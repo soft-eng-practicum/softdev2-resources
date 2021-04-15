@@ -175,7 +175,7 @@ by Christopher Martinezz
 <br>
 
 ```js
-export interface StuInterface {<br>
+export interface StuInterface {
     id: number;<br>
     name: string;<br>
     age: number;<br>

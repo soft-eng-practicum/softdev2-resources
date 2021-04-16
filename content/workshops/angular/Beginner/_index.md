@@ -73,8 +73,8 @@ by Christopher Martinezz
     </ul>
 </ul>
 </section>
-<section><img src="/softdev2-resources/images/angular/Student-Details Component.png" height="100" width="200">
-         <img src="/softdev2-resources/images/angular/Student-List Component.png" height="100" width="200">
+<section><img src="/softdev2-resources/images/angular/Student-Details Component.png" height="300" width="500">
+         <img src="/softdev2-resources/images/angular/Student-List Component.png" height="300" width="500">
 </section>
 
 ---
@@ -164,11 +164,13 @@ by Christopher Martinezz
 
 ---
 ## Make a URL
+<section>
 <ul>
   <li>Making this URL will direct it to the JSON file in the data folder</li>
-  
+  <li>If there is a URL that actually works, or another place in your code that needs to be called, add it into the single quotes</li>
 </ul>
-
+</section>
+<section><img src="/softdev2-resources/images/angular/makeAUrlSlide.PNG" height="550" width="400"></section>
 
 ---
 ## Observable

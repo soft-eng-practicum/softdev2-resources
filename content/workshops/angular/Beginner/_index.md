@@ -73,8 +73,8 @@ by Christopher Martinezz
     </ul>
 </ul>
 </section>
-<section><img src="/softdev2-resources/images/angular/Student-Details Component.png" height="300" width="500">
-         <img src="/softdev2-resources/images/angular/Student-List Component.png" height="300" width="500">
+<section><img src="/softdev2-resources/images/angular/Student-Details Component.png" height="750" width="600">
+         <img src="/softdev2-resources/images/angular/Student-List Component.png" height="750" width="600">
 </section>
 
 ---

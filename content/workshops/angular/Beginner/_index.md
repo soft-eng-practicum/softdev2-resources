@@ -9,7 +9,7 @@ author = "Christopher Martinez"
   
 ---
 
-## Welcome to Angular for beginners!!!
+##  Angular Service!!!
 
  <img src="/softdev2-resources/images/angular/angular-icon-logo.png" width="200" height="200">
 by Christopher Martinezz
@@ -60,6 +60,7 @@ by Christopher Martinezz
 ---
 
 ## Why is this code wrong?
+<section>
 <ul>
   <li>D.R.Y. - Don't Repeat Yourself</li>
     <ul>
@@ -71,7 +72,10 @@ by Christopher Martinezz
       <li>This is where we interact with the database/communicate with the controller</li>
     </ul>
 </ul>
-
+</section>
+<section><img src="/softdev2-resources/images/angular/Student-Details Component.png" height="500" width="700">
+         <img src="/softdev2-resources/images/angular/Student-List Component.png" height="500" width="700">
+</section>
 
 ---
 ## Angular Service Information

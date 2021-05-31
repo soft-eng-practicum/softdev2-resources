@@ -1,24 +1,16 @@
 +++
-title = "Git Workshops"
-weight = 01 # chapter number
+title = "Angular"
+weight = 03 # chapter number
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-plan-software.png" 
-    link="https://dilbert.com/strip/1998-11-10" >}}
-  
----
+## Angular Services workshop by Chris Martinez
 
-## Welcome
+An intermediate level workshop highlighting purpose of the Angular Services components.
 
-- What's better than to watch some workshops videos?
+{{% youtube XAoLbv_6Yws %}}
 
+- [Angular Services - slides](services/)
 
-Work in progress ...
-
-
-
-We will also add slides of the workshops...
-
-
+{{% reveal-prevnext-links %}}
 
 ---

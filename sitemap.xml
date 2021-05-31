@@ -1,243 +1,129 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/exams/midterm/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/requirements-phase/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/schedule/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/workshops/git/beginner/</loc>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/workshops/git/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/intellectual-property/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/</loc>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/workshops/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/client-checkpoint-phase/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/exams/final/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/syllabus/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-principles/</loc>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/workshops/angular/</loc>
-  </url>
-  
-  <url>
-    <loc>https://soft-eng-practicum.github.io/softdev2-resources/workshops/git/intermediate/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/licensing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-intro/chapter-tech/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-userstories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/gradebook/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/last-stretch-phase/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/github-social-computing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-scrum/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-teamwork/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/exams/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-agiledevelopment/chapter-kanban/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-jira/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-project-design/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-software-protection/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn1a/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn1b/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn1c/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn2a/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn2b/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn3a/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn3b/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn4a/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn4b/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn5a/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn5b/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn6a/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn6b/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/assgn7/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/instructor/assignments/presentations/</loc>
     <lastmod>2020-12-20T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/about/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://soft-eng-practicum.github.io/softdev2-resources/tags/</loc>
   </url>
-  
 </urlset>

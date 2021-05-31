@@ -1,22 +1,16 @@
 +++
-title = "Angular for Beginners"
+title = "Angular Services"
 outputs = ["Reveal"]
 weight = 01 # chapter number
 author = "Christopher Martinez"
+date = "12:25 PM 2/3/2021"
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" >}}12:25 PM 2/3/2021
+{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" >}}
   
 ---
 
-##  Angular Service!!!
-
- <img src="/softdev2-resources/images/angular/angular-icon-logo.png" width="200" height="200">
-by Christopher Martinezz
- 
----
-
-## Prerequisite
+## Prerequisites
 
 <ul>
   <li>Install <a href="https://nodejs.org/en/">NodeJS</a></li>
@@ -37,6 +31,7 @@ by Christopher Martinezz
 ---
  
  ## Download content 
+ 
 <section>
   <ul> <li>git clone https://github.com/KidLanz/SID.git</li> 
  <br>

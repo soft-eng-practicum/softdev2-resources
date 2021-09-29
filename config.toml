@@ -27,7 +27,7 @@ isHTML = true
     # Source Code repository section
     description = "Lectures and other resources for teaching and learning about software development"
     github_repository = "https://github.com/GGC-SD/softdev2-resources"
-    version = "0.1.1"
+    version = "0.8.0"
 
     # Settings special to the textbook
     author = "Anca Doloc-Mihu and Cengiz Günay"

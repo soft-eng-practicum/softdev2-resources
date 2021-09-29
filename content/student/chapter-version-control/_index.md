@@ -2,7 +2,7 @@
 title = "Version Control"
 outputs = ["Reveal"]
 # chapter number
-weight = 04
+weight = 4
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/comics/version-control-comic-return-to-zero.png" %}}

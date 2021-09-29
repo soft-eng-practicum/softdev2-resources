@@ -1,7 +1,7 @@
 +++
 title = "Requirements in Agile"
 outputs = ["Reveal"]
-weight = 03
+weight = 3
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/requirements/requirements.png" %}}
@@ -48,7 +48,7 @@ Some slides courtesy of Joan Smith, Eugene Agichstein, and the Internets.
 {{% /fragment %}}
 
 {{% fragment %}} <p align='left'> 10-100 x as much after release </p>
-
+<
 [Code Complete, p30](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
 {{% /fragment %}}
 

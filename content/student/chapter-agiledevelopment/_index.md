@@ -1,7 +1,7 @@
 +++
 title = "Agile Development"
 outputs = ["Reveal"]
-weight = 02 # chapter number
+weight = 2 # chapter number
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-agile-programming.png" 

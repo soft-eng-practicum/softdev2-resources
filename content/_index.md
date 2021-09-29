@@ -10,3 +10,5 @@ description: Home page
 # Welcome!
 
 We are still adding materials. Select a chapter from the menu on the left.
+
+To learn more about how to use or adopt this book, check out our [About page](/softdev2-resources/about/).

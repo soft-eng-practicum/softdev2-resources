@@ -1,6 +1,6 @@
 +++
 title = "Angular"
-weight = 03 # chapter number
+weight = 3 # chapter number
 +++
 
 ## Angular Services workshop by Chris Martinez

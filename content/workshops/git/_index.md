@@ -1,6 +1,6 @@
 +++
 title = "Git Workshops"
-weight = 01 # chapter number
+weight = 1 # chapter number
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-plan-software.png" 

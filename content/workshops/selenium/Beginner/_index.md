@@ -1,7 +1,7 @@
 +++
 title = "Selenium WebDriver for Beginners"
 outputs = ["Reveal"]
-weight = 08 # chapter number
+weight = 8 # chapter number
 author = "Safiyullah Khan"
 +++
 

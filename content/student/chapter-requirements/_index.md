@@ -1,7 +1,7 @@
 +++
 title = "Requirements in Agile"
 outputs = ["Reveal"]
-weight = 03
+weight = 3
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/requirements/requirements.png" %}}

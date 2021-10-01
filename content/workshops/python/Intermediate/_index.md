@@ -1,7 +1,7 @@
 +++
 title = "Intermediate Python"
 outputs = ["Reveal"]
-weight = 07 # chapter number
+weight = 7 # chapter number
 author = "Safiyullah Khan"
 +++
 

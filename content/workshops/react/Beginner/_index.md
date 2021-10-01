@@ -2,7 +2,7 @@
 +++
 title = "React for Beginners"
 outputs = ["Reveal"]
-weight = 01 # chapter number
+weight = 1 # chapter number
 author = "Alex Abraham"
 +++
 

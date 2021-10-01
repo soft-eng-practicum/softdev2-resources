@@ -1,7 +1,7 @@
 +++
 title = "Angular Services"
 outputs = ["Reveal"]
-weight = 01 # chapter number
+weight = 1 # chapter number
 author = "Christopher Martinez"
 date = "12:25 PM 2/3/2021"
 +++

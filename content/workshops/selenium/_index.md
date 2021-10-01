@@ -1,6 +1,6 @@
 +++
 title = "Selenium Workshops"
-weight = 08 # chapter number
+weight = 8 # chapter number
 author = "Safiyullah Khan"
 +++
 

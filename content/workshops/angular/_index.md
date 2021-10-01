@@ -1,5 +1,5 @@
 +++
-title = "Angular"
+title = "Angular (Videos)"
 weight = 3 # chapter number
 +++
 

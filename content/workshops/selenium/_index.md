@@ -1,17 +1,11 @@
 +++
-title = "Selenium Workshops"
+title = "Selenium (Videos)"
 weight = 8 # chapter number
 author = "Safiyullah Khan"
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/selenium/selenium-webdriver-logo.png" width="100" height="100" author="Safiyullah Khan">}}
+## Selenium by Safiyullah Khan
 
-
-  
----
-
-## Selenium
-
-- Safiyullah Khan
+{{% youtube aqiwpe_re-o %}}
 
 ---

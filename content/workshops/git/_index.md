@@ -1,6 +1,6 @@
 +++
 title = "Git (Videos)"
-weight = 1 # chapter number
+weight = 2 # chapter number
 +++
 
 ## Git branching and Github Pages

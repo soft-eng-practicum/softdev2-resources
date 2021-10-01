@@ -1,6 +1,6 @@
 +++
 title = "React Workshops"
-weight = 3 # chapter number
+weight = 1 # chapter number
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" >}}

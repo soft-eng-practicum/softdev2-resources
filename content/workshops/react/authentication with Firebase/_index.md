@@ -5,9 +5,9 @@ publishdate = "2021-01-5T12:00:00Z"
 
 title = "React and Firebase Workshop"
 description = "This workshop will authentication with React and Firebase"
-author = "Ryan Cosentino"
+author = "Keyvan Shabani"
 
-weight = -5
+weight = 2
 
 outputs = ["Reveal"]
 

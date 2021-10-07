@@ -31,18 +31,75 @@ outputs = ["Reveal"]
 
 - The most classic usage of cloud
 - Create a copy of a real computer, virtually
+- Similar to running a VM on the side on your laptop
 - We will create a Linux virtual machine
 - Optionally, you could also create Windows and Mac
-- See tutorial on page below
+- Continue onto page below
 
 ---
 
-#### Installing a node-based web server
+### Start Azure tutorial to create a VM and then follow here
 
-- You have an option to follow a full tutorial or create your own app
-- Skip to the next page for the latter
-- Follow instructions for [installing a MEAN stack application](https://docs.microsoft.com/en-us/learn/modules/build-a-web-app-with-mean-on-a-linux-vm/)
+- Start with this [tutorial](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-virtual-machines/), but keep this page open for modifications
+- Your Azure sandbox will expire in 1 hour
+- After your search in the Marketplace:
+  - Instead of **"Ubuntu Server 18.04 LTS"**, select **"20.04"**
+- Under "Networking" tab, select the **NIC network security group** to **None**
+- Stop at the end of the page after creating the VM
+- Note the public IP address from Overview tab on Azure Portal
+
+---
+
+### Connect to your VM
+
+- Connect to your VM via SSH:
+  - On MacOS, just open a terminal and type (replace `username` and `IP` with yours):
+  ```sh
+  ssh username@IP
+  ```
+  - On Windows, download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) and follow [instructions](https://www.ssh.com/ssh/putty/windows/) (enter only IP address and it will prompt for the username)
+- Once you are connected, follow below in the *remote* terminal (stop if you fail and ask for help)
+
+---
+
+### Install Node.js on VM
+
+- Install Node.js using APT package manager on Ubuntu:
+  ```sh
+  $ sudo apt update
+  $ sudo apt install nodejs
+  $ sudo apt install npm
+  ```
+- Test your Node version:
+  ```sh
+  $ node -v
+  ```
+- OPTIONAL: Add the Ubuntu PPA set up for up-to-date Node.js packages (will take couple of minutes):
+  ```sh
+  $ curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
+  $ sudo bash nodesource_setup.sh
+  ```
+
+---
+
+### Run a Node.js project
+
+- Try any of these, but **set port to 8080**:
+  - Example [Express Hello World](https://expressjs.com/en/starter/hello-world.html)
+  - Example [React projects](https://reactjs.org/community/examples.html)
+  - Example [Angular projects](https://angular.io/guide/example-apps-list)
+- Once you run the server process, open a browser to `public IP address:8080`
+- If you see the output of your server, **you are done!**
+- Some more optional info below
+
+---
+
+#### Other tutorials: Installing a node-based web server
+
+- If above instructions didn't work for you, read on
+- There is an older tutorial: [installing a MEAN stack application](https://docs.microsoft.com/en-us/learn/modules/build-a-web-app-with-mean-on-a-linux-vm/) 
 - You can skip setting up MongoDB if you will not use it
+- But, it uses an ancient Ubuntu 16.04 installation with Node version 4 (currently we're at 16)
 
 ---
 

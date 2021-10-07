@@ -84,8 +84,9 @@ outputs = ["Reveal"]
 
 ### Run a Node.js project
 
+- Use the `nano filename` to edit a file and paste content into it
 - Try any of these, but **set port to 8080**:
-  - Example [Express Hello World](https://expressjs.com/en/starter/hello-world.html)
+  - Example [Express Hello World](https://expressjs.com/en/starter/hello-world.html) (do `npm install express`)
   - Example [React projects](https://reactjs.org/community/examples.html)
   - Example [Angular projects](https://angular.io/guide/example-apps-list)
 - Once you run the server process, open a browser to `public IP address:8080`

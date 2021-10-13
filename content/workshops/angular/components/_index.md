@@ -13,7 +13,7 @@ weight = -5
 outputs = ["Reveal"]
 
 [reveal_hugo]
-custom_css = "css/angularComponents.css"
+custom_css = "css/docker.css"
 margin = 0.1
 +++
 

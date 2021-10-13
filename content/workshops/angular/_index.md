@@ -11,6 +11,8 @@ An intermediate level workshop highlighting purpose of the Angular Services comp
 
 - [Angular Services - slides](services/)
 
+- [Angular Components] (components/)
+
 {{% reveal-prevnext-links %}}
 
 ---

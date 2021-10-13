@@ -4,11 +4,11 @@ date = "2021-01-5T12:00:00Z"
 lastmod = "2021-01-5T12:00:00Z"
 publishdate = "2021-01-5T12:00:00Z"
 
-title = "Angular Components Workshop"
+title = "Angular Components"
 description = "This workshop will cover the basics of Components in Angular"
 author = "Roberto Salas Montoya"
 
-weight = -5
+weight = 2
 
 outputs = ["Reveal"]
 
@@ -32,27 +32,31 @@ Angular Components can be describe as a the most basic building blocks of an Ang
 {{% fragment %}}
 #### A component is made of
 
--HTML template that declares what is viewed on the page
--Typescript files that give it behavior just like methods do to a class in java
--CSS selector that defines how it is used in the view page
+- HTML template that declares what is viewed on the page
+- Typescript files that give it behavior just like methods do to a class in java
+- CSS selector that defines how it is used in the view page
+
 {{% /fragment %}}
 
 ---
 
-## Let's create an Angular Project to demo Components
+## Let's create an Angular Project
 
-In order to create Angular project we must first have Node installed in our system. You can download Node from [here] (https://nodejs.org/en/).
+In order to create Angular project we must first have Node installed in our system. You can download Node from [here](https://nodejs.org/en/).
 
 Once Node is installed the next step is to open the terminal and run the next commands to install and create our Angular application.
+
 ```sh
 $ npm install -g @angular/cli
 ```
 
-The previous command installed Angular the next command is to create a Project and give it a name. I will use ComponentsDemo for demostration you can use what ever you like.
+The previous command installed Angular the next command is to create a Project and give it a name.
+
 ```sh
 $ ng new ComponentsDemo
 ```
 The next command is to run and open our application
+
 ```sh
 $ cd ComponentsDemo
 ng serve --open
@@ -62,9 +66,10 @@ ng serve --open
 
 ## Accessing our Project
 
-In order to edit and modify our Angular Components application we are going to use Visual Studio Code. Download and install [Visual Studio Code](https://code.visualstudio.com/).
+In order to edit and modify our Angular components application we are going to use Visual Studio Code. Download and install [Visual Studio Code](https://code.visualstudio.com/).
 
 We can open our project in Visual code using the following command in the Terminal.
+
 ```sh
 $ code .
 ```
@@ -73,7 +78,7 @@ $ code .
 
 ## Creating our Components
 
-There are two way to create Components in Angular manually and using the Angular CLI
+There are two ways to create components in Angular manually and using the Angular CLI
 
 {{% fragment %}}
 The best way according to the Angular docs forms it to create components using the Angular CLI, Which is what we are going to do next.

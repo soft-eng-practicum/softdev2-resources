@@ -30,7 +30,7 @@ Roberto Salas
 Angular Components can be describe as a the most basic building blocks of an Angular application. In simple technical terms a component is just controller for the user interface.
 
 {{% fragment %}}
-#### A component is made of?
+#### A component is made of
 
 -HTML template that declares what is viewed on the page
 -Typescript files that give it behavior just like methods do to a class in java

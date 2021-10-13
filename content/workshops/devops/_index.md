@@ -1,5 +1,5 @@
 +++
-title = "Cloud Development Workshops"
+title = "DevOps Workshops"
 weight = 5 # chapter number
 +++
 

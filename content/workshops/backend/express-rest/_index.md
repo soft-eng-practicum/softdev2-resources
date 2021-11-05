@@ -208,6 +208,6 @@ outputs = ["Reveal"]
 
 ### More Information
 
-- To add more API routes and understand what they do, follow the tutorial at [TutorialsPoint](https://www.tutorialspoint.com/expressjs/index.htm)
+- To add more API routes and understand what they do, see the rest of tutorial at [TutorialsPoint](https://www.tutorialspoint.com/expressjs/expressjs_restful_apis.htm)
 - We skipped sections that explain basic usage of ExpressJS for web apps
 - REST API section has more routes with parameters for complete operation

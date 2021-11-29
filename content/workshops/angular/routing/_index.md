@@ -4,8 +4,8 @@ date = "2021-01-5T12:00:00Z"
 lastmod = "2021-01-5T12:00:00Z"
 publishdate = "2021-01-5T12:00:00Z"
 
-title = "Angular Components"
-description = "This workshop will cover the basics of Components in Angular"
+title = "Angular Routing"
+description = "This workshop will cover the basics of Routing in Angular"
 author = "Roberto Salas Montoya"
 
 weight = 2
@@ -17,7 +17,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-## Angular Components Workshop
+## Angular Routing Workshop
 
 Roberto Salas
 
@@ -25,22 +25,32 @@ Roberto Salas
 
 ---
 
-## What are Angular Components?
+## Overview
 
-Angular Components can be describe as a the most basic building blocks of an Angular application. In simple technical terms a component is just controller for the user interface.
+Introduction, What is routing in Angular?
+
+Creating a Project that includes the routing module or adding routing module.
+
+Configure Route Module Check
 
 {{% fragment %}}
-#### A component is made of
+#### Three step fundamental blocks
 
-- HTML template that declares what is viewed on the page
-- Typescript files that give it behavior just like methods do to a class in java
-- CSS selector that defines how it is used in the view page
+- Route paths
+- Router outlet
+- Routerlink and link active
 
 {{% /fragment %}}
 
 ---
+## What is Angular routing?
 
-## Let's create an Angular Project
+Routing in Angular is basically navigating between pages. The Router Module consists of directives and service to implement navigation. In more simple words you could describe it as the function behind the application that lets users move between different screen views.
+
+
+---
+
+## Create an Angular Project
 
 In order to create Angular project we must first have Node installed in our system. You can download Node from [here](https://nodejs.org/en/).
 
@@ -53,20 +63,21 @@ $ npm install -g @angular/cli
 The previous command installed Angular the next command is to create a Project and give it a name.
 
 ```sh
-$ ng new ComponentsDemo
-```
-The next command is to run and open our application
-
-```sh
-$ cd ComponentsDemo
-ng serve --open
+$ ng new RoutingDemo
 ```
 
 ---
 
-## Accessing our Project
+## Accessing and opening our Project
 
-In order to edit and modify our Angular components application we are going to use Visual Studio Code. Download and install [Visual Studio Code](https://code.visualstudio.com/).
+The next command is to run and open our application
+
+```sh
+$ cd RoutingDemo
+ng serve --open
+```
+
+In order to edit and modify our Angular Routing application we are going to use Visual Studio Code. Download and install [Visual Studio Code](https://code.visualstudio.com/).
 
 We can open our project in Visual code using the following command in the Terminal.
 
@@ -76,74 +87,42 @@ $ code .
 
 ---
 
-## Creating our Components
+## PRE-CONFIGURING ROUTES 1.0
 
-There are two ways to create components in Angular manually and using the Angular CLI
+Assuming you have component views already created we will type the following code to configure our Routes in the *AppRoutingModule* file.
 
-{{% fragment %}}
-The best way according to the Angular docs forms it to create components using the Angular CLI, Which is what we are going to do next.
+First import the components that will be routed. Use the following script to import each component at a time.
 
-From the terminal we need to go to our Angular application first once on it we will run the following command.
 ```sh
-$ ng generate component <component name>
+import {exampleComponent} from ‘./example/example/component’;
 ```
-FIY <component name> shoud be replace by the name of your component.
-{{% /fragment %}}
 
 ---
 
-## First Container
+## PRE-CONFIGURING ROUTES 1.1
 
-First we'll create and run an Ubuntu container:
+Now its time to import our *AppRoutingModule* into our *AppModule* *Note (skip this step if you created the app with routing this step should be already done)
+Make sure you’re *AppModule* has the commented importation shown in the image if not add both statements.
 
-```sh
-$ docker run -it --rm ubuntu bash
-```
-where
-- `-it` is short for `--interactive --tty` which starts the container in interactive mode and lets you enter text via the terminal
-- `--rm` deletes the container after it exits (but not the image)
-- `ubuntu` is the name of the image
-- `bash` is the command executed when the container starts<br>
-(technically bash is already the default entrypoint for the Ubuntu image and is only used here to showcase the [COMMAND] argument)
+<img src="/softdev2-resources/images/angular/ImportsAppModule.png" width="450" height="300" />
 
 ---
 
-## First Container
+## PRE-CONFIGURING ROUTES 1.2
 
-If this is your first time using the Ubuntu image Docker will first download it from Docker Hub. If everything has gone according to plan, you should see a new prompt similar to
-```sh
-root@a5d9a7a5232c:/#
-```
+The last thing step before we start creating our route paths is making sure that our AppRoutingModule file has imported Router Module and Routes correctly.
 
-where
-- `root` is the current user
-- `a5d9a7a5232c` is the hostname (randomly generated by Docker)
-- `/` is your current working directory (root directory in this case)
-- `#` is another indication that you're logged in as root (non root users have a `$`)
+The Angular CLI should have also set up the import and exports for @NgModule.
+Please verify if not done so add the missing code.
 
-**Note:** In documentation, it is common to use a single dollar sign `$` prompt (instead of something like `root@a5d9a7a5232c:/#`) for simplicity, especially when the information conveyed in a longer prompt isn't relevant to the concepts at hand.
+<img src="/softdev2-resources/images/angular/ImportRouterModule.png" width="450" height="300" />
 
 ---
 
-## First Container
+## Routes paths
 
-You can try running commands like `ls` to list files and folders:
-```sh
-$ ls
-bin  boot  dev  etc  home  lib  ...  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
-```
+In our *AppRoutingModule* there is a Routes array (const routes: Routes). Inside this array there is an object that contains two properties path and component. Path is just the URL path for the route and Component is used to tell Angular which component to use for the mentioned path.
 
-or `ps aux` to list running processes:
-```sh
-$ ps aux
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  1.0  0.1   4112  3492 pts/0    Ss   17:13   0:00 /bin/bash
-root        10  0.0  0.1   5900  3024 pts/0    R+   17:13   0:00 ps aux
-```
-
-**Note:** If this were a virtual machine, you would see tens, possibly hundreds of running processes instead of a small list of isolated ones.
-
----
 
 ## First Container
 

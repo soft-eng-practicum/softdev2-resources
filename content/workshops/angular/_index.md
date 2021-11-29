@@ -13,6 +13,8 @@ An intermediate level workshop highlighting purpose of the Angular Services comp
 
 - [Angular Components] (components/)
 
+- [Angular Routing] (routing/)
+
 {{% reveal-prevnext-links %}}
 
 ---

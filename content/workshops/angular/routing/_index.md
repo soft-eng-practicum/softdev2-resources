@@ -241,6 +241,7 @@ const routes: Routes = [
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
 ```
+
 ---
 
 ## 404 Page
@@ -256,5 +257,5 @@ Now with our component created add a nice html body message for the user. Add th
 ```sh
 <p>ERROR 404 PAGE NOT FOUND!!!</p>
 ```
-g
+
 {{% /section %}}

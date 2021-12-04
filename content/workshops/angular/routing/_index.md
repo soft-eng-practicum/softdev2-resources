@@ -230,6 +230,8 @@ After *component:* we would type the name of the component we want the user to g
 
 ## Displaying a 404 page
 
+{{% section %}}
+
 Display a page 404 can be useful to let the user know that what they are looking for was not found or miss typed. First thing we need to do to create a page 404 is create a new Angular component. After this we will proceed to add the path and route like the previous components. This is done in *AppRoutingModule.ts*.
 
 ```sh
@@ -239,3 +241,20 @@ const routes: Routes = [
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
 ```
+---
+
+## 404 Page
+
+Lets creat a Component to display our 404 message using the Angular CLI.
+
+```sh
+$ ng generate component pageNotFound
+```
+
+Now with our component created add a nice html body message for the user. Add this to *PageNotFoundComponent.html*.
+
+```sh
+<p>ERROR 404 PAGE NOT FOUND!!!</p>
+```
+g
+{{% /section %}}

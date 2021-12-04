@@ -169,9 +169,9 @@ const routes: Routes = [];
 export class AppRoutingModule { }
 ```
 
+{{% /section %}}
 ---
 
-{{% /section %}}
 
 ## Routes paths
 

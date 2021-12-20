@@ -3,16 +3,26 @@ title = "React Workshops"
 weight = 3 # chapter number
 +++
 
-{{% figure src="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" %}}
+{{% figure src="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" 
+    style="float: left;" %}}
 
 **React.JS** is a JavaScript library for building user interfaces, 
 for web as well as mobile applications.
 
-## React Authentication with Firebase
+## Workshop: React beginner 
+
+by Alex Abraham
+
+Follow [slides](beginner/)
+
+## Workshop: React Authentication with Firebase
 
 by Keyvan Shabani
 
-- [slides](authentication-with-firebase/)
+### Instructions:
+
+1. Clone [starter repo](https://github.com/soft-eng-practicum/react-auth-firebase-workshop) 
+1. Follow [slides](authentication-with-firebase/) with the video below
 
 {{% youtube VPpqHXfASO4 %}}
 

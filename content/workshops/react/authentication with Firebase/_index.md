@@ -3,7 +3,7 @@ date = "2021-01-5T12:00:00Z"
 lastmod = "2021-01-5T12:00:00Z"
 publishdate = "2021-01-5T12:00:00Z"
 
-title = "React and Firebase Workshop"
+title = "React Authentication with Firebase Workshop"
 description = "This workshop will authentication with React and Firebase"
 author = "Keyvan Shabani"
 
@@ -16,11 +16,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-## Welcome to the React and Firebase Workshop
-
-Author: Keyvan Shabani
-
-<img src="/softdev2-resources/images/react/authentication with Firebase/react.png" alt="React Firebase Logo" width="400"/>
+{{< reveal-titlepage figure="/softdev2-resources/images/react/authentication with Firebase/react.png" width="100px" >}}
 
 ---
 ## What is React?
@@ -64,34 +60,37 @@ npm start
 
 ## Let's set up a firebase project
 
-- go to **[Firebase](https://firebase.google.com)** and create an account.
+- Go to **[Firebase](https://firebase.google.com)** and create an account.
 - Click on "Go to console" on the top right corner.
 - Click on "Add project" to create a project, and simply follow the steps on website.
+- Then, open your terminal in the project root and install the Firebase command-line interface (CLI):
+```sh
+npm install -g firebase-tools
+```
+Mac and Linux users would need to prepend this command with `sudo`.
 
 ---
 
 ## Login to firebase and install
 
-- Open your terminal in the project root and run the following command
-```sh
-firebase login
-```
-
-- Run this command in terminal to view all of your firebase projects
-```sh
-firebase projects:list
-```
+- Once the Firebase CLI is installed on your computer, you should be able run:
+  ```sh
+  firebase login
+  ```
+- Run this command to view all of your firebase projects:
+  ```sh
+  firebase projects:list
+  ```
 - If you see the project you just created, then you are ready to go
-
 - Now it is time to install firebase in your project
-```sh
-npm install firebase
-```
+  ```sh
+  npm install firebase
+  ```
 ---
 
 ## Initialize Firebase App
 
-- under src folder, create a new folder called "firebase"
+- Under src folder, create a new folder called "firebase"
 - Inside the firebase folder, create a file called "config.js"
 - Now go to your project in firebase website. go to the "Project settings", and copy the project configuration.
 
@@ -416,7 +415,8 @@ http://localhost:3000/profile/
 
 ---
 
-## impelementing logout
+## Implementing logout
+
 - Now we have to create a logout function so the logged in user is able to logout.
 - Under the src folder, create a file and call it "Header.js" and paste the following code in it
 ```sh
@@ -461,7 +461,7 @@ export const logout = () => {
 
 ---
 
-## impelementing login
+## Implementing login
 - Inside pages folder, create a new file and call it "Login.js"
 - Paste this code in Login.js
 ```sh
@@ -565,7 +565,7 @@ import Login from './pages/Login';
 
 ---
 
-## impelementing forgot password
+## Implementing forgot password
 - Inside the pages folder, create a new file called "ForgotPassword.js" and paste the following
 ```sh
 import React, { useState } from 'react'

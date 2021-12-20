@@ -3,22 +3,16 @@ title = "React Workshops"
 weight = 3 # chapter number
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" >}}
-  
----
+{{% figure src="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" %}}
 
-## Welcome
+**React.JS** is a JavaScript library for building user interfaces, 
+for web as well as mobile applications.
 
-- this will be a react workshop for beginner and intermediate levels.
+## React Authentication with Firebase
 
+by Keyvan Shabani
 
-### React Js 
-**-A JavaScript library for building user interfaces-**
-For web as well as mobile applications
+- [slides](authentication-with-firebase/)
 
+{{% youtube VPpqHXfASO4 %}}
 
-We will also add slides of the workshops...
-
-
-
----

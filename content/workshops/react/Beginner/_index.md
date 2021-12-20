@@ -6,8 +6,8 @@ weight = 1 # chapter number
 author = "Alex Abraham"
 +++
 
----
-### Welcome to the React for beginners course
+{{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" >}}
+
 ---
 ### What is React Js?
 

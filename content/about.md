@@ -14,7 +14,7 @@ Materials are used for the [ITEC 3870 Software Development course sequence](http
 Other contributors (in alphabetical order of last name):
 - Alex Abraham
 - Ryan Cosentino
-- Kristopher Hendriks
+- Kristoffer Hendricks
 - Safiyullah Khan
 - Christopher Martinez
 - Shaun Mitchell

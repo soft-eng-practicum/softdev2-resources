@@ -93,18 +93,21 @@ a more complex user interface.</p>
 
 
 ---
-- Open your command prompt/termianl prompt on Windows/Mac
+
+### Test your environment and create an app
+
+- Open your command prompt/termianl prompt on Windows/Mac:
   ```bash
   $ node -v
   ```
-  This is to see our version of nodeJs on our device, if there's an error, nodeJs didnt succesfully download
+  This is to see our version of Node.js on our device, if there's an error, it didnt succesfully download.
 - Create your app:
   ```bash
   $ npx create-react-app first-react-app
   ```
   (`first-react-app` is the name of our project)
   If it works, congrats you've created your very first react app.
-- Start VS Code to look at the code:
+- Start VS Code to see its contents:
   ```bash
   code .
   ```

@@ -9,4 +9,4 @@ description: Home page
 
 # Welcome!
 
-We are still adding materials. Select a chapter from the menu on the left.
+Select a chapter from the menu on the left. See the [About](about/) page for more information about this resource.

@@ -1,5 +1,5 @@
 +++
-title = "Angular Beginner Workshop"
+title = "Angular Beginner"
 weight = 1 # chapter number
 outputs = ["Reveal"]
 +++

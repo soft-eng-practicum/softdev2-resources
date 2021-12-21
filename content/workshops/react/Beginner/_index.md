@@ -1,4 +1,3 @@
-
 +++
 title = "React for Beginners"
 outputs = ["Reveal"]
@@ -111,6 +110,88 @@ a more complex user interface.</p>
   ```bash
   code .
   ```
+---
 
+### Routing
 
- 
+<div style="width: 30%; display: inline-block;">
+
+```html
+<Switch>
+    <Route exact path="/">
+        <Home />
+    </Route>
+    <Route path="/about">
+        <About />
+    </Route>
+    <Route path="/dashboard">
+        <Dashboard />
+    </Route>
+</Switch>
+```
+
+</div><div style="width: 55%; display: inline-block;">
+
+```html
+<Router>
+    <div>
+        <ul>
+            <li>
+                <Link to="/">Home</Link>
+            </li>
+            <li>
+                <Link to="/about">About</Link>
+            </li>
+            <li>
+                <Link to="/dashboard">Dashboard</Link>
+            </li>
+        </ul>
+</Router>
+```
+
+</div>
+
+---
+
+### State vs Props
+
+- **State**: is the data that changes over the lifetime of a specific instance in a react component.
+
+- **Props** (short for properties): is an object of arbitrary inputs a React function accepts as the first argument.
+
+---
+
+{{% section %}}
+
+### Diving Into Props
+
+- Think of props as arguments to a function. React components are functions which return JSX (or more generally something that's renderable like React elements, null, a string, etc.).
+
+- Typically when you have a piece of code that you would like to reuse, you can place that code into a function and any dynamic values that code used before can be accepted as arguments (for example const five = 2 + 3 could be extracted to a function and accept arguments like so const five = add(2, 3)).
+
+---
+
+### Diving Into Props
+
+When we define:
+```jsx
+function Add(props) {
+    return (
+        <div>
+            {props.n1} + {props.n2} = {props.n1 + props.n2}
+        </div>
+        )
+}
+```
+
+Then,
+```html
+<Add n1={2} n2={3} />
+```
+
+Becomes:
+```
+2+3=5
+```
+
+{{% /section %}}

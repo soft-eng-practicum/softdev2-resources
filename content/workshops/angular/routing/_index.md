@@ -8,7 +8,7 @@ title = "Angular Routing"
 description = "This workshop will cover the basics of Routing in Angular"
 author = "Roberto Salas Montoya"
 
-weight = 2
+weight = 3
 
 outputs = ["Reveal"]
 
@@ -17,11 +17,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-## Angular Routing Workshop
-
-Roberto Salas
-
-<img src="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" />
+{{% reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" %}}
 
 ---
 

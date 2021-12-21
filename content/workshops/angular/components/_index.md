@@ -1,4 +1,3 @@
-
 +++
 date = "2021-01-5T12:00:00Z"
 lastmod = "2021-01-5T12:00:00Z"
@@ -17,11 +16,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-## Angular Components Workshop
-
-Roberto Salas
-
-<img src="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" />
+{{% reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" %}}
 
 ---
 

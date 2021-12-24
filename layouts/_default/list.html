@@ -1,0 +1,18 @@
+{{- define "main" -}}
+{{- if eq .Type "workshops" -}}
+<h1>{{ .Title }}</h1>
+
+<p>Contents:</p>
+<ul>
+  {{- range .Sections -}}
+  {{- .Render "li" -}}
+  {{- end -}}
+</ul>
+{{- else -}}
+<h1>{{ .Title }}</h1>
+{{- end -}}
+{{- partial "table-of-contents.html" . -}}
+{{- .Content -}}
+{{- partial "edit-meta.html" . -}}
+{{- partial "pagination.html" . -}}
+{{- end -}}

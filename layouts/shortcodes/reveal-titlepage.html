@@ -1,4 +1,4 @@
-<h3>{{ $.Page.Params.title }}</h3>
+<h3>{{ $.Page.Params.title }}{{- with $.Page.Params.video -}}&nbsp;(includes video){{- end -}}</h3>
 
 <h4>{{- $.Page.Param "course" -}}, <br> {{- $.Page.Param "author" -}} </h4>
 <p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
@@ -26,4 +26,12 @@
 
 {{- end -}}
 
-{{ partial "reveal-prevnext-links.html" . }}
+{{- partial "reveal-prevnext-links.html" . -}}
+
+{{- with $.Page.Params.video -}}
+</section>
+<section>
+  Watch video with rest of the slides here:
+  <iframe width="1024" height="600" src="https://www.youtube.com/embed/{{ . }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+{{- end -}}

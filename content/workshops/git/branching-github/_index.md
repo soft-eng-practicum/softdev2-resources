@@ -3,6 +3,7 @@ title = "Git Branching and Github Pages"
 #outputs = ["Reveal"]
 weight = 2 # chapter number
 author = "Shaun Mitchell"
+video = "q4Qja5OHaLQ"
 +++
 
 By Shaun Mitchell

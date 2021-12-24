@@ -4,6 +4,7 @@ outputs = ["Reveal"]
 weight = 4 # chapter number
 author = "Christopher Martinez"
 date = "12:25 PM 2/3/2021"
+video = "2_pJQNVwgFg"
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" >}}

@@ -6,6 +6,7 @@ publishdate = "2021-01-5T12:00:00Z"
 title = "React Authentication with Firebase Workshop"
 description = "This workshop will authentication with React and Firebase"
 author = "Keyvan Shabani"
+video = "VPpqHXfASO4"
 
 weight = 2
 
@@ -17,6 +18,12 @@ margin = 0.1
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/react/authentication with Firebase/react.png" width="100px" >}}
+
+---
+
+## Note:
+
+To follow instructions in video, clone this [starter repo](https://github.com/soft-eng-practicum/react-auth-firebase-workshop) 
 
 ---
 ## What is React?

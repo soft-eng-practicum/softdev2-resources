@@ -6,6 +6,7 @@ publishdate = "2021-01-5T12:00:00Z"
 title = "Docker Workshop"
 description = "This workshop will cover the basics of Docker"
 author = "Ryan Cosentino"
+video = "b_G9_0l3iqM"
 
 weight = -5
 
@@ -16,11 +17,14 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-## Welcome to the Docker Workshop
+{{< reveal-titlepage figure="/softdev2-resources/images/docker/docker.png" width="100px" >}}
 
-Ryan Cosentino
+---
 
-<img src="/softdev2-resources/images/docker/docker.png" alt="Docker Logo" width="400"/>
+## Troubleshooting notes:
+- Windows users may need to install the [WSL2 update](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package)
+- If Docker cannot turn on Hyper-V, you may need to enter your computer's BIOS setup to turn it on
+- Make sure you have enough space on your hard drive
 
 ---
 

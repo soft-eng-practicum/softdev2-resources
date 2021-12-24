@@ -9,20 +9,3 @@ weight = 3 # chapter number
 **React.JS** is a JavaScript library for building user interfaces, 
 for web as well as mobile applications.
 
-## Workshop: React beginner 
-
-by Alex Abraham
-
-Follow [slides](beginner/)
-
-## Workshop: React Authentication with Firebase
-
-by Keyvan Shabani
-
-### Instructions:
-
-1. Clone [starter repo](https://github.com/soft-eng-practicum/react-auth-firebase-workshop) 
-1. Follow [slides](authentication-with-firebase/) with the video below
-
-{{% youtube VPpqHXfASO4 %}}
-

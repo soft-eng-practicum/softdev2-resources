@@ -1,2 +1,4 @@
 <li>
-  <a href={{ .Permalink }}>{{ .Title }}</a> {{ with .Params.author }} by {{ . }}{{ end }}</li>
+  <a href={{ .Permalink }}>{{ .Title }}</a> {{ with .Params.author }} by {{ . }}{{ end }}
+  {{- with .Params.video -}}&nbsp;(<a href="https://youtu.be/{{- . -}}" target="_new">video</a>){{- end -}}
+</li>

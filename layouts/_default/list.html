@@ -1,15 +1,14 @@
 {{- define "main" -}}
-{{- if eq .Type "workshops" -}}
 <h1>{{ .Title }}</h1>
-
+{{- if eq .Type "workshops" -}}
+{{- with .Sections -}}
 <p>Contents:</p>
 <ul>
-  {{- range .Sections -}}
+  {{- range . -}}
   {{- .Render "li" -}}
   {{- end -}}
 </ul>
-{{- else -}}
-<h1>{{ .Title }}</h1>
+{{- end -}}
 {{- end -}}
 {{- partial "table-of-contents.html" . -}}
 {{- .Content -}}

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>React for Beginners</title>
+<meta name="description" content="Lectures and other resources for teaching and learning about software development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reveal.css"><link rel="stylesheet" href="/softdev2-resources/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/softdev2-resources/highlight-js/default.min.css">
+    <style>
+  .reveal strong {
+    color: blue;
+  }
+  .home-link {
+    position: absolute;
+    font-size: 150%;
+    left: 20px;
+    bottom: 20px;          
+  }
+  .reveal section.side-by-side figure {
+    position: absolute;
+  }
+  .reveal section.side-by-side figure:first-of-type {
+    left: 5%;
+  }
+  .reveal section.side-by-side figure:nth-of-type(2) {
+    right: 5%;
+  }
+</style>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-K4SBB2EN2W', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h3>React for Beginners</h3>
+
+<h4>ITEC 3870 Software Development II, <br>Alex Abraham</h4>
+<p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
+<figure >
+    
+ <img src="/softdev2-resources/images/react/1280px-React-icon.svg.png" height="100"  />
+    
+    
+</figure>
+<p><a class="nav nav-prev" href="https://ggc-sd.github.io/softdev2-resources/workshops/react/" title="React Workshops"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - React Workshops</a>, <span></span><a class="nav nav-next" href="https://ggc-sd.github.io/softdev2-resources/workshops/react/authentication-with-firebase/" title="React Authentication with Firebase Workshop">Next - React Authentication with Firebase Workshop <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+</section><section>
+<h3 id="what-is-react-js">What is React Js?</h3>
+<p>A JavaScript library for building user interfaces
+For web as well as mobile applications
+Developed by a team at Facebook in 2011</p>
+ <ul>
+<li>It is an open-source, reusable component based front-end library</li>
+<li>In a model view controller architecture, react is the "view" which is responsible for how 
+  the app looks and feels"</li>
+<li>Currently one of the most popular libraries for building Javascript libraries"</li>
+</ul>
+</section><section>
+<h3 id="components">Components</h3>
+<h2>-A piece of the Ui-</h2>
+<p>Independent, isolated, and reuable components, which become the building blocks to 
+a more complex user interface.</p>
+<p>In react, webpages are just the combination of many children components</p>
+</section><section>
+<h3 id="app">App</h3>
+<h2>-Root Component-</h2>
+<p>Every React application has at least one component known as the Root Component (Most of the time named the App component)</p>
+<p>This component represents the entire application and is where all the child components are displayed</p>
+</section><section>
+<h3 id="heading"></h3>
+<table>
+  <tr>
+    <td>
+ <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="500" height="500"/>
+      </td>
+    <td style ="vertical-align: middle;">
+ <p>Here we see several components</p>
+ <ul>
+  <li>NavBar</li>
+  <li>Feed</li>
+  <li>Who to Follow</li>
+  <li>Profile dashboard</li>
+  <li>Trends</li>
+</ul>
+      </td>
+    </tr>
+  </table>
+</section><section>
+<h3 id="heading-1"></h3>
+ <h2>Twitter Site</h2>
+ <p>Take a look at all the <strong>components</strong> (which are all the rectangles with red borders)</p>
+ <p><strong>The App (or root component) Component</strong> is the page itself that is displaying all the components</p>
+<table>
+  <tr>
+    <td>
+ <img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350"/>
+      </td>
+    <td>
+ <img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350"/>
+      </td>
+</tr>
+</table>
+</section><section>
+<h3 id="heading-2"></h3>
+<h1>Getting started!</h1>
+<h2>Install NodeJs</h2>
+<a href="https://nodejs.org/en/" target="_blank">NodeJS download link</a>
+<p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
+<p> Every time we use npm, we are using NodeJs's packager tool</p>
+</section><section>
+<h3 id="heading-3"></h3>
+<h1>Set up your environment (IDE)</h1>
+<a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code download link</a>
+</section><section>
+<h3 id="test-your-environment-and-create-an-app">Test your environment and create an app</h3>
+<ul>
+<li>Open your command prompt/termianl prompt on Windows/Mac:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>$ node -v
+</code></pre></div>This is to see our version of Node.js on our device, if there&rsquo;s an error, it didnt succesfully download.</li>
+<li>Create your app:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>$ npx create-react-app first-react-app
+</code></pre></div>(<code>first-react-app</code> is the name of our project)
+If it works, congrats you&rsquo;ve created your very first react app.</li>
+<li>Start VS Code to see its contents:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>code .
+</code></pre></div></li>
+</ul>
+</section><section>
+<h3 id="routing">Routing</h3>
+<div style="width: 30%; display: inline-block;">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;<span style="color:#f92672">Switch</span>&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">exact</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;
+        &lt;<span style="color:#f92672">Home</span> /&gt;
+    &lt;/<span style="color:#f92672">Route</span>&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;
+        &lt;<span style="color:#f92672">About</span> /&gt;
+    &lt;/<span style="color:#f92672">Route</span>&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/dashboard&#34;</span>&gt;
+        &lt;<span style="color:#f92672">Dashboard</span> /&gt;
+    &lt;/<span style="color:#f92672">Route</span>&gt;
+&lt;/<span style="color:#f92672">Switch</span>&gt;
+</code></pre></div></div><div style="width: 55%; display: inline-block;">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;<span style="color:#f92672">Router</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">ul</span>&gt;
+            &lt;<span style="color:#f92672">li</span>&gt;
+                &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;Home&lt;/<span style="color:#f92672">Link</span>&gt;
+            &lt;/<span style="color:#f92672">li</span>&gt;
+            &lt;<span style="color:#f92672">li</span>&gt;
+                &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;About&lt;/<span style="color:#f92672">Link</span>&gt;
+            &lt;/<span style="color:#f92672">li</span>&gt;
+            &lt;<span style="color:#f92672">li</span>&gt;
+                &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/dashboard&#34;</span>&gt;Dashboard&lt;/<span style="color:#f92672">Link</span>&gt;
+            &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+</code></pre></div></div>
+</section><section>
+<h3 id="state-vs-props">State vs Props</h3>
+<ul>
+<li>
+<p><strong>State</strong>: is the data that changes over the lifetime of a specific instance in a react component.</p>
+</li>
+<li>
+<p><strong>Props</strong> (short for properties): is an object of arbitrary inputs a React function accepts as the first argument.</p>
+</li>
+</ul>
+</section><section>
+
+
+<section data-shortcode-section>
+<h3 id="diving-into-props">Diving Into Props</h3>
+<ul>
+<li>
+<p>Think of props as arguments to a function. React components are functions which return JSX (or more generally something that&rsquo;s renderable like React elements, null, a string, etc.).</p>
+</li>
+<li>
+<p>Typically when you have a piece of code that you would like to reuse, you can place that code into a function and any dynamic values that code used before can be accepted as arguments (for example const five = 2 + 3 could be extracted to a function and accept arguments like so const five = add(2, 3)).</p>
+</li>
+</ul>
+</section><section>
+<h3 id="diving-into-props-1">Diving Into Props</h3>
+<p>When we define:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Add</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">return</span> (
+        &lt;<span style="color:#f92672">div</span>&gt;
+            {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n1</span>} <span style="color:#f92672">+</span> {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n2</span>} <span style="color:#f92672">=</span> {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n2</span>}
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        )
+}
+</code></pre></div><p>Then,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;<span style="color:#f92672">Add</span> <span style="color:#a6e22e">n1</span><span style="color:#f92672">=</span><span style="color:#e6db74">{2}</span> <span style="color:#a6e22e">n2</span><span style="color:#f92672">=</span><span style="color:#e6db74">{3}</span> /&gt;
+</code></pre></div><p>Becomes:</p>
+<pre tabindex="0"><code>2+3=5
+</code></pre>
+</section>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/softdev2-resources/reveal-hugo/object-assign.js></script>
+
+<a href="/softdev2-resources/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","height":720,"history":true,"slide_number":true,"width":1280}</script>
+<script type="application/json" id="reveal-hugo-page-params">null</script>
+
+<script src="/softdev2-resources/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    <a class="home-link" href="https://ggc-sd.github.io/softdev2-resources/">Home</a>
+
+    
+  </body>
+</html>

@@ -16,8 +16,9 @@
   }
   .home-link {
     position: absolute;
-    left: 10px;
-    bottom: 5px;          
+    font-size: 150%;
+    left: 20px;
+    bottom: 20px;          
   }
   .reveal section.side-by-side figure {
     position: absolute;
@@ -49,24 +50,20 @@ if (!doNotTrack) {
       <div class="slides">
   
 
-    <section><h3 id="re-introduction-to-software-engineering">Version Control</h3>
-<h4 id="itec-3870-software-development-ii-br-anca-doloc-mihu-and-cengiz-günay">ITEC 3870 Software Development II, <br>Anca Doloc-Mihu and Cengiz Günay</h4>
+    <section><h3>Version Control</h3>
+<h4>ITEC 3870 Software Development II, <br>Anca Doloc-Mihu and Cengiz Günay</h4>
 <p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
 <figure >
  <img src="/softdev2-resources/images/comics/version-control-comic-return-to-zero.png" height="300px"  />
 </figure>
-<p><a class="nav nav-prev" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-requirements/chapter-teamwork/" title="Teamwork"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Teamwork</a>, <span></span><a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/github-social-computing/" title="Github Social Computing">Next - Github Social Computing <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+<p><a class="nav nav-prev" href="https://ggc-sd.github.io/softdev2-resources/student/chapter-requirements/chapter-teamwork/" title="Teamwork"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Teamwork</a>, <span></span><a class="nav nav-next" href="https://ggc-sd.github.io/softdev2-resources/student/chapter-version-control/github-social-computing/" title="Github Social Computing">Next - Github Social Computing <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
 </section><section>
 <h2 id="why-version-control">Why Version Control?</h2>
 <ul>
 <li>It&rsquo;s a <strong>must</strong> in today&rsquo;s computing industry
 <ul>
-<li><a href="https://www.wired.com/2014/03/bitcoin-exchange/" target="_blank" rel="noreferrer noopener">Mt. Gox, a company that don&rsquo;t use VC and lost almost a billion dollars…</a>
-
-</li>
-<li><a href="http://www.troyhunt.com/2012/09/life-without-source-control-share-your.html" target="_blank" rel="noreferrer noopener">Another painful story without VC</a>
-
-</li>
+<li><a href="https://www.wired.com/2014/03/bitcoin-exchange/" target="_blank" rel="noreferrer noopener">Mt. Gox, a company that don&rsquo;t use VC and lost almost a billion dollars…</a></li>
+<li><a href="http://www.troyhunt.com/2012/09/life-without-source-control-share-your.html" target="_blank" rel="noreferrer noopener">Another painful story without VC</a></li>
 <li>challenge: find more horror stories!</li>
 </ul>
 </li>
@@ -116,9 +113,7 @@ if (!doNotTrack) {
 <h3 id="each-commit-increments-version">Each commit increments version</h3>
 <p><a href="http://betterexplained.com/articles/a-visual-guide-to-version-control/" target="_blank" rel="noreferrer noopener"><figure><img src="/softdev2-resources/images/version-control/version-control-basic-numbering.png" height="400px"/>
 </figure>
-</a>
-
-</p>
+</a></p>
 </section><section>
 <section data-background-image="/softdev2-resources/images/version-control/github-mainpage.png"
     data-background-opacity=0.5>
@@ -127,9 +122,7 @@ if (!doNotTrack) {
 </section><section>
 <p><a href="http://git-scm.com/documentation" target="_blank" rel="noreferrer noopener"><figure><img src="/softdev2-resources/images/version-control/github-linguist.png" height="100%"/>
 </figure>
-</a>
-
-</p>
+</a></p>
 </section><section>
 <section data-background-image="/softdev2-resources/images/version-control/github-linguist-log.png"
     data-background-position="center"
@@ -206,9 +199,7 @@ data-background-opacity=0.5></p>
   <p>Mac vs PC guy: different line endings:</p>
 <ul>
 <li>Can create a lot of trouble when sending/receiving files between Mac/Linux and Windows</li>
-<li>Git has settings for it: <a href="https://help.github.com/articles/dealing-with-line-endings/" target="_blank" rel="noreferrer noopener"><code>core.autocrlf</code></a>
-
- will automatically convert for you!</li>
+<li>Git has settings for it: <a href="https://help.github.com/articles/dealing-with-line-endings/" target="_blank" rel="noreferrer noopener"><code>core.autocrlf</code></a> will automatically convert for you!</li>
 </ul>
 
 </span>
@@ -236,21 +227,11 @@ data-background-opacity=0.5></p>
 </section><section>
 <h3 id="git-resources">Git Resources</h3>
 <ul>
-<li><a href="https://git-scm.com/" target="_blank" rel="noreferrer noopener">Download</a>
-
-</li>
-<li><a href="http://rogerdudler.github.io/git-guide/" target="_blank" rel="noreferrer noopener">A simple Git guide</a>
-
-</li>
-<li><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noreferrer noopener">The Pro Git book</a>
-
-</li>
-<li><a href="https://learngitbranching.js.org/" target="_blank" rel="noreferrer noopener">Learn Git branching</a>
-
-</li>
-<li><a href="http://try.github.io/" target="_blank" rel="noreferrer noopener">More learning tutorials</a>
-
-</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noreferrer noopener">Download</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/" target="_blank" rel="noreferrer noopener">A simple Git guide</a></li>
+<li><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noreferrer noopener">The Pro Git book</a></li>
+<li><a href="https://learngitbranching.js.org/" target="_blank" rel="noreferrer noopener">Learn Git branching</a></li>
+<li><a href="http://try.github.io/" target="_blank" rel="noreferrer noopener">More learning tutorials</a></li>
 </ul>
 </section><section>
 <h2 id="credits">Credits</h2>
@@ -326,7 +307,7 @@ data-background-opacity=0.5></p>
 
 
 
-    <a class="home-link" href="https://soft-eng-practicum.github.io/softdev2-resources/">Home</a>
+    <a class="home-link" href="https://ggc-sd.github.io/softdev2-resources/">Home</a>
 
     
   </body>

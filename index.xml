@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Intermediate Agile Software Development</title>
-    <link>https://soft-eng-practicum.github.io/softdev2-resources/</link>
+    <link>https://ggc-sd.github.io/softdev2-resources/</link>
     <description>Recent content in Home on Intermediate Agile Software Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://soft-eng-practicum.github.io/softdev2-resources/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://ggc-sd.github.io/softdev2-resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About this Site</title>
-      <link>https://soft-eng-practicum.github.io/softdev2-resources/about/</link>
+      <link>https://ggc-sd.github.io/softdev2-resources/about/</link>
       <pubDate>Thu, 19 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://soft-eng-practicum.github.io/softdev2-resources/about/</guid>
+      <guid>https://ggc-sd.github.io/softdev2-resources/about/</guid>
       <description>This site contains a collection of lectures, assignments, and instructor materials for teaching software engineering or development, at an intermediate level. It is assumed that students already know basic software engineering terms and skills.
-Materials are used for the ITEC 3870 Software Development II course taught at Georgia Gwinnett College . They were developed by Cengiz Gunay and Anca Doloc-Mihu , supported by an Affordable Learning Georgia grant in 2019-2020.</description>
+Materials are used for the ITEC 3870 Software Development course sequence taught at Georgia Gwinnett College. They were developed by Cengiz Gunay and Anca Doloc-Mihu, supported by an Affordable Learning Georgia grant at inception in 2019-2020 and by a continuation ALG grant for further development in 2020-2021.</description>
     </item>
     
   </channel>

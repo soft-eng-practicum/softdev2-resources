@@ -1,0 +1,53 @@
+::selection {
+	color: inherit;
+	background: lightskyblue;
+}
+
+.slide {
+	background-color: lightblue;
+}
+
+.reveal a,
+.home-link {
+	color: blue;
+}
+.reveal a:hover,
+.home-link:hover {
+	color: dodgerblue;
+}
+
+.home-link {
+	font-family: "Roboto Slab", serif;
+	text-decoration: none;
+}
+
+.reveal .controls {
+	color: darkblue;
+}
+
+.reveal .progress {
+	color: cadetblue;
+}
+
+/* Make code blocks round + shadow */
+div.highlight pre {
+	background-color: inherit !important;
+}
+div.highlight code {
+	padding: 15px;
+	border-radius: 5px;
+
+	background-color: #272822;
+	box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 10px;
+}
+/* Make highlighted parts of lines span whole code block */
+div.highlight code > span[style*="background-color:#3c3d38"] {
+	margin: 0 -15px;
+	padding: 0 15px;
+}
+
+.plain {
+	border: none !important;
+	background: none !important;
+	box-shadow: none !important;
+}

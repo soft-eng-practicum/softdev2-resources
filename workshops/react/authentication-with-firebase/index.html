@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>React Authentication with Firebase Workshop</title>
+<meta name="description" content="This workshop will authentication with React and Firebase">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reveal.css"><link rel="stylesheet" href="/softdev2-resources/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/softdev2-resources/highlight-js/default.min.css"><link rel="stylesheet" href="/softdev2-resources/css/docker.css" id="custom_css">
+    <style>
+  .reveal strong {
+    color: blue;
+  }
+  .home-link {
+    position: absolute;
+    font-size: 150%;
+    left: 20px;
+    bottom: 20px;          
+  }
+  .reveal section.side-by-side figure {
+    position: absolute;
+  }
+  .reveal section.side-by-side figure:first-of-type {
+    left: 5%;
+  }
+  .reveal section.side-by-side figure:nth-of-type(2) {
+    right: 5%;
+  }
+</style>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-K4SBB2EN2W', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h3>React Authentication with Firebase Workshop&nbsp;(includes video)</h3>
+
+<h4>ITEC 3870 Software Development II, <br>Keyvan Shabani</h4>
+<p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
+<figure >
+    
+ <img src="/softdev2-resources/images/react/authentication%20with%20Firebase/react.png" height="300px"  />
+    
+    
+</figure>
+<p><a class="nav nav-prev" href="https://ggc-sd.github.io/softdev2-resources/workshops/react/beginner/" title="React for Beginners"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - React for Beginners</a>, <span></span><a class="nav nav-next" href="https://ggc-sd.github.io/softdev2-resources/workshops/backend/" title="Back-end Workshops">Next - Back-end Workshops <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p></section>
+<section>
+  Watch video with rest of the slides here:
+  <iframe width="1024" height="600" src="https://www.youtube.com/embed/VPpqHXfASO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+</section><section>
+<h2 id="note">Note:</h2>
+<p>To follow instructions in video, clone this <a href="https://github.com/soft-eng-practicum/react-auth-firebase-workshop" target="_blank" rel="noreferrer noopener">starter repo</a></p>
+</section><section>
+<h2 id="what-is-react">What is React?</h2>
+<p>React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It’s used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook. React first deployed on Facebook’s newsfeed in 2011 and on Instagram in 2012.</p>
+
+
+<span class='fragment '
+  >
+  <h4 id="why-to-use-react">Why to use React?</h4>
+<p>ReactJS is just simpler to grasp right away. The component-based approach, well-defined lifecycle, and use of just plain JavaScript make React very simple to learn, build a professional web (and mobile applications), and support it. React uses a special syntax called JSX which allows you to mix HTML with JavaScript. This is not a requirement; Developer can still write in plain JavaScript but JSX is much easier to use.</p>
+
+</span>
+</section><section>
+<h2 id="what-is-firebase">What is Firebase?</h2>
+<p>Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure.
+Firebase is categorized as a NoSQL database program, which stores data in JSON-like documents.</p>
+<h4 id="what-are-the-key-features">What are the key features?</h4>
+<ol>
+<li>Authentication</li>
+<li>Realtime database</li>
+<li>Hosting</li>
+<li>Notifications</li>
+</ol>
+</section><section>
+<h3 id="now-it-is-time-to-create-a-react-project">Now it is time to create a React project</h3>
+<p>In order to create a react app, you must have Node installed on your device. If you do not have Node, download from <strong><a href="https://nodejs.org/en/download/" target="_blank" rel="noreferrer noopener">here</a></strong>.</p>
+<p>Open a terminal and run the following code which is going to create a React app for you.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm create-react-app authentication
+</code></pre></div><p>Once the app is created, enter the following command in your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>cd authentication
+npm start
+</code></pre></div></section><section>
+<h2 id="lets-set-up-a-firebase-project">Let&rsquo;s set up a firebase project</h2>
+<ul>
+<li>Go to <strong><a href="https://firebase.google.com" target="_blank" rel="noreferrer noopener">Firebase</a></strong> and create an account.</li>
+<li>Click on &ldquo;Go to console&rdquo; on the top right corner.</li>
+<li>Click on &ldquo;Add project&rdquo; to create a project, and simply follow the steps on website.</li>
+<li>Then, open your terminal in the project root and install the Firebase command-line interface (CLI):</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install -g firebase-tools
+</code></pre></div><p>Mac and Linux users would need to prepend this command with <code>sudo</code>.</p>
+</section><section>
+<h2 id="login-to-firebase-and-install">Login to firebase and install</h2>
+<ul>
+<li>Once the Firebase CLI is installed on your computer, you should be able run:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>firebase login
+</code></pre></div></li>
+<li>Run this command to view all of your firebase projects:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>firebase projects:list
+</code></pre></div></li>
+<li>If you see the project you just created, then you are ready to go</li>
+<li>Now it is time to install firebase in your project
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install firebase
+</code></pre></div></li>
+</ul>
+</section><section>
+<h2 id="initialize-firebase-app">Initialize Firebase App</h2>
+<ul>
+<li>Under src folder, create a new folder called &ldquo;firebase&rdquo;</li>
+<li>Inside the firebase folder, create a file called &ldquo;config.js&rdquo;</li>
+<li>Now go to your project in firebase website. go to the &ldquo;Project settings&rdquo;, and copy the project configuration.</li>
+</ul>
+</section><section>
+<ul>
+<li>It should look something like this.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>// Import the functions you need from the SDKs you need
+import <span style="color:#f92672">{</span> initializeApp <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#34;firebase/app&#34;</span>;
+import <span style="color:#f92672">{</span> getAnalytics <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#34;firebase/analytics&#34;</span>;
+// TODO: Add SDKs <span style="color:#66d9ef">for</span> Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app<span style="color:#960050;background-color:#1e0010">&#39;</span>s Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  apiKey: <span style="color:#e6db74">&#34;AIzaSyAeNL3vYTqEkQ4SjY2wCZI0tVt__ZLkPIk&#34;</span>,
+  authDomain: <span style="color:#e6db74">&#34;test-55b83.firebaseapp.com&#34;</span>,
+  projectId: <span style="color:#e6db74">&#34;test-55b83&#34;</span>,
+  storageBucket: <span style="color:#e6db74">&#34;test-55b83.appspot.com&#34;</span>,
+  messagingSenderId: <span style="color:#e6db74">&#34;226842485528&#34;</span>,
+  appId: <span style="color:#e6db74">&#34;1:226842485528:web:e18496f2f84e11d188346d&#34;</span>,
+  measurementId: <span style="color:#e6db74">&#34;G-GJG1R0XZHL&#34;</span>
+<span style="color:#f92672">}</span>;
+
+// Initialize Firebase
+const app <span style="color:#f92672">=</span> initializeApp<span style="color:#f92672">(</span>firebaseConfig<span style="color:#f92672">)</span>;
+const analytics <span style="color:#f92672">=</span> getAnalytics<span style="color:#f92672">(</span>app<span style="color:#f92672">)</span>;
+</code></pre></div><ul>
+<li>Paste the code inside the config.js file</li>
+</ul>
+</section><section>
+<h2 id="firebase-authentication-setup">Firebase Authentication Setup</h2>
+<ul>
+<li>In firebase website, click on &ldquo;Authentication&rdquo;</li>
+<li>then click on &ldquo;Sign-in method&rdquo; and enable &ldquo;Email/Password&rdquo;</li>
+<li>This is going to allow you to sign up and sign in users with email and password.</li>
+</ul>
+</section><section>
+<ul>
+<li>We will be using routing in your application so let&rsquo;s install react router</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install react-router-dom@5.2.0
+</code></pre></div><ul>
+<li>
+<p>You can use later version of router dom but this is what I am using for this workshop</p>
+</li>
+<li>
+<p>I am also using <strong><a href="https://semantic-ui.com/introduction/getting-started.html" target="_blank" rel="noreferrer noopener">Semantic Ui</a></strong> classes for the UI. See the documentation on how to install.</p>
+</li>
+</ul>
+</section><section>
+<h2 id="signup-component">Signup component</h2>
+<ul>
+<li>Let&rsquo;s create a signup component so the user can sign up</li>
+<li>Under src folder, create a folder called &ldquo;pages&rdquo;</li>
+<li>Inside pages, create a file called &ldquo;Signup.js&rdquo;</li>
+<li>Before writing any code, install react hook form which is a library I will be using to handle the forms and submittions.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install react-hook-form@5.7.2
+</code></pre></div><ul>
+<li>Read <strong><a href="https://react-hook-form.com" target="_blank" rel="noreferrer noopener">React Hook Form</a></strong> documentation for more information.</li>
+</ul>
+</section><section>
+<ul>
+<li>Paste the following code in Signup.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>;
+import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
+import <span style="color:#f92672">{</span> signup <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
+import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+
+<span style="color:#66d9ef">function</span> Signup<span style="color:#f92672">(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
+  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+
+  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+    let newUser;
+    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
+    try <span style="color:#f92672">{</span>
+      newUser <span style="color:#f92672">=</span> await signup<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
+      reset<span style="color:#f92672">()</span>;
+    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>newUser<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      props.history.push<span style="color:#f92672">(</span><span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>newUser.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span><span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+      setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>;
+
+  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+
+  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
+      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
+        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;two fields&#34;</span>&gt;
+              &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+                &lt;label&gt;
+                  First Name
+                  &lt;input
+                    type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>
+                    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;firstName&#34;</span>
+                    placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;First Name&#34;</span>
+                    ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+                  /&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+                &lt;label&gt;
+                  Last Name
+                  &lt;input
+                    type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>
+                    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lastName&#34;</span>
+                    placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last Name&#34;</span>
+                    ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+                  /&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+              &lt;label&gt;
+                Email
+                &lt;input
+                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
+                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+                /&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+              &lt;label&gt;
+                Password
+                &lt;input
+                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Password&#34;</span>
+                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+                /&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
+              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
+                Signup
+              &lt;/button&gt;
+              or
+              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span>&gt;Log In&lt;/Link&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  <span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>
+
+export default Signup;
+
+</code></pre></div></section><section>
+<h2 id="adding-style">Adding Style</h2>
+<ul>
+<li>Paste the following CSS code inside of App.css</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>body <span style="color:#f92672">{</span>
+  background-color: <span style="color:#75715e">#f9f9f9 !important;</span>
+  font-size: 15px;
+  font-family: <span style="color:#e6db74">&#39;Titillium Web&#39;</span>, sans-serif !important;
+<span style="color:#f92672">}</span>
+
+a <span style="color:#f92672">{</span>
+  text-decoration: none;
+<span style="color:#f92672">}</span>
+
+.ui.button,
+.ui.input,
+.ui.form input <span style="color:#f92672">{</span>
+  font-family: <span style="color:#e6db74">&#39;Titillium Web&#39;</span>, sans-serif !important;
+<span style="color:#f92672">}</span>
+
+header <span style="color:#f92672">{</span>
+  height: 50px;
+  background: <span style="color:#75715e">#1a2129;</span>
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+<span style="color:#f92672">}</span>
+
+header h2 <span style="color:#f92672">{</span>
+  color: <span style="color:#75715e">#fff;</span>
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  left: 10px;
+<span style="color:#f92672">}</span>
+
+.app <span style="color:#f92672">{</span>
+  margin-top: 100px;
+<span style="color:#f92672">}</span>
+
+.login-container <span style="color:#f92672">{</span>
+  display: flex;
+  align-items: center;
+  justify-content: center;
+<span style="color:#f92672">}</span>
+
+.ui.card.login-card <span style="color:#f92672">{</span>
+  width: 450px;
+<span style="color:#f92672">}</span>
+
+.ui.form input<span style="color:#f92672">[</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;text&#39;</span><span style="color:#f92672">]</span>,
+.ui.form input<span style="color:#f92672">[</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span><span style="color:#f92672">]</span>,
+.ui.form <span style="color:#66d9ef">select</span> <span style="color:#f92672">{</span>
+  margin-top: 10px;
+<span style="color:#f92672">}</span>
+
+.logout <span style="color:#f92672">{</span>
+  float: right;
+  position: relative;
+  top: 4px;
+  right: 15px;
+<span style="color:#f92672">}</span>
+
+.actions <span style="color:#f92672">{</span>
+  text-align: right;
+<span style="color:#f92672">}</span>
+
+.actions button <span style="color:#f92672">{</span>
+  margin-right: 5px;
+<span style="color:#f92672">}</span>
+
+.actions a <span style="color:#f92672">{</span>
+  margin-left: 5px;
+<span style="color:#f92672">}</span>
+</code></pre></div></section><section>
+<h2 id="create-a-new-route-for-signup">create a new route for signup</h2>
+<ul>
+<li>In App.js import the following</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import <span style="color:#e6db74">&#39;./pages/Signup&#39;</span>;
+import <span style="color:#f92672">{</span> Route, Switch, BrowserRouter, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</code></pre></div><ul>
+<li>Add the following code inside of the return</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;BrowserRouter&gt;
+        &lt;Header&gt;&lt;/Header&gt;
+        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
+          &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui grid container&#34;</span>&gt;
+            &lt;Switch&gt;
+              &lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt;
+              &lt;/Route&gt;
+            &lt;/Switch&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/BrowserRouter&gt;
+</code></pre></div></section><section>
+<h2 id="create-signup-function">create signup function</h2>
+<ul>
+<li>Create a new file inside firebase folder and call it &ldquo;auth.js&rdquo;</li>
+<li>write a sign up function which alllows the user to sign up with email and password</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import firebase from <span style="color:#e6db74">&#39;firebase/app&#39;</span>;
+import <span style="color:#e6db74">&#39;firebase/auth&#39;</span>;
+
+export const signup <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span> firstName, lastName, email, password <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+  const resp <span style="color:#f92672">=</span> await firebase
+    .auth<span style="color:#f92672">()</span>
+    .createUserWithEmailAndPassword<span style="color:#f92672">(</span>email, password<span style="color:#f92672">)</span>;
+  await resp.user.updateProfile<span style="color:#f92672">({</span> displayName: <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span>firstName<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>lastName<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span> <span style="color:#f92672">})</span>;
+<span style="color:#f92672">}</span>;
+</code></pre></div><ul>
+<li>Now we are able to signup new users and store their data in the firebase.</li>
+</ul>
+</section><section>
+<h2 id="displaying-the-users-data">Displaying the users data</h2>
+<ul>
+<li>Now that we have a user, it is time to create a profile page and display their information.</li>
+<li>Inside the pages folder, create a new file and call it &ldquo;Profile.js&rdquo; and include the following code</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
+
+const Profile <span style="color:#f92672">=</span> <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>!user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> null;
+  <span style="color:#f92672">}</span>
+
+  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+    &lt;div&gt;
+      &lt;p&gt;Name: <span style="color:#f92672">{</span>user.displayName<span style="color:#f92672">}</span>&lt;/p&gt;
+      &lt;p&gt;Email: <span style="color:#f92672">{</span>user.email<span style="color:#f92672">}</span>&lt;/p&gt;
+      &lt;p&gt;ID: <span style="color:#f92672">{</span>user.uid<span style="color:#f92672">}</span>&lt;/p&gt;
+      &lt;/div&gt;
+  <span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>
+
+export default Profile;
+</code></pre></div></section><section>
+<ul>
+<li>We also have to create a route for the Profile.js, so inside App.js paste the following code</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import Profile from <span style="color:#e6db74">&#39;./pages/Profile&#39;</span>;
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/profile/:id&#34;</span> component<span style="color:#f92672">={</span>Profile<span style="color:#f92672">}</span> /&gt;
+</code></pre></div><ul>
+<li>Now if we navigate to the following route, we see the user information if a user session exists.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>http://localhost:3000/profile/
+</code></pre></div></section><section>
+<h2 id="implementing-logout">Implementing logout</h2>
+<ul>
+<li>Now we have to create a logout function so the logged in user is able to logout.</li>
+<li>Under the src folder, create a file and call it &ldquo;Header.js&rdquo; and paste the following code in it</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+import <span style="color:#f92672">{</span> logout <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./firebase/auth&#39;</span>;
+import <span style="color:#f92672">{</span> useHistory <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./firebase/UserProvider&#39;</span>;
+
+<span style="color:#66d9ef">function</span> Header<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  const history <span style="color:#f92672">=</span> useHistory<span style="color:#f92672">()</span>;
+  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+
+  const logoutUser <span style="color:#f92672">=</span> async <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+    await logout<span style="color:#f92672">()</span>;
+    history.push<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;/login&#39;</span><span style="color:#f92672">)</span>;
+  <span style="color:#f92672">}</span>;
+
+  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+    &lt;header&gt;
+      &lt;h2&gt;GGC&lt;/h2&gt;
+      <span style="color:#f92672">{</span>!!user <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>
+        &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui secondary button logout&#34;</span> onClick<span style="color:#f92672">={</span>logoutUser<span style="color:#f92672">}</span>&gt;
+          LOGOUT
+        &lt;/button&gt;
+      <span style="color:#f92672">)}</span>
+    &lt;/header&gt;
+  <span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>
+
+export default Header;
+</code></pre></div></section><section>
+<ul>
+<li>Now that we have a header with a logout button, we must give the functionality to the button.</li>
+<li>Inside the auth.js file, create a new function called logout</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>export const logout <span style="color:#f92672">=</span> <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">return</span> firebase.auth<span style="color:#f92672">()</span>.signOut<span style="color:#f92672">()</span>;
+<span style="color:#f92672">}</span>;
+</code></pre></div></section><section>
+<h2 id="implementing-login">Implementing login</h2>
+<ul>
+<li>Inside pages folder, create a new file and call it &ldquo;Login.js&rdquo;</li>
+<li>Paste this code in Login.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>;
+import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
+import <span style="color:#f92672">{</span> login <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
+import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+
+<span style="color:#66d9ef">function</span> Login<span style="color:#f92672">(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
+  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+
+  const routeOnLogin <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>user<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+      props.history.push<span style="color:#f92672">(</span><span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>user.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span><span style="color:#f92672">)</span>;
+  <span style="color:#f92672">}</span>;
+
+  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+    let user;
+    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
+    try <span style="color:#f92672">{</span>
+      user <span style="color:#f92672">=</span> await login<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
+      reset<span style="color:#f92672">()</span>;
+    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      routeOnLogin<span style="color:#f92672">(</span>user<span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+      setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>;
+
+  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+
+  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
+      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
+        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+              &lt;label&gt;
+                Email
+                &lt;input
+                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
+                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+                /&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+              &lt;label&gt;
+                Password
+                &lt;input
+                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Password&#34;</span>
+                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+                /&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
+              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
+                Login
+              &lt;/button&gt;
+              or
+              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span>&gt;Sign Up&lt;/Link&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span>&gt;Forgot Password?&lt;/Link&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  <span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>
+
+export default Login;
+</code></pre></div></section><section>
+<ul>
+<li>Inside the auth.js file, create a new function called login</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>export const login <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span> email, password <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+  const resp <span style="color:#f92672">=</span> await firebase
+    .auth<span style="color:#f92672">()</span>
+    .signInWithEmailAndPassword<span style="color:#f92672">(</span>email, password<span style="color:#f92672">)</span>;
+
+  <span style="color:#66d9ef">return</span> resp.user;
+<span style="color:#f92672">}</span>;
+</code></pre></div><ul>
+<li>We still need to handle the routing for login so inside App.js, create a new route for login</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import Login from <span style="color:#e6db74">&#39;./pages/Login&#39;</span>;
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> component<span style="color:#f92672">={</span>Login<span style="color:#f92672">}</span> /&gt;
+</code></pre></div></section><section>
+<h2 id="implementing-forgot-password">Implementing forgot password</h2>
+<ul>
+<li>Inside the pages folder, create a new file called &ldquo;ForgotPassword.js&rdquo; and paste the following</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>
+import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
+import <span style="color:#f92672">{</span> passwordReset <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
+
+
+
+<span style="color:#66d9ef">function</span> ForgotPassword<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
+  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+
+  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
+    try <span style="color:#f92672">{</span>
+      await passwordReset<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
+      reset<span style="color:#f92672">()</span>;
+      console.log<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Please check your email address!&#34;</span><span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span>
+    setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+  <span style="color:#f92672">}</span>
+
+
+  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+
+  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
+      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
+        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+              &lt;label&gt;
+                Email
+                &lt;input
+                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
+                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+                  required
+                /&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
+              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
+                Reset Password
+              &lt;/button&gt;
+              or
+              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span>&gt;Login&lt;/Link&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  <span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>
+
+export default ForgotPassword;
+</code></pre></div></section><section>
+<ul>
+<li>Inside the auth.js file, create a new function called passwordReset</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>export const passwordReset <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span>email<span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">return</span> await firebase.auth<span style="color:#f92672">()</span>.sendPasswordResetEmail<span style="color:#f92672">(</span>email<span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>;
+</code></pre></div><ul>
+<li>We still need to handle the routing for ForgotPassword so inside App.js, create a new route for ForgotPassword</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import ForgotPassword from <span style="color:#e6db74">&#39;./pages/ForgotPassword&#39;</span>;
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span> component<span style="color:#f92672">={</span>ForgotPassword<span style="color:#f92672">}</span> /&gt;
+</code></pre></div></section><section>
+<h2 id="fixing-route-issues">fixing route issues</h2>
+<ul>
+<li>Before wrapping up on authentication, we still need to fix some issue. Currently even when we have a logged in user session, we are still able to navigate to login, signup and forgot password page. In order to fix this issue, we need to create a file called &ldquo;ProfileRedirect&rdquo; inside on a folder called &ldquo;router&rdquo;</li>
+</ul>
+</section><section>
+<ul>
+<li>Paste this code inside of the ProfileRedirect.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+import <span style="color:#f92672">{</span> Route, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
+
+const ProfileRedirect <span style="color:#f92672">=</span> <span style="color:#f92672">({</span> component: Component, ...rest <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+
+  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+    &lt;Route
+      <span style="color:#f92672">{</span>...rest<span style="color:#f92672">}</span>
+      render<span style="color:#f92672">={(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt;
+        !user ? <span style="color:#f92672">(</span>
+          &lt;Component <span style="color:#f92672">{</span>...props<span style="color:#f92672">}</span> /&gt;
+        <span style="color:#f92672">)</span> : <span style="color:#f92672">(</span>
+          &lt;Redirect
+            to<span style="color:#f92672">={{</span>
+              pathname: <span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>user.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>,
+              state: <span style="color:#f92672">{</span> from: props.location <span style="color:#f92672">}</span>,
+            <span style="color:#f92672">}}</span>
+          /&gt;
+        <span style="color:#f92672">)</span>
+      <span style="color:#f92672">}</span>
+    /&gt;
+  <span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>;
+
+export default ProfileRedirect;
+</code></pre></div></section><section>
+<ul>
+<li>Import ProfileRedirect in the App.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import ProfileRedirect from <span style="color:#e6db74">&#39;./router/ProfileRedirect&#39;</span>;
+</code></pre></div><ul>
+<li>Now in the App.js, change the Route of login, signup and forgotpassword to ProfileRedirect.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt;
+&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> component<span style="color:#f92672">={</span>Login<span style="color:#f92672">}</span> /&gt;
+&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span> component<span style="color:#f92672">={</span>ForgotPassword<span style="color:#f92672">}</span> /&gt;
+&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;
+    &lt;Redirect to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> /&gt;
+&lt;/Route&gt;
+</code></pre></div><ul>
+<li>This is going to fix the issue we had with routing and is going to block the logged in user to try to navigate to these pages.</li>
+</ul>
+</section><section>
+<h2 id="securing-users-profile">securing users profile</h2>
+<ul>
+<li>Even though we have a secure authentication system now, there is still one last issue that we need to fix. Currently if a user is logged in, they are able to navigate to another user&rsquo;s profile page as long as they have a user&rsquo;s UID. In order to fix this issue, we need to create a new file called &ldquo;PrivateRoute.js&rdquo; inside the router folder.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+import <span style="color:#f92672">{</span> Route, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
+
+const PrivateRoute <span style="color:#f92672">=</span> <span style="color:#f92672">({</span> component: Component, ...rest <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+
+  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+    &lt;Route
+      <span style="color:#f92672">{</span>...rest<span style="color:#f92672">}</span>
+      render<span style="color:#f92672">={(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+        const id <span style="color:#f92672">=</span> props.match.params.id;
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>!!user <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>user.uid <span style="color:#f92672">===</span> id<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+          <span style="color:#66d9ef">return</span> &lt;Component <span style="color:#f92672">{</span>...props<span style="color:#f92672">}</span> /&gt;;
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+          <span style="color:#66d9ef">return</span> &lt;Redirect to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> /&gt;;
+        <span style="color:#f92672">}</span>
+      <span style="color:#f92672">}}</span>
+    /&gt;
+  <span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span>;
+
+export default PrivateRoute;
+</code></pre></div></section><section>
+<ul>
+<li>Second thing we need to do is to change the route of profile page. Therefore, inside the App.js file change the route to the following</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import PrivateRoute from <span style="color:#e6db74">&#39;./router/PrivateRoute&#39;</span>;
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;PrivateRoute exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/profile/:id&#34;</span> component<span style="color:#f92672">={</span>Profile<span style="color:#f92672">}</span> /&gt;
+</code></pre></div><ul>
+<li>This is going to avoid the user to navigate to a profile page if the user&rsquo;s UID does not match with the ID in our props. This means that the users is authorize to see that profile page, because it does not belong to them.</li>
+</ul>
+</section><section>
+<h2 id="summary">Summary</h2>
+<p>This bring us to the end of Authentication with React and Firebase, I hope this is going to be useful for you when creating your own react project.</p>
+<p>The code for this tutorial can be found in my <strong><a href="https://github.com/keyvan1996" target="_blank" rel="noreferrer noopener">Github</a></strong></p>
+<p>Create by: Keyvan Shabani</p>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/softdev2-resources/reveal-hugo/object-assign.js></script>
+
+<a href="/softdev2-resources/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","height":720,"history":true,"slide_number":true,"width":1280}</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_css":"css/docker.css","margin":0.1}</script>
+
+<script src="/softdev2-resources/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    <a class="home-link" href="https://ggc-sd.github.io/softdev2-resources/">Home</a>
+
+    
+  </body>
+</html>

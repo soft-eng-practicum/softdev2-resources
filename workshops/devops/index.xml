@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevOps Workshops on Intermediate Agile Software Development</title>
-    <link>https://ggc-sd.github.io/softdev2-resources/workshops/devops/</link>
+    <link>https://soft-eng-practicum.github.io/softdev2-resources/workshops/devops/</link>
     <description>Recent content in DevOps Workshops on Intermediate Agile Software Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Mar 2021 12:00:00 +0000</lastBuildDate><atom:link href="https://ggc-sd.github.io/softdev2-resources/workshops/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Mar 2021 12:00:00 +0000</lastBuildDate><atom:link href="https://soft-eng-practicum.github.io/softdev2-resources/workshops/devops/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

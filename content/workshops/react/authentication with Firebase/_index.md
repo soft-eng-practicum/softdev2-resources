@@ -83,15 +83,16 @@ npm start
 - Go to **[Firebase](https://firebase.google.com)** and create an account.
 - Click on "Go to console" on the top right corner.
 - Click on "Add project" to create a project, and simply follow the steps on website.
+
+---
+
+## OPTIONAL: Login to firebase and install
+
 - Then, open your terminal in the project root and install the Firebase command-line interface (CLI):
 ```sh
 npm install -g firebase-tools
 ```
 Mac and Linux users would need to prepend this command with `sudo`.
-
----
-
-## Login to firebase and install
 
 - Once the Firebase CLI is installed on your computer, you should be able run:
   ```sh
@@ -102,10 +103,7 @@ Mac and Linux users would need to prepend this command with `sudo`.
   firebase projects:list
   ```
 - If you see the project you just created, then you are ready to go
-- Now it is time to install firebase in your project
-  ```sh
-  npm install firebase
-  ```
+
 ---
 
 ## Initialize Firebase App

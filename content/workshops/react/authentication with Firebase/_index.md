@@ -25,6 +25,11 @@ margin = 0.1
 
 To follow instructions in video, clone this [starter repo](https://github.com/soft-eng-practicum/react-auth-firebase-workshop) 
 
+Example:
+```sh
+git clone https://github.com/soft-eng-practicum/react-auth-firebase-workshop.git
+```
+
 ---
 ## What is React?
 React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It’s used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook. React first deployed on Facebook’s newsfeed in 2011 and on Instagram in 2012.

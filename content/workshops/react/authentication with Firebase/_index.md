@@ -164,8 +164,6 @@ npm install react-router-dom@5.2.0
 
 ## Signup component
 - Let's create a signup component so the user can sign up
-- Under src folder, create a folder called "pages"
-- Inside pages, create a file called "Signup.js"
 - Before writing any code, install react hook form which is a library I will be using to handle the forms and submittions.
 ```sh
 npm install react-hook-form@5.7.2
@@ -174,7 +172,9 @@ npm install react-hook-form@5.7.2
 
 ---
 
-- Paste the following code in Signup.js
+- Under src folder, create a folder called `pages`
+- Inside pages, create a file called `Signup.js`
+- Paste the following code in `Signup.js`
 ```sh
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';

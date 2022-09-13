@@ -110,9 +110,10 @@ Mac and Linux users would need to prepend this command with `sudo`.
 
 ## Initialize Firebase App
 
-- Under src folder, create a new folder called "firebase"
-- Inside the firebase folder, create a file called "config.js"
-- Now go to your project in firebase website. go to the "Project settings", and copy the project configuration.
+- These are already done for you in the **starter app**:
+  - Under src folder, create a new folder called "firebase"
+  - Inside the firebase folder, create a file called "config.js"
+- But you need to do this: go to your project in firebase website, go to the "Project settings", and copy the project configuration.
 
 ---
 
@@ -140,7 +141,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 ```
-- Paste the code inside the config.js file
+- Paste the code inside the `config.js` file
 
 ---
 

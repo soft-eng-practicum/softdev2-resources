@@ -360,7 +360,7 @@ header h2 {
 ## create a new route for signup
 - In App.js import the following
 ```sh
-import './pages/Signup';
+import Signup from './pages/Signup';
 import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 ```
 - Add the following code inside of the return

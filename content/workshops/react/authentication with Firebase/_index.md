@@ -58,7 +58,15 @@ Firebase is categorized as a NoSQL database program, which stores data in JSON-l
 
 In order to create a react app, you must have Node installed on your device. If you do not have Node, download from **[here](https://nodejs.org/en/download/)**.
 
-Open a terminal and run the following code which is going to create a React app for you.
+If you **cloned the starter repo**, open a terminal and change your directory into it, install dependencies, and run:
+```sh
+cd react-auth-firebase-workshop
+npm install
+npm start
+```
+(it may give a few errors and open a blank web page)
+
+If you **did NOT clone the starter repo**, open a terminal and run the following code which is going to create a React app for you.
 ```sh
 npm create-react-app authentication
 ```

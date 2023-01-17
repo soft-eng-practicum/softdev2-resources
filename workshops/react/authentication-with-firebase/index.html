@@ -68,7 +68,9 @@ if (!doNotTrack) {
 </section><section>
 <h2 id="note">Note:</h2>
 <p>To follow instructions in video, clone this <a href="https://github.com/soft-eng-practicum/react-auth-firebase-workshop" target="_blank" rel="noreferrer noopener">starter repo</a></p>
-</section><section>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>git clone https://github.com/soft-eng-practicum/react-auth-firebase-workshop.git
+</span></span></code></pre></div></section><section>
 <h2 id="what-is-react">What is React?</h2>
 <p>React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It’s used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook. React first deployed on Facebook’s newsfeed in 2011 and on Instagram in 2012.</p>
 
@@ -93,69 +95,84 @@ Firebase is categorized as a NoSQL database program, which stores data in JSON-l
 </section><section>
 <h3 id="now-it-is-time-to-create-a-react-project">Now it is time to create a React project</h3>
 <p>In order to create a react app, you must have Node installed on your device. If you do not have Node, download from <strong><a href="https://nodejs.org/en/download/" target="_blank" rel="noreferrer noopener">here</a></strong>.</p>
-<p>Open a terminal and run the following code which is going to create a React app for you.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm create-react-app authentication
-</code></pre></div><p>Once the app is created, enter the following command in your terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>cd authentication
-npm start
-</code></pre></div></section><section>
+<p>If you <strong>cloned the starter repo</strong>, open a terminal and do:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>cd react-auth-firebase-workshop
+</span></span><span style="display:flex;"><span>npm install
+</span></span><span style="display:flex;"><span>npm start
+</span></span></code></pre></div><p>(it may give a few errors and open a blank web page)</p>
+<p>If you <strong>did NOT clone the starter repo</strong>, open a terminal and create a new React app:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm create-react-app authentication
+</span></span></code></pre></div><p>Once the app is created, enter the following command in your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>cd authentication
+</span></span><span style="display:flex;"><span>npm start
+</span></span></code></pre></div></section><section>
 <h2 id="lets-set-up-a-firebase-project">Let&rsquo;s set up a firebase project</h2>
 <ul>
 <li>Go to <strong><a href="https://firebase.google.com" target="_blank" rel="noreferrer noopener">Firebase</a></strong> and create an account.</li>
 <li>Click on &ldquo;Go to console&rdquo; on the top right corner.</li>
 <li>Click on &ldquo;Add project&rdquo; to create a project, and simply follow the steps on website.</li>
+</ul>
+</section><section>
+<h2 id="optional-login-to-firebase-and-install">OPTIONAL: Login to firebase and install</h2>
+<ul>
 <li>Then, open your terminal in the project root and install the Firebase command-line interface (CLI):</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install -g firebase-tools
-</code></pre></div><p>Mac and Linux users would need to prepend this command with <code>sudo</code>.</p>
-</section><section>
-<h2 id="login-to-firebase-and-install">Login to firebase and install</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install -g firebase-tools
+</span></span></code></pre></div><p>Mac and Linux users would need to prepend this command with <code>sudo</code>.</p>
 <ul>
 <li>Once the Firebase CLI is installed on your computer, you should be able run:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>firebase login
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>firebase login
+</span></span></code></pre></div></li>
 <li>Run this command to view all of your firebase projects:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>firebase projects:list
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>firebase projects:list
+</span></span></code></pre></div></li>
 <li>If you see the project you just created, then you are ready to go</li>
-<li>Now it is time to install firebase in your project
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install firebase
-</code></pre></div></li>
 </ul>
 </section><section>
 <h2 id="initialize-firebase-app">Initialize Firebase App</h2>
 <ul>
+<li>These are already done for you in the <strong>starter app</strong>:
+<ul>
 <li>Under src folder, create a new folder called &ldquo;firebase&rdquo;</li>
 <li>Inside the firebase folder, create a file called &ldquo;config.js&rdquo;</li>
-<li>Now go to your project in firebase website. go to the &ldquo;Project settings&rdquo;, and copy the project configuration.</li>
+</ul>
+</li>
+<li>But you need to do this:
+<ul>
+<li>go to your project in firebase website</li>
+<li>go to the &ldquo;Project settings&rdquo;,</li>
+<li>click on &ldquo;Create App&rdquo; and select &ldquo;Web app&rdquo;,</li>
+<li>copy its project configuration.</li>
+</ul>
+</li>
 </ul>
 </section><section>
 <ul>
 <li>It should look something like this.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>// Import the functions you need from the SDKs you need
-import <span style="color:#f92672">{</span> initializeApp <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#34;firebase/app&#34;</span>;
-import <span style="color:#f92672">{</span> getAnalytics <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#34;firebase/analytics&#34;</span>;
-// TODO: Add SDKs <span style="color:#66d9ef">for</span> Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app<span style="color:#960050;background-color:#1e0010">&#39;</span>s Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
-  apiKey: <span style="color:#e6db74">&#34;AIzaSyAeNL3vYTqEkQ4SjY2wCZI0tVt__ZLkPIk&#34;</span>,
-  authDomain: <span style="color:#e6db74">&#34;test-55b83.firebaseapp.com&#34;</span>,
-  projectId: <span style="color:#e6db74">&#34;test-55b83&#34;</span>,
-  storageBucket: <span style="color:#e6db74">&#34;test-55b83.appspot.com&#34;</span>,
-  messagingSenderId: <span style="color:#e6db74">&#34;226842485528&#34;</span>,
-  appId: <span style="color:#e6db74">&#34;1:226842485528:web:e18496f2f84e11d188346d&#34;</span>,
-  measurementId: <span style="color:#e6db74">&#34;G-GJG1R0XZHL&#34;</span>
-<span style="color:#f92672">}</span>;
-
-// Initialize Firebase
-const app <span style="color:#f92672">=</span> initializeApp<span style="color:#f92672">(</span>firebaseConfig<span style="color:#f92672">)</span>;
-const analytics <span style="color:#f92672">=</span> getAnalytics<span style="color:#f92672">(</span>app<span style="color:#f92672">)</span>;
-</code></pre></div><ul>
-<li>Paste the code inside the config.js file</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>// Import the functions you need from the SDKs you need
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> initializeApp <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#34;firebase/app&#34;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> getAnalytics <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#34;firebase/analytics&#34;</span>;
+</span></span><span style="display:flex;"><span>// TODO: Add SDKs <span style="color:#66d9ef">for</span> Firebase products that you want to use
+</span></span><span style="display:flex;"><span>// https://firebase.google.com/docs/web/setup#available-libraries
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Your web app<span style="color:#960050;background-color:#1e0010">&#39;</span>s Firebase configuration
+</span></span><span style="display:flex;"><span>// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+</span></span><span style="display:flex;"><span>const firebaseConfig <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  apiKey: <span style="color:#e6db74">&#34;AIzaSyAeNL3vYTqEkQ4SjY2wCZI0tVt__ZLkPIk&#34;</span>,
+</span></span><span style="display:flex;"><span>  authDomain: <span style="color:#e6db74">&#34;test-55b83.firebaseapp.com&#34;</span>,
+</span></span><span style="display:flex;"><span>  projectId: <span style="color:#e6db74">&#34;test-55b83&#34;</span>,
+</span></span><span style="display:flex;"><span>  storageBucket: <span style="color:#e6db74">&#34;test-55b83.appspot.com&#34;</span>,
+</span></span><span style="display:flex;"><span>  messagingSenderId: <span style="color:#e6db74">&#34;226842485528&#34;</span>,
+</span></span><span style="display:flex;"><span>  appId: <span style="color:#e6db74">&#34;1:226842485528:web:e18496f2f84e11d188346d&#34;</span>,
+</span></span><span style="display:flex;"><span>  measurementId: <span style="color:#e6db74">&#34;G-GJG1R0XZHL&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Initialize Firebase
+</span></span><span style="display:flex;"><span>const app <span style="color:#f92672">=</span> initializeApp<span style="color:#f92672">(</span>firebaseConfig<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>const analytics <span style="color:#f92672">=</span> getAnalytics<span style="color:#f92672">(</span>app<span style="color:#f92672">)</span>;
+</span></span></code></pre></div><ul>
+<li>Paste the code inside the <code>config.js</code> file</li>
 </ul>
 </section><section>
 <h2 id="firebase-authentication-setup">Firebase Authentication Setup</h2>
@@ -168,8 +185,8 @@ const analytics <span style="color:#f92672">=</span> getAnalytics<span style="co
 <ul>
 <li>We will be using routing in your application so let&rsquo;s install react router</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install react-router-dom@5.2.0
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install react-router-dom@5.2.0
+</span></span></code></pre></div><ul>
 <li>
 <p>You can use later version of router dom but this is what I am using for this workshop</p>
 </li>
@@ -181,226 +198,225 @@ const analytics <span style="color:#f92672">=</span> getAnalytics<span style="co
 <h2 id="signup-component">Signup component</h2>
 <ul>
 <li>Let&rsquo;s create a signup component so the user can sign up</li>
-<li>Under src folder, create a folder called &ldquo;pages&rdquo;</li>
-<li>Inside pages, create a file called &ldquo;Signup.js&rdquo;</li>
 <li>Before writing any code, install react hook form which is a library I will be using to handle the forms and submittions.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>npm install react-hook-form@5.7.2
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install react-hook-form@5.7.2
+</span></span></code></pre></div><ul>
 <li>Read <strong><a href="https://react-hook-form.com" target="_blank" rel="noreferrer noopener">React Hook Form</a></strong> documentation for more information.</li>
 </ul>
 </section><section>
 <ul>
-<li>Paste the following code in Signup.js</li>
+<li>Under src folder, create a folder called <code>pages</code></li>
+<li>Inside pages, create a file called <code>Signup.js</code></li>
+<li>Paste the following code in <code>Signup.js</code></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>;
-import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
-import <span style="color:#f92672">{</span> signup <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
-import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
-
-<span style="color:#66d9ef">function</span> Signup<span style="color:#f92672">(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
-  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
-
-  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-    let newUser;
-    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
-    try <span style="color:#f92672">{</span>
-      newUser <span style="color:#f92672">=</span> await signup<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
-      reset<span style="color:#f92672">()</span>;
-    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>newUser<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-      props.history.push<span style="color:#f92672">(</span><span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>newUser.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span><span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-      setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span>
-  <span style="color:#f92672">}</span>;
-
-  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-
-  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
-    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
-      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
-        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;two fields&#34;</span>&gt;
-              &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
-                &lt;label&gt;
-                  First Name
-                  &lt;input
-                    type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>
-                    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;firstName&#34;</span>
-                    placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;First Name&#34;</span>
-                    ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
-                  /&gt;
-                &lt;/label&gt;
-              &lt;/div&gt;
-              &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
-                &lt;label&gt;
-                  Last Name
-                  &lt;input
-                    type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>
-                    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lastName&#34;</span>
-                    placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last Name&#34;</span>
-                    ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
-                  /&gt;
-                &lt;/label&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
-              &lt;label&gt;
-                Email
-                &lt;input
-                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
-                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
-                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
-                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
-                /&gt;
-              &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
-              &lt;label&gt;
-                Password
-                &lt;input
-                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
-                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
-                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Password&#34;</span>
-                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
-                /&gt;
-              &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
-              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
-                Signup
-              &lt;/button&gt;
-              or
-              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span>&gt;Log In&lt;/Link&gt;
-            &lt;/div&gt;
-          &lt;/form&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  <span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>
-
-export default Signup;
-
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> signup <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> Signup<span style="color:#f92672">(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    let newUser;
+</span></span><span style="display:flex;"><span>    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    try <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      newUser <span style="color:#f92672">=</span> await signup<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>      reset<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>newUser<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      props.history.push<span style="color:#f92672">(</span><span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>newUser.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;two fields&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;label&gt;
+</span></span><span style="display:flex;"><span>                  First Name
+</span></span><span style="display:flex;"><span>                  &lt;input
+</span></span><span style="display:flex;"><span>                    type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>
+</span></span><span style="display:flex;"><span>                    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;firstName&#34;</span>
+</span></span><span style="display:flex;"><span>                    placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;First Name&#34;</span>
+</span></span><span style="display:flex;"><span>                    ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                  /&gt;
+</span></span><span style="display:flex;"><span>                &lt;/label&gt;
+</span></span><span style="display:flex;"><span>              &lt;/div&gt;
+</span></span><span style="display:flex;"><span>              &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;label&gt;
+</span></span><span style="display:flex;"><span>                  Last Name
+</span></span><span style="display:flex;"><span>                  &lt;input
+</span></span><span style="display:flex;"><span>                    type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>
+</span></span><span style="display:flex;"><span>                    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lastName&#34;</span>
+</span></span><span style="display:flex;"><span>                    placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last Name&#34;</span>
+</span></span><span style="display:flex;"><span>                    ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                  /&gt;
+</span></span><span style="display:flex;"><span>                &lt;/label&gt;
+</span></span><span style="display:flex;"><span>              &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;label&gt;
+</span></span><span style="display:flex;"><span>                Email
+</span></span><span style="display:flex;"><span>                &lt;input
+</span></span><span style="display:flex;"><span>                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+</span></span><span style="display:flex;"><span>                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+</span></span><span style="display:flex;"><span>                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
+</span></span><span style="display:flex;"><span>                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                /&gt;
+</span></span><span style="display:flex;"><span>              &lt;/label&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;label&gt;
+</span></span><span style="display:flex;"><span>                Password
+</span></span><span style="display:flex;"><span>                &lt;input
+</span></span><span style="display:flex;"><span>                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+</span></span><span style="display:flex;"><span>                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+</span></span><span style="display:flex;"><span>                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Password&#34;</span>
+</span></span><span style="display:flex;"><span>                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                /&gt;
+</span></span><span style="display:flex;"><span>              &lt;/label&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                Signup
+</span></span><span style="display:flex;"><span>              &lt;/button&gt;
+</span></span><span style="display:flex;"><span>              or
+</span></span><span style="display:flex;"><span>              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span>&gt;Log In&lt;/Link&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>          &lt;/form&gt;
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>      &lt;/div&gt;
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export default Signup;
+</span></span></code></pre></div></section><section>
 <h2 id="adding-style">Adding Style</h2>
 <ul>
 <li>Paste the following CSS code inside of App.css</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>body <span style="color:#f92672">{</span>
-  background-color: <span style="color:#75715e">#f9f9f9 !important;</span>
-  font-size: 15px;
-  font-family: <span style="color:#e6db74">&#39;Titillium Web&#39;</span>, sans-serif !important;
-<span style="color:#f92672">}</span>
-
-a <span style="color:#f92672">{</span>
-  text-decoration: none;
-<span style="color:#f92672">}</span>
-
-.ui.button,
-.ui.input,
-.ui.form input <span style="color:#f92672">{</span>
-  font-family: <span style="color:#e6db74">&#39;Titillium Web&#39;</span>, sans-serif !important;
-<span style="color:#f92672">}</span>
-
-header <span style="color:#f92672">{</span>
-  height: 50px;
-  background: <span style="color:#75715e">#1a2129;</span>
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 1;
-<span style="color:#f92672">}</span>
-
-header h2 <span style="color:#f92672">{</span>
-  color: <span style="color:#75715e">#fff;</span>
-  margin: 0;
-  padding: 10px;
-  position: absolute;
-  left: 10px;
-<span style="color:#f92672">}</span>
-
-.app <span style="color:#f92672">{</span>
-  margin-top: 100px;
-<span style="color:#f92672">}</span>
-
-.login-container <span style="color:#f92672">{</span>
-  display: flex;
-  align-items: center;
-  justify-content: center;
-<span style="color:#f92672">}</span>
-
-.ui.card.login-card <span style="color:#f92672">{</span>
-  width: 450px;
-<span style="color:#f92672">}</span>
-
-.ui.form input<span style="color:#f92672">[</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;text&#39;</span><span style="color:#f92672">]</span>,
-.ui.form input<span style="color:#f92672">[</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span><span style="color:#f92672">]</span>,
-.ui.form <span style="color:#66d9ef">select</span> <span style="color:#f92672">{</span>
-  margin-top: 10px;
-<span style="color:#f92672">}</span>
-
-.logout <span style="color:#f92672">{</span>
-  float: right;
-  position: relative;
-  top: 4px;
-  right: 15px;
-<span style="color:#f92672">}</span>
-
-.actions <span style="color:#f92672">{</span>
-  text-align: right;
-<span style="color:#f92672">}</span>
-
-.actions button <span style="color:#f92672">{</span>
-  margin-right: 5px;
-<span style="color:#f92672">}</span>
-
-.actions a <span style="color:#f92672">{</span>
-  margin-left: 5px;
-<span style="color:#f92672">}</span>
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>body <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  background-color: <span style="color:#75715e">#f9f9f9 !important;</span>
+</span></span><span style="display:flex;"><span>  font-size: 15px;
+</span></span><span style="display:flex;"><span>  font-family: <span style="color:#e6db74">&#39;Titillium Web&#39;</span>, sans-serif !important;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  text-decoration: none;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.ui.button,
+</span></span><span style="display:flex;"><span>.ui.input,
+</span></span><span style="display:flex;"><span>.ui.form input <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  font-family: <span style="color:#e6db74">&#39;Titillium Web&#39;</span>, sans-serif !important;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>header <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  height: 50px;
+</span></span><span style="display:flex;"><span>  background: <span style="color:#75715e">#1a2129;</span>
+</span></span><span style="display:flex;"><span>  position: fixed;
+</span></span><span style="display:flex;"><span>  top: 0px;
+</span></span><span style="display:flex;"><span>  width: 100%;
+</span></span><span style="display:flex;"><span>  z-index: 1;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>header h2 <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  color: <span style="color:#75715e">#fff;</span>
+</span></span><span style="display:flex;"><span>  margin: 0;
+</span></span><span style="display:flex;"><span>  padding: 10px;
+</span></span><span style="display:flex;"><span>  position: absolute;
+</span></span><span style="display:flex;"><span>  left: 10px;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.app <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  margin-top: 100px;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.login-container <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  display: flex;
+</span></span><span style="display:flex;"><span>  align-items: center;
+</span></span><span style="display:flex;"><span>  justify-content: center;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.ui.card.login-card <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  width: 450px;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.ui.form input<span style="color:#f92672">[</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;text&#39;</span><span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>.ui.form input<span style="color:#f92672">[</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span><span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>.ui.form <span style="color:#66d9ef">select</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  margin-top: 10px;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.logout <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  float: right;
+</span></span><span style="display:flex;"><span>  position: relative;
+</span></span><span style="display:flex;"><span>  top: 4px;
+</span></span><span style="display:flex;"><span>  right: 15px;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.actions <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  text-align: right;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.actions button <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  margin-right: 5px;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.actions a <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  margin-left: 5px;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></section><section>
 <h2 id="create-a-new-route-for-signup">create a new route for signup</h2>
 <ul>
 <li>In App.js import the following</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import <span style="color:#e6db74">&#39;./pages/Signup&#39;</span>;
-import <span style="color:#f92672">{</span> Route, Switch, BrowserRouter, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import Signup from <span style="color:#e6db74">&#39;./pages/Signup&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> Route, Switch, BrowserRouter, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span></code></pre></div><ul>
 <li>Add the following code inside of the return</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;BrowserRouter&gt;
-        &lt;Header&gt;&lt;/Header&gt;
-        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
-          &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui grid container&#34;</span>&gt;
-            &lt;Switch&gt;
-              &lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt;
-              &lt;/Route&gt;
-            &lt;/Switch&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/BrowserRouter&gt;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;BrowserRouter&gt;
+</span></span><span style="display:flex;"><span>        &lt;Header&gt;&lt;/Header&gt;
+</span></span><span style="display:flex;"><span>        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui grid container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;Switch&gt;
+</span></span><span style="display:flex;"><span>              &lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt;
+</span></span><span style="display:flex;"><span>              &lt;/Route&gt;
+</span></span><span style="display:flex;"><span>            &lt;/Switch&gt;
+</span></span><span style="display:flex;"><span>          &lt;/div&gt;
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>      &lt;/BrowserRouter&gt;
+</span></span></code></pre></div></section><section>
 <h2 id="create-signup-function">create signup function</h2>
 <ul>
 <li>Create a new file inside firebase folder and call it &ldquo;auth.js&rdquo;</li>
 <li>write a sign up function which alllows the user to sign up with email and password</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import firebase from <span style="color:#e6db74">&#39;firebase/app&#39;</span>;
-import <span style="color:#e6db74">&#39;firebase/auth&#39;</span>;
-
-export const signup <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span> firstName, lastName, email, password <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-  const resp <span style="color:#f92672">=</span> await firebase
-    .auth<span style="color:#f92672">()</span>
-    .createUserWithEmailAndPassword<span style="color:#f92672">(</span>email, password<span style="color:#f92672">)</span>;
-  await resp.user.updateProfile<span style="color:#f92672">({</span> displayName: <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span>firstName<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>lastName<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span> <span style="color:#f92672">})</span>;
-<span style="color:#f92672">}</span>;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import firebase from <span style="color:#e6db74">&#39;firebase/app&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#e6db74">&#39;firebase/auth&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export const signup <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span> firstName, lastName, email, password <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const resp <span style="color:#f92672">=</span> await firebase
+</span></span><span style="display:flex;"><span>    .auth<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>    .createUserWithEmailAndPassword<span style="color:#f92672">(</span>email, password<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>  await resp.user.updateProfile<span style="color:#f92672">({</span> displayName: <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span>firstName<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>lastName<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span> <span style="color:#f92672">})</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span></code></pre></div><ul>
 <li>Now we are able to signup new users and store their data in the firebase.</li>
 </ul>
 </section><section>
@@ -409,252 +425,252 @@ export const signup <span style="color:#f92672">=</span> async <span style="colo
 <li>Now that we have a user, it is time to create a profile page and display their information.</li>
 <li>Inside the pages folder, create a new file and call it &ldquo;Profile.js&rdquo; and include the following code</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
-import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
-
-const Profile <span style="color:#f92672">=</span> <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
-
-  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>!user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> null;
-  <span style="color:#f92672">}</span>
-
-  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
-    &lt;div&gt;
-      &lt;p&gt;Name: <span style="color:#f92672">{</span>user.displayName<span style="color:#f92672">}</span>&lt;/p&gt;
-      &lt;p&gt;Email: <span style="color:#f92672">{</span>user.email<span style="color:#f92672">}</span>&lt;/p&gt;
-      &lt;p&gt;ID: <span style="color:#f92672">{</span>user.uid<span style="color:#f92672">}</span>&lt;/p&gt;
-      &lt;/div&gt;
-  <span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>
-
-export default Profile;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>const Profile <span style="color:#f92672">=</span> <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>!user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> null;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    &lt;div&gt;
+</span></span><span style="display:flex;"><span>      &lt;p&gt;Name: <span style="color:#f92672">{</span>user.displayName<span style="color:#f92672">}</span>&lt;/p&gt;
+</span></span><span style="display:flex;"><span>      &lt;p&gt;Email: <span style="color:#f92672">{</span>user.email<span style="color:#f92672">}</span>&lt;/p&gt;
+</span></span><span style="display:flex;"><span>      &lt;p&gt;ID: <span style="color:#f92672">{</span>user.uid<span style="color:#f92672">}</span>&lt;/p&gt;
+</span></span><span style="display:flex;"><span>      &lt;/div&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export default Profile;
+</span></span></code></pre></div></section><section>
 <ul>
 <li>We also have to create a route for the Profile.js, so inside App.js paste the following code</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import Profile from <span style="color:#e6db74">&#39;./pages/Profile&#39;</span>;
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/profile/:id&#34;</span> component<span style="color:#f92672">={</span>Profile<span style="color:#f92672">}</span> /&gt;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import Profile from <span style="color:#e6db74">&#39;./pages/Profile&#39;</span>;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/profile/:id&#34;</span> component<span style="color:#f92672">={</span>Profile<span style="color:#f92672">}</span> /&gt;
+</span></span></code></pre></div><ul>
 <li>Now if we navigate to the following route, we see the user information if a user session exists.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>http://localhost:3000/profile/
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>http://localhost:3000/profile/
+</span></span></code></pre></div></section><section>
 <h2 id="implementing-logout">Implementing logout</h2>
 <ul>
 <li>Now we have to create a logout function so the logged in user is able to logout.</li>
 <li>Under the src folder, create a file and call it &ldquo;Header.js&rdquo; and paste the following code in it</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
-import <span style="color:#f92672">{</span> logout <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./firebase/auth&#39;</span>;
-import <span style="color:#f92672">{</span> useHistory <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
-import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./firebase/UserProvider&#39;</span>;
-
-<span style="color:#66d9ef">function</span> Header<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-  const history <span style="color:#f92672">=</span> useHistory<span style="color:#f92672">()</span>;
-  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
-
-  const logoutUser <span style="color:#f92672">=</span> async <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-    await logout<span style="color:#f92672">()</span>;
-    history.push<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;/login&#39;</span><span style="color:#f92672">)</span>;
-  <span style="color:#f92672">}</span>;
-
-  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
-    &lt;header&gt;
-      &lt;h2&gt;GGC&lt;/h2&gt;
-      <span style="color:#f92672">{</span>!!user <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>
-        &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui secondary button logout&#34;</span> onClick<span style="color:#f92672">={</span>logoutUser<span style="color:#f92672">}</span>&gt;
-          LOGOUT
-        &lt;/button&gt;
-      <span style="color:#f92672">)}</span>
-    &lt;/header&gt;
-  <span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>
-
-export default Header;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> logout <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./firebase/auth&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useHistory <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./firebase/UserProvider&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> Header<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const history <span style="color:#f92672">=</span> useHistory<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const logoutUser <span style="color:#f92672">=</span> async <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    await logout<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>    history.push<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;/login&#39;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    &lt;header&gt;
+</span></span><span style="display:flex;"><span>      &lt;h2&gt;GGC&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">{</span>!!user <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>        &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui secondary button logout&#34;</span> onClick<span style="color:#f92672">={</span>logoutUser<span style="color:#f92672">}</span>&gt;
+</span></span><span style="display:flex;"><span>          LOGOUT
+</span></span><span style="display:flex;"><span>        &lt;/button&gt;
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">)}</span>
+</span></span><span style="display:flex;"><span>    &lt;/header&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export default Header;
+</span></span></code></pre></div></section><section>
 <ul>
 <li>Now that we have a header with a logout button, we must give the functionality to the button.</li>
 <li>Inside the auth.js file, create a new function called logout</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>export const logout <span style="color:#f92672">=</span> <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-  <span style="color:#66d9ef">return</span> firebase.auth<span style="color:#f92672">()</span>.signOut<span style="color:#f92672">()</span>;
-<span style="color:#f92672">}</span>;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>export const logout <span style="color:#f92672">=</span> <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> firebase.auth<span style="color:#f92672">()</span>.signOut<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span></code></pre></div></section><section>
 <h2 id="implementing-login">Implementing login</h2>
 <ul>
 <li>Inside pages folder, create a new file and call it &ldquo;Login.js&rdquo;</li>
 <li>Paste this code in Login.js</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>;
-import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
-import <span style="color:#f92672">{</span> login <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
-import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
-
-<span style="color:#66d9ef">function</span> Login<span style="color:#f92672">(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
-  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
-
-  const routeOnLogin <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>user<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-      props.history.push<span style="color:#f92672">(</span><span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>user.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span><span style="color:#f92672">)</span>;
-  <span style="color:#f92672">}</span>;
-
-  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-    let user;
-    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
-    try <span style="color:#f92672">{</span>
-      user <span style="color:#f92672">=</span> await login<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
-      reset<span style="color:#f92672">()</span>;
-    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-      routeOnLogin<span style="color:#f92672">(</span>user<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-      setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span>
-  <span style="color:#f92672">}</span>;
-
-  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-
-  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
-    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
-      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
-        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
-              &lt;label&gt;
-                Email
-                &lt;input
-                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
-                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
-                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
-                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
-                /&gt;
-              &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
-              &lt;label&gt;
-                Password
-                &lt;input
-                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
-                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
-                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Password&#34;</span>
-                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
-                /&gt;
-              &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
-              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
-                Login
-              &lt;/button&gt;
-              or
-              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span>&gt;Sign Up&lt;/Link&gt;
-            &lt;/div&gt;
-            &lt;div&gt;
-              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span>&gt;Forgot Password?&lt;/Link&gt;
-            &lt;/div&gt;
-          &lt;/form&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  <span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>
-
-export default Login;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> login <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> Login<span style="color:#f92672">(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const routeOnLogin <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>user<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      props.history.push<span style="color:#f92672">(</span><span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>user.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    let user;
+</span></span><span style="display:flex;"><span>    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    try <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      user <span style="color:#f92672">=</span> await login<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>      reset<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      routeOnLogin<span style="color:#f92672">(</span>user<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;label&gt;
+</span></span><span style="display:flex;"><span>                Email
+</span></span><span style="display:flex;"><span>                &lt;input
+</span></span><span style="display:flex;"><span>                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+</span></span><span style="display:flex;"><span>                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+</span></span><span style="display:flex;"><span>                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
+</span></span><span style="display:flex;"><span>                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                /&gt;
+</span></span><span style="display:flex;"><span>              &lt;/label&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;label&gt;
+</span></span><span style="display:flex;"><span>                Password
+</span></span><span style="display:flex;"><span>                &lt;input
+</span></span><span style="display:flex;"><span>                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+</span></span><span style="display:flex;"><span>                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>
+</span></span><span style="display:flex;"><span>                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Password&#34;</span>
+</span></span><span style="display:flex;"><span>                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                /&gt;
+</span></span><span style="display:flex;"><span>              &lt;/label&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                Login
+</span></span><span style="display:flex;"><span>              &lt;/button&gt;
+</span></span><span style="display:flex;"><span>              or
+</span></span><span style="display:flex;"><span>              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span>&gt;Sign Up&lt;/Link&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;div&gt;
+</span></span><span style="display:flex;"><span>              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span>&gt;Forgot Password?&lt;/Link&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>          &lt;/form&gt;
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>      &lt;/div&gt;
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export default Login;
+</span></span></code></pre></div></section><section>
 <ul>
 <li>Inside the auth.js file, create a new function called login</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>export const login <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span> email, password <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-  const resp <span style="color:#f92672">=</span> await firebase
-    .auth<span style="color:#f92672">()</span>
-    .signInWithEmailAndPassword<span style="color:#f92672">(</span>email, password<span style="color:#f92672">)</span>;
-
-  <span style="color:#66d9ef">return</span> resp.user;
-<span style="color:#f92672">}</span>;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>export const login <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span> email, password <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const resp <span style="color:#f92672">=</span> await firebase
+</span></span><span style="display:flex;"><span>    .auth<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>    .signInWithEmailAndPassword<span style="color:#f92672">(</span>email, password<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> resp.user;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span></code></pre></div><ul>
 <li>We still need to handle the routing for login so inside App.js, create a new route for login</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import Login from <span style="color:#e6db74">&#39;./pages/Login&#39;</span>;
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> component<span style="color:#f92672">={</span>Login<span style="color:#f92672">}</span> /&gt;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import Login from <span style="color:#e6db74">&#39;./pages/Login&#39;</span>;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> component<span style="color:#f92672">={</span>Login<span style="color:#f92672">}</span> /&gt;
+</span></span></code></pre></div></section><section>
 <h2 id="implementing-forgot-password">Implementing forgot password</h2>
 <ul>
 <li>Inside the pages folder, create a new file called &ldquo;ForgotPassword.js&rdquo; and paste the following</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>
-import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
-import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
-import <span style="color:#f92672">{</span> passwordReset <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
-
-
-
-<span style="color:#66d9ef">function</span> ForgotPassword<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
-  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
-
-  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
-    try <span style="color:#f92672">{</span>
-      await passwordReset<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
-      reset<span style="color:#f92672">()</span>;
-      console.log<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Please check your email address!&#34;</span><span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span>
-    setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
-  <span style="color:#f92672">}</span>
-
-
-  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-
-  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
-    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
-      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
-        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
-              &lt;label&gt;
-                Email
-                &lt;input
-                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
-                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
-                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
-                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
-                  required
-                /&gt;
-              &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
-              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
-                Reset Password
-              &lt;/button&gt;
-              or
-              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span>&gt;Login&lt;/Link&gt;
-            &lt;/div&gt;
-          &lt;/form&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  <span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>
-
-export default ForgotPassword;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> Link <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> passwordReset <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/auth&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> ForgotPassword<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">{</span> register, handleSubmit, reset <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useForm<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">[</span>isLoading, setLoading<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> useState<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const onSubmit <span style="color:#f92672">=</span> async <span style="color:#f92672">(</span>data<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    setLoading<span style="color:#f92672">(</span>true<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    try <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      await passwordReset<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>      reset<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>      console.log<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Please check your email address!&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      console.log<span style="color:#f92672">(</span>error<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    setLoading<span style="color:#f92672">(</span>false<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  const formClassName <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span>ui form <span style="color:#e6db74">${</span>isLoading ? <span style="color:#e6db74">&#39;loading&#39;</span> : <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui card login-card&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;form className<span style="color:#f92672">={</span>formClassName<span style="color:#f92672">}</span> onSubmit<span style="color:#f92672">={</span>handleSubmit<span style="color:#f92672">(</span>onSubmit<span style="color:#f92672">)}</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;label&gt;
+</span></span><span style="display:flex;"><span>                Email
+</span></span><span style="display:flex;"><span>                &lt;input
+</span></span><span style="display:flex;"><span>                  type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+</span></span><span style="display:flex;"><span>                  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>
+</span></span><span style="display:flex;"><span>                  placeholder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email&#34;</span>
+</span></span><span style="display:flex;"><span>                  ref<span style="color:#f92672">={</span>register<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                  required
+</span></span><span style="display:flex;"><span>                /&gt;
+</span></span><span style="display:flex;"><span>              &lt;/label&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>            &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field actions&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;button className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui primary button login&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                Reset Password
+</span></span><span style="display:flex;"><span>              &lt;/button&gt;
+</span></span><span style="display:flex;"><span>              or
+</span></span><span style="display:flex;"><span>              &lt;Link to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span>&gt;Login&lt;/Link&gt;
+</span></span><span style="display:flex;"><span>            &lt;/div&gt;
+</span></span><span style="display:flex;"><span>          &lt;/form&gt;
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>      &lt;/div&gt;
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export default ForgotPassword;
+</span></span></code></pre></div></section><section>
 <ul>
 <li>Inside the auth.js file, create a new function called passwordReset</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>export const passwordReset <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span>email<span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-  <span style="color:#66d9ef">return</span> await firebase.auth<span style="color:#f92672">()</span>.sendPasswordResetEmail<span style="color:#f92672">(</span>email<span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>export const passwordReset <span style="color:#f92672">=</span> async <span style="color:#f92672">({</span>email<span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> await firebase.auth<span style="color:#f92672">()</span>.sendPasswordResetEmail<span style="color:#f92672">(</span>email<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span></code></pre></div><ul>
 <li>We still need to handle the routing for ForgotPassword so inside App.js, create a new route for ForgotPassword</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import ForgotPassword from <span style="color:#e6db74">&#39;./pages/ForgotPassword&#39;</span>;
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span> component<span style="color:#f92672">={</span>ForgotPassword<span style="color:#f92672">}</span> /&gt;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import ForgotPassword from <span style="color:#e6db74">&#39;./pages/ForgotPassword&#39;</span>;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span> component<span style="color:#f92672">={</span>ForgotPassword<span style="color:#f92672">}</span> /&gt;
+</span></span></code></pre></div></section><section>
 <h2 id="fixing-route-issues">fixing route issues</h2>
 <ul>
 <li>Before wrapping up on authentication, we still need to fix some issue. Currently even when we have a logged in user session, we are still able to navigate to login, signup and forgot password page. In order to fix this issue, we need to create a file called &ldquo;ProfileRedirect&rdquo; inside on a folder called &ldquo;router&rdquo;</li>
@@ -663,48 +679,48 @@ export default ForgotPassword;
 <ul>
 <li>Paste this code inside of the ProfileRedirect.js</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
-import <span style="color:#f92672">{</span> Route, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
-import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
-
-const ProfileRedirect <span style="color:#f92672">=</span> <span style="color:#f92672">({</span> component: Component, ...rest <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
-
-  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
-    &lt;Route
-      <span style="color:#f92672">{</span>...rest<span style="color:#f92672">}</span>
-      render<span style="color:#f92672">={(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt;
-        !user ? <span style="color:#f92672">(</span>
-          &lt;Component <span style="color:#f92672">{</span>...props<span style="color:#f92672">}</span> /&gt;
-        <span style="color:#f92672">)</span> : <span style="color:#f92672">(</span>
-          &lt;Redirect
-            to<span style="color:#f92672">={{</span>
-              pathname: <span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>user.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>,
-              state: <span style="color:#f92672">{</span> from: props.location <span style="color:#f92672">}</span>,
-            <span style="color:#f92672">}}</span>
-          /&gt;
-        <span style="color:#f92672">)</span>
-      <span style="color:#f92672">}</span>
-    /&gt;
-  <span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>;
-
-export default ProfileRedirect;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> Route, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>const ProfileRedirect <span style="color:#f92672">=</span> <span style="color:#f92672">({</span> component: Component, ...rest <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    &lt;Route
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">{</span>...rest<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>      render<span style="color:#f92672">={(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt;
+</span></span><span style="display:flex;"><span>        !user ? <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>          &lt;Component <span style="color:#f92672">{</span>...props<span style="color:#f92672">}</span> /&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">)</span> : <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>          &lt;Redirect
+</span></span><span style="display:flex;"><span>            to<span style="color:#f92672">={{</span>
+</span></span><span style="display:flex;"><span>              pathname: <span style="color:#e6db74">`</span>/profile/<span style="color:#e6db74">${</span>user.uid<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>,
+</span></span><span style="display:flex;"><span>              state: <span style="color:#f92672">{</span> from: props.location <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>          /&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    /&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export default ProfileRedirect;
+</span></span></code></pre></div></section><section>
 <ul>
 <li>Import ProfileRedirect in the App.js</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import ProfileRedirect from <span style="color:#e6db74">&#39;./router/ProfileRedirect&#39;</span>;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import ProfileRedirect from <span style="color:#e6db74">&#39;./router/ProfileRedirect&#39;</span>;
+</span></span></code></pre></div><ul>
 <li>Now in the App.js, change the Route of login, signup and forgotpassword to ProfileRedirect.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt;
-&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> component<span style="color:#f92672">={</span>Login<span style="color:#f92672">}</span> /&gt;
-&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span> component<span style="color:#f92672">={</span>ForgotPassword<span style="color:#f92672">}</span> /&gt;
-&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;
-    &lt;Redirect to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> /&gt;
-&lt;/Route&gt;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> component<span style="color:#f92672">={</span>Login<span style="color:#f92672">}</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/forgotpassword&#34;</span> component<span style="color:#f92672">={</span>ForgotPassword<span style="color:#f92672">}</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;Redirect to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;/Route&gt;
+</span></span></code></pre></div><ul>
 <li>This is going to fix the issue we had with routing and is going to block the logged in user to try to navigate to these pages.</li>
 </ul>
 </section><section>
@@ -712,37 +728,37 @@ export default ProfileRedirect;
 <ul>
 <li>Even though we have a secure authentication system now, there is still one last issue that we need to fix. Currently if a user is logged in, they are able to navigate to another user&rsquo;s profile page as long as they have a user&rsquo;s UID. In order to fix this issue, we need to create a new file called &ldquo;PrivateRoute.js&rdquo; inside the router folder.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
-import <span style="color:#f92672">{</span> Route, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
-import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
-
-const PrivateRoute <span style="color:#f92672">=</span> <span style="color:#f92672">({</span> component: Component, ...rest <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
-
-  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
-    &lt;Route
-      <span style="color:#f92672">{</span>...rest<span style="color:#f92672">}</span>
-      render<span style="color:#f92672">={(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
-        const id <span style="color:#f92672">=</span> props.match.params.id;
-
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>!!user <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>user.uid <span style="color:#f92672">===</span> id<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-          <span style="color:#66d9ef">return</span> &lt;Component <span style="color:#f92672">{</span>...props<span style="color:#f92672">}</span> /&gt;;
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-          <span style="color:#66d9ef">return</span> &lt;Redirect to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> /&gt;;
-        <span style="color:#f92672">}</span>
-      <span style="color:#f92672">}}</span>
-    /&gt;
-  <span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>;
-
-export default PrivateRoute;
-</code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React from <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> Route, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useSession <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;../firebase/UserProvider&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>const PrivateRoute <span style="color:#f92672">=</span> <span style="color:#f92672">({</span> component: Component, ...rest <span style="color:#f92672">})</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  const <span style="color:#f92672">{</span> user <span style="color:#f92672">}</span> <span style="color:#f92672">=</span> useSession<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    &lt;Route
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">{</span>...rest<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>      render<span style="color:#f92672">={(</span>props<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        const id <span style="color:#f92672">=</span> props.match.params.id;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>!!user <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>user.uid <span style="color:#f92672">===</span> id<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> &lt;Component <span style="color:#f92672">{</span>...props<span style="color:#f92672">}</span> /&gt;;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> &lt;Redirect to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> /&gt;;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>    /&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export default PrivateRoute;
+</span></span></code></pre></div></section><section>
 <ul>
 <li>Second thing we need to do is to change the route of profile page. Therefore, inside the App.js file change the route to the following</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>import PrivateRoute from <span style="color:#e6db74">&#39;./router/PrivateRoute&#39;</span>;
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;PrivateRoute exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/profile/:id&#34;</span> component<span style="color:#f92672">={</span>Profile<span style="color:#f92672">}</span> /&gt;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import PrivateRoute from <span style="color:#e6db74">&#39;./router/PrivateRoute&#39;</span>;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;PrivateRoute exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/profile/:id&#34;</span> component<span style="color:#f92672">={</span>Profile<span style="color:#f92672">}</span> /&gt;
+</span></span></code></pre></div><ul>
 <li>This is going to avoid the user to navigate to a profile page if the user&rsquo;s UID does not match with the ID in our props. This means that the users is authorize to see that profile page, because it does not belong to them.</li>
 </ul>
 </section><section>

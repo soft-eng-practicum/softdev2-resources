@@ -67,23 +67,23 @@ and source code <a href="https://github.com/jquery/jquery" target="_blank" rel="
 <h2 id="installing-jquery">&ldquo;Installing&rdquo; jQuery</h2>
 <p>While jQuery can be downloaded and used locally, it is commonly accessed via a CDN (content delivery network). One is provided by the jQuery website, although companies like Google and Microsoft also provide their own as a public service.</p>
 <p>Visit the following <a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_default" target="_blank" rel="noreferrer noopener">link</a> and replace the default HTML in the editor with the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-	&lt;<span style="color:#f92672">title</span>&gt;My Page&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-	&lt;<span style="color:#f92672">h1</span>&gt;My Page&lt;/<span style="color:#f92672">h1</span>&gt;
-	&lt;<span style="color:#f92672">p</span>&gt;Welcome to my page!&lt;/<span style="color:#f92672">p</span>&gt;
-
-	&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.5.1.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-	&lt;<span style="color:#f92672">script</span>&gt;
-		<span style="color:#75715e">// Your Code
-</span><span style="color:#75715e"></span>	&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><p>Then click the &ldquo;Run&rdquo; button. The first <code>&lt;script&gt;</code> tag loads jQuery.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">title</span>&gt;My Page&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">h1</span>&gt;My Page&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">p</span>&gt;Welcome to my page!&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.5.1.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Your Code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Then click the &ldquo;Run&rdquo; button. The first <code>&lt;script&gt;</code> tag loads jQuery.</p>
 </section><section>
 <h2 id="the-jquery-constructor">The jQuery Constructor</h2>
 <p>A major component of jQuery is the constructor <code>jQuery</code> which creates and returns jQuery objects. This is the primary means of interacting with jQuery.</p>
@@ -99,8 +99,8 @@ and source code <a href="https://github.com/jquery/jquery" target="_blank" rel="
 <h2 id="selector"><code>$(selector)</code></h2>
 <p>The constructor <code>$(selector)</code> takes in a CSS selector as a string and returns a jQuery object composed of a collection of DOM elements that match the selector.</p>
 <p>For example,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;p&#34;</span>)
-</code></pre></div><p>creates a jQurey object that contains all paragraph elements. The following are examples of <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank" rel="noreferrer noopener">CSS selectors</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;p&#34;</span>)
+</span></span></code></pre></div><p>creates a jQurey object that contains all paragraph elements. The following are examples of <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank" rel="noreferrer noopener">CSS selectors</a>:</p>
 <ul>
 <li><code>&quot;table&quot;</code> selects all <code>table</code> elements</li>
 <li><code>&quot;.warning&quot;</code> selects all elements with the <code>warning</code> class</li>
@@ -113,33 +113,33 @@ and source code <a href="https://github.com/jquery/jquery" target="_blank" rel="
 <h3 id="csspropertyname-value"><code>.css(propertyName, value)</code></h3>
 <p>This method sets the CSS property <code>propertyName</code> to <code>value</code> for all of the matched elements. For example, <code>$(&quot;h1&quot;).css(&quot;background-color&quot;, &quot;blue&quot;)</code> would set the background of all <code>h1</code> elements to <code>blue</code>.</p>
 <p>In the w3schools HTML editor, under the line <code>// Your Code</code>, add the line</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-family&#34;</span>, <span style="color:#e6db74">&#34;Fantasy&#34;</span>);
-</code></pre></div><p>After pressing &ldquo;Run&rdquo; the header should be displayed in a decorative and playful font.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-family&#34;</span>, <span style="color:#e6db74">&#34;Fantasy&#34;</span>);
+</span></span></code></pre></div><p>After pressing &ldquo;Run&rdquo; the header should be displayed in a decorative and playful font.</p>
 </section><section>
 <h2 id="addclassclassname"><code>addClass(className)</code></h2>
 <p>This method takes one or more space-separated CSS class names and adds them to each of the matched elements.</p>
 <p>To demonstrate this, first add the following to the head section of your document:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;<span style="color:#f92672">head</span>&gt;
-	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-	&lt;<span style="color:#f92672">title</span>&gt;My Page&lt;/<span style="color:#f92672">title</span>&gt;
-<span style="display:block;width:100%;background-color:#3c3d38">	&lt;<span style="color:#f92672">style</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38">		.<span style="color:#a6e22e">lightgray</span> { <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">lightgray</span>; }
-</span><span style="display:block;width:100%;background-color:#3c3d38">	&lt;/<span style="color:#f92672">style</span>&gt;
-</span>&lt;/<span style="color:#f92672">head</span>&gt;
-</code></pre></div><p>and add the following to your script element so it looks like</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#75715e">// Your Code
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-family&#34;</span>, <span style="color:#e6db74">&#34;Fantasy&#34;</span>);
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
-</span></code></pre></div><p>After pressing &ldquo;Run&rdquo; the header should be displayed with a light gray background.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">title</span>&gt;My Page&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>	&lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>		.<span style="color:#a6e22e">lightgray</span> { <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">lightgray</span>; }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>	&lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span></code></pre></div><p>and add the following to your script element so it looks like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#75715e">// Your Code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-family&#34;</span>, <span style="color:#e6db74">&#34;Fantasy&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
+</span></span></code></pre></div><p>After pressing &ldquo;Run&rdquo; the header should be displayed with a light gray background.</p>
 </section><section>
 <h2 id="modifying-the-page-with-json">Modifying the Page with JSON</h2>
 <p>Now we&rsquo;ll start using jQuery to add elements to the page. First add a table to the start of the <code>body</code> tag, so it looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;<span style="color:#f92672">h1</span>&gt;My Page&lt;/<span style="color:#f92672">h1</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;Welcome to my page!&lt;/<span style="color:#f92672">p</span>&gt;
-<span style="display:block;width:100%;background-color:#3c3d38">&lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;courses&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38">	&lt;<span style="color:#f92672">tr</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Subject&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Number&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Title&lt;/<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">tr</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38">&lt;/<span style="color:#f92672">table</span>&gt;
-</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;My Page&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;Welcome to my page!&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>&lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;courses&#34;</span>&gt;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>	&lt;<span style="color:#f92672">tr</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Subject&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Number&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Title&lt;/<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div>
 
 <span class='fragment '
   >
@@ -150,39 +150,39 @@ and source code <a href="https://github.com/jquery/jquery" target="_blank" rel="
 </section><section>
 <h2 id="modifying-the-page-with-json-1">Modifying the Page with JSON</h2>
 <p>Next, add the following JSON string to your script:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;<span style="color:#f92672">script</span>&gt;
-	<span style="color:#75715e">// Your Code
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-family&#34;</span>, <span style="color:#e6db74">&#34;Fantasy&#34;</span>);
-	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
-
-<span style="display:block;width:100%;background-color:#3c3d38">	<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">courses</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`[
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">		{&#34;sub&#34;: &#34;ITEC&#34;, &#34;num&#34;: &#34;2140&#34;, &#34;title&#34;: &#34;Programming Fundamentals&#34;},
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">		{&#34;sub&#34;: &#34;ITEC&#34;, &#34;num&#34;: &#34;2150&#34;, &#34;title&#34;: &#34;Intermediate Programming&#34;},
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">		{&#34;sub&#34;: &#34;ITEC&#34;, &#34;num&#34;: &#34;3150&#34;, &#34;title&#34;: &#34;Advanced Programming&#34;}
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">	]`</span>;
-</span>&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div><p>In JavaScript, strings enclosed with backticks (e.g. `hello`) are called template literals. While template literals are usually used for embedded expressions, as we&rsquo;ll soon see, they&rsquo;re used here due to their multi-line support.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Your Code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-family&#34;</span>, <span style="color:#e6db74">&#34;Fantasy&#34;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>	<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">courses</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`[
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">		{&#34;sub&#34;: &#34;ITEC&#34;, &#34;num&#34;: &#34;2140&#34;, &#34;title&#34;: &#34;Programming Fundamentals&#34;},
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">		{&#34;sub&#34;: &#34;ITEC&#34;, &#34;num&#34;: &#34;2150&#34;, &#34;title&#34;: &#34;Intermediate Programming&#34;},
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">		{&#34;sub&#34;: &#34;ITEC&#34;, &#34;num&#34;: &#34;3150&#34;, &#34;title&#34;: &#34;Advanced Programming&#34;}
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">	]`</span>;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>In JavaScript, strings enclosed with backticks (e.g. `hello`) are called template literals. While template literals are usually used for embedded expressions, as we&rsquo;ll soon see, they&rsquo;re used here due to their multi-line support.</p>
 </section><section>
 <h2 id="modifying-the-page-with-json-2">Modifying the Page with JSON</h2>
 <p>In most real world applications, JSON is fetched from a backend server using XMLHttpRequests or the Fetch API. But for our purposes a hard-coded string will do.</p>
 <p>Now we can link our table to a jQuery object and prepare to iterate over our JSON list. To deserialize the JSON string, we&rsquo;ll use the <code>JSON.parse</code> method which turns our string into an array:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">table</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>);
-<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">courses</span>)) {
-
-}
-</code></pre></div><p>The <code>for...of</code> syntax creates a loop that iterates over all elements in the array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">table</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">courses</span>)) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The <code>for...of</code> syntax creates a loop that iterates over all elements in the array.</p>
 </section><section>
 <h2 id="adding-rows-to-our-table">Adding Rows to Our Table</h2>
 <p>We only have one step left: add the course data to the table. To do this, we will use jQuery&rsquo;s <code>append(content)</code> method which takes a string and adds it to the end of our matched element:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">table</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>);
-<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">courses</span>)) {
-<span style="display:block;width:100%;background-color:#3c3d38">	<span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">`&lt;tr&gt;
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">		&lt;td&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">sub</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/td&gt;
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">		&lt;td&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">num</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/td&gt;
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">		&lt;td&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">title</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/td&gt;
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">	&lt;/tr&gt;`</span>);
-</span>}
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">table</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">courses</span>)) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>	<span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">`&lt;tr&gt;
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">		&lt;td&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">sub</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/td&gt;
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">		&lt;td&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">num</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/td&gt;
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">		&lt;td&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">title</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/td&gt;
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">	&lt;/tr&gt;`</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 <span class='fragment '
   >
@@ -198,14 +198,14 @@ and source code <a href="https://github.com/jquery/jquery" target="_blank" rel="
 <h2 id="dom-traversal">DOM Traversal</h2>
 <p>Another important and useful feature of jQuery is DOM traversal. By traversing the DOM, you can find and select elements based on their relative position to other elements. Many methods relate to children, siblings, and parents.</p>
 <p>To apply a left border to all children of the body tag:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;body&#34;</span>).<span style="color:#a6e22e">children</span>().<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;border-left&#34;</span>, <span style="color:#e6db74">&#34;4px solid green&#34;</span>);
-</code></pre></div><img src="/softdev2-resources/images/jquery/table-3-border.png" width="400" style="border: none;"/>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;body&#34;</span>).<span style="color:#a6e22e">children</span>().<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;border-left&#34;</span>, <span style="color:#e6db74">&#34;4px solid green&#34;</span>);
+</span></span></code></pre></div><img src="/softdev2-resources/images/jquery/table-3-border.png" width="400" style="border: none;"/>
 <p><strong>Note:</strong> <code>children()</code> only traverse one level down.</p>
 </section><section>
 <h2 id="dom-traversal-1">DOM Traversal</h2>
 <p><code>.eq(index)</code> can be used to select a particular element from a jQuery object. <code>.eq(index)</code> differs from array access <code>[index]</code> in that <code>.eq(index)</code> returns a jQuery object instead of the underlying DOM element.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;tr&#34;</span>).<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">3</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-weight&#34;</span>, <span style="color:#e6db74">&#34;bold&#34;</span>);
-</code></pre></div><img src="/softdev2-resources/images/jquery/table-4-eq.png" width="400" style="border: none;"/>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;tr&#34;</span>).<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">3</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-weight&#34;</span>, <span style="color:#e6db74">&#34;bold&#34;</span>);
+</span></span></code></pre></div><img src="/softdev2-resources/images/jquery/table-4-eq.png" width="400" style="border: none;"/>
 <p><strong>Note:</strong> The <code>eq(index)</code> method, like array access, is zero indexed.</p>
 </section><section>
 <h2 id="dom-traversal-2">DOM Traversal</h2>
@@ -219,17 +219,17 @@ and source code <a href="https://github.com/jquery/jquery" target="_blank" rel="
 </section><section>
 <h2 id="event-handling">Event Handling</h2>
 <p>Event handling can be used to execute code when events are triggered, such as key presses or mouse movements. Add a button under the table in the body:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>&lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;courses&#34;</span>&gt;
-	&lt;<span style="color:#f92672">tr</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Subject&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Number&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Title&lt;/<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">tr</span>&gt;
-&lt;/<span style="color:#f92672">table</span>&gt;
-<span style="display:block;width:100%;background-color:#3c3d38">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;Press me!&lt;/<span style="color:#f92672">button</span>&gt;;
-</span></code></pre></div><p>and then add the bottom 3 lines to your script section:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;tr&#34;</span>).<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">3</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-weight&#34;</span>, <span style="color:#e6db74">&#34;bold&#34;</span>);
-
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#btn&#34;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>() {
-</span><span style="display:block;width:100%;background-color:#3c3d38">	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>).<span style="color:#a6e22e">toggleClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
-</span><span style="display:block;width:100%;background-color:#3c3d38">});
-</span></code></pre></div></section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;courses&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Subject&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Number&lt;/<span style="color:#f92672">th</span>&gt;&lt;<span style="color:#f92672">th</span>&gt;Title&lt;/<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;Press me!&lt;/<span style="color:#f92672">button</span>&gt;;
+</span></span></code></pre></div><p>and then add the bottom 3 lines to your script section:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;tr&#34;</span>).<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">3</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;font-weight&#34;</span>, <span style="color:#e6db74">&#34;bold&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#btn&#34;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>).<span style="color:#a6e22e">toggleClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>});
+</span></span></code></pre></div></section><section>
 <h2 id="event-handling-1">Event Handling</h2>
 <p>The <code>.click(function)</code> method executes <code>function</code> whenever the selected elements are clicked. In our case, we&rsquo;re toggling the previously defined <code>lightgray</code> class on our table. Basically, if the table isn&rsquo;t assigned the class, then jQuery adds it, and if the table already has the class, jQuery removes it.</p>
 <p>After pressing the button, your table should turn gray, and pressing it again should restore the original background:</p>
@@ -238,14 +238,14 @@ and source code <a href="https://github.com/jquery/jquery" target="_blank" rel="
 <h2 id="wrapping-up">Wrapping Up</h2>
 <p>This is just a small glimpse of what jQuery can do.</p>
 <p>Try the following for a cool animation:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#btn&#34;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>() {
-	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>).<span style="color:#a6e22e">toggleClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
-	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">animate</span>({
-		<span style="color:#a6e22e">fontSize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">+</span>Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">50</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>,
-		<span style="color:#a6e22e">paddingLeft</span><span style="color:#f92672">:</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">300</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>
-	});
-});
-</code></pre></div><p>In the next Workshop we&rsquo;ll use Bootstrap to make our page look more professional.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#btn&#34;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#courses&#34;</span>).<span style="color:#a6e22e">toggleClass</span>(<span style="color:#e6db74">&#34;lightgray&#34;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;h1&#34;</span>).<span style="color:#a6e22e">animate</span>({
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">fontSize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">+</span>Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">50</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>,
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">paddingLeft</span><span style="color:#f92672">:</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">300</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>In the next Workshop we&rsquo;ll use Bootstrap to make our page look more professional.</p>
 </section>
 
   

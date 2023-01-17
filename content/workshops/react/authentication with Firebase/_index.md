@@ -25,6 +25,11 @@ margin = 0.1
 
 To follow instructions in video, clone this [starter repo](https://github.com/soft-eng-practicum/react-auth-firebase-workshop) 
 
+Example:
+```sh
+git clone https://github.com/soft-eng-practicum/react-auth-firebase-workshop.git
+```
+
 ---
 ## What is React?
 React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It’s used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook. React first deployed on Facebook’s newsfeed in 2011 and on Instagram in 2012.
@@ -53,7 +58,15 @@ Firebase is categorized as a NoSQL database program, which stores data in JSON-l
 
 In order to create a react app, you must have Node installed on your device. If you do not have Node, download from **[here](https://nodejs.org/en/download/)**.
 
-Open a terminal and run the following code which is going to create a React app for you.
+If you **cloned the starter repo**, open a terminal and do:
+```sh
+cd react-auth-firebase-workshop
+npm install
+npm start
+```
+(it may give a few errors and open a blank web page)
+
+If you **did NOT clone the starter repo**, open a terminal and create a new React app:
 ```sh
 npm create-react-app authentication
 ```
@@ -70,15 +83,16 @@ npm start
 - Go to **[Firebase](https://firebase.google.com)** and create an account.
 - Click on "Go to console" on the top right corner.
 - Click on "Add project" to create a project, and simply follow the steps on website.
+
+---
+
+## OPTIONAL: Login to firebase and install
+
 - Then, open your terminal in the project root and install the Firebase command-line interface (CLI):
 ```sh
 npm install -g firebase-tools
 ```
 Mac and Linux users would need to prepend this command with `sudo`.
-
----
-
-## Login to firebase and install
 
 - Once the Firebase CLI is installed on your computer, you should be able run:
   ```sh
@@ -89,17 +103,19 @@ Mac and Linux users would need to prepend this command with `sudo`.
   firebase projects:list
   ```
 - If you see the project you just created, then you are ready to go
-- Now it is time to install firebase in your project
-  ```sh
-  npm install firebase
-  ```
+
 ---
 
 ## Initialize Firebase App
 
-- Under src folder, create a new folder called "firebase"
-- Inside the firebase folder, create a file called "config.js"
-- Now go to your project in firebase website. go to the "Project settings", and copy the project configuration.
+- These are already done for you in the **starter app**:
+  - Under src folder, create a new folder called "firebase"
+  - Inside the firebase folder, create a file called "config.js"
+- But you need to do this: 
+  - go to your project in firebase website
+  - go to the "Project settings", 
+  - click on "Create App" and select "Web app", 
+  - copy its project configuration.
 
 ---
 
@@ -127,7 +143,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 ```
-- Paste the code inside the config.js file
+- Paste the code inside the `config.js` file
 
 ---
 
@@ -150,8 +166,6 @@ npm install react-router-dom@5.2.0
 
 ## Signup component
 - Let's create a signup component so the user can sign up
-- Under src folder, create a folder called "pages"
-- Inside pages, create a file called "Signup.js"
 - Before writing any code, install react hook form which is a library I will be using to handle the forms and submittions.
 ```sh
 npm install react-hook-form@5.7.2
@@ -160,7 +174,9 @@ npm install react-hook-form@5.7.2
 
 ---
 
-- Paste the following code in Signup.js
+- Under src folder, create a folder called `pages`
+- Inside pages, create a file called `Signup.js`
+- Paste the following code in `Signup.js`
 ```sh
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -342,7 +358,7 @@ header h2 {
 ## create a new route for signup
 - In App.js import the following
 ```sh
-import './pages/Signup';
+import Signup from './pages/Signup';
 import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 ```
 - Add the following code inside of the return

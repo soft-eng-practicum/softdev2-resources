@@ -22,7 +22,7 @@ weight: 1
      setup: "Initialize LMS, archive and clear discussion area, post syllabus, post intro slides, set up entry quiz, make discussion posts for welcome message, <i>Message in a Bottle</i>, and <i>Introductions</i>. Post project ideas and potential clients.",
      topic: "Intro slides. Warning about self work. Go over success tips on LMS.",
      handson: "Entry quiz, answer the questions, and post resume.", module: 1, 
-     assignment: "Post introductory resumes. Regiser with version control (Github) and chat/forum services (Discord, Reddit). Vote for project ideas.", days: 7},
+     assignment: "Post introductory resumes. Register with version control (Github) and chat/forum services (Discord, Reddit). Vote for project ideas.", days: 7},
     {name: "Technology overview, project/team selection, and requirements",
      setup: "Add everyone to LMS/version control/chat/discussion services. Post hackathon and local meetup schedules. Post requirements and Git lecture slides. Create team chat channels and code repositories with master branch force push protection.",
      topic: "Explain shortcut links on LMS for chat and discussion. Brief introduction to tools (e.g., Discord usage and channels).",

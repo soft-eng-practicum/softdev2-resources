@@ -16,12 +16,14 @@ weight = 1 # chapter number
 {{% fragment %}}
 Logistics heads-up:
 
-- Using Reddit/Piazza for forum discussion and Q&A support
-- Sections 1 & 2 are separate, but follow same content
+- Using Reddit for forum discussion and Q&A support
+<!-- - Sections 1 & 2 are separate, but follow same content -->
 - Using Discord and Github organizations with previous members
 - Everything online this semester, will meet on live video on Discord
+- Any problems, potential issues?
 {{% /fragment %}}
 
+<!-- only when combining sections: 
 {{% fragment %}}
 Meaning:
 
@@ -30,7 +32,7 @@ Meaning:
 - Can even collaborate with projects?
 - Any problems, potential issues?
 {{% /fragment %}}
-
+-->
 ---
 
 ### Meet your instructor
@@ -44,6 +46,8 @@ Email: cgunay@ggc.edu
 Office: Virtual and W-2117 (by [appointment](https://cgunay.youcanbook.me/)) 
 
 Phone: 678-951-9621 (also GroupMe)
+
+> thinks he's funny
 
 ---
 
@@ -113,6 +117,6 @@ Topics will be posted later, but will include:
 {{% fragment %}}
 Time to work on:
 
-1. Register for Discord, Github, and Reddit
+1. You must have already registered for Discord, Github, and Reddit
 1. Respond to resume on Reddit
 {{% /fragment %}}

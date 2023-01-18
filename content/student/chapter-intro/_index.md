@@ -112,6 +112,7 @@ Topics will be posted later, but will include:
 - Let's look through the syllabus 
 {{% fragment %}} 
 - Message in a bottle for you 
+- Success tips
 {{% /fragment %}}
 
 {{% fragment %}}
@@ -119,4 +120,5 @@ Time to work on:
 
 1. You must have already registered for Discord, Github, and Reddit
 1. Respond to resume on Reddit
+1. Watch for assignment on Reddit/Discord this week for project ideas
 {{% /fragment %}}

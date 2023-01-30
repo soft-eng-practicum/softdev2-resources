@@ -9,7 +9,6 @@
     bottom: 20px;          
   }
   .reveal div.side-by-side figure {
-    //position: absolute;
     display: inline;
   }
   .reveal div.side-by-side figure:first-of-type {
@@ -17,6 +16,15 @@
   }
   .reveal div.side-by-side figure:nth-of-type(2) {
     right: 5%;
+  }
+  .reveal div.left-float figure {
+    display: inline;
+    float: left;
+  }
+  .reveal div.left-float ul {
+    display: inline-block;
+    margin-left: 0em;
+    //float: left;
   }
 </style>
 {{ template "_internal/google_analytics_async.html" . }}

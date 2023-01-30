@@ -60,6 +60,17 @@ Cons:
 
 ### Follow: Grizzly Hacks @ GGC
 
+<div class="left-float">
 {{< figure src="/softdev2-resources/images/intro/hackathons/grizzly-hacks-flyer-qr.jpg" height=500 >}}
+
+Coming up: Workshop on backend development
+- Using **Java Spring Boot** 
+- This Friday Feb 3rd, 2pm
+
+Hybrid format: 
+- either in Room B-1600 
+- or online on Discord
+
+</div>
 
 {{% reveal-prevnext-links %}}

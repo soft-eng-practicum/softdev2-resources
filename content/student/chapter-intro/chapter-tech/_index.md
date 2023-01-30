@@ -1,10 +1,45 @@
 +++
 title = "Technology Overview"
 outputs = ["Reveal"]
-weight = 2 # chapter number
+weight = 3 # chapter number
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/technology.jpg" %}}
+
+---
+
+#### Getting out of your comfort zone
+
+Forget: **Java**
+
+{{% fragment %}} 
+Why?
+- It's not the only language out there: [TIOBE Index](https://www.tiobe.com/tiobe-index/), [Github State of the Octoverse survey](https://octoverse.github.com/), and [StackOverflow Developer Survey of 2019](https://insights.stackoverflow.com/survey/2019)
+- The more languages you are familiar with, the better chances for jobs
+- Knowledge of imperative language like Java easily translates to several other languages (C#, Python, Javascript, C/C++, …)
+- Java is not on the rise, but it's still very popular
+- Web frameworks and languages have transformed application development landscape, especially **Javascript** (not Java)
+{{% /fragment %}} 
+
+---
+
+#### What's the deal with Javascript?
+
+{{% fragment %}} 
+
+- Classical web architecture:
+
+{{< figure src="/softdev2-resources/images/intro/web-arch-classic.svg" height=200 >}}
+
+{{% /fragment %}} 
+
+{{% fragment %}} 
+
+- Javascript web architecture:
+
+{{< figure src="/softdev2-resources/images/intro/web-arch-javascript.svg" height=200 >}}
+
+{{% /fragment %}} 
 
 ---
 

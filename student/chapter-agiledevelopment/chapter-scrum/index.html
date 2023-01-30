@@ -20,13 +20,14 @@
     left: 20px;
     bottom: 20px;          
   }
-  .reveal section.side-by-side figure {
-    position: absolute;
+  .reveal div.side-by-side figure {
+    
+    display: inline;
   }
-  .reveal section.side-by-side figure:first-of-type {
+  .reveal div.side-by-side figure:first-of-type {
     left: 5%;
   }
-  .reveal section.side-by-side figure:nth-of-type(2) {
+  .reveal div.side-by-side figure:nth-of-type(2) {
     right: 5%;
   }
 </style>
@@ -277,11 +278,7 @@ if (!doNotTrack) {
   <p>At the end of every Sprint, the team must complete a <strong>potentially releasable product increment</strong> meaning that it is done as agreed upon.</p>
 
 </span>
-</section>
-
-<section data-noprocess data-shortcode-slide
-      class="side-by-side">
-  
+</section><section>
 <h3 id="tracking-progress">Tracking Progress</h3>
 <p><strong>Burndown Chart</strong> Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.
 As the work progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint.</p>
@@ -289,10 +286,12 @@ As the work progresses, the amount of work remaining should steadily decrease an
 
 <span class='fragment '
   >
-   <figure><img src="/softdev2-resources/images/scrum/sprintburndownchart.png" height="270"/>
- </figure>
- <figure><img src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height="270"/>
- </figure>
+  <div class="side-by-side">
+<figure><img src="/softdev2-resources/images/scrum/sprintburndownchart.png" height="270"/>
+</figure>
+<figure><img src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height="270"/>
+</figure>
+</div>
 
 </span>
 </section><section>

@@ -8,6 +8,20 @@ weight = 1 # chapter number
 
 ---
 
+### Be more proactive to advance your career
+
+- Technology world is very competitive
+- Going through classes and getting a degree by itself is not enough
+- What else can you do?
+
+{{% fragment %}}
+- Performance at whiteboard/online coding interviews, 
+- Public project activity, 
+- Community involvement, etc
+{{% /fragment %}}
+
+---
+
 ### An incredible opportunity for advancement: Hackathons
 
 {{< figure src="/softdev2-resources/images/intro/hackathons/ugahacks-sp19.jpg" height=500 >}}

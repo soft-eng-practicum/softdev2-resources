@@ -1,3 +1,6 @@
 *~
 public/
 TAGS
+
+# Hugo
+.hugo_build.lock

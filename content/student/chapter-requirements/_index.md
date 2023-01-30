@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 weight = 3
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/requirements/requirements.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/requirements/requirements.png" height="250px" %}}
 
 Some slides courtesy of Joan Smith, Eugene Agichstein, and the Internets.
 
@@ -21,7 +21,7 @@ Some slides courtesy of Joan Smith, Eugene Agichstein, and the Internets.
 {{% fragment %}} <p align='left'> * It may be as complex as a 500 pages of description </p> {{% /fragment %}}
 
 
-{{< figure src="/softdev2-resources/images/requirements/requirements2.png" width=400 >}}
+{{< figure src="/softdev2-resources/images/requirements/requirements2.png" height=200 >}}
 
 ---
 
@@ -49,7 +49,7 @@ Some slides courtesy of Joan Smith, Eugene Agichstein, and the Internets.
 
 {{% fragment %}} <p align='left'> 10-100 x as much after release </p>
 
-[Code Complete, p30](https://learning.oreilly.com/library/view/code-complete-second/0735619670/)
+[Code Complete, p30](https://learning.oreilly.com/library/view/code-complete-2nd/0735619670/ch03.html)
 {{% /fragment %}}
 
 ---
@@ -293,5 +293,5 @@ and more
 {{% fragment %}} <p align='left'> * Use case diagram shows <b>all things an actor can do </b> </p> {{% /fragment %}}
 
 {{% fragment %}} <p align='left'> * Can be broken down to individual <b> user stories</b> </p> {{% /fragment %}}
-    
-   
+
+{{% reveal-prevnext-links %}}

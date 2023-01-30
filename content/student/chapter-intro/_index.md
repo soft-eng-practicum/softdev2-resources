@@ -122,3 +122,17 @@ Time to work on:
 1. Respond to resume on Reddit
 1. Watch for assignment on Reddit/Discord this week for project ideas
 {{% /fragment %}}
+
+---
+
+### Be more proactive to advance your career
+
+- Technology world is very competitive
+- Going through classes and getting a degree by itself is not enough
+- What else can you do?
+
+{{% fragment %}}
+- Performance at whiteboard/online coding interviews, 
+- public project activity, 
+- community involvement, etc
+{{% /fragment %}}

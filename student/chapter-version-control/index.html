@@ -196,6 +196,26 @@ data-background-opacity=0.5></p>
 </span>
 </slide>
 </section><section>
+<h3 id="parallel-development-branches-and-merging">Parallel development: branches and merging</h3>
+<p>Many ways to do it, but recommended way:</p>
+<ul>
+<li><code>master</code> or <code>main</code> for releases</li>
+<li><code>develop</code> for active development</li>
+<li>Optional: open one branch per feature, e.g. <code>feature-xyz</code></li>
+</ul>
+
+
+<span class='fragment '
+  >
+  <p>Relevant Git commands:</p>
+<ul>
+<li><code>git switch xyz</code> for switching all your code to branch <code>xyz</code> (without losing if you committed all)</li>
+<li><code>git merge xyz</code> for merging all the changes in branch <code>xyz</code> onto current branch</li>
+<li>resolve conflicts (see your assignment)</li>
+</ul>
+
+</span>
+</section><section>
 <h3 id="common-issues-with-git">Common issues with Git</h3>
 <p>Avoiding bloating and conflict hell:</p>
 <ul>

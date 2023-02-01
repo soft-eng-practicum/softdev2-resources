@@ -123,4 +123,27 @@ Time to work on:
 1. Watch for assignment on Reddit/Discord this week for project ideas
 {{% /fragment %}}
 
+---
+
+### Communication!!! (1)
+
+{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-1.png" height=500 >}}
+
+---
+
+### Communication!!! (2)
+
+{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-2.png" height=500 >}}
+
+---
+
+### Communication!!! (3)
+
+{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-3.png" height=500 >}}
+
+---
+
+### That's all folks!
+
 {{% reveal-prevnext-links %}}
+

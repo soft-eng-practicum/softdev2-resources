@@ -148,6 +148,22 @@ Common usage scenario:
 
 ---
 
+### Parallel development: branches and merging
+
+Many ways to do it, but recommended way:
+- `master` or `main` for releases
+- `develop` for active development
+- Optional: open one branch per feature, e.g. `feature-xyz`
+
+{{% fragment %}}
+Relevant Git commands:
+- `git switch xyz` for switching all your code to branch `xyz` (without losing if you committed all)
+- `git merge xyz` for merging all the changes in branch `xyz` onto current branch
+- resolve conflicts (see your assignment)
+{{% /fragment %}}
+
+---
+
 ### Common issues with Git
 
 Avoiding bloating and conflict hell:

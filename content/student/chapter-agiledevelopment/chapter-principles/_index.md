@@ -1,5 +1,5 @@
 +++
-title = "Agile Principles"
+title = "Agile Values and Principles"
 outputs = ["Reveal"]
 weight = 2
 
@@ -68,9 +68,13 @@ What does it mean to be AGILE?
  
 ---
 
+<section>
+
 ### Agile Principles
 
-{{% fragment %}} 1. **Satisfy the Customer** 
+{{% fragment %}} 
+
+1. **Satisfy the Customer** 
 
 Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 {{% /fragment %}}
@@ -88,7 +92,7 @@ Deliver working software frequently, from a couple of weeks to a couple of month
 
 ---
 
-### Agile Principles
+### Agile Principles (cont.)
 
 {{% fragment %}} 4. **Work Together** 
 
@@ -107,7 +111,7 @@ The most efficient and effective method of conveying information to and within a
 
 ---
 
-### Agile Principles
+### Agile Principles (cont.)
 
 {{% fragment %}} 7. **Working Solutions** 
 
@@ -126,7 +130,7 @@ Continuous attention to technical excellence and good design enhances agility (q
 
 ---
 
-### Agile Principles
+### Agile Principles (cont.)
 
 {{% fragment %}} 10. **Simplicity is Essential** 
 
@@ -142,7 +146,9 @@ The best architectures, requirements, and designs emerge from self–organizing 
 
 At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 {{% /fragment %}}
- 
+
+</section>
+
 ---
 
 ### Agile means
@@ -151,7 +157,7 @@ At regular intervals, the team reflects on how to become more effective, then tu
 
 ---
 
-### How to do Agile?
+### How to be Agile?
 
 **The process molds to the needs of the people and team**, not the other way around
 
@@ -174,6 +180,8 @@ There are many Agile process models proposed by various groups...
 {{% /fragment %}} 
 
 ---
+
+<section> 
 
 ### Extreme Programming (XP)
 
@@ -220,7 +228,10 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * **Acceptance tests** are defined by the customer and executed to assess customer visible functionality
 {{% /fragment %}} 
 
+</section>
+
 ---
+<section>
 
 ### Choose your Agile Flavor
 
@@ -247,6 +258,21 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
     * Design Globally, Code Locally
     * Acceptance Testing is important
 
+</section>
+
+---
+
+<div style="width: 100%; height: 700px; overflow: scroll; position: absolute; top: 0">
+
+### Agile explained with cars
+
+<a href="https://toggl.com/track/developer-methods-infographic/">
+    <img src="/softdev2-resources/images/agile/agile-explained-with-cars-toggl.avif" 
+         style="width: 100%; max-height: initial; ">
+    </a>
+</div>
+
+
 ---
 
 ### Criticisms of Agile Development
@@ -265,3 +291,4 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
 {{% fragment %}}<p align='left'> Inadequate handing of non-functional details. </p>{{% /fragment %}} 
 
+{{% reveal-prevnext-links %}}

@@ -40,7 +40,7 @@ See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scr
 
 {{% fragment %}} **Scrum is the most popular agile framework.**
 
-{{< figure src="/softdev2-resources/images/agilestatus-methods.png" width="600" >}}
+{{< figure src="/softdev2-resources/images/agile/agilestatus-methods.png" width="600" >}}
 {{% /fragment %}}
 
 ---
@@ -159,6 +159,8 @@ As the work progresses, the amount of work remaining should steadily decrease an
 
 ---
 
+<section>
+
 ### Daily Scrum
 
 <div style="width: 50%; margin-left: auto; margin-right: auto;">
@@ -204,5 +206,10 @@ Bonus scrum meeting [Sillicon Valey]:
 
 ### Now ... Scrum
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=700 >}}
+{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=600 >}}
+
+
+<section>
+
+{{% reveal-prevnext-links %}}
 

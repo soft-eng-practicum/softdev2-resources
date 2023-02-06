@@ -72,3 +72,4 @@ Work flow: cards moving from left to right
 
 In agile, if values are combined with Kanban characteristics, the outcome would be Agile Kanban. This practice is gaining popularity in Software Developmement, and it means that  the Agile iteration approach and Kanban value stream focus are combined.
 
+{{% reveal-prevnext-links %}}

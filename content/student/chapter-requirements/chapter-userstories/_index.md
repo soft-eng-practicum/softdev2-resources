@@ -97,7 +97,8 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 
 ### Daily Scrum
 
-<div style="width: 50%">
+<div style="width: 70%; margin-left: auto; margin-right: auto;">
 {{< youtube kKIc1NFO-AU >}}
 </div>
     
+{{% reveal-prevnext-links %}}

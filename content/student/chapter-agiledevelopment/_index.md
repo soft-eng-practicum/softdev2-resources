@@ -83,9 +83,8 @@ What does it mean to be AGILE?
 
 ### Agile Statistics
 
- [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
+[The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agile/agilestatus-success.png" width="600" >}}
+{{< figure src="/softdev2-resources/images/agile/agilestatus-success.png" width="600" >}}
  
----
-
+{{% reveal-prevnext-links %}} 

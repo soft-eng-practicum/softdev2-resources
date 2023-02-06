@@ -5,6 +5,8 @@ weight = 3
 
 +++
 
+<!--style>p {text-align: left;} </style-->
+
 {{% reveal-titlepage figure="/softdev2-resources/images/teamwork.jpg" %}}
 
 ---
@@ -89,6 +91,8 @@ Our Scrum Team includes three roles:
 
 ---
 
+<section class="left-aligned">
+
 ### Scrum Values
 
 {{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. 
@@ -105,6 +109,8 @@ Our Scrum Team includes three roles:
 
 {{% fragment %}} **Respect**: Scrum team members respect each other’s ideas, give each other permission to have a bad day once in a while, and recognize each other’s accomplishments. They show respect to one another, to the product owner, to stakeholders, and to the ScrumMaster. 
 {{% /fragment %}}
+
+</section>
 
 ---
 
@@ -194,3 +200,4 @@ In our class settings, communication happens via several venues set up by the in
 {{< figure src="/softdev2-resources/images/scrum/teamsscrums.JPG" width=550 >}}
 </div>
 
+{{% reveal-prevnext-links %}}

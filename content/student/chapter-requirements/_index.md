@@ -183,6 +183,8 @@ Examples: Medicine, library, physics, chemistry <br></p>
  
 ---
 
+<section>
+
 ### Non-functional requirements categories
 
 <p align='left'> <b> Product requirements</b> - related to product behavior <br>
@@ -195,7 +197,15 @@ Example: Process requirements, implementation requirements, delivery requirement
 Example: Interoperability, legislation, ethics 
 </p>
 
-{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=400 >}} {{% /fragment %}}
+{{% fragment %}} {{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=200 >}} {{% /fragment %}}
+
+---
+
+### Non-functional requirements categories (cont.)
+
+{{< figure src="/softdev2-resources/images/requirements/nonfctrequirements.png" width=800 >}}
+
+</section>
 
 ---
 
@@ -212,6 +222,8 @@ Example: Interoperability, legislation, ethics
 {{< figure src="/softdev2-resources/images/requirements/reqengineering.png" width=700 >}}
 
 ---
+
+<section>
 
 ### Feasibility study
 
@@ -266,6 +278,8 @@ Should be short (2-3 weeks)
 * Are there issues linked with the fact that this is an offshore project?
 
 and more
+
+</section>
 
 ---
 

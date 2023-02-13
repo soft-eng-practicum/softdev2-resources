@@ -130,7 +130,7 @@ Our Scrum Team includes three roles:
 
 * team has tools available to communicate fast and easy with each other when needed - we have Discord 
 
-* also, in our class setting, the instrucotr is part of the team, who is available during class time and on team channels </p>
+* also, in our class setting, the instructor is part of the team, who is available during class time and on team channels </p>
 {{% /fragment %}}
 
 

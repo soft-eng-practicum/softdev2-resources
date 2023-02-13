@@ -102,6 +102,25 @@ After the goals have been achieved, it is good practice to evaluate the performa
 {{% /fragment %}}
 
 ---
-## Jira
+
+<iframe width="1000" height="600" src="https://www.youtube.com/embed/6EgCIXJpt7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+---
+
+### JIRA
+
+Backlogs:
+- **Regular backlog**: all remaining stories
+- **Sprint backlog**: stories assigned to specific sprints
+
+{{% fragment %}}
+You can add to backlogs:
+- **User stories**
+- **Tasks** (chores)
+- **Bugs**
+
+Be creative about using **tasks** and **bugs** to add planning, learning, testing, and other time consuming tasks.
+{{% /fragment %}}
+
 
 {{% reveal-prevnext-links %}}

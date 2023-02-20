@@ -45,8 +45,6 @@ margin = 0.1
 
 ## Welcome to the Bootstrap Workshop
 
-*(Work in Progress)*
-
 Ryan Cosentino
 
 <img src="/softdev2-resources/images/jquery/logo.png" alt="jQuery and Bootstrap" width="700" class="plain"/>
@@ -436,4 +434,6 @@ For the second button, we need to delete the last row in the table:
 
 ## Result
 
-<img src="/softdev2-resources/images/bootstrap/form-4.png" width="500" style="border: none;"/>
+<img src="/softdev2-resources/images/bootstrap/form-4.png" height="500" style="border: none;"/>
+
+{{% reveal-prevnext-links %}}

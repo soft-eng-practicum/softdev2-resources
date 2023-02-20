@@ -18,8 +18,6 @@ margin = 0.1
 
 ## Welcome to the jQuery Workshop
 
-*(Work in Progress)*
-
 Ryan Cosentino
 
 <img src="/softdev2-resources/images/jquery/logo.png" alt="jQuery and Bootstrap" width="700" class="plain"/>
@@ -328,3 +326,5 @@ $("#btn").click(function() {
 ```
 
 In the next Workshop we'll use Bootstrap to make our page look more professional.
+
+{{% reveal-prevnext-links %}}

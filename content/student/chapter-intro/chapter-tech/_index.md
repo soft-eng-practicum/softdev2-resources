@@ -47,9 +47,9 @@ At least for now. Why?
 
 Major players; require Node.js on the server
 
-1. Angular (Typescript) - a full framework, supported by Google
-1. React (JSX) - only a library. Invented by Facebook, but open source now
-1. Vue.JS (Javascript) - modeled by original Angular, independent and open source
+1. [Angular](https://angular.io/) (Typescript) - a full framework, owned by Google
+1. [React](https://reactjs.org/) (JSX) - only a library. Invented by Facebook, but open source now
+1. [Vue.JS](https://vuejs.org/) (Javascript) - modeled after legacy AngularJS; lighter, independent, and open source
 
 {{% note %}}
 - Angular controlled by Google and may change, forces Typescript

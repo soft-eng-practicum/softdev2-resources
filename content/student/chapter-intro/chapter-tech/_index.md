@@ -13,7 +13,7 @@ weight = 3 # chapter number
 Forget: **Java**
 
 {{% fragment %}} 
-Why?
+At least for now. Why?
 - It's not the only language out there: [TIOBE Index](https://www.tiobe.com/tiobe-index/), [Github State of the Octoverse survey](https://octoverse.github.com/), and [StackOverflow Developer Survey of 2019](https://insights.stackoverflow.com/survey/2019)
 - The more languages you are familiar with, the better chances for jobs
 - Knowledge of imperative language like Java easily translates to several other languages (C#, Python, Javascript, C/C++, …)
@@ -144,10 +144,61 @@ Simpler, less powerful, cloud options available
 
 #### Online Servers
 
-There are free or low-cost options
+There are free or low-cost options:
 
-- Heroku - Completely free servers available, but can't host database for free
-- Netlify/Github Pages - Free hosting of static web content
-- Amazon Web Services (AWS) - 12-month free tier 
-- Microsoft Azure - free tier 
-- Altervista - Free PHP and MySQL server
+- [Render](https://render.com/) - Free hosting of backend (Node.js, etc)
+- [Netlify](https://www.netlify.com/)/[Github Pages](https://pages.github.com/) - Free hosting of only static web content
+- [Amazon Web Services (AWS)](https://aws.amazon.com/free/) - 12-month free tier and some always free services
+- [Microsoft Azure](https://azure.microsoft.com/en-us/free/students/) - free for student
+- [Heroku](https://www.heroku.com/) - Was recently acquired by Salesforce and ceased free accounts
+- [Altervista](https://en.altervista.org/) - Free PHP hosting and MySQL server. A bit slow.
+
+---
+
+### I'm lost! How to learn all of this?
+
+{{% fragment %}}
+
+We can't teach all technologies, and you need to get used to picking
+them up faster in preparation for real jobs out there.
+
+{{% /fragment %}}
+
+{{% fragment %}}
+
+#### Some advice:
+
+- **Learn how to read!** (Literally) Always first go to the tool's _official website_ and follow their _latest_ documentation, examples, and tutorials. <!-- class="fragment" -->
+
+{{% /fragment %}}
+
+{{% fragment %}}
+- **Practice a simpler project** Do not jump into modifying your inherited project without understanding the basics on a simpler toy project.
+{{% /fragment %}}
+
+{{% fragment %}}
+- **Do not update everything at the beginning** This may go against the fast-paced update culture, but we first need to preserve the working conditions of an older project. You are almost **guaranteed to irreversibly break** a project if you blindly update all of its dependencies to the latest version.
+{{% /fragment %}}
+
+{{% fragment %}}
+- **Do not watch those Youtube tutorials!** Yeah, old school person here, who doesn't understand the new generation. But, see next slide.
+{{% /fragment %}}
+
+---
+
+### What's wrong with video tutorials?
+
+- you can't copy-paste from a video
+- they are almost always outdated (these tools update every 3 months or so)
+- they usually show only a very specific solution that may not be a good fit for you
+- you can't continue following if you get an error during a step
+- you can't search keywords within a video
+    
+
+---
+
+### How about some learning resources?
+
+- [W3Schools](https://www.w3schools.com/) for HTML, CSS, Javascript, Python, etc.
+- [LinkedIn Learning](https://www.linkedin.com/learning/): Videos, if you must.
+- [O'Reilly/Safari Books](https://learning.oreilly.com/home/): Up-to-date books by actual industry experts and even authors of the very tools we are using. They also have those videos.

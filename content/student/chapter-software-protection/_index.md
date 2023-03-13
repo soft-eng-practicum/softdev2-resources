@@ -328,7 +328,7 @@ https://www.ipwatchdog.com/
 
 #### Credits
 
-- Pooya Shoghi helped with slide contents
+- Thanks to Pooya Shoghi for previous discussion
 - Dr Anca Doloc-Mihu supervised students Jamaima Endres and Zachary A Moore for constructing the resource website
 
 {{% reveal-prevnext-links %}}

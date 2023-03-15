@@ -157,6 +157,7 @@ Take one or more screenshots that show:
 - your `config.js` file with the new auth info
 - the output when you run `npm start`
 - the blank page that opens on localhost
+- have your name somewhere in there
 and submit
 
 ---

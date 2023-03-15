@@ -64,7 +64,7 @@ cd react-auth-firebase-workshop
 npm install
 npm start
 ```
-(it may give a few errors and open a blank web page)
+(it may give a few [errors](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported) and open a blank web page)
 
 If you **did NOT clone the starter repo**, open a terminal and create a new React app:
 ```sh
@@ -154,13 +154,22 @@ const analytics = getAnalytics(app);
 
 ---
 
-- We will be using routing in your application so let's install react router
-```sh
-npm install react-router-dom@5.2.0
-```
-- You can use later version of router dom but this is what I am using for this workshop
+### Additional packages
 
-- I am also using **[Semantic Ui](https://semantic-ui.com/introduction/getting-started.html)** classes for the UI. See the documentation on how to install.
+- We will be using routing in your application so we included
+  `react-router-dom` in the starter repo. **If you have not cloned it**,
+  you must install:
+
+```sh
+npm install react-router-dom@5.2.0 --save
+```
+- You can use later version of router DOM but this is what we are using for this workshop
+
+- I am also using **[Semantic Ui](https://semantic-ui.com/introduction/getting-started.html)** classes for the UI. See the documentation on how to install or simply do (**skip for now if doesn't work**):
+
+```sh
+npm install semantic-ui --save
+```
 
 ---
 

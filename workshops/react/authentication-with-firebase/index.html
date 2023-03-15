@@ -111,7 +111,7 @@ Firebase is categorized as a NoSQL database program, which stores data in JSON-l
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>cd react-auth-firebase-workshop
 </span></span><span style="display:flex;"><span>npm install
 </span></span><span style="display:flex;"><span>npm start
-</span></span></code></pre></div><p>(it may give a few errors and open a blank web page)</p>
+</span></span></code></pre></div><p>(it may give a few <a href="https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported" target="_blank" rel="noreferrer noopener">errors</a> and open a blank web page)</p>
 <p>If you <strong>did NOT clone the starter repo</strong>, open a terminal and create a new React app:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm create-react-app authentication
 </span></span></code></pre></div><p>Once the app is created, enter the following command in your terminal.</p>
@@ -194,19 +194,23 @@ Firebase is categorized as a NoSQL database program, which stores data in JSON-l
 <li>This is going to allow you to sign up and sign in users with email and password.</li>
 </ul>
 </section><section>
+<h3 id="additional-packages">Additional packages</h3>
 <ul>
-<li>We will be using routing in your application so let&rsquo;s install react router</li>
+<li>We will be using routing in your application so we included
+<code>react-router-dom</code> in the starter repo. <strong>If you have not cloned it</strong>,
+you must install:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install react-router-dom@5.2.0
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install react-router-dom@5.2.0 --save
 </span></span></code></pre></div><ul>
 <li>
-<p>You can use later version of router dom but this is what I am using for this workshop</p>
+<p>You can use later version of router DOM but this is what we are using for this workshop</p>
 </li>
 <li>
-<p>I am also using <strong><a href="https://semantic-ui.com/introduction/getting-started.html" target="_blank" rel="noreferrer noopener">Semantic Ui</a></strong> classes for the UI. See the documentation on how to install.</p>
+<p>I am also using <strong><a href="https://semantic-ui.com/introduction/getting-started.html" target="_blank" rel="noreferrer noopener">Semantic Ui</a></strong> classes for the UI. See the documentation on how to install or simply do (<strong>skip for now if doesn&rsquo;t work</strong>):</p>
 </li>
 </ul>
-</section><section>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install semantic-ui --save
+</span></span></code></pre></div></section><section>
 <h2 id="signup-component">Signup component</h2>
 <ul>
 <li>Let&rsquo;s create a signup component so the user can sign up</li>

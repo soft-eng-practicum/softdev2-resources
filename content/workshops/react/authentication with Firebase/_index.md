@@ -119,7 +119,7 @@ Mac and Linux users would need to prepend this command with `sudo`.
 
 ---
 
-- It should look something like this.
+- It should look something like this (**DON'T COPY THIS**).
 ```sh
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -143,7 +143,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 ```
-- Paste the code inside the `config.js` file
+- Paste the code **from your firebase page** inside the `config.js` file
 
 ---
 
@@ -151,6 +151,13 @@ const analytics = getAnalytics(app);
 - In firebase website, click on "Authentication"
 - then click on "Sign-in method" and enable "Email/Password"
 - This is going to allow you to sign up and sign in users with email and password.
+
+**Checkpoint!**
+Take one or more screenshots that show:
+- your `config.js` file with the new auth info
+- the output when you run `npm start`
+- the blank page that opens on localhost
+and submit
 
 ---
 

@@ -205,8 +205,7 @@ and submit</li>
 </section><section>
 <h3 id="additional-packages">Additional packages</h3>
 <ul>
-<li>We will be using routing in your application so we included
-<code>react-router-dom</code> in the starter repo. <strong>If you have not cloned it</strong>,
+<li>Routing in the app is achieved via the <code>react-router-dom</code> package. <strong>If you have not cloned the starter repo</strong>,
 you must install:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install react-router-dom@5.2.0 --save
@@ -215,11 +214,14 @@ you must install:</li>
 <p>You can use later version of router DOM but this is what we are using for this workshop</p>
 </li>
 <li>
-<p>I am also using <strong><a href="https://semantic-ui.com/introduction/getting-started.html" target="_blank" rel="noreferrer noopener">Semantic Ui</a></strong> classes for the UI. See the documentation on how to install or simply do (<strong>skip for now if doesn&rsquo;t work</strong>):</p>
+<p>I am also using <strong><a href="https://semantic-ui.com/introduction/getting-started.html" target="_blank" rel="noreferrer noopener">Semantic UI</a></strong> classes for the UI. See the documentation on how to install or simply do (<strong>skip for now if not working</strong>):</p>
 </li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install semantic-ui --save
 </span></span></code></pre></div></section><section>
+
+
+<section data-shortcode-section>
 <h2 id="signup-component">Signup component</h2>
 <ul>
 <li>Let&rsquo;s create a signup component so the user can sign up</li>
@@ -231,9 +233,9 @@ you must install:</li>
 </ul>
 </section><section>
 <ul>
-<li>Under src folder, create a folder called <code>pages</code></li>
-<li>Inside pages, create a file called <code>Signup.js</code></li>
-<li>Paste the following code in <code>Signup.js</code></li>
+<li>Under the <code>src</code> folder, create a folder called <code>pages</code></li>
+<li>Inside <code>pages</code>, create a file called <code>Signup.js</code></li>
+<li>Paste the following React component in <code>Signup.js</code></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import React, <span style="color:#f92672">{</span> useState <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react&#39;</span>;
 </span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> useForm <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-hook-form&#39;</span>;
@@ -429,8 +431,8 @@ you must install:</li>
 </span></span></code></pre></div></section><section>
 <h2 id="create-signup-function">create signup function</h2>
 <ul>
-<li>Create a new file inside firebase folder and call it &ldquo;auth.js&rdquo;</li>
-<li>write a sign up function which alllows the user to sign up with email and password</li>
+<li>Create a new file inside <code>src/firebase</code> folder and call it <code>auth.js</code></li>
+<li>write a <code>signup</code> function which allows the user to sign up with email and password</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import firebase from <span style="color:#e6db74">&#39;firebase/app&#39;</span>;
 </span></span><span style="display:flex;"><span>import <span style="color:#e6db74">&#39;firebase/auth&#39;</span>;
@@ -444,6 +446,25 @@ you must install:</li>
 </span></span></code></pre></div><ul>
 <li>Now we are able to signup new users and store their data in the firebase.</li>
 </ul>
+</section><section>
+<h2 id="checkpoint">Checkpoint</h2>
+<p>Make sure the sign up functionality works by running <code>npm start</code>. Check your system terminal and browser console for errors!</p>
+<p><strong>Submit screenshot #1:</strong></p>
+<ul>
+<li>Console output while running the app</li>
+<li>App signup page in browser</li>
+</ul>
+<p><strong>Submit screenshot #2:</strong></p>
+<ul>
+<li>Folder structure including the new signup.js file</li>
+<li>Firebase console Authentication&gt;Users with new user</li>
+</ul>
+<p><strong>Challenge:</strong></p>
+<ul>
+<li>Show the form validation errors coming back from firebase on the page instead of the console</li>
+</ul>
+
+</section>
 </section><section>
 <h2 id="displaying-the-users-data">Displaying the users data</h2>
 <ul>

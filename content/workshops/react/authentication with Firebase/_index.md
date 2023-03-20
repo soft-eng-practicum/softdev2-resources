@@ -184,7 +184,7 @@ npm install semantic-ui --save
 
 ## Signup component
 - Let's create a signup component so the user can sign up
-- Before writing any code, install react hook form which is a library I will be using to handle the forms and submittions.
+- Before writing any code, install react hook form which is a library I will be using to handle the forms and submittions. Make sure to do this at the bottom of your project folder:
 ```sh
 npm install react-hook-form@5.7.2
 ```

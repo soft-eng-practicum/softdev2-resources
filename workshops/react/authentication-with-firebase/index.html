@@ -334,7 +334,7 @@ you must install:</li>
 </span></span></code></pre></div></section><section>
 <h2 id="adding-style">Adding Style</h2>
 <ul>
-<li>Paste the following CSS code inside of App.css</li>
+<li>Paste the following CSS code inside of <code>src/App.css</code></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>body <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>  background-color: <span style="color:#75715e">#f9f9f9 !important;</span>
@@ -410,10 +410,11 @@ you must install:</li>
 </span></span></code></pre></div></section><section>
 <h2 id="create-a-new-route-for-signup">create a new route for signup</h2>
 <ul>
-<li>In App.js import the following</li>
+<li>In <code>App.js</code> import the following</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import Signup from <span style="color:#e6db74">&#39;./pages/Signup&#39;</span>;
 </span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> Route, Switch, BrowserRouter, Redirect <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>import ProfileRedirect from <span style="color:#e6db74">&#39;./router/ProfileRedirect&#39;</span>;
 </span></span></code></pre></div><ul>
 <li>Add the following code inside of the return</li>
 </ul>
@@ -422,7 +423,9 @@ you must install:</li>
 </span></span><span style="display:flex;"><span>        &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>          &lt;div className<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui grid container&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>            &lt;Switch&gt;
-</span></span><span style="display:flex;"><span>              &lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt;
+</span></span><span style="display:flex;"><span>              &lt;ProfileRedirect exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/signup&#34;</span> component<span style="color:#f92672">={</span>Signup<span style="color:#f92672">}</span> /&gt; 
+</span></span><span style="display:flex;"><span>              &lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;Redirect to<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> /&gt;
 </span></span><span style="display:flex;"><span>              &lt;/Route&gt;
 </span></span><span style="display:flex;"><span>            &lt;/Switch&gt;
 </span></span><span style="display:flex;"><span>          &lt;/div&gt;
@@ -464,7 +467,7 @@ browser console for errors!</p>
 <p><strong>Challenge:</strong></p>
 <ul>
 <li>Show the form validation errors coming back from firebase on the
-page instead of the console. <strong>Hint:</strong> Add a new <code>UseState</code> call.</li>
+page instead of the console. <strong>Hint:</strong> Add a new <code>useState()</code> call.</li>
 </ul>
 
 </section>
@@ -647,7 +650,7 @@ page instead of the console. <strong>Hint:</strong> Add a new <code>UseState</co
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> resp.user;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
 </span></span></code></pre></div><ul>
-<li>We still need to handle the routing for login so inside App.js, create a new route for login</li>
+<li>We still need to handle the routing for login so inside <code>App.js</code>, create a new route for login</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import Login from <span style="color:#e6db74">&#39;./pages/Login&#39;</span>;
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;Route exact path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/login&#34;</span> component<span style="color:#f92672">={</span>Login<span style="color:#f92672">}</span> /&gt;

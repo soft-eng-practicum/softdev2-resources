@@ -296,7 +296,7 @@ export default Signup;
 ---
 
 ## Adding Style
-- Paste the following CSS code inside of App.css
+- Paste the following CSS code inside of `src/App.css`
 ```sh
 body {
   background-color: #f9f9f9 !important;
@@ -374,10 +374,11 @@ header h2 {
 ---
 
 ## create a new route for signup
-- In App.js import the following
+- In `App.js` import the following
 ```sh
 import Signup from './pages/Signup';
 import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
+import ProfileRedirect from './router/ProfileRedirect';
 ```
 - Add the following code inside of the return
 ```sh
@@ -386,7 +387,9 @@ import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
         <div className="app">
           <div className="ui grid container">
             <Switch>
-              <Route exact path="/signup" component={Signup} />
+              <ProfileRedirect exact path="/signup" component={Signup} /> 
+              <Route exact path="/">
+                <Redirect to="/login" />
               </Route>
             </Switch>
           </div>
@@ -430,7 +433,7 @@ browser console for errors!
 
 **Challenge:**
 - Show the form validation errors coming back from firebase on the
-  page instead of the console. **Hint:** Add a new `UseState` call.
+  page instead of the console. **Hint:** Add a new `useState()` call.
 
 {{% /section %}}
 
@@ -626,7 +629,7 @@ export const login = async ({ email, password }) => {
   return resp.user;
 };
 ```
-- We still need to handle the routing for login so inside App.js, create a new route for login
+- We still need to handle the routing for login so inside `App.js`, create a new route for login
 ```sh
 import Login from './pages/Login';
 ```

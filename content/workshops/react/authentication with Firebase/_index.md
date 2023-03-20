@@ -164,8 +164,7 @@ and submit
 
 ### Additional packages
 
-- We will be using routing in your application so we included
-  `react-router-dom` in the starter repo. **If you have not cloned it**,
+- Routing in the app is achieved via the `react-router-dom` package. **If you have not cloned the starter repo**,
   you must install:
 
 ```sh
@@ -173,13 +172,15 @@ npm install react-router-dom@5.2.0 --save
 ```
 - You can use later version of router DOM but this is what we are using for this workshop
 
-- I am also using **[Semantic Ui](https://semantic-ui.com/introduction/getting-started.html)** classes for the UI. See the documentation on how to install or simply do (**skip for now if doesn't work**):
+- I am also using **[Semantic UI](https://semantic-ui.com/introduction/getting-started.html)** classes for the UI. See the documentation on how to install or simply do (**skip for now if not working**):
 
 ```sh
 npm install semantic-ui --save
 ```
 
 ---
+
+{{% section %}}
 
 ## Signup component
 - Let's create a signup component so the user can sign up
@@ -191,9 +192,9 @@ npm install react-hook-form@5.7.2
 
 ---
 
-- Under src folder, create a folder called `pages`
-- Inside pages, create a file called `Signup.js`
-- Paste the following code in `Signup.js`
+- Under the `src` folder, create a folder called `pages`
+- Inside `pages`, create a file called `Signup.js`
+- Paste the following React component in `Signup.js`
 ```sh
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -396,8 +397,8 @@ import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 ---
 
 ## create signup function
-- Create a new file inside firebase folder and call it "auth.js"
-- write a sign up function which alllows the user to sign up with email and password
+- Create a new file inside `src/firebase` folder and call it `auth.js`
+- write a `signup` function which allows the user to sign up with email and password
 ```sh
 import firebase from 'firebase/app';
 import 'firebase/auth';
@@ -410,6 +411,26 @@ export const signup = async ({ firstName, lastName, email, password }) => {
 };
 ```
 - Now we are able to signup new users and store their data in the firebase.
+
+---
+
+## Checkpoint
+
+Make sure the sign up functionality works by running `npm
+start`. Check your system terminal and browser console for errors!
+
+**Submit screenshot #1:**
+- Console output while running the app
+- App signup page in browser
+
+**Submit screenshot #2:**
+- Folder structure including the new signup.js file
+- Firebase console Authentication>Users with new user
+
+**Challenge:**
+- Show the form validation errors coming back from firebase on the page instead of the console
+
+{{% /section %}}
 
 ---
 

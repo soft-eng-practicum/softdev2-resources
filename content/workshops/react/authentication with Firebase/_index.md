@@ -416,8 +416,9 @@ export const signup = async ({ firstName, lastName, email, password }) => {
 
 ## Checkpoint
 
-Make sure the sign up functionality works by running `npm
-start`. Check your system terminal and browser console for errors!
+Make sure sign up works by running `npm start`. Navigate to
+[http://localhost:3000/signup](http://localhost:3000/signup). Check your system terminal and
+browser console for errors!
 
 **Submit screenshot #1:**
 - Console output while running the app
@@ -428,11 +429,14 @@ start`. Check your system terminal and browser console for errors!
 - Firebase console Authentication>Users with new user
 
 **Challenge:**
-- Show the form validation errors coming back from firebase on the page instead of the console
+- Show the form validation errors coming back from firebase on the
+  page instead of the console. **Hint:** Add a new `UseState` call.
 
 {{% /section %}}
 
 ---
+
+{{% section %}}
 
 ## Displaying the users data
 - Now that we have a user, it is time to create a profile page and display their information.
@@ -473,6 +477,12 @@ import Profile from './pages/Profile';
 ```sh
 http://localhost:3000/profile/
 ```
+
+**Checkpoint!**
+
+Submit screenshots.
+
+{{% /section %}}
 
 ---
 

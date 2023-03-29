@@ -70,6 +70,124 @@ if (!doNotTrack) {
 </figure>
 <p><a class="nav nav-prev" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-version-control/" title="Version Control"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Version Control</a>, <span></span><a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/student/chapter-jira/" title="Project Management with JIRA">Next - Project Management with JIRA <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
 </section><section>
+<section>
+<h3 id="github-usage-pattern-example-2048">GitHub usage pattern example: 2048</h3>
+<p><a href="http://gabrielecirulli.github.io/2048/" target="_blank" rel="noreferrer noopener"><figure><img src="/softdev2-resources/images/version-control/github-2048-orig.png" height="600"/>
+</figure>
+</a></p>
+</section><section>
+<h3 id="so-many-variants">So many variants!</h3>
+<p><a href="http://doge2048.com/" target="_blank" rel="noreferrer noopener"><figure><img src="/softdev2-resources/images/version-control/github-2048-doge.png" height="600"/>
+</figure>
+</a></p>
+</section><section>
+<p><a href="http://baiqiang.github.io/2048-3d/" target="_blank" rel="noreferrer noopener"><figure><img src="/softdev2-resources/images/version-control/github-2048-3D2.png" height="600"/>
+</figure>
+</a></p>
+</section>
+</section><section>
+<section>
+<h3 id="2048-github-page">2048 GitHub page</h3>
+<p><a href="https://github.com/gabrielecirulli/2048" target="_blank" rel="noreferrer noopener"><figure><img src="/softdev2-resources/images/version-control/github-2048-gabri-0.png" height="600"/>
+</figure>
+</a></p>
+</section><section>
+<h3 id="2048-github-page-1">2048 GitHub page</h3>
+<p><a href="https://github.com/gabrielecirulli/2048" target="_blank" rel="noreferrer noopener"><figure><img src="/softdev2-resources/images/version-control/github-2048-gabri-1.png" height="600"/>
+</figure>
+</a></p>
+</section><section>
+<h3 id="whats-forking-">What&rsquo;s <em>forking</em> ??</h3>
+
+
+<span class='fragment '
+  >
+  <figure><img src="/softdev2-resources/images/version-control/fork-plate-spagetti.jpg" height="200"/>
+</figure>
+<p>Stealing from their plate?</p>
+
+</span>
+
+
+<span class='fragment '
+  >
+  <figure><img src="/softdev2-resources/images/version-control/forkintheroad.jpg" height="200"/>
+</figure>
+<p>More like a fork in the road.</p>
+
+</span>
+</section>
+</section><section>
+<section>
+<h3 id="github-encourages-social-computing">GitHub encourages <em>social computing</em></h3>
+<p>Common GitHub usage pattern: <strong>fork &amp; modify</strong></p>
+<ol>
+<li>Fork (clone) someone&rsquo;s project into your account</li>
+<li>Modify and make it your own</li>
+<li>Share with original project through “pull requests”</li>
+</ol>
+
+
+<span class='fragment '
+  >
+  <p>Our GitHub usage pattern: <strong>push &amp; pull</strong></p>
+<ol>
+<li>Several users collaborate on same repo</li>
+<li>Open GitHub account and we associate you with private project repos</li>
+<li>Install local client <code>git</code> on Windows, Mac, Linux</li>
+<li>Clone the repo on your local computer (don&rsquo;t fork on GitHub!)</li>
+<li>Modify, then push and pull</li>
+<li>Communicate your pushes with your teammates!</li>
+<li>(Optional) Make branches and switch between them</li>
+</ol>
+
+</span>
+</section><section>
+<h3 id="our-git-workflow-is-centralized">Our Git workflow is <em>centralized</em></h3>
+<p><figure><img src="/softdev2-resources/images/version-control/git-scm-workflow-centralized.png" height="400"/>
+</figure>
+
+<a href="http://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows" target="_blank" rel="noreferrer noopener">Chacon &amp; Straub&rsquo;s Pro Git book: 5.1 Distributed Git - Distributed Workflows</a></p>
+</section>
+</section><section>
+<section>
+<h3 id="an-improved-git-workflow-integration-manager">An improved Git workflow: Integration Manager</h3>
+<figure><img src="/softdev2-resources/images/version-control/git-scm-workflow-integ-mgr.png" height="400"/>
+</figure>
+
+</section><section>
+<h3 id="can-we-adopt-features-from-integration-manager">Can we adopt features from integration manager?</h3>
+
+
+<span class='fragment '
+  >
+  <p>Yes!</p>
+<ul>
+<li>Use branches</li>
+<li>Send pull requests (PRs) within the same repo</li>
+<li>Have someone to review code and accept PR</li>
+</ul>
+
+</span>
+</section>
+</section><section>
+<h3 id="ultimate-git-workflow-benevolent-dictator">Ultimate Git workflow: Benevolent Dictator</h3>
+<figure><img src="/softdev2-resources/images/version-control/git-scm-workflow-benevolent-dictator.png" height="400"/>
+</figure>
+
+</section><section>
+<section>
+<div style="width: 100%; height: 700px; overflow: scroll; position: absolute; top: 0">
+<h3 id="a-branching-model-gitflow">A branching model: <em>gitflow</em></h3>
+<p><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noreferrer noopener"><img src="/softdev2-resources/images/version-control/git-branching-model-1.png" 
+style="width: 100%; max-height: initial; "></a></p>
+</div>
+</section><section>
+<h3 id="gitflow-references">Gitflow references</h3>
+<p>Original article: <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noreferrer noopener">“A successful Git branching model” by Vincent Driessen (2010)</a> and more recent <a href="https://jeffkreeftmeijer.com/git-flow/" target="_blank" rel="noreferrer noopener">Using git-flow to automate your git branching workflow (2010)</a></p>
+<p>Or simply use the <a href="https://github.com/nvie/gitflow" target="_blank" rel="noreferrer noopener">GitFlow</a> extension to git</p>
+<p>Atlassian Tutorial: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows" target="_blank" rel="noreferrer noopener">Comparing Workflows: Centralized, Feature Branch, Gitflow, Forking Workflows</a></p>
+</section>
 </section>
 
   

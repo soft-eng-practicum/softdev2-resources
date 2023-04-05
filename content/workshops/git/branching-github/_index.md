@@ -1,5 +1,5 @@
 +++
-title = "Git Branching and Github Pages"
+title = "Git log, branch, stash, rebase, and merge"
 #outputs = ["Reveal"]
 weight = 2 # chapter number
 author = "Shaun Mitchell"
@@ -8,7 +8,7 @@ video = "q4Qja5OHaLQ"
 
 By Shaun Mitchell
 
-- See the [slides](https://docs.google.com/presentation/d/1RRmFH5Z4mdT2AB776fUOGkcfxCVedioFedDRTF3j9vw/present?token=AC4w5VgbtBLGua2k5_VTUwmQc_w2sQe5aA:1601427946471&includes_info_params=1&eisi=CI3riP_Xj-wCFczMOgcdAEwFNg#slide=id.p) for the video below
+- See the [slides](https://docs.google.com/presentation/d/1Q7Vu1AqJJo27fO0uArLNh3OciPXXQlDLAcAb-VufH0Y/present?usp=sharing) for the video below
 
 {{% youtube q4Qja5OHaLQ %}}
 

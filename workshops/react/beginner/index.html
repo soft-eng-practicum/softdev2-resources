@@ -78,13 +78,16 @@ if (!doNotTrack) {
 <p>A JavaScript library for building user interfaces
 For web as well as mobile applications
 Developed by a team at Facebook in 2011</p>
- <ul>
+<ul>
 <li>It is an open-source, reusable component based front-end library</li>
-<li>In a model view controller architecture, react is the "view" which is responsible for how 
-  the app looks and feels"</li>
-<li>Currently one of the most popular libraries for building Javascript libraries"</li>
+<li>In a Model View Controller (MVC) architecture, React is the &ldquo;View&rdquo; which is responsible for how
+the app &ldquo;looks and feels&rdquo;. However, more accurately, it is strictly not MVC and instead uses the <a href="https://www.infoq.com/news/2014/05/facebook-mvc-flux/" target="_blank" rel="noreferrer noopener">Flux pattern</a>.</li>
+<li>As of 2022, it is <a href="https://www.komododigital.co.uk/insights/9-reasons-why-react-is-still-popular-in-2021/" target="_blank" rel="noreferrer noopener">one of the most popular</a> libraries for building Javascript libraries.</li>
 </ul>
 </section><section>
+
+
+<section data-shortcode-section>
 <h3 id="components">Components</h3>
 <h2>-A piece of the Ui-</h2>
 <p>Independent, isolated, and reuable components, which become the building blocks to 
@@ -129,17 +132,24 @@ a more complex user interface.</p>
       </td>
 </tr>
 </table>
+
+</section>
 </section><section>
-<h3 id="heading-2"></h3>
+<h3 id="heading"></h3>
+
+
+<section data-shortcode-section>
 <h1>Getting started!</h1>
 <h2>Install NodeJs</h2>
 <a href="https://nodejs.org/en/" target="_blank">NodeJS download link</a>
 <p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
 <p> Every time we use npm, we are using NodeJs's packager tool</p>
 </section><section>
-<h3 id="heading-3"></h3>
+<h3 id="heading"></h3>
 <h1>Set up your environment (IDE)</h1>
 <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code download link</a>
+
+</section>
 </section><section>
 <h3 id="test-your-environment-and-create-an-app">Test your environment and create an app</h3>
 <ul>
@@ -151,11 +161,98 @@ a more complex user interface.</p>
 </span></span></code></pre></div>(<code>first-react-app</code> is the name of our project)
 If it works, congrats you&rsquo;ve created your very first react app.</li>
 <li>Start VS Code to see its contents:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>code .
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ cd first-react-app
+</span></span><span style="display:flex;"><span>$ code src/App.js
 </span></span></code></pre></div></li>
 </ul>
 </section><section>
+<h3 id="state-vs-props">State vs Props</h3>
+<ul>
+<li>
+<p><strong>State</strong>: is the data that changes over the lifetime of a specific instance in a react component.</p>
+</li>
+<li>
+<p><strong>Props</strong> (short for properties): is an object of arbitrary inputs a React function accepts as the first argument.</p>
+</li>
+</ul>
+</section><section>
+
+
+<section data-shortcode-section>
+<h3 id="diving-into-props">Diving Into Props</h3>
+<ul>
+<li>
+<p>Think of props as arguments to a function. React components are functions which return JSX (or more generally something that&rsquo;s renderable like React elements, null, a string, etc.).</p>
+</li>
+<li>
+<p>Typically when you have a piece of code that you would like to reuse, you can place that code into a function and any dynamic values that code used before can be accepted as arguments (for example const five = 2 + 3 could be extracted to a function and accept arguments like so const five = add(2, 3)).</p>
+</li>
+</ul>
+</section><section>
+<h3 id="diving-into-props-1">Diving Into Props</h3>
+<p>When we define (insert before App()):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Add</span>(<span style="color:#a6e22e">props</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n1</span>} <span style="color:#f92672">+</span> {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n2</span>} <span style="color:#f92672">=</span> {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n2</span>}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Then, insert before <code>&lt;/header&gt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">Add</span> <span style="color:#a6e22e">n1</span><span style="color:#f92672">=</span><span style="color:#e6db74">{2}</span> <span style="color:#a6e22e">n2</span><span style="color:#f92672">=</span><span style="color:#e6db74">{3}</span> /&gt;
+</span></span></code></pre></div><p>Becomes:</p>
+<pre tabindex="0"><code>2+3=5
+</code></pre>
+</section>
+</section><section>
+
+
+<section data-shortcode-section>
+<h3 id="how-to-use-state">How to use State</h3>
+<ul>
+<li>State is what controls drawing of components</li>
+<li>React updates the UI only when state of a component changes</li>
+<li>Think of an input text box; it only changes state when someone enters text in it</li>
+</ul>
+</section><section>
+<h3 id="the-usestate-function">The useState function</h3>
+<p>Start by adding on the top:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">useState</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span></code></pre></div><p>We will add a button to flip a coin. Let&rsquo;s create state for the coin:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">coin</span>, <span style="color:#a6e22e">setCoin</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#ae81ff">0</span>);
+</span></span></code></pre></div><p>Here, <code>coin</code> becomes the variable holding the value and <code>setCoin</code> is
+the function we will use to update the state. <code>useState(0)</code> sets the
+initial value.</p>
+</section><section>
+<h3 id="flip-the-coin-with-a-button">Flip the coin with a button</h3>
+<p>To flip the coin, we need to call <code>setCoin()</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#a6e22e">setCoin</span>((<span style="color:#a6e22e">coin</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><p>Put it in the <code>onClick</code> action of an HTML button as a <strong>callback</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{ () =&gt; <span style="color:#a6e22e">setCoin</span>((<span style="color:#a6e22e">coin</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span>) } &gt; <span style="color:#a6e22e">Flip</span> &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span></code></pre></div></section><section>
+<h3 id="final-product-with-state">Final product with state</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Flip</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">coin</span>, <span style="color:#a6e22e">setCoin</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e">coin</span>}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{ () =&gt; <span style="color:#a6e22e">setCoin</span>((<span style="color:#a6e22e">coin</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span>) }
+</span></span><span style="display:flex;"><span>      &gt; <span style="color:#a6e22e">Flip</span> &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>and add a line to the <code>App()</code> function as well, below <code>&lt;Add&gt;</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">Flip</span> /&gt;
+</span></span></code></pre></div><p>You will get:</p>
+<p>0 <button>Flip</button></p>
+<p>Clicking the button will flip the coin value between 0 and 1.</p>
+
+</section>
+</section><section>
 <h3 id="routing">Routing</h3>
+<p>First install the <a href="https://reactrouter.com/" target="_blank" rel="noreferrer noopener">React Router</a> in the console/terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ npm install react-router-dom
+</span></span></code></pre></div><p>Then, follow <a href="https://reactrouter.com/en/main/start/tutorial" target="_blank" rel="noreferrer noopener">tutorial</a>. Some examples:</p>
 <div style="width: 30%; display: inline-block;">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">Switch</span>&gt;
 </span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">exact</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;
@@ -184,45 +281,6 @@ If it works, congrats you&rsquo;ve created your very first react app.</li>
 </span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">ul</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">Router</span>&gt;
 </span></span></code></pre></div></div>
-</section><section>
-<h3 id="state-vs-props">State vs Props</h3>
-<ul>
-<li>
-<p><strong>State</strong>: is the data that changes over the lifetime of a specific instance in a react component.</p>
-</li>
-<li>
-<p><strong>Props</strong> (short for properties): is an object of arbitrary inputs a React function accepts as the first argument.</p>
-</li>
-</ul>
-</section><section>
-
-
-<section data-shortcode-section>
-<h3 id="diving-into-props">Diving Into Props</h3>
-<ul>
-<li>
-<p>Think of props as arguments to a function. React components are functions which return JSX (or more generally something that&rsquo;s renderable like React elements, null, a string, etc.).</p>
-</li>
-<li>
-<p>Typically when you have a piece of code that you would like to reuse, you can place that code into a function and any dynamic values that code used before can be accepted as arguments (for example const five = 2 + 3 could be extracted to a function and accept arguments like so const five = add(2, 3)).</p>
-</li>
-</ul>
-</section><section>
-<h3 id="diving-into-props-1">Diving Into Props</h3>
-<p>When we define:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Add</span>(<span style="color:#a6e22e">props</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>            {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n1</span>} <span style="color:#f92672">+</span> {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n2</span>} <span style="color:#f92672">=</span> {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">n2</span>}
-</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Then,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">Add</span> <span style="color:#a6e22e">n1</span><span style="color:#f92672">=</span><span style="color:#e6db74">{2}</span> <span style="color:#a6e22e">n2</span><span style="color:#f92672">=</span><span style="color:#e6db74">{3}</span> /&gt;
-</span></span></code></pre></div><p>Becomes:</p>
-<pre tabindex="0"><code>2+3=5
-</code></pre>
-</section>
 </section>
 
   

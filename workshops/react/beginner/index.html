@@ -64,7 +64,7 @@ if (!doNotTrack) {
 
     <section><h3>React for Beginners</h3>
 
-<h4>ITEC 3870 Software Development II, <br>Alex Abraham</h4>
+<h4>ITEC 3870 Software Development II, <br>Alex Abraham and Cengiz Gunay</h4>
 <p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
 <figure >
     
@@ -75,9 +75,8 @@ if (!doNotTrack) {
 <p><a class="nav nav-prev" href="https://soft-eng-practicum.github.io/softdev2-resources/workshops/react/" title="React Workshops"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - React Workshops</a>, <span></span><a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/workshops/react/authentication-with-firebase/" title="React Authentication with Firebase Workshop">Next - React Authentication with Firebase Workshop <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
 </section><section>
 <h3 id="what-is-react-js">What is React Js?</h3>
-<p>A JavaScript library for building user interfaces
-For web as well as mobile applications
-Developed by a team at Facebook in 2011</p>
+<img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;"/>
+<p>A JavaScript library for building user interfaces for web as well as mobile applications developed by a team at Facebook in 2011.</p>
 <ul>
 <li>It is an open-source, reusable component based front-end library</li>
 <li>In a Model View Controller (MVC) architecture, React is the &ldquo;View&rdquo; which is responsible for how
@@ -89,15 +88,16 @@ the app &ldquo;looks and feels&rdquo;. However, more accurately, it is strictly 
 
 <section data-shortcode-section>
 <h3 id="components">Components</h3>
-<h2>-A piece of the Ui-</h2>
-<p>Independent, isolated, and reuable components, which become the building blocks to 
+<blockquote>
+<p>Component = A piece of the UI</p>
+</blockquote>
+<p>Independent, isolated, and reuable components, which become the building blocks to
 a more complex user interface.</p>
-<p>In react, webpages are just the combination of many children components</p>
+<p>In react, webpages are just the combination of many children components.</p>
 </section><section>
-<h3 id="app">App</h3>
-<h2>-Root Component-</h2>
-<p>Every React application has at least one component known as the Root Component (Most of the time named the App component)</p>
-<p>This component represents the entire application and is where all the child components are displayed</p>
+<h3 id="app-root-component">App: Root Component</h3>
+<p>Every React application has at least one component known as the Root Component (Most of the time named the App component).</p>
+<p>This component represents the entire application and is where all the child components are displayed.</p>
 </section><section>
 <h3 id="heading"></h3>
 <table>
@@ -118,61 +118,116 @@ a more complex user interface.</p>
     </tr>
   </table>
 </section><section>
-<h3 id="heading-1"></h3>
- <h2>Twitter Site</h2>
- <p>Take a look at all the <strong>components</strong> (which are all the rectangles with red borders)</p>
- <p><strong>The App (or root component) Component</strong> is the page itself that is displaying all the components</p>
+<h3 id="twitter-site">Twitter Site</h3>
+<p>Take a look at all the <strong>components</strong> (which are all the rectangles with red borders).</p>
+<p><strong>The App (or root component) Component</strong> is the page itself that is displaying all the components.</p>
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350"/>
-      </td>
+		<img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350"/>
+    </td>
     <td>
- <img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350"/>
-      </td>
+		<img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350"/>
+    </td>
 </tr>
 </table>
 
 </section>
 </section><section>
-<h3 id="heading"></h3>
 
 
 <section data-shortcode-section>
-<h1>Getting started!</h1>
-<h2>Install NodeJs</h2>
-<a href="https://nodejs.org/en/" target="_blank">NodeJS download link</a>
-<p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
-<p> Every time we use npm, we are using NodeJs's packager tool</p>
+<h3 id="getting-started---install-nodejs">Getting started! - Install NodeJS</h3>
+<p><a href="https://nodejs.org/en/" target="_blank" rel="noreferrer noopener">NodeJS download link</a></p>
+<p>It will install the tools <code>npm</code>, to install 3rd party plugins, and <code>npx</code>, for running tools.</p>
+<ul>
+<li><code>npm</code> is the <em>node package manager</em>, and</li>
+<li><code>npx</code> is the package <em>runner</em> that allows us to run programs without installing.</li>
+</ul>
 </section><section>
-<h3 id="heading"></h3>
-<h1>Set up your environment (IDE)</h1>
-<a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code download link</a>
+<h3 id="set-up-your-environment-ide">Set up your environment (IDE)</h3>
+<p><a href="https://code.visualstudio.com/download" target="_blank" rel="noreferrer noopener">Visual Studio Code download link</a></p>
 
 </section>
 </section><section>
+
+
+<section data-shortcode-section>
 <h3 id="test-your-environment-and-create-an-app">Test your environment and create an app</h3>
 <ul>
-<li>Open your command prompt/termianl prompt on Windows/Mac:
+<li>
+<p>Open your command prompt/terminal on Windows/Mac:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ node -v
-</span></span></code></pre></div>This is to see our version of Node.js on our device, if there&rsquo;s an error, it didnt succesfully download.</li>
-<li>Create your app:
+</span></span></code></pre></div><p>This is to see our version of Node.js on our device, if there&rsquo;s an error, it didnt succesfully download.</p>
+</li>
+<li>
+<p>Create your app:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ npx create-react-app first-react-app
-</span></span></code></pre></div>(<code>first-react-app</code> is the name of our project)
-If it works, congrats you&rsquo;ve created your very first react app.</li>
-<li>Start VS Code to see its contents:
+</span></span></code></pre></div><p>(<code>first-react-app</code> is the name of our project)</p>
+<p>If it works, congrats you&rsquo;ve created your very first react app.</p>
+</li>
+<li>
+<p>Start VS Code to see its contents:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ cd first-react-app
 </span></span><span style="display:flex;"><span>$ code src/App.js
 </span></span></code></pre></div></li>
 </ul>
 </section><section>
-<h3 id="state-vs-props">State vs Props</h3>
+<h3 id="the-root-component">The root component</h3>
+<img src="/softdev2-resources/images/react/beginner-root-component-VScode.png" width="600"/>
+<p>Run it with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ npm start
+</span></span></code></pre></div></section><section>
+<h3 id="open-the-browser">Open the browser</h3>
+<img src="/softdev2-resources/images/react/beginner-initial-output.png" width="600"/>
+<p>Modify the text in VScode to see changes!</p>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section>
+<h3 id="react-is-written-in-jsx">React is written in JSX</h3>
+<p><a href="https://react.dev/learn/writing-markup-with-jsx" target="_blank" rel="noreferrer noopener">JSX</a> is an extension of Javascript that allows HTML to appear inside the code.</p>
+<p>A React component is basically a JS function that returns HTML code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">logo</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./logo.svg&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;./App.css&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">App</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	...
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
+</span></span></code></pre></div><p>which is forbidden in regular Javascript.</p>
+</section><section>
+<h3 id="create-your-first-component">Create your first component!</h3>
+<p>insert before <code>App()</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">MyComponent</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Say</span> <span style="color:#a6e22e">my</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">!</span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>(you can replace <code>MyComponent</code> with any word you like)</p>
+<p>Then, insert before the closing <code>&lt;/header&gt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">MyComponent</span> /&gt;
+</span></span></code></pre></div><p>(make sure it&rsquo;s the same function name as above.)</p>
+<p>Now you can save and observe the output.</p>
+
+</section>
+</section><section>
+<h3 id="props-and-state"><em>Props</em> and <em>State</em></h3>
 <ul>
 <li>
-<p><strong>State</strong>: is the data that changes over the lifetime of a specific instance in a react component.</p>
+<p><strong>Props</strong> (short for properties): is an object of arbitrary inputs a React function accepts as the first argument.</p>
 </li>
 <li>
-<p><strong>Props</strong> (short for properties): is an object of arbitrary inputs a React function accepts as the first argument.</p>
+<p><strong>State</strong>: is the data that changes over the lifetime of a specific instance in a react component.</p>
 </li>
 </ul>
 </section><section>
@@ -181,12 +236,12 @@ If it works, congrats you&rsquo;ve created your very first react app.</li>
 <section data-shortcode-section>
 <h3 id="diving-into-props">Diving Into Props</h3>
 <ul>
-<li>
-<p>Think of props as arguments to a function. React components are functions which return JSX (or more generally something that&rsquo;s renderable like React elements, null, a string, etc.).</p>
-</li>
-<li>
-<p>Typically when you have a piece of code that you would like to reuse, you can place that code into a function and any dynamic values that code used before can be accepted as arguments (for example const five = 2 + 3 could be extracted to a function and accept arguments like so const five = add(2, 3)).</p>
-</li>
+<li>Think of <code>props</code> as arguments to the <em>component</em> function.</li>
+<li>Typically when you have a piece of code that you would like to reuse
+(such as <code>2 + 3</code>), you can place that code into a function and any
+dynamic values that code used before can be accepted as arguments
+(such as <code>add(2, 3)</code>).</li>
+<li><code>props</code> allow passing arguments in HTML.</li>
 </ul>
 </section><section>
 <h3 id="diving-into-props-1">Diving Into Props</h3>
@@ -198,7 +253,8 @@ If it works, congrats you&rsquo;ve created your very first react app.</li>
 </span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Then, insert before <code>&lt;/header&gt;</code></p>
+</span></span></code></pre></div><p>(<a href="https://react.dev/learn/javascript-in-jsx-with-curly-braces" target="_blank" rel="noreferrer noopener"><code>{}</code> bring back Javascript into the HTML</a>)</p>
+<p>Then, insert before <code>&lt;/header&gt;</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;<span style="color:#f92672">Add</span> <span style="color:#a6e22e">n1</span><span style="color:#f92672">=</span><span style="color:#e6db74">{2}</span> <span style="color:#a6e22e">n2</span><span style="color:#f92672">=</span><span style="color:#e6db74">{3}</span> /&gt;
 </span></span></code></pre></div><p>Becomes:</p>
 <pre tabindex="0"><code>2+3=5
@@ -280,7 +336,8 @@ initial value.</p>
 </span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">li</span>&gt;
 </span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">ul</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">Router</span>&gt;
-</span></span></code></pre></div></div>
+</span></span></code></pre></div><pre><code>&lt;/div&gt;
+</code></pre>
 </section>
 
   

@@ -4,7 +4,7 @@ lastmod = "2021-01-5T12:00:00Z"
 publishdate = "2021-01-5T12:00:00Z"
 
 title = "React Authentication with Firebase Workshop"
-description = "This workshop will authentication with React and Firebase"
+description = "Build a React app with authentication backed by Firebase"
 author = "Keyvan Shabani"
 video = "VPpqHXfASO4"
 
@@ -23,7 +23,8 @@ margin = 0.1
 
 ## Note:
 
-To follow instructions in video, clone this [starter repo](https://github.com/soft-eng-practicum/react-auth-firebase-workshop) 
+**Video is outdated**. To follow instructions, clone this [starter
+repo](https://github.com/soft-eng-practicum/react-auth-firebase-workshop)
 
 Example:
 ```sh
@@ -31,34 +32,42 @@ git clone https://github.com/soft-eng-practicum/react-auth-firebase-workshop.git
 ```
 
 ---
-## What is React?
+## What is React? <img src="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100"  />
+
+
+<img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;"/>
+<img src="/softdev2-resources/images/react/Instagram_logo_2016.svg" width="100" height="100" style="float: left;"/>
 React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It’s used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook. React first deployed on Facebook’s newsfeed in 2011 and on Instagram in 2012.
 
 {{% fragment %}}
-#### Why to use React?
+
+#### Why use React?
 
 ReactJS is just simpler to grasp right away. The component-based approach, well-defined lifecycle, and use of just plain JavaScript make React very simple to learn, build a professional web (and mobile applications), and support it. React uses a special syntax called JSX which allows you to mix HTML with JavaScript. This is not a requirement; Developer can still write in plain JavaScript but JSX is much easier to use.
 
 {{% /fragment %}}
 
 ---
+
+<img src="/softdev2-resources/images/react/firebase-logo.png" width="300"  />
+
 ## What is Firebase?
 
 Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure.
 Firebase is categorized as a NoSQL database program, which stores data in JSON-like documents.
 
-#### What are the key features?
+#### Key features
 1. Authentication
 2. Realtime database
 3. Hosting
 4. Notifications
 
 ---
-### Now it is time to create a React project
+### Create a React project
 
 In order to create a react app, you must have Node installed on your device. If you do not have Node, download from **[here](https://nodejs.org/en/download/)**.
 
-If you **cloned the starter repo**, open a terminal and do:
+If you **cloned the starter repo**, open a terminal and type:
 ```sh
 cd react-auth-firebase-workshop
 npm install
@@ -78,6 +87,8 @@ npm start
 
 ---
 
+{{% section %}}
+
 ## Let's set up a firebase project
 
 - Go to **[Firebase](https://firebase.google.com)** and create an account.
@@ -86,7 +97,7 @@ npm start
 
 ---
 
-## OPTIONAL: Login to firebase and install
+## SKIP: Login to firebase and install
 
 - Then, open your terminal in the project root and install the Firebase command-line interface (CLI):
 ```sh
@@ -104,26 +115,30 @@ Mac and Linux users would need to prepend this command with `sudo`.
   ```
 - If you see the project you just created, then you are ready to go
 
+{{% /section %}}
+
 ---
+
+{{% section %}}
 
 ## Initialize Firebase App
 
-- These are already done for you in the **starter app**:
-  - Under src folder, create a new folder called "firebase"
-  - Inside the firebase folder, create a file called "config.js"
-- But you need to do this: 
-  - go to your project in firebase website
-  - go to the "Project settings", 
-  - click on "Create App" and select "Web app", 
-  - copy its project configuration.
+- Make sure you have in your **starter app**:
+  - Under `src/` folder, create a new folder called `firebase/`
+  - Inside the `firebase/` folder, create a file called `config.js`
+- But you still need to: 
+  - Select your project on the Firebase website
+  - Go to the "Project settings", 
+  - Click on "Create App" and select "Web app", 
+  - UNSELECT analytics
+  - Copy its project configuration.
 
 ---
 
 - It should look something like this (**DON'T COPY THIS**).
-```sh
+```jsx
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -141,9 +156,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 ```
 - Paste the code **from your firebase page** inside the `config.js` file
+
+{{% /section %}}
 
 ---
 
@@ -195,7 +211,7 @@ npm install react-hook-form@5.7.2
 - Under the `src` folder, create a folder called `pages`
 - Inside `pages`, create a file called `Signup.js`
 - Paste the following React component in `Signup.js`
-```sh
+```jsx
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { signup } from '../firebase/auth';
@@ -297,7 +313,7 @@ export default Signup;
 
 ## Adding Style
 - Paste the following CSS code inside of `src/App.css`
-```sh
+```css
 body {
   background-color: #f9f9f9 !important;
   font-size: 15px;
@@ -375,13 +391,13 @@ header h2 {
 
 ## create a new route for signup
 - In `App.js` import the following
-```sh
+```jsx
 import Signup from './pages/Signup';
 import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 import ProfileRedirect from './router/ProfileRedirect';
 ```
 - Add the following code inside of the return
-```sh
+```jsx
 <BrowserRouter>
         <Header></Header>
         <div className="app">
@@ -402,7 +418,7 @@ import ProfileRedirect from './router/ProfileRedirect';
 ## create signup function
 - Create a new file inside `src/firebase` folder and call it `auth.js`
 - write a `signup` function which allows the user to sign up with email and password
-```sh
+```jsx
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
@@ -444,7 +460,7 @@ browser console for errors!
 ## Displaying the users data
 - Now that we have a user, it is time to create a profile page and display their information.
 - Inside the pages folder, create a new file and call it "Profile.js" and include the following code
-```sh
+```jsx
 import React from 'react';
 import { useSession } from '../firebase/UserProvider';
 
@@ -489,11 +505,13 @@ Submit screenshots.
 
 ---
 
+{{% section %}}
+
 ## Implementing logout
 
 - Now we have to create a logout function so the logged in user is able to logout.
 - Under the src folder, create a file and call it "Header.js" and paste the following code in it
-```sh
+```jsx
 import React from 'react';
 import { logout } from './firebase/auth';
 import { useHistory } from 'react-router-dom';
@@ -527,18 +545,22 @@ export default Header;
 
 - Now that we have a header with a logout button, we must give the functionality to the button.
 - Inside the auth.js file, create a new function called logout
-```sh
+```jsx
 export const logout = () => {
   return firebase.auth().signOut();
 };
 ```
 
+{{% /section %}}
+
 ---
 
+{{% section %}}
+
 ## Implementing login
-- Inside pages folder, create a new file and call it "Login.js"
-- Paste this code in Login.js
-```sh
+- Inside pages folder, create a new file and call it `Login.js`
+- Paste this code in `Login.js`
+```jsx
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { login } from '../firebase/auth';
@@ -637,7 +659,11 @@ import Login from './pages/Login';
 <Route exact path="/login" component={Login} />
 ```
 
+{{% /section %}}
+
 ---
+
+{{% section %}}
 
 ## Implementing forgot password
 - Inside the pages folder, create a new file called "ForgotPassword.js" and paste the following
@@ -718,7 +744,11 @@ import ForgotPassword from './pages/ForgotPassword';
 <Route exact path="/forgotpassword" component={ForgotPassword} />
 ```
 
+{{% /section %}}
+
 ---
+
+{{% section %}}
 
 ## fixing route issues
 - Before wrapping up on authentication, we still need to fix some issue. Currently even when we have a logged in user session, we are still able to navigate to login, signup and forgot password page. In order to fix this issue, we need to create a file called "ProfileRedirect" inside on a folder called "router"
@@ -773,9 +803,14 @@ import ProfileRedirect from './router/ProfileRedirect';
 ```
 - This is going to fix the issue we had with routing and is going to block the logged in user to try to navigate to these pages.
 
+{{% /section %}}
+
 ---
 
-## securing users profile
+{{% section %}}
+
+## Securing users profile
+
 - Even though we have a secure authentication system now, there is still one last issue that we need to fix. Currently if a user is logged in, they are able to navigate to another user's profile page as long as they have a user's UID. In order to fix this issue, we need to create a new file called "PrivateRoute.js" inside the router folder.
 ```sh
 import React from 'react';
@@ -815,6 +850,8 @@ import PrivateRoute from './router/PrivateRoute';
 ```
 - This is going to avoid the user to navigate to a profile page if the user's UID does not match with the ID in our props. This means that the users is authorize to see that profile page, because it does not belong to them.
 
+{{% /section %}}
+
 ---
 
 ## Summary
@@ -822,7 +859,7 @@ This bring us to the end of Authentication with React and Firebase, I hope this 
 
 The code for this tutorial can be found in my **[Github](https://github.com/keyvan1996)**
 
-Create by: Keyvan Shabani
+Created by: [Keyvan Shabani](https://www.linkedin.com/in/keyvan-shabani/)
 
 
 

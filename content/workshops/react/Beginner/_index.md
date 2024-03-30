@@ -364,7 +364,7 @@ Then, follow [tutorial](https://reactrouter.com/en/main/start/tutorial). Some ex
                 <Link to="/dashboard">Dashboard</Link>
             </li>
         </ul>
+	</div>
 </Router>
 ```
 
-	</div>

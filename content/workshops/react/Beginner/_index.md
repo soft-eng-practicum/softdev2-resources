@@ -2,7 +2,7 @@
 title = "React for Beginners"
 outputs = ["Reveal"]
 weight = 1 # chapter number
-author = "Alex Abraham"
+author = "Alex Abraham and Cengiz Gunay"
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" >}}
@@ -10,9 +10,10 @@ author = "Alex Abraham"
 ---
 ### What is React Js?
 
- A JavaScript library for building user interfaces
-  For web as well as mobile applications
- Developed by a team at Facebook in 2011
+<img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;"/>
+
+ A JavaScript library for building user interfaces for web as well as mobile applications developed by a team at Facebook in 2011.
+ 
 - It is an open-source, reusable component based front-end library
 - In a Model View Controller (MVC) architecture, React is the "View" which is responsible for how 
   the app "looks and feels". However, more accurately, it is strictly not MVC and instead uses the [Flux pattern](https://www.infoq.com/news/2014/05/facebook-mvc-flux/).
@@ -23,16 +24,21 @@ author = "Alex Abraham"
 {{% section %}}
 
 ### Components
-<h2>-A piece of the Ui-</h2>
-<p>Independent, isolated, and reuable components, which become the building blocks to 
-a more complex user interface.</p>
-<p>In react, webpages are just the combination of many children components</p>
+
+> Component = A piece of the UI
+
+Independent, isolated, and reuable components, which become the building blocks to 
+a more complex user interface.
+
+In react, webpages are just the combination of many children components.
 
 ---
-### App
-<h2>-Root Component-</h2>
-<p>Every React application has at least one component known as the Root Component (Most of the time named the App component)</p>
-<p>This component represents the entire application and is where all the child components are displayed</p>
+
+### App: Root Component
+
+Every React application has at least one component known as the Root Component (Most of the time named the App component).
+
+This component represents the entire application and is where all the child components are displayed.
 
 ---
 
@@ -56,19 +62,20 @@ a more complex user interface.</p>
   </table>
  
  ---
- ###
- <h2>Twitter Site</h2>
- <p>Take a look at all the <strong>components</strong> (which are all the rectangles with red borders)</p>
- <p><strong>The App (or root component) Component</strong> is the page itself that is displaying all the components</p>
+ ### Twitter Site
+ 
+ Take a look at all the **components** (which are all the rectangles with red borders).
+ 
+**The App (or root component) Component** is the page itself that is displaying all the components.
 
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350"/>
-      </td>
+		<img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350"/>
+    </td>
     <td>
- <img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350"/>
-      </td>
+		<img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350"/>
+    </td>
 </tr>
 </table>
 
@@ -76,28 +83,32 @@ a more complex user interface.</p>
 
 ---
 
-### 
 
 {{% section %}}
 
-<h1>Getting started!</h1>
-<h2>Install NodeJs</h2>
-<a href="https://nodejs.org/en/" target="_blank">NodeJS download link</a>
-<p>We wont be using nodeJS, but we will be downloading it for its packager tool (npm), to install 3rd party plugins</p>
-<p> Every time we use npm, we are using NodeJs's packager tool</p>
+### Getting started! - Install NodeJS
+
+[NodeJS download link](https://nodejs.org/en/)
+
+It will install the tools `npm`, to install 3rd party plugins, and `npx`, for running tools.
+
+- `npm` is the *node package manager*, and
+- `npx` is the package *runner* that allows us to run programs without installing.
 
 ---
-###
-<h1>Set up your environment (IDE)</h1>
-<a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code download link</a>
+### Set up your environment (IDE)
+
+[Visual Studio Code download link](https://code.visualstudio.com/download)
 
 {{% /section %}}
 
 ---
 
+{{% section %}}
+
 ### Test your environment and create an app
 
-- Open your command prompt/termianl prompt on Windows/Mac:
+- Open your command prompt/terminal on Windows/Mac:
   ```bash
   $ node -v
   ```
@@ -107,20 +118,94 @@ a more complex user interface.</p>
   $ npx create-react-app first-react-app
   ```
   (`first-react-app` is the name of our project)
+
   If it works, congrats you've created your very first react app.
 - Start VS Code to see its contents:
   ```bash
   $ cd first-react-app
   $ code src/App.js
   ```
+---
+
+### The root component
+
+<img src="/softdev2-resources/images/react/beginner-root-component-VScode.png" width="600"/>
+
+Run it with:
+```bash
+$ npm start
+```
+  
+---
+
+### Open the browser
+
+<img src="/softdev2-resources/images/react/beginner-initial-output.png" width="600"/>
+
+Modify the text in VScode to see changes!
+
+{{% /section %}}
 
 ---
 
-### State vs Props
+{{% section %}}
 
-- **State**: is the data that changes over the lifetime of a specific instance in a react component.
+
+### React is written in JSX
+
+[JSX](https://react.dev/learn/writing-markup-with-jsx) is an extension of Javascript that allows HTML to appear inside the code. 
+
+A React component is basically a JS function that returns HTML code:
+
+```jsx
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+	...
+    </div>
+  );
+}
+
+export default App;
+```
+which is forbidden in regular Javascript.
+
+---
+
+### Create your first component!
+
+insert before `App()`:
+```jsx
+function MyComponent() {
+  return (
+    <p>
+        Say my name!
+    </p>
+    )
+}
+```
+(you can replace `MyComponent` with any word you like)
+
+Then, insert before the closing `</header>`
+```html
+<MyComponent />
+```
+(make sure it's the same function name as above.)
+
+Now you can save and observe the output.
+
+{{% /section %}}
+
+---
+
+### *Props* and *State*
 
 - **Props** (short for properties): is an object of arbitrary inputs a React function accepts as the first argument.
+
+- **State**: is the data that changes over the lifetime of a specific instance in a react component.
 
 ---
 
@@ -128,9 +213,14 @@ a more complex user interface.</p>
 
 ### Diving Into Props
 
-- Think of props as arguments to a function. React components are functions which return JSX (or more generally something that's renderable like React elements, null, a string, etc.).
-
-- Typically when you have a piece of code that you would like to reuse, you can place that code into a function and any dynamic values that code used before can be accepted as arguments (for example const five = 2 + 3 could be extracted to a function and accept arguments like so const five = add(2, 3)).
+- Think of `props` as arguments to the *component* function. 
+- Typically when you have a piece of code that you would like to reuse
+  (such as `2 + 3`), you can place that code into a function and any
+  dynamic values that code used before can be accepted as arguments
+  (such as `add(2, 3)`).
+- `props` allow passing arguments in HTML.
+  
+  
 
 ---
 
@@ -146,6 +236,7 @@ function Add(props) {
         )
 }
 ```
+([`{}` bring back Javascript into the HTML](https://react.dev/learn/javascript-in-jsx-with-curly-braces))
 
 Then, insert before `</header>`
 ```html
@@ -276,4 +367,4 @@ Then, follow [tutorial](https://reactrouter.com/en/main/start/tutorial). Some ex
 </Router>
 ```
 
-</div>
+	</div>

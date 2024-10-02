@@ -492,10 +492,7 @@ import Profile from './pages/Profile';
 ```sh
 <Route exact path="/profile/:id" component={Profile} />
 ```
-- Now if we navigate to the following route, we see the user information if a user session exists.
-```sh
-http://localhost:3000/profile/
-```
+- Now if we navigate to the following route [http://localhost:3000/profile/1](http://localhost:3000/profile/1), we see the information of user with ID 1 if a user session exists.
 
 **Checkpoint!**
 

@@ -1,286 +1,69 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-<title>Angular Routing</title>
-<meta name="description" content="This workshop will cover the basics of Routing in Angular">
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reset.css">
-<link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reveal.css"><link rel="stylesheet" href="/softdev2-resources/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/softdev2-resources/highlight-js/default.min.css"><link rel="stylesheet" href="/softdev2-resources/css/docker.css" id="custom_css">
-    <style>
-  .reveal section.left-aligned p { text-align: left;
-  }
-  
-  .reveal strong {
-    color: blue;
-  }
-  .home-link {
-    position: absolute;
-    font-size: 150%;
-    left: 20px;
-    bottom: 20px;          
-  }
-  .reveal div.side-by-side figure {
-    display: inline;
-  }
-  .reveal div.side-by-side figure:first-of-type {
-    left: 5%;
-  }
-  .reveal div.side-by-side figure:nth-of-type(2) {
-    right: 5%;
-  }
-  .reveal div.left-float figure {
-    display: inline;
-    float: left;
-  }
-  .reveal div.left-float ul {
-    display: inline-block;
-    margin-left: 0em;
-    
-  }
-</style>
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-K4SBB2EN2W', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-  </head>
-  <body>
-    
-    <div class="reveal">
-      <div class="slides">
-  
-
-    <section><h3>Angular Routing</h3>
-<h4>ITEC 3870 Software Development II, <br>Roberto Salas Montoya</h4>
-<p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
-<figure >
- <img src="/softdev2-resources/images/angular/angular-icon-logo.png" height="300px"  />
-</figure>
-<p><a class="nav nav-prev" href="https://soft-eng-practicum.github.io/softdev2-resources/workshops/angular/components/" title="Angular Components"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Angular Components</a>, <span></span><a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/workshops/angular/services/" title="Angular Services">Next - Angular Services <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
-</section><section>
-<h2 id="overview">Overview</h2>
-<p>Introduction, What is routing in Angular?</p>
-<p>Creating a Project that includes the routing module or adding routing module.</p>
-<p>Configure Route Module Check</p>
-
-
-<span class='fragment '
-  >
-  <h4 id="three-step-fundamental-blocks">Three step fundamental blocks</h4>
-<ul>
-<li>Route paths</li>
-<li>Routerlink and link active</li>
-<li>Router outlet</li>
-</ul>
-
-</span>
-</section><section>
-<h2 id="what-is-angular-routing">What is Angular routing?</h2>
-<p>Routing in Angular is basically navigating between pages. The Router Module consists of directives and service to implement navigation. In more simple words you could describe it as the function behind the application that lets users move between different screen views.</p>
-</section><section>
-<h2 id="create-an-angular-project">Create an Angular Project</h2>
-<p>In order to create Angular project we must first have Node installed in our system. You can download Node from <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer noopener">here</a>.</p>
-<p>Once Node is installed the next step is to open the terminal and run the next commands to install and create our Angular application.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ npm install -g @angular/cli
-</span></span></code></pre></div><p>The previous command installed Angular the next command is to create a Project and give it a name.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ ng new RoutingDemo
-</span></span></code></pre></div></section><section>
-<h2 id="accessing-and-opening-our-project">Accessing and opening our Project</h2>
-<p>The next command is to run and open our application</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ cd RoutingDemo
-</span></span><span style="display:flex;"><span>$ ng serve --open
-</span></span></code></pre></div><p>In order to edit and modify our Angular Routing application we are going to use Visual Studio Code. Download and install <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener">Visual Studio Code</a>.</p>
-<p>We can open our project in Visual code using the following command in the Terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ code .
-</span></span></code></pre></div></section><section>
-<h2 id="creating-components-for-route-demo">Creating Components for Route Demo</h2>
-<p>For the purpose of demonstrating the route configuration we will create two components professorList and studentList. We will use the following two commands to create each component at a time in the Angular CLI.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ ng generate component professorList
-</span></span></code></pre></div><p>And</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ ng generate component studentList
-</span></span></code></pre></div></section><section>
-
-
-<section data-shortcode-section>
-<h2 id="pre-configuring-routes-10">PRE-CONFIGURING ROUTES 1.0</h2>
-<p>Assuming you have component views already created we will type the following code to configure our Routes in the <em>AppRoutingModule.ts</em> file.</p>
-<p>First import the components that will be routed. Use the following script to import each component at a time.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import <span style="color:#f92672">{</span>exampleComponent<span style="color:#f92672">}</span> from ‘./example/example/component’;
-</span></span></code></pre></div></section><section>
-<h2 id="pre-configuring-routes-11">PRE-CONFIGURING ROUTES 1.1</h2>
-<p>Now its time to import our <em>AppRoutingModule.ts</em> into our <em>AppModule.ts</em> *Note (skip this step if you created the app with routing this step should be already done)
-Make sure you’re <em>AppModule.ts</em> has the commented importation shown in the image if not add both statements.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>import <span style="color:#f92672">{</span> NgModule <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
-</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> BrowserModule <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;@angular/platform-browser&#39;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> AppRoutingModule <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./app-routing.module&#39;</span>;
-</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> AppComponent <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./app.component&#39;</span>;
-</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> StudentListComponent <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./student-list/student-list.component&#39;</span>;
-</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> ProfessorListComponent <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;./professor-list/professor-list.component&#39;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@NgModule<span style="color:#f92672">({</span>
-</span></span><span style="display:flex;"><span>  declarations: <span style="color:#f92672">[</span>
-</span></span><span style="display:flex;"><span>    AppComponent,
-</span></span><span style="display:flex;"><span>    StudentListComponent,
-</span></span><span style="display:flex;"><span>    ProfessorListComponent
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">]</span>,
-</span></span><span style="display:flex;"><span>  imports: <span style="color:#f92672">[</span>
-</span></span><span style="display:flex;"><span>    BrowserModule,
-</span></span><span style="display:flex;"><span>    AppRoutingModule
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">]</span>,
-</span></span><span style="display:flex;"><span>  providers: <span style="color:#f92672">[]</span>,
-</span></span><span style="display:flex;"><span>  bootstrap: <span style="color:#f92672">[</span>AppComponent<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">})</span>
-</span></span><span style="display:flex;"><span>export class AppModule <span style="color:#f92672">{</span> <span style="color:#f92672">}</span>
-</span></span></code></pre></div></section><section>
-<h2 id="pre-configuring-routes-12">PRE-CONFIGURING ROUTES 1.2</h2>
-<p>The last thing step before we start creating our route paths is making sure that our <em>AppRoutingModule.ts</em> file has imported Router Module and Routes correctly.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>The Angular CLI should have also set up the import and exports <span style="color:#66d9ef">for</span> @NgModule.
-</span></span><span style="display:flex;"><span>Please verify <span style="color:#66d9ef">if</span> not <span style="color:#66d9ef">done</span> so add the missing code.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> NgModule <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
-</span></span><span style="display:flex;"><span>import <span style="color:#f92672">{</span> RouterModule, Routes <span style="color:#f92672">}</span> from <span style="color:#e6db74">&#39;@angular/router&#39;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>const routes: Routes <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@NgModule<span style="color:#f92672">({</span>
-</span></span><span style="display:flex;"><span>  imports: <span style="color:#f92672">[</span>RouterModule.forRoot<span style="color:#f92672">(</span>routes<span style="color:#f92672">)]</span>,
-</span></span><span style="display:flex;"><span>  exports: <span style="color:#f92672">[</span>RouterModule<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">})</span>
-</span></span><span style="display:flex;"><span>export class AppRoutingModule <span style="color:#f92672">{</span> <span style="color:#f92672">}</span>
-</span></span></code></pre></div>
-</section>
-</section><section>
-<h2 id="routes-paths">Routes paths</h2>
-<p>In our <em>AppRoutingModule.ts</em> there is a Routes array (const routes: Routes). Inside this array there is an object that contains two properties path and component. Path is just the URL path for the route and Component is used to tell Angular which component to use for the mentioned path.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>const routes: Routes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;professorList-component&#39;</span>, component: ProfessorListComponent <span style="color:#f92672">}</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;studentList-component&#39;</span>, component: StudentListComponent <span style="color:#f92672">}</span>,
-</span></span><span style="display:flex;"><span><span style="color:#f92672">]</span>;
-</span></span></code></pre></div></section><section>
-<h2 id="add-routerlink-and-linkactive">Add routerlink and linkactive</h2>
-<p>In the previews step we defined the routes of each component now its time to add the links to both components. In our AppComponent.html we will list our likes in the following html form.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;h1&gt;Angular Router App&lt;/h1&gt;
-</span></span><span style="display:flex;"><span>&lt;nav&gt;
-</span></span><span style="display:flex;"><span>  &lt;ul&gt;
-</span></span><span style="display:flex;"><span>    &lt;li&gt;&lt;a routerLink<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/professorList-component&#34;</span> routerLinkActive<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;First Component &lt;/a&gt;&lt;/li&gt;
-</span></span><span style="display:flex;"><span>    &lt;br&gt;
-</span></span><span style="display:flex;"><span>    &lt;li&gt;&lt;a routerLink<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/studentList-component&#34;</span> routerLinkActive<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;Second Component&lt;/a&gt;&lt;/li&gt;
-</span></span><span style="display:flex;"><span>  &lt;/ul&gt;
-</span></span><span style="display:flex;"><span>&lt;/nav&gt;
-</span></span></code></pre></div></section><section>
-<h2 id="add-route-outlet">Add route outlet</h2>
-<p>The next step to display our component view is to add the router outlet in <em>AppComponent.html</em>. This is key concept in Angular since our html from the components we have define previous will take the place of these tags once the selected route component is clicked.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;router-outlet&gt;&lt;/router-outlet&gt;
-</span></span></code></pre></div></section><section>
-<h2 id="wildcard-routes">Wildcard Routes</h2>
-<p>Sometimes users navigate to URLs that do not exist this is when wildcards come in handy. Wildcards are used to redirect users to the correct view. To set this up we will use the following line of code in <em>AppRoutingModule.ts</em>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;professorList-component&#39;</span>, component: ProfessorListComponent <span style="color:#f92672">}</span>,
-</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;studentList-component&#39;</span>, component: StudentListComponent <span style="color:#f92672">}</span>,
-</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;**&#39;</span>, component:  <span style="color:#f92672">}</span>, // Wildcard route
-</span></span></code></pre></div><p>After <em>component:</em> we would type the name of the component we want the user to go to instead of the wrong URL address that they tried to access.</p>
-</section><section>
-
-
-<section data-shortcode-section>
-<h2 id="displaying-a-404-page">Displaying a 404 page</h2>
-<p>Display a page 404 can be useful to let the user know that what they are looking for was not found or miss typed. First thing we need to do to create a page 404 is create a new Angular component. After this we will proceed to add the path and route like the previous components. This is done in <em>AppRoutingModule.ts</em>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>const routes: Routes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;professorList-component&#39;</span>, component: ProfessorListComponent <span style="color:#f92672">}</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;studentList-component&#39;</span>, component: StudentListComponent <span style="color:#f92672">}</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span> path: <span style="color:#e6db74">&#39;**&#39;</span>, component: PageNotFoundComponent <span style="color:#f92672">}</span>,  // Wildcard route <span style="color:#66d9ef">for</span> a <span style="color:#ae81ff">404</span> page
-</span></span><span style="display:flex;"><span><span style="color:#f92672">]</span>;
-</span></span></code></pre></div></section><section>
-<h2 id="404-page">404 Page</h2>
-<p>Lets creat a Component to display our 404 message using the Angular CLI.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>$ ng generate component pageNotFound
-</span></span></code></pre></div><p>Now with our component created add a nice html body message for the user. Add this to <em>PageNotFoundComponent.html</em>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>&lt;p&gt;ERROR <span style="color:#ae81ff">404</span> PAGE NOT FOUND!!!&lt;/p&gt;
-</span></span></code></pre></div>
-</section>
-</section>
-
-  
-
-
-</div>
-      
-
-    </div>
-<script type="text/javascript" src=/softdev2-resources/reveal-hugo/object-assign.js></script>
-
-<a href="/softdev2-resources/reveal-js/css/print/" id="print-location" style="display: none;"></a>
-<script type="text/javascript">
-  var printLocationElement = document.getElementById('print-location');
-  var link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
-  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
-  document.getElementsByTagName('head')[0].appendChild(link);
-</script>
-
-<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","height":720,"history":true,"slide_number":true,"width":1280}</script>
-<script type="application/json" id="reveal-hugo-page-params">{"custom_css":"css/docker.css","margin":0.1}</script>
-
-<script src="/softdev2-resources/reveal-js/js/reveal.js"></script>
-
-<script type="text/javascript">
-  
-  
-  function camelize(map) {
-    if (map) {
-      Object.keys(map).forEach(function(k) {
-        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
-        if (newK != k) {
-          map[newK] = map[k];
-          delete map[k];
-        }
-      });
-    }
-    return map;
-  }
-  
-  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
-  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
-  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
-  
-  var options = Object.assign({},
-    camelize(revealHugoDefaults),
-    camelize(revealHugoSiteParams),
-    camelize(revealHugoPageParams));
-  Reveal.initialize(options);
-</script>
-
-
-  
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/marked.js"></script>
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/markdown.js"></script>
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/highlight/highlight.js"></script>
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/zoom-js/zoom.js"></script>
-  
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/notes/notes.js"></script>
-
-
-
-    <a class="home-link" href="https://soft-eng-practicum.github.io/softdev2-resources/">Home</a>
-
-    
-  </body>
-</html>
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Angular Routing</title>
+<meta name=description content="This workshop will cover the basics of Routing in Angular"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=stylesheet href=/softdev2-resources/reveal-js/dist/reset.css><link rel=stylesheet href=/softdev2-resources/reveal-js/dist/reveal.css><link rel=stylesheet href=/softdev2-resources/reveal-hugo/themes/robot-lung.css id=theme><link rel=stylesheet href=/softdev2-resources/highlight-js/default.min.css><link rel=stylesheet href=/softdev2-resources/css/docker.css id=custom_css><style>.reveal section.left-aligned p{text-align:left}.reveal strong{color:blue}.home-link{position:absolute;font-size:150%;left:20px;bottom:20px}.reveal div.side-by-side figure{display:inline}.reveal div.side-by-side figure:first-of-type{left:5%}.reveal div.side-by-side figure:nth-of-type(2){right:5%}.reveal div.left-float figure{display:inline;float:left}.reveal div.left-float ul{display:inline-block;margin-left:0}</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-K4SBB2EN2W"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-K4SBB2EN2W")}</script></head><body><div class=reveal><div class=slides><section><h3>Angular Routing</h3><h4>ITEC 3870 Software Development II,<br>Roberto Salas Montoya</h4><p>(License: <a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a>)</p><figure><img src=/softdev2-resources/images/angular/angular-icon-logo.png height=300px></figure><p><a class="nav nav-prev" href=https://soft-eng-practicum.github.io/softdev2-resources/workshops/angular/components/ title="Angular Components"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - Angular Components</a>, <span></span><a class="nav nav-next" href=https://soft-eng-practicum.github.io/softdev2-resources/workshops/angular/services/ title="Angular Services">Next - Angular Services <i class="fas fa-arrow-right" aria-hidden=true></i></a></p></section><section><h2 id=overview>Overview</h2><p>Introduction, What is routing in Angular?</p><p>Creating a Project that includes the routing module or adding routing module.</p><p>Configure Route Module Check</p><span class=fragment><h4 id=three-step-fundamental-blocks>Three step fundamental blocks</h4><ul><li>Route paths</li><li>Routerlink and link active</li><li>Router outlet</li></ul></span></section><section><h2 id=what-is-angular-routing>What is Angular routing?</h2><p>Routing in Angular is basically navigating between pages. The Router Module consists of directives and service to implement navigation. In more simple words you could describe it as the function behind the application that lets users move between different screen views.</p></section><section><h2 id=create-an-angular-project>Create an Angular Project</h2><p>In order to create Angular project we must first have Node installed in our system. You can download Node from <a href=https://nodejs.org/en/ target=_blank rel="noreferrer noopener">here</a>.</p><p>Once Node is installed the next step is to open the terminal and run the next commands to install and create our Angular application.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>$ npm install -g @angular/cli
+</span></span></code></pre></div><p>The previous command installed Angular the next command is to create a Project and give it a name.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>$ ng new RoutingDemo
+</span></span></code></pre></div></section><section><h2 id=accessing-and-opening-our-project>Accessing and opening our Project</h2><p>The next command is to run and open our application</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>$ cd RoutingDemo
+</span></span><span style=display:flex><span>$ ng serve --open
+</span></span></code></pre></div><p>In order to edit and modify our Angular Routing application we are going to use Visual Studio Code. Download and install <a href=https://code.visualstudio.com/ target=_blank rel="noreferrer noopener">Visual Studio Code</a>.</p><p>We can open our project in Visual code using the following command in the Terminal.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>$ code .
+</span></span></code></pre></div></section><section><h2 id=creating-components-for-route-demo>Creating Components for Route Demo</h2><p>For the purpose of demonstrating the route configuration we will create two components professorList and studentList. We will use the following two commands to create each component at a time in the Angular CLI.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>$ ng generate component professorList
+</span></span></code></pre></div><p>And</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>$ ng generate component studentList
+</span></span></code></pre></div></section><section><section data-shortcode-section><h2 id=pre-configuring-routes-10>PRE-CONFIGURING ROUTES 1.0</h2><p>Assuming you have component views already created we will type the following code to configure our Routes in the <em>AppRoutingModule.ts</em> file.</p><p>First import the components that will be routed. Use the following script to import each component at a time.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>import <span style=color:#f92672>{</span>exampleComponent<span style=color:#f92672>}</span> from ‘./example/example/component’;
+</span></span></code></pre></div></section><section><h2 id=pre-configuring-routes-11>PRE-CONFIGURING ROUTES 1.1</h2><p>Now its time to import our <em>AppRoutingModule.ts</em> into our <em>AppModule.ts</em> *Note (skip this step if you created the app with routing this step should be already done)
+Make sure you’re <em>AppModule.ts</em> has the commented importation shown in the image if not add both statements.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>import <span style=color:#f92672>{</span> NgModule <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;@angular/core&#39;</span>;
+</span></span><span style=display:flex><span>import <span style=color:#f92672>{</span> BrowserModule <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;@angular/platform-browser&#39;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>import <span style=color:#f92672>{</span> AppRoutingModule <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;./app-routing.module&#39;</span>;
+</span></span><span style=display:flex><span>import <span style=color:#f92672>{</span> AppComponent <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;./app.component&#39;</span>;
+</span></span><span style=display:flex><span>import <span style=color:#f92672>{</span> StudentListComponent <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;./student-list/student-list.component&#39;</span>;
+</span></span><span style=display:flex><span>import <span style=color:#f92672>{</span> ProfessorListComponent <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;./professor-list/professor-list.component&#39;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>@NgModule<span style=color:#f92672>({</span>
+</span></span><span style=display:flex><span>  declarations: <span style=color:#f92672>[</span>
+</span></span><span style=display:flex><span>    AppComponent,
+</span></span><span style=display:flex><span>    StudentListComponent,
+</span></span><span style=display:flex><span>    ProfessorListComponent
+</span></span><span style=display:flex><span>  <span style=color:#f92672>]</span>,
+</span></span><span style=display:flex><span>  imports: <span style=color:#f92672>[</span>
+</span></span><span style=display:flex><span>    BrowserModule,
+</span></span><span style=display:flex><span>    AppRoutingModule
+</span></span><span style=display:flex><span>  <span style=color:#f92672>]</span>,
+</span></span><span style=display:flex><span>  providers: <span style=color:#f92672>[]</span>,
+</span></span><span style=display:flex><span>  bootstrap: <span style=color:#f92672>[</span>AppComponent<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>})</span>
+</span></span><span style=display:flex><span>export class AppModule <span style=color:#f92672>{</span> <span style=color:#f92672>}</span>
+</span></span></code></pre></div></section><section><h2 id=pre-configuring-routes-12>PRE-CONFIGURING ROUTES 1.2</h2><p>The last thing step before we start creating our route paths is making sure that our <em>AppRoutingModule.ts</em> file has imported Router Module and Routes correctly.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>The Angular CLI should have also set up the import and exports <span style=color:#66d9ef>for</span> @NgModule.
+</span></span><span style=display:flex><span>Please verify <span style=color:#66d9ef>if</span> not <span style=color:#66d9ef>done</span> so add the missing code.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>import <span style=color:#f92672>{</span> NgModule <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;@angular/core&#39;</span>;
+</span></span><span style=display:flex><span>import <span style=color:#f92672>{</span> RouterModule, Routes <span style=color:#f92672>}</span> from <span style=color:#e6db74>&#39;@angular/router&#39;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>const routes: Routes <span style=color:#f92672>=</span> <span style=color:#f92672>[]</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>@NgModule<span style=color:#f92672>({</span>
+</span></span><span style=display:flex><span>  imports: <span style=color:#f92672>[</span>RouterModule.forRoot<span style=color:#f92672>(</span>routes<span style=color:#f92672>)]</span>,
+</span></span><span style=display:flex><span>  exports: <span style=color:#f92672>[</span>RouterModule<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>})</span>
+</span></span><span style=display:flex><span>export class AppRoutingModule <span style=color:#f92672>{</span> <span style=color:#f92672>}</span>
+</span></span></code></pre></div></section></section><section><h2 id=routes-paths>Routes paths</h2><p>In our <em>AppRoutingModule.ts</em> there is a Routes array (const routes: Routes). Inside this array there is an object that contains two properties path and component. Path is just the URL path for the route and Component is used to tell Angular which component to use for the mentioned path.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>const routes: Routes <span style=color:#f92672>=</span> <span style=color:#f92672>[</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;professorList-component&#39;</span>, component: ProfessorListComponent <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;studentList-component&#39;</span>, component: StudentListComponent <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span><span style=color:#f92672>]</span>;
+</span></span></code></pre></div></section><section><h2 id=add-routerlink-and-linkactive>Add routerlink and linkactive</h2><p>In the previews step we defined the routes of each component now its time to add the links to both components. In our AppComponent.html we will list our likes in the following html form.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>&lt;h1&gt;Angular Router App&lt;/h1&gt;
+</span></span><span style=display:flex><span>&lt;nav&gt;
+</span></span><span style=display:flex><span>  &lt;ul&gt;
+</span></span><span style=display:flex><span>    &lt;li&gt;&lt;a routerLink<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/professorList-component&#34;</span> routerLinkActive<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;active&#34;</span>&gt;First Component &lt;/a&gt;&lt;/li&gt;
+</span></span><span style=display:flex><span>    &lt;br&gt;
+</span></span><span style=display:flex><span>    &lt;li&gt;&lt;a routerLink<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/studentList-component&#34;</span> routerLinkActive<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;active&#34;</span>&gt;Second Component&lt;/a&gt;&lt;/li&gt;
+</span></span><span style=display:flex><span>  &lt;/ul&gt;
+</span></span><span style=display:flex><span>&lt;/nav&gt;
+</span></span></code></pre></div></section><section><h2 id=add-route-outlet>Add route outlet</h2><p>The next step to display our component view is to add the router outlet in <em>AppComponent.html</em>. This is key concept in Angular since our html from the components we have define previous will take the place of these tags once the selected route component is clicked.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>&lt;router-outlet&gt;&lt;/router-outlet&gt;
+</span></span></code></pre></div></section><section><h2 id=wildcard-routes>Wildcard Routes</h2><p>Sometimes users navigate to URLs that do not exist this is when wildcards come in handy. Wildcards are used to redirect users to the correct view. To set this up we will use the following line of code in <em>AppRoutingModule.ts</em>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span><span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;professorList-component&#39;</span>, component: ProfessorListComponent <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span><span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;studentList-component&#39;</span>, component: StudentListComponent <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span><span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;**&#39;</span>, component:  <span style=color:#f92672>}</span>, // Wildcard route
+</span></span></code></pre></div><p>After <em>component:</em> we would type the name of the component we want the user to go to instead of the wrong URL address that they tried to access.</p></section><section><section data-shortcode-section><h2 id=displaying-a-404-page>Displaying a 404 page</h2><p>Display a page 404 can be useful to let the user know that what they are looking for was not found or miss typed. First thing we need to do to create a page 404 is create a new Angular component. After this we will proceed to add the path and route like the previous components. This is done in <em>AppRoutingModule.ts</em>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>const routes: Routes <span style=color:#f92672>=</span> <span style=color:#f92672>[</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;professorList-component&#39;</span>, component: ProfessorListComponent <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;studentList-component&#39;</span>, component: StudentListComponent <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>{</span> path: <span style=color:#e6db74>&#39;**&#39;</span>, component: PageNotFoundComponent <span style=color:#f92672>}</span>,  // Wildcard route <span style=color:#66d9ef>for</span> a <span style=color:#ae81ff>404</span> page
+</span></span><span style=display:flex><span><span style=color:#f92672>]</span>;
+</span></span></code></pre></div></section><section><h2 id=404-page>404 Page</h2><p>Lets creat a Component to display our 404 message using the Angular CLI.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>$ ng generate component pageNotFound
+</span></span></code></pre></div><p>Now with our component created add a nice html body message for the user. Add this to <em>PageNotFoundComponent.html</em>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>&lt;p&gt;ERROR <span style=color:#ae81ff>404</span> PAGE NOT FOUND!!!&lt;/p&gt;
+</span></span></code></pre></div></section></section></div></div><script type=text/javascript src=/softdev2-resources/reveal-hugo/object-assign.js></script><script src=/softdev2-resources/reveal-js/dist/reveal.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/markdown/markdown.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/highlight/highlight.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/zoom/zoom.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/notes/notes.js></script><script type=text/javascript>function camelize(e){return e&&Object.keys(e).forEach(function(t){newK=t.replace(/(_\w)/g,function(e){return e[1].toUpperCase()}),newK!=t&&(e[newK]=e[t],delete e[t])}),e}var revealHugoDefaults={center:!0,controls:!0,history:!0,progress:!0,transition:"slide"},revealHugoSiteParams={custom_theme:"reveal-hugo/themes/robot-lung.css",height:720,history:!0,slide_number:!0,width:1280},revealHugoPageParams={custom_css:"css/docker.css",margin:.1},revealHugoPlugins={plugins:[RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]},options=Object.assign({},camelize(revealHugoDefaults),camelize(revealHugoSiteParams),camelize(revealHugoPageParams),camelize(revealHugoPlugins));Reveal.initialize(options)</script><a class=home-link href=https://soft-eng-practicum.github.io/softdev2-resources/>Home</a></body></html>

@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Home on Intermediate Agile Software Development</title>
-    <link>https://soft-eng-practicum.github.io/softdev2-resources/</link>
-    <description>Recent content in Home on Intermediate Agile Software Development</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://soft-eng-practicum.github.io/softdev2-resources/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About this Site</title>
-      <link>https://soft-eng-practicum.github.io/softdev2-resources/about/</link>
-      <pubDate>Thu, 19 Oct 2017 15:26:15 +0000</pubDate>
-      
-      <guid>https://soft-eng-practicum.github.io/softdev2-resources/about/</guid>
-      <description>This site contains a collection of lectures, assignments, and instructor materials for teaching software engineering or development, at an intermediate level. It is assumed that students already know basic software engineering terms and skills.
-Materials are used for the ITEC 3870 Software Development course sequence taught at Georgia Gwinnett College. They were developed by Cengiz Gunay and Anca Doloc-Mihu, supported by an Affordable Learning Georgia grant at inception in 2019-2020 and by a continuation ALG grant for further development in 2020-2021.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Intermediate Agile Software Development</title><link>https://soft-eng-practicum.github.io/softdev2-resources/</link><description>Recent content in Home on Intermediate Agile Software Development</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 26 Oct 2019 15:26:15 +0000</lastBuildDate><atom:link href="https://soft-eng-practicum.github.io/softdev2-resources/index.xml" rel="self" type="application/rss+xml"/><item><title>About this Site</title><link>https://soft-eng-practicum.github.io/softdev2-resources/about/</link><pubDate>Fri, 23 Nov 2018 15:26:15 +0000</pubDate><guid>https://soft-eng-practicum.github.io/softdev2-resources/about/</guid><description>&lt;p>This site contains a collection of lectures, assignments, and instructor materials for teaching software engineering or development, at an &lt;em>intermediate&lt;/em> level. It is assumed that students already know basic software engineering terms and skills.&lt;/p>
+&lt;p>Materials are used for the &lt;a href="https://soft-eng-practicum.github.io/" target="_blank" rel="noreferrer noopener">ITEC 3870 Software Development course sequence&lt;/a> taught at &lt;a href="https://ggc.edu" target="_blank" rel="noreferrer noopener">Georgia Gwinnett College&lt;/a>. They were developed by &lt;a href="https://www.ggc.edu/about-ggc/directory/cengiz-gunay" target="_blank" rel="noreferrer noopener">Cengiz Gunay&lt;/a> and &lt;a href="https://www.ggc.edu/about-ggc/directory/anca-doloc-mihu" target="_blank" rel="noreferrer noopener">Anca Doloc-Mihu&lt;/a>, supported by an &lt;a href="https://www.affordablelearninggeorgia.org/" target="_blank" rel="noreferrer noopener">Affordable Learning Georgia&lt;/a> grant at inception in 2019-2020 and by a continuation ALG grant for further development in 2020-2021.&lt;/p></description></item></channel></rss>

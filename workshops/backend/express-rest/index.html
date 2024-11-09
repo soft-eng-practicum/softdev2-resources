@@ -1,317 +1,63 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-<title>REST API with ExpressJS Workshop</title>
-<meta name="description" content="Simple Hello World application, followed by REST API">
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reset.css">
-<link rel="stylesheet" href="/softdev2-resources/reveal-js/css/reveal.css"><link rel="stylesheet" href="/softdev2-resources/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/softdev2-resources/highlight-js/default.min.css">
-    <style>
-  .reveal section.left-aligned p { text-align: left;
-  }
-  
-  .reveal strong {
-    color: blue;
-  }
-  .home-link {
-    position: absolute;
-    font-size: 150%;
-    left: 20px;
-    bottom: 20px;          
-  }
-  .reveal div.side-by-side figure {
-    display: inline;
-  }
-  .reveal div.side-by-side figure:first-of-type {
-    left: 5%;
-  }
-  .reveal div.side-by-side figure:nth-of-type(2) {
-    right: 5%;
-  }
-  .reveal div.left-float figure {
-    display: inline;
-    float: left;
-  }
-  .reveal div.left-float ul {
-    display: inline-block;
-    margin-left: 0em;
-    
-  }
-</style>
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-K4SBB2EN2W', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-  </head>
-  <body>
-    
-    <div class="reveal">
-      <div class="slides">
-  
-
-    <section><h3>REST API with ExpressJS Workshop</h3>
-
-<h4>ITEC 3870 Software Development II, <br>Cengiz Gunay</h4>
-<p>(License: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
-<figure >
-    
- <img src="/softdev2-resources/images/azure/Azure.png" height="100px"  />
-    
-    
-</figure>
-<p><a class="nav nav-prev" href="https://soft-eng-practicum.github.io/softdev2-resources/workshops/backend/" title="Back-end Workshops"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Back-end Workshops</a>, <span></span><a class="nav nav-next" href="https://soft-eng-practicum.github.io/softdev2-resources/workshops/security/" title="Security of Software">Next - Security of Software <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
-</section><section>
-<h3 id="rest-apis-are-universal">REST APIs are universal</h3>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noreferrer noopener">REST</a> stands for &ldquo;Representational State Transfer&rdquo;</li>
-<li>Allows separating backend data store from frontend logic</li>
-<li>Can be connected to database, files, or any other data structure</li>
-<li>A RESTful API can be used by both web and mobile front ends</li>
-<li>Many resources on web are offered as APIs: <a href="https://github.com/toddmotto/public-apis" target="_blank" rel="noreferrer noopener">Todmotto&rsquo;s list</a></li>
-<li>Before creating an API, we will set a backend service</li>
-</ul>
-</section><section>
-
-
-<section data-shortcode-section>
-<h3 id="simple-expressjs-hello-world-application">Simple ExpressJS Hello World application</h3>
-<ul>
-<li>Following tutorial on <a href="https://www.tutorialspoint.com/expressjs/index.htm" target="_blank" rel="noreferrer noopener">TutorialsPoint</a> (lots of ads!)</li>
-<li>Express is a very widely used backend JS framework</li>
-<li>Frontend frameworks like Angular and React run in the browser, but Express runs on the server, using Node.JS</li>
-<li>We will do the first 4 sections in the tutorial, through the section &ldquo;Hello World&rdquo;</li>
-<li>Follow on down&hellip;</li>
-</ul>
-</section><section>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Install <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer noopener">Node.JS</a> that will also install the Node Package Manager (<code>npm</code>)</li>
-<li>Test in command prompt or terminal with:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>node --version
-</span></span><span style="display:flex;"><span>npm --version
-</span></span></code></pre></div>which should give you the installed versions.</li>
-</ul>
-</section><section>
-<h3 id="create-a-project-folder">Create a project folder</h3>
-<ul>
-<li>Run the commands:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>mkdir hello-world
-</span></span><span style="display:flex;"><span>cd hello-world
-</span></span><span style="display:flex;"><span>pwd
-</span></span></code></pre></div></li>
-<li>Last command should show that you are <em>inside</em> the new project folder</li>
-</ul>
-</section><section>
-<h3 id="initialize-your-nodejs-project">Initialize your Node.JS project</h3>
-<ul>
-<li>Create a <code>package.json</code> file with the following command:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm init -y
-</span></span></code></pre></div>(if you want control over what goes in it, omit the <code>-y</code>)</li>
-<li>Start installing Node packages for our project:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install --save express
-</span></span></code></pre></div>which will download packages under the <code>node_modules</code> folder <br>
-(the <code>--save</code> option will make an entry inside the <code>package.json</code> file)</li>
-<li>Install a global program to run your project:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>npm install -g nodemon
-</span></span></code></pre></div>which will install the <code>nodemon</code> utility system-wide <br>
-(if you are on Mac or Linux, you would need to run this with <code>sudo</code> powers)</li>
-</ul>
-</section><section>
-<h3 id="your-hello-world-program">Your Hello World program</h3>
-<ul>
-<li>Paste this into a new file named <code>index.js</code> (use any text editor):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>){
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Hello world!&#34;</span>);
-</span></span><span style="display:flex;"><span>});
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>);
-</span></span></code></pre></div>It will create a <em>route</em> to the root (<code>'/'</code>) of your website and print.</li>
-<li>Run it with the command:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>nodemod index.js
-</span></span></code></pre></div>which should display some information and wait until canceled.</li>
-</ul>
-</section><section>
-<h3 id="viewing-your-express-program">Viewing your Express program</h3>
-<ul>
-<li>Open your browser to <a href="http://localhost:3000" target="_blank" rel="noreferrer noopener">http://localhost:3000</a></li>
-<li>It should display:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Hello World
-</span></span></code></pre></div></li>
-<li>If this basic Express program works, you can continue to the right to build an API</li>
-</ul>
-
-</section>
-</section><section>
-
-
-<section data-shortcode-section>
-<h3 id="a-restful-api-in-expressjs">A RESTful API in Express.JS</h3>
-<ul>
-<li>Following up on the <strong>Hello World</strong> application</li>
-<li>Create an <code>api.js</code> file with the contents:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bodyParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;body-parser&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cookieParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;cookie-parser&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">multer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;multer&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">upload</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">multer</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">cookieParser</span>());
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">bodyParser</span>.<span style="color:#a6e22e">json</span>());
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">bodyParser</span>.<span style="color:#a6e22e">urlencoded</span>({ <span style="color:#a6e22e">extended</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> }));
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">upload</span>.<span style="color:#a6e22e">array</span>());
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//Require the Router we defined in movies.js
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">movies</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./movies.js&#39;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//Use the Router on the sub route /movies
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/movies&#39;</span>, <span style="color:#a6e22e">movies</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>);
-</span></span></code></pre></div></li>
-</ul>
-</section><section>
-<h4 id="whats-new">What&rsquo;s new?</h4>
-<ul>
-<li>Multiple packages loaded at the top. Install them first:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>node install --save body-parser
-</span></span><span style="display:flex;"><span>node install --save cookie-parser
-</span></span><span style="display:flex;"><span>node install --save multer
-</span></span></code></pre></div></li>
-<li>An external file <code>movies.js</code> is loaded, which we will create in the next step.</li>
-<li>With <code>app.use()</code> an ExpressJS <em>Router</em> is set up for the <code>/movies</code> sub-URLs</li>
-</ul>
-</section><section>
-<h4 id="make-the-router-component">Make the router component</h4>
-<ul>
-<li>Create a new file <code>movies.js</code>:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">router</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Router</span>();
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">movies</span> <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>    {<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">101</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Fight Club&#34;</span>, <span style="color:#a6e22e">year</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1999</span>, <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8.1</span>},
-</span></span><span style="display:flex;"><span>    {<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">102</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Inception&#34;</span>, <span style="color:#a6e22e">year</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2010</span>, <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8.7</span>},
-</span></span><span style="display:flex;"><span>    {<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">103</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;The Dark Knight&#34;</span>, <span style="color:#a6e22e">year</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2008</span>, <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">9</span>},
-</span></span><span style="display:flex;"><span>    {<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">104</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;12 Angry Men&#34;</span>, <span style="color:#a6e22e">year</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1957</span>, <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8.9</span>}
-</span></span><span style="display:flex;"><span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//Routes will go here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">router</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>){
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>(<span style="color:#a6e22e">movies</span>);
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div>which returns a JSON in response to the root URL <code>/</code>, which now points under <code>/movies</code> where the Router is attached in <code>api.js</code>.</li>
-</ul>
-</section><section>
-<h4 id="running-it">Running it</h4>
-<ul>
-<li>Run with:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>nodemon api.js
-</span></span></code></pre></div></li>
-<li>Point browser to <a href="http://localhost:3000/movies" target="_blank" rel="noreferrer noopener">http://localhost:3000/movies</a>, which should show:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>[{&#34;id&#34;:101,&#34;name&#34;:&#34;Fight Club&#34;,&#34;year&#34;:1999,&#34;rating&#34;:8.1},
-</span></span><span style="display:flex;"><span> {&#34;id&#34;:102,&#34;name&#34;:&#34;Inception&#34;,&#34;year&#34;:2010,&#34;rating&#34;:8.7},
-</span></span><span style="display:flex;"><span> {&#34;id&#34;:103,&#34;name&#34;:&#34;The Dark Knight&#34;,&#34;year&#34;:2008,&#34;rating&#34;:9},
-</span></span><span style="display:flex;"><span> {&#34;id&#34;:104,&#34;name&#34;:&#34;12 Angry Men&#34;,&#34;year&#34;:1957,&#34;rating&#34;:8.9}]
-</span></span></code></pre></div></li>
-</ul>
-
-</section>
-</section><section>
-<h3 id="more-information">More Information</h3>
-<ul>
-<li>To add more API routes and understand what they do, see the rest of tutorial at <a href="https://www.tutorialspoint.com/expressjs/expressjs_restful_apis.htm" target="_blank" rel="noreferrer noopener">TutorialsPoint</a></li>
-<li>We skipped sections that explain basic usage of ExpressJS for web apps</li>
-<li>REST API section has more routes with parameters for complete operation</li>
-</ul>
-</section>
-
-  
-
-
-</div>
-      
-
-    </div>
-<script type="text/javascript" src=/softdev2-resources/reveal-hugo/object-assign.js></script>
-
-<a href="/softdev2-resources/reveal-js/css/print/" id="print-location" style="display: none;"></a>
-<script type="text/javascript">
-  var printLocationElement = document.getElementById('print-location');
-  var link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
-  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
-  document.getElementsByTagName('head')[0].appendChild(link);
-</script>
-
-<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","height":720,"history":true,"slide_number":true,"width":1280}</script>
-<script type="application/json" id="reveal-hugo-page-params">null</script>
-
-<script src="/softdev2-resources/reveal-js/js/reveal.js"></script>
-
-<script type="text/javascript">
-  
-  
-  function camelize(map) {
-    if (map) {
-      Object.keys(map).forEach(function(k) {
-        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
-        if (newK != k) {
-          map[newK] = map[k];
-          delete map[k];
-        }
-      });
-    }
-    return map;
-  }
-  
-  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
-  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
-  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
-  
-  var options = Object.assign({},
-    camelize(revealHugoDefaults),
-    camelize(revealHugoSiteParams),
-    camelize(revealHugoPageParams));
-  Reveal.initialize(options);
-</script>
-
-
-  
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/marked.js"></script>
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/markdown/markdown.js"></script>
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/highlight/highlight.js"></script>
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/zoom-js/zoom.js"></script>
-  
-  
-  <script type="text/javascript" src="/softdev2-resources/reveal-js/plugin/notes/notes.js"></script>
-
-
-
-    <a class="home-link" href="https://soft-eng-practicum.github.io/softdev2-resources/">Home</a>
-
-    
-  </body>
-</html>
+<!doctype html><html lang=en><head><meta charset=utf-8><title>REST API with ExpressJS Workshop</title>
+<meta name=description content="Simple Hello World application, followed by REST API"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=stylesheet href=/softdev2-resources/reveal-js/dist/reset.css><link rel=stylesheet href=/softdev2-resources/reveal-js/dist/reveal.css><link rel=stylesheet href=/softdev2-resources/reveal-hugo/themes/robot-lung.css id=theme><link rel=stylesheet href=/softdev2-resources/highlight-js/default.min.css><style>.reveal section.left-aligned p{text-align:left}.reveal strong{color:blue}.home-link{position:absolute;font-size:150%;left:20px;bottom:20px}.reveal div.side-by-side figure{display:inline}.reveal div.side-by-side figure:first-of-type{left:5%}.reveal div.side-by-side figure:nth-of-type(2){right:5%}.reveal div.left-float figure{display:inline;float:left}.reveal div.left-float ul{display:inline-block;margin-left:0}</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-K4SBB2EN2W"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-K4SBB2EN2W")}</script></head><body><div class=reveal><div class=slides><section><h3>REST API with ExpressJS Workshop</h3><h4>ITEC 3870 Software Development II,<br>Cengiz Gunay</h4><p>(License: <a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a>)</p><figure><img src=/softdev2-resources/images/azure/Azure.png height=100px></figure><p><a class="nav nav-prev" href=https://soft-eng-practicum.github.io/softdev2-resources/workshops/backend/ title="Back-end Workshops"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - Back-end Workshops</a>, <span></span><a class="nav nav-next" href=https://soft-eng-practicum.github.io/softdev2-resources/workshops/security/ title="Security of Software">Next - Security of Software <i class="fas fa-arrow-right" aria-hidden=true></i></a></p></section><section><h3 id=rest-apis-are-universal>REST APIs are universal</h3><ul><li><a href=https://en.wikipedia.org/wiki/Representational_state_transfer target=_blank rel="noreferrer noopener">REST</a> stands for &ldquo;Representational State Transfer&rdquo;</li><li>Allows separating backend data store from frontend logic</li><li>Can be connected to database, files, or any other data structure</li><li>A RESTful API can be used by both web and mobile front ends</li><li>Many resources on web are offered as APIs: <a href=https://github.com/toddmotto/public-apis target=_blank rel="noreferrer noopener">Todmotto&rsquo;s list</a></li><li>Before creating an API, we will set a backend service</li></ul></section><section><section data-shortcode-section><h3 id=simple-expressjs-hello-world-application>Simple ExpressJS Hello World application</h3><ul><li>Following tutorial on <a href=https://www.tutorialspoint.com/expressjs/index.htm target=_blank rel="noreferrer noopener">TutorialsPoint</a> (lots of ads!)</li><li>Express is a very widely used backend JS framework</li><li>Frontend frameworks like Angular and React run in the browser, but Express runs on the server, using Node.JS</li><li>We will do the first 4 sections in the tutorial, through the section &ldquo;Hello World&rdquo;</li><li>Follow on down&mldr;</li></ul></section><section><h3 id=prerequisites>Prerequisites</h3><ul><li>Install <a href=https://nodejs.org/en/ target=_blank rel="noreferrer noopener">Node.JS</a> that will also install the Node Package Manager (<code>npm</code>)</li><li>Test in command prompt or terminal with:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>node --version
+</span></span><span style=display:flex><span>npm --version
+</span></span></code></pre></div>which should give you the installed versions.</li></ul></section><section><h3 id=create-a-project-folder>Create a project folder</h3><ul><li>Run the commands:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>mkdir hello-world
+</span></span><span style=display:flex><span>cd hello-world
+</span></span><span style=display:flex><span>pwd
+</span></span></code></pre></div></li><li>Last command should show that you are <em>inside</em> the new project folder</li></ul></section><section><h3 id=initialize-your-nodejs-project>Initialize your Node.JS project</h3><ul><li>Create a <code>package.json</code> file with the following command:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>npm init -y
+</span></span></code></pre></div>(if you want control over what goes in it, omit the <code>-y</code>)</li><li>Start installing Node packages for our project:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>npm install --save express
+</span></span></code></pre></div>which will download packages under the <code>node_modules</code> folder<br>(the <code>--save</code> option will make an entry inside the <code>package.json</code> file)</li><li>Install a global program to run your project:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>npm install -g nodemon
+</span></span></code></pre></div>which will install the <code>nodemon</code> utility system-wide<br>(if you are on Mac or Linux, you would need to run this with <code>sudo</code> powers)</li></ul></section><section><h3 id=your-hello-world-program>Your Hello World program</h3><ul><li>Paste this into a new file named <code>index.js</code> (use any text editor):<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>express</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;express&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>app</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>express</span>();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>get</span>(<span style=color:#e6db74>&#39;/&#39;</span>, <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>req</span>, <span style=color:#a6e22e>res</span>){
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>send</span>(<span style=color:#e6db74>&#34;Hello world!&#34;</span>);
+</span></span><span style=display:flex><span>});
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>listen</span>(<span style=color:#ae81ff>3000</span>);
+</span></span></code></pre></div>It will create a <em>route</em> to the root (<code>'/'</code>) of your website and print.</li><li>Run it with the command:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>nodemod index.js
+</span></span></code></pre></div>which should display some information and wait until canceled.</li></ul></section><section><h3 id=viewing-your-express-program>Viewing your Express program</h3><ul><li>Open your browser to <a href=http://localhost:3000 target=_blank rel="noreferrer noopener">http://localhost:3000</a></li><li>It should display:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>Hello World
+</span></span></code></pre></div></li><li>If this basic Express program works, you can continue to the right to build an API</li></ul></section></section><section><section data-shortcode-section><h3 id=a-restful-api-in-expressjs>A RESTful API in Express.JS</h3><ul><li>Following up on the <strong>Hello World</strong> application</li><li>Create an <code>api.js</code> file with the contents:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>express</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;express&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>bodyParser</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;body-parser&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>cookieParser</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;cookie-parser&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>multer</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;multer&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>upload</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>multer</span>();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>app</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>express</span>();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>use</span>(<span style=color:#a6e22e>cookieParser</span>());
+</span></span><span style=display:flex><span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>use</span>(<span style=color:#a6e22e>bodyParser</span>.<span style=color:#a6e22e>json</span>());
+</span></span><span style=display:flex><span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>use</span>(<span style=color:#a6e22e>bodyParser</span>.<span style=color:#a6e22e>urlencoded</span>({ <span style=color:#a6e22e>extended</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span> }));
+</span></span><span style=display:flex><span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>use</span>(<span style=color:#a6e22e>upload</span>.<span style=color:#a6e22e>array</span>());
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//Require the Router we defined in movies.js
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>movies</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;./movies.js&#39;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//Use the Router on the sub route /movies
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>use</span>(<span style=color:#e6db74>&#39;/movies&#39;</span>, <span style=color:#a6e22e>movies</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>listen</span>(<span style=color:#ae81ff>3000</span>);
+</span></span></code></pre></div></li></ul></section><section><h4 id=whats-new>What&rsquo;s new?</h4><ul><li>Multiple packages loaded at the top. Install them first:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>node install --save body-parser
+</span></span><span style=display:flex><span>node install --save cookie-parser
+</span></span><span style=display:flex><span>node install --save multer
+</span></span></code></pre></div></li><li>An external file <code>movies.js</code> is loaded, which we will create in the next step.</li><li>With <code>app.use()</code> an ExpressJS <em>Router</em> is set up for the <code>/movies</code> sub-URLs</li></ul></section><section><h4 id=make-the-router-component>Make the router component</h4><ul><li>Create a new file <code>movies.js</code>:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>express</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;express&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>router</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>express</span>.<span style=color:#a6e22e>Router</span>();
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>movies</span> <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>    {<span style=color:#a6e22e>id</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>101</span>, <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Fight Club&#34;</span>, <span style=color:#a6e22e>year</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1999</span>, <span style=color:#a6e22e>rating</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>8.1</span>},
+</span></span><span style=display:flex><span>    {<span style=color:#a6e22e>id</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>102</span>, <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Inception&#34;</span>, <span style=color:#a6e22e>year</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>2010</span>, <span style=color:#a6e22e>rating</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>8.7</span>},
+</span></span><span style=display:flex><span>    {<span style=color:#a6e22e>id</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>103</span>, <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;The Dark Knight&#34;</span>, <span style=color:#a6e22e>year</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>2008</span>, <span style=color:#a6e22e>rating</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>9</span>},
+</span></span><span style=display:flex><span>    {<span style=color:#a6e22e>id</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>104</span>, <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;12 Angry Men&#34;</span>, <span style=color:#a6e22e>year</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1957</span>, <span style=color:#a6e22e>rating</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>8.9</span>}
+</span></span><span style=display:flex><span>];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//Routes will go here
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>module</span>.<span style=color:#a6e22e>exports</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>router</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>router</span>.<span style=color:#a6e22e>get</span>(<span style=color:#e6db74>&#39;/&#39;</span>, <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>req</span>, <span style=color:#a6e22e>res</span>){
+</span></span><span style=display:flex><span> <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>json</span>(<span style=color:#a6e22e>movies</span>);
+</span></span><span style=display:flex><span>});
+</span></span></code></pre></div>which returns a JSON in response to the root URL <code>/</code>, which now points under <code>/movies</code> where the Router is attached in <code>api.js</code>.</li></ul></section><section><h4 id=running-it>Running it</h4><ul><li>Run with:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>nodemon api.js
+</span></span></code></pre></div></li><li>Point browser to <a href=http://localhost:3000/movies target=_blank rel="noreferrer noopener">http://localhost:3000/movies</a>, which should show:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>[{&#34;id&#34;:101,&#34;name&#34;:&#34;Fight Club&#34;,&#34;year&#34;:1999,&#34;rating&#34;:8.1},
+</span></span><span style=display:flex><span> {&#34;id&#34;:102,&#34;name&#34;:&#34;Inception&#34;,&#34;year&#34;:2010,&#34;rating&#34;:8.7},
+</span></span><span style=display:flex><span> {&#34;id&#34;:103,&#34;name&#34;:&#34;The Dark Knight&#34;,&#34;year&#34;:2008,&#34;rating&#34;:9},
+</span></span><span style=display:flex><span> {&#34;id&#34;:104,&#34;name&#34;:&#34;12 Angry Men&#34;,&#34;year&#34;:1957,&#34;rating&#34;:8.9}]
+</span></span></code></pre></div></li></ul></section></section><section><h3 id=more-information>More Information</h3><ul><li>To add more API routes and understand what they do, see the rest of tutorial at <a href=https://www.tutorialspoint.com/expressjs/expressjs_restful_apis.htm target=_blank rel="noreferrer noopener">TutorialsPoint</a></li><li>We skipped sections that explain basic usage of ExpressJS for web apps</li><li>REST API section has more routes with parameters for complete operation</li></ul></section></div></div><script type=text/javascript src=/softdev2-resources/reveal-hugo/object-assign.js></script><script src=/softdev2-resources/reveal-js/dist/reveal.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/markdown/markdown.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/highlight/highlight.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/zoom/zoom.js></script><script type=text/javascript src=/softdev2-resources/reveal-js/plugin/notes/notes.js></script><script type=text/javascript>function camelize(e){return e&&Object.keys(e).forEach(function(t){newK=t.replace(/(_\w)/g,function(e){return e[1].toUpperCase()}),newK!=t&&(e[newK]=e[t],delete e[t])}),e}var revealHugoDefaults={center:!0,controls:!0,history:!0,progress:!0,transition:"slide"},revealHugoSiteParams={custom_theme:"reveal-hugo/themes/robot-lung.css",height:720,history:!0,slide_number:!0,width:1280},revealHugoPageParams={},revealHugoPlugins={plugins:[RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]},options=Object.assign({},camelize(revealHugoDefaults),camelize(revealHugoSiteParams),camelize(revealHugoPageParams),camelize(revealHugoPlugins));Reveal.initialize(options)</script><a class=home-link href=https://soft-eng-practicum.github.io/softdev2-resources/>Home</a></body></html>

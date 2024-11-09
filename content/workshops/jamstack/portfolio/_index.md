@@ -148,6 +148,9 @@ From [https://jamstackthemes.dev](https://jamstackthemes.dev/#ssg=jekyll&archety
 ### Editing content on your site
 
 - Use [Markdown format](https://www.markdownguide.org/) in `.md` files
+- Add new files to add blog entries
+- Add categories and tags
+- Change menus
 
 {{% /section %}}
 
@@ -159,5 +162,14 @@ We will go step-by-step, but here are overall steps:
 - Create a [new repository on Github](https://docs.github.com/en/pages/quickstart)
 - Create a [site with the default processor, _Jekyll_](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
 - Github supports Jekyll automatically, but you have to stay within [their versions](https://pages.github.com/versions/)
+- Main [Jekyll documentation](https://jekyllrb.com/)
+- Jekyll's templating language is [Liquid](https://shopify.github.io/liquid/)
 
---- 
+---
+
+### More JAMstack technologies
+
+- Hugo
+- Gatsby
+- Astro
+- Next

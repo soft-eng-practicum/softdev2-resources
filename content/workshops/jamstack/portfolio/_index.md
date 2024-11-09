@@ -43,7 +43,11 @@ margin = 0.1
 	}
 </style>
 
-### Building a personal portfolio site<br> using a static site builder
+<img src="/softdev2-resources/images/jamstack/portfolio-workshop.svg" alt="Portfolio site QR code" 
+     width="300" class="plain"
+     style="float: right" />
+
+### Building a personal portfolio<br> using a static site builder
 
 Cengiz Gunay
 
@@ -55,9 +59,9 @@ add logos here
 
 ## What is a static site???
 
-### From [https://JAMstack.WTF](https://JAMstack.WTF) :
+From [JAMstack.WTF](https://JAMstack.WTF) :
 
-<iframe src="https://jamstack.wtf/" style="width=100%; height=600px" width="100%" height="400">
+<iframe src="https://jamstack.wtf/" style="" width="100%" height="600">
 </iframe>
 
 {{% fragment %}}
@@ -68,5 +72,19 @@ This presentation was also built on a static site.
 
 ## Advantages of static sites
 
-- You can host easily - just serving a folder on the internet
-- Many free services for hosting: [Github Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), [Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html), [Gitlab Pages](https://docs.gitlab.com/ee/user/project/pages/)
+- Host easily:
+    - by serving a folder on the internet without a *backend* process
+    - Many free services for hosting:<br> 
+    [Github Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), [Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html), [Gitlab Pages](https://docs.gitlab.com/ee/user/project/pages/)
+- Use text and Markdown instead of writing HTML
+- Use *many* existing templates
+
+---
+
+### Templates and Technologies
+
+From [https://jamstackthemes.dev](https://jamstackthemes.dev/#ssg=jekyll&archetype=portfolio) :
+
+<iframe src="https://jamstackthemes.dev/#ssg=jekyll&archetype=portfolio" style="" width="100%" height="600">
+</iframe>
+

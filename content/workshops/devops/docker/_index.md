@@ -1,7 +1,7 @@
 +++
-date = "2021-01-5T12:00:00Z"
-lastmod = "2021-01-5T12:00:00Z"
-publishdate = "2021-01-5T12:00:00Z"
+date = "2021-01-05T12:00:00Z"
+lastmod = "2021-01-05T12:00:00Z"
+publishdate = "2021-01-05T12:00:00Z"
 
 title = "Docker Workshop"
 description = "This workshop will cover the basics of Docker"

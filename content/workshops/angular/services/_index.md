@@ -3,7 +3,7 @@ title = "Angular Services"
 outputs = ["Reveal"]
 weight = 4 # chapter number
 author = "Christopher Martinez"
-date = "12:25 PM 2/3/2021"
+date = 2021-02-03T12:25:00-05:00
 video = "2_pJQNVwgFg"
 +++
 

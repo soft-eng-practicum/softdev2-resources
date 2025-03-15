@@ -20,6 +20,8 @@ margin = 0.1
 
 ---
 
+{{% section %}}
+
 ### What is Hugging Face?
 
 One stop shop for all AI tasks simplified:
@@ -27,3 +29,51 @@ One stop shop for all AI tasks simplified:
 {{% figure src="/softdev2-resources/images/ai/hugging-face-home-screenshot_20250315.png" height="500" 
     style="" %}}
 
+---
+
+Crowd-sourced resources:
+
+- **Models**: AI models ready to download and use.
+- **Datasets**: Download training/testing datasets for building models.
+- **Spaces**: Cloud-hosted AI apps, ready to use.
+
+{{% figure src="/softdev2-resources/images/ai/hugging-face-home-screenshot_20250315.png" height="500" 
+    style="" %}}
+
+{{% /section %}}
+
+---
+
+{{% section %}}
+
+### A English-to-Spanish Translator App on HF
+
+https://huggingface.co/spaces/gradio-tests/english_to_spanish
+
+<iframe
+	src="https://gradio-tests-english-to-spanish.hf.space"
+	frameborder="0"
+	width="850"
+	height="450"
+></iframe>
+
+---
+
+### Use this app from a new Python program!
+
+Click on "Use via API" to get Python code.
+
+{{% figure src="/softdev2-resources/images/ai/hugging-face-translate-api-screenshot_20250315.png" height="500" 
+    style="" %}}
+    
+---
+
+### Or create a new Javascript program!
+
+Select Javascript.
+
+{{% figure src="/softdev2-resources/images/ai/hugging-face-translate-api-javascript.png" height="500" 
+    style="" %}}
+
+
+{{% /section %}}

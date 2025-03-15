@@ -24,10 +24,12 @@ margin = 0.1
 
 ### What is Hugging Face?
 
-One stop shop for all AI tasks simplified:
+One stop shop for all AI tasks simplified: https://huggingface.co
 
 {{% figure src="/softdev2-resources/images/ai/hugging-face-home-screenshot_20250315.png" height="500" 
     style="" %}}
+
+**Create an account now!**
 
 ---
 

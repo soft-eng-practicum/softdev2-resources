@@ -55,7 +55,7 @@ https://huggingface.co/spaces/gradio-tests/english_to_spanish
 ## Try it!
 
 <iframe
-	src="https://gradio-tests-english-to-spanish.hf.space"
+	src="https://gradio-tests-old-english-to-spanish.hf.space"
 	frameborder="0"
 	width="850"
 	height="450"
@@ -84,6 +84,53 @@ Select Javascript.
 
 ---
 
+{{% section %}}
+
+### How does it work?
+
+{{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-gradio.png" height="600" 
+    class="" %}}
+
+---
+
+### Connects to a model
+
+{{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-linked-model.png" 
+    height="300" class="" %}}
+
+Model page:
+https://huggingface.co/Helsinki-NLP/opus-mt-en-es
+
+---
+
+### Under Helsinki-NLP
+
+https://huggingface.co/Helsinki-NLP
+
+Select any model and we can build a new translator!
+
+{{% /section %}}
+
+---
+
+### Build your own space
+
+- select a model (such as the translate models)
+- click Deploy and select Spaces 
+
+<div class="side-by-side">
+{{% figure src="/softdev2-resources/images/ai/hugging-face-model-menu-space.png" 
+    height="350" class="" %}}
+{{% figure src="/softdev2-resources/images/ai/hugging-face-model-deploy-modal.png" 
+    height="350" class="" %}}
+</div>
+
+- or select an existing space and duplicate it
+
+
+
+---
+
 ### Javascript call to the API
 
 ```js
@@ -105,3 +152,21 @@ $ node index.js
 ```
 
 See code here: https://github.com/grizzlyhacks/workshop-hugging-face-translate
+
+---
+
+### Running it locally
+
+<div class="side-by-side">
+{{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-local.png" 
+    height="350" class="" %}}
+{{% fragment %}}
+{{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-local-options.png" 
+    height="350" style="" %}}
+{{% /fragment %}}
+</div>
+
+{{% fragment %}}
+Takes much longer and requires resources on your machine!
+{{% /fragment %}}
+

@@ -1,0 +1,11 @@
+.sidebar .slide-menu .has-sub-menu > a span.mark {
+        color: #4d4d4d !important;
+    }
+
+    p a, a.edit-page, a.headerlink{
+        color: #20597E !important;
+    }
+
+    p.powered{
+        color: #545454 !important;
+    }

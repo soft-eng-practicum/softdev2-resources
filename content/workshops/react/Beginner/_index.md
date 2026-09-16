@@ -8,6 +8,10 @@ author = "Alex Abraham and Cengiz Gunay"
 {{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" >}}
 
 ---
+
+## Introduction
+
+---
 ### What is React Js?
 
 <img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;"/>
@@ -42,7 +46,6 @@ This component represents the entire application and is where all the child comp
 
 ---
 
-###
 <table>
   <tr>
     <td>
@@ -62,6 +65,7 @@ This component represents the entire application and is where all the child comp
   </table>
  
  ---
+
  ### Twitter Site
  
  Take a look at all the **components** (which are all the rectangles with red borders).
@@ -83,6 +87,9 @@ This component represents the entire application and is where all the child comp
 
 ---
 
+## Installing
+
+---
 
 {{% section %}}
 
@@ -244,9 +251,8 @@ Then, insert before `</header>`
 ```
 
 Becomes:
-```
+
 2+3=5
-```
 
 {{% /section %}}
 

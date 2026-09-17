@@ -27,14 +27,15 @@ margin = 0.1
 	.bg-light     { background-color: #f8f9fa; }
 	.bg-dark      { background-color: #343a40; }
 
-	.text-primary { color: #007bff; }
+	.text-primary { color: #0054AD; }
 	.text-secondary { color: #6c757d; }
-	.text-success   { color: #28a745; }
-	.text-danger    { color: #dc3545; }
-	.text-warning   { color: #ffc107; }
-	.text-info      { color: #17a2b8; }
-	.text-white     { color: #fff;    }
-	.text-light     { color: #f8f9fa; }
+	.text-success   { color: #106527; }
+	.text-danger    { color: #AA1D2B; }
+	.text-warning   { color: #ffc107; background-color:#255C74;}
+	.text-info      { color: #73DAE7; background-color:#255C74;}
+	.text-white     { color: #fff;}
+	.text-white1     { color: #fff; background-color:#255C74;}
+	.text-light     { color: #f8f9fa; background-color:#255C74;}
 	.text-dark      { color: #343a40; }
 
 	div[class^="bg-"] {
@@ -55,7 +56,7 @@ Ryan Cosentino
 
 The goal of this workshop is to use Bootstrap and jQuery to create a form that can add or remove courses from a table:
 
-<img src="/softdev2-resources/images/bootstrap/form-4.png" width="400" style="border: none;"/>
+<img src="/softdev2-resources/images/bootstrap/form-4.png" width="400" style="border: none;" alt="Form made with Bootstrap and jQuery"/>
 
 ---
 
@@ -178,7 +179,7 @@ There are a set of main colors that can be applied to many Bootstrap components:
 <p class="text-danger">danger</p>
 <p class="text-warning">warning</p>
 <p class="text-info">info</p>
-<p class="text-white">white</p>
+<p class="text-white1">white</p>
 <p class="text-light">light</p>
 <p class="text-dark">dark</p>
 </div>
@@ -245,7 +246,7 @@ A **card** is a flexible and extensible container with rounded borders. Add the 
 
 After pressing Run, you should see something like this:
 
-<img src="/softdev2-resources/images/bootstrap/card.png" width="800" style="border: none;"/>
+<img src="/softdev2-resources/images/bootstrap/card.png" width="800" style="border: none;" alt="Card printing the word: hello"/>
 
 {{% /section %}}
 
@@ -276,7 +277,7 @@ Here, the `legend` tag acts like a title and we're giving it a bottom border and
 
 After pressing Run, you should see something like this:
 
-<img src="/softdev2-resources/images/bootstrap/form-1.png" width="800" style="border: none;"/>
+<img src="/softdev2-resources/images/bootstrap/form-1.png" width="800" style="border: none;" alt="Form to add the subject of a course"/>
 
 {{% /section %}}
 
@@ -315,7 +316,7 @@ Now lets add an input for the course number and title:
 
 After pressing Run, you should see something like this:
 
-<img src="/softdev2-resources/images/bootstrap/form-2.png" width="700" style="border: none;"/>
+<img src="/softdev2-resources/images/bootstrap/form-2.png" width="700" style="border: none;" alt="Form with Text Fields"/>
 
 {{% /section %}}
 
@@ -350,7 +351,7 @@ Here, the `btn` class activates the Bootstrap styles and the `btn-color` class c
 
 After pressing Run, you should see something like this:
 
-<img src="/softdev2-resources/images/bootstrap/form-3.png" width="600" style="border: none;"/>
+<img src="/softdev2-resources/images/bootstrap/form-3.png" width="600" style="border: none;" alt="Form with buttons at the bottom"/>
 
 {{% /section %}}
 
@@ -434,6 +435,6 @@ For the second button, we need to delete the last row in the table:
 
 ## Result
 
-<img src="/softdev2-resources/images/bootstrap/form-4.png" height="500" style="border: none;"/>
+<img src="/softdev2-resources/images/bootstrap/form-4.png" height="500" style="border: none;" alt="Form with Delete Last Course button"/>
 
 {{% reveal-prevnext-links %}}

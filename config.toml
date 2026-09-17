@@ -127,7 +127,7 @@ isHTML = true
     slide_number = true
     #transition = 'zoom'
     #transition_speed = 'fast'
-    highlight_theme = "obsidian"
+    highlight_theme = "ir-black"
 
 [params.algolia]
     vars = [

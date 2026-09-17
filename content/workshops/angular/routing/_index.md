@@ -17,7 +17,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" alt="Angular logo"%}}
 
 ---
 

@@ -5,7 +5,7 @@ weight = 1 # chapter number
 author = "Alex Abraham and Cengiz Gunay"
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" >}}
+{{< reveal-titlepage figure="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100" height="100" alt="React logo">}}
 
 ---
 
@@ -14,7 +14,7 @@ author = "Alex Abraham and Cengiz Gunay"
 ---
 ### What is React Js?
 
-<img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;"/>
+<img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;" alt="Facebook logo"/>
 
  A JavaScript library for building user interfaces for web as well as mobile applications developed by a team at Facebook in 2011.
  
@@ -49,7 +49,7 @@ This component represents the entire application and is where all the child comp
 <table>
   <tr>
     <td>
- <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="500" height="500"/>
+ <img src="/softdev2-resources/images/react/React-Components-Example-1024x556.jpg" width="500" height="500" alt="Root Component"/>
       </td>
     <td style ="vertical-align: middle;">
  <p>Here we see several components</p>
@@ -75,10 +75,10 @@ This component represents the entire application and is where all the child comp
 <table>
   <tr>
     <td>
-		<img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350"/>
+		<img src="/softdev2-resources/images/react/twitterpage.jpg" width="400" height="350" alt="Twitter page"/>
     </td>
     <td>
-		<img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350"/>
+		<img src="/softdev2-resources/images/react/twitter-components.png" width="400" height="350" alt="Twitter components"/>
     </td>
 </tr>
 </table>
@@ -136,7 +136,7 @@ It will install the tools `npm`, to install 3rd party plugins, and `npx`, for ru
 
 ### The root component
 
-<img src="/softdev2-resources/images/react/beginner-root-component-VScode.png" width="600"/>
+<img src="/softdev2-resources/images/react/beginner-root-component-VScode.png" width="600" alt="root component VScode"/>
 
 Run it with:
 ```bash
@@ -147,7 +147,7 @@ $ npm start
 
 ### Open the browser
 
-<img src="/softdev2-resources/images/react/beginner-initial-output.png" width="600"/>
+<img src="/softdev2-resources/images/react/beginner-initial-output.png" width="600" alt="react initial output"/>
 
 Modify the text in VScode to see changes!
 

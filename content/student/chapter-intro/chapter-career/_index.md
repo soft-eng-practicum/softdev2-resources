@@ -24,7 +24,7 @@ weight = 1 # chapter number
 
 ### An incredible opportunity for advancement: Hackathons
 
-{{< figure src="/softdev2-resources/images/intro/hackathons/ugahacks-sp19.jpg" height=500 >}}
+{{< figure src="/softdev2-resources/images/intro/hackathons/ugahacks-sp19.jpg" height=500 alt="UGA Hacks spring 2019">}}
 
 ---
 
@@ -46,17 +46,17 @@ Cons:
 
 ### Spring: UGA Hacks in Athens, GA
 
-{{< figure src="/softdev2-resources/images/intro/hackathons/ugahacks-sp19-judging.jpg" height=500 >}}
+{{< figure src="/softdev2-resources/images/intro/hackathons/ugahacks-sp19-judging.jpg" height=500 alt="UGA Hacks spring 2019 judging">}}
 
 ---
 
 ### Clemson University: CU Hack.it
 
-{{< figure src="/softdev2-resources/images/intro/hackathons/clemson-cuhackit-sp19-gunay.jpg" height=300 >}}
+{{< figure src="/softdev2-resources/images/intro/hackathons/clemson-cuhackit-sp19-gunay.jpg" height=300 alt="Clemson University: CU Hack.it">}}
 
 <div class="side-by-side"> 
-{{< figure src="/softdev2-resources/images/intro/hackathons/clemson-cuhackit-sp19-breeona-judging.jpg" height=200 >}} 
-{{< figure src="/softdev2-resources/images/intro/hackathons/clemson-cuhackit-sp19-ben-judging.jpg" height=200 >}}
+{{< figure src="/softdev2-resources/images/intro/hackathons/clemson-cuhackit-sp19-breeona-judging.jpg" height=200 alt="clemson cuhackit sp19 breeona judging">}} 
+{{< figure src="/softdev2-resources/images/intro/hackathons/clemson-cuhackit-sp19-ben-judging.jpg" height=200 alt="clemson cuhackit sp19 ben judging">}}
 </div>
 
 ---
@@ -64,18 +64,18 @@ Cons:
 ### University of Alabama: Auburn Hacks
 
 <div class="side-by-side"> 
-{{< figure src="/softdev2-resources/images/intro/hackathons/auburn-hacks-breeona-team.jpg" height=200 >}} 
-{{< figure src="/softdev2-resources/images/intro/hackathons/auburn-hacks-eric-nancy-hassan-judging.jpg" height=200 >}}
+{{< figure src="/softdev2-resources/images/intro/hackathons/auburn-hacks-breeona-team.jpg" height=200 alt="auburn hacks breeona team">}} 
+{{< figure src="/softdev2-resources/images/intro/hackathons/auburn-hacks-eric-nancy-hassan-judging.jpg" height=200 alt="auburn hacks eric nancy hassan judging">}}
 </div>
 
-{{< figure src="/softdev2-resources/images/intro/hackathons/auburn-hacks-breeona-award.jpg" height=300 >}}
+{{< figure src="/softdev2-resources/images/intro/hackathons/auburn-hacks-breeona-award.jpg" height=300 alt="auburn hacks breeona award">}}
 
 ---
 
 ### Follow: Grizzly Hacks @ GGC
 
 <div class="left-float">
-{{< figure src="/softdev2-resources/images/intro/hackathons/grizzly-hacks-flyer-qr.jpg" height=500 >}}
+{{< figure src="/softdev2-resources/images/intro/hackathons/grizzly-hacks-flyer-qr.jpg" height=500 alt="Grizzly Hacks @ GGC">}}
 
 Coming up: Workshop on backend development
 - Using **Java Spring Boot** 

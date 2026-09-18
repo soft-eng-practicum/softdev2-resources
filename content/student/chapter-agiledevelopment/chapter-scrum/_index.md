@@ -5,7 +5,7 @@ weight = 3
 
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/scrum/scrumrugby.jpg" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/scrum/scrumrugby.jpg" alt="rugby team"%}}
 
 ---
 
@@ -17,7 +17,7 @@ weight = 3
 
 {{% fragment %}} <p align='left'> * Takeuchi and Nonaka compare high-performing, cross-functional teams to the scrum formation used by Rugby teams. </p> {{% /fragment %}} 
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
+{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 alt="rugby team">}}
 
 ---
 
@@ -28,7 +28,7 @@ weight = 3
 {{% fragment %}} <p align='left'> * It requires complete team work, hard work, and strength. That meaning translates to software development </p> {{% /fragment %}}
 
 
-{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 >}}
+{{< figure src="/softdev2-resources/images/scrum/scrumrugby.jpg" width=400 alt="rugby team">}}
 
 See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scrum) 
 
@@ -40,7 +40,7 @@ See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scr
 
 {{% fragment %}} **Scrum is the most popular agile framework.**
 
-{{< figure src="/softdev2-resources/images/agile/agilestatus-methods.png" width="600" >}}
+{{< figure src="/softdev2-resources/images/agile/agilestatus-methods.png" width="600" alt="agile status methods">}}
 {{% /fragment %}}
 
 ---
@@ -151,8 +151,8 @@ As the work progresses, the amount of work remaining should steadily decrease an
 {{% fragment %}} 
 
 <div class="side-by-side">
-{{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" height=270 >}} 
-{{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height=270 >}} 
+{{< figure src="/softdev2-resources/images/scrum/sprintburndownchart.png" height=270 alt="sprint burndown chart">}} 
+{{< figure src="/softdev2-resources/images/scrum/sprintburndownchartstudents.png" height=270 alt="sprint burndown chart students">}} 
 </div>
 
 {{% /fragment %}}
@@ -206,7 +206,7 @@ Bonus scrum meeting [Sillicon Valey]:
 
 ### Now ... Scrum
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=600 >}}
+{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=600 alt="We SCRUM hard">}}
 
 
 <section>

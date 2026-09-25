@@ -106,7 +106,7 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
 
 {{% fragment %}} * During each sprint, the team completes one or more increments of the project. Each completed increment must be fully tested and fully approved by the end of the sprint (potentially deliverable).{{% /fragment %}}
 
- {{< figure src="/softdev2-resources/images/scrum/sprint.png" width=500 >}}
+ {{< figure src="/softdev2-resources/images/scrum/sprint.png" width=500 alt="sprint">}}
  
  
 ---
@@ -206,7 +206,7 @@ Bonus scrum meeting [Sillicon Valey]:
 
 ### Now ... Scrum
 
-{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=600 alt="We SCRUM hard">}}
+{{< figure src="/softdev2-resources/images/scrum/wescrum.png" width=600 alt="We SCRUM hard" alt="SCRUM">}}
 
 
 <section>

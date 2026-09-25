@@ -5,7 +5,7 @@ outputs = ["Reveal"]
 weight = 2
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/protection/licenseagreement.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/protection/licenseagreement.png" alt="license agreement"%}}
 
 ---
 

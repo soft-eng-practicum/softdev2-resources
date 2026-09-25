@@ -17,3 +17,7 @@ p.powered{
 .content-container main ol a{
     color: #20597E !important;
 }
+
+blockquote p {
+    color: #525252 !important;
+}

@@ -1,11 +1,23 @@
 .sidebar .slide-menu .has-sub-menu > a span.mark {
         color: #4d4d4d !important;
-    }
+}
 
-    p a, a.edit-page, a.headerlink{
-        color: #20597E !important;
-    }
+p a, a.edit-page, a.headerlink{
+    color: #20597E !important;
+}
 
-    p.powered{
-        color: #545454 !important;
-    }
+p.powered{
+    color: #545454 !important;
+}
+
+.content-container main ul a{
+    color: #20597E !important;
+}
+
+.content-container main ol a{
+    color: #20597E !important;
+}
+
+blockquote p {
+    color: #525252 !important;
+}

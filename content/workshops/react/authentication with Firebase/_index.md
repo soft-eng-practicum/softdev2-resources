@@ -17,7 +17,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/react/authentication with Firebase/react.png" width="100px" >}}
+{{< reveal-titlepage figure="/softdev2-resources/images/react/authentication with Firebase/react.png" width="100px" alt="Firebase and React logo">}}
 
 ---
 
@@ -32,11 +32,11 @@ git clone https://github.com/soft-eng-practicum/react-auth-firebase-workshop.git
 ```
 
 ---
-## What is React? <img src="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100"  />
+## What is React? <img src="/softdev2-resources/images/react/1280px-React-icon.svg.png" width="100"  alt="React icon"/>
 
 
-<img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;"/>
-<img src="/softdev2-resources/images/react/Instagram_logo_2016.svg" width="100" height="100" style="float: left;"/>
+<img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;" alt="Facebook icon"/>
+<img src="/softdev2-resources/images/react/Instagram_logo_2016.svg" width="100" height="100" style="float: left;" alt="Instagram logo"/>
 React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It’s used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook. React first deployed on Facebook’s newsfeed in 2011 and on Instagram in 2012.
 
 {{% fragment %}}
@@ -49,7 +49,7 @@ ReactJS is just simpler to grasp right away. The component-based approach, well-
 
 ---
 
-<img src="/softdev2-resources/images/react/firebase-logo.png" width="300"  />
+<img src="/softdev2-resources/images/react/firebase-logo.png" width="300"  alt="Firebase logo"/>
 
 ## What is Firebase?
 

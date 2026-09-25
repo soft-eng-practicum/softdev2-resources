@@ -17,7 +17,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/docker/docker.png" width="100px" >}}
+{{< reveal-titlepage figure="/softdev2-resources/images/docker/docker.png" width="100px" alt="Docker logo">}}
 
 ---
 

@@ -5,12 +5,12 @@ weight = 2 # chapter number
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-agile-programming.png" 
-    link="https://dilbert.com/strip/2007-11-26"%}}
+    link="https://dilbert.com/strip/2007-11-26" alt="dilbert agile programming"%}}
 
 ---
 ### What is AGILITY? 
 
-{{< figure src="/softdev2-resources/images/agile/agility.jpg" height="400" >}}
+{{< figure src="/softdev2-resources/images/agile/agility.jpg" height="400" alt="squirrell">}}
 
 What does it mean to be AGILE?
 
@@ -53,7 +53,7 @@ What does it mean to be AGILE?
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agile/agilestatus-methods.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-methods.png" width="600" alt="agile status methods">}}
 
 ---
 
@@ -61,7 +61,7 @@ What does it mean to be AGILE?
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agile/agilestatus-toptechniques.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-toptechniques.png" width="600" alt="agile status top techniques">}}
  
 ---
 
@@ -69,7 +69,7 @@ What does it mean to be AGILE?
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agile/agilestatus-tool.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-tool.png" width="600" alt="agile status tool">}}
  
 ---
 
@@ -77,7 +77,7 @@ What does it mean to be AGILE?
 
  [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
- {{< figure src="/softdev2-resources/images/agile/agilestatus-practices.png" width="600" >}}
+ {{< figure src="/softdev2-resources/images/agile/agilestatus-practices.png" width="600" alt="agile status practices">}}
  
 ---
 
@@ -85,6 +85,6 @@ What does it mean to be AGILE?
 
 [The 14th annual STATE of AGILE Report, 2020](https://stateofagile.com/)
 
-{{< figure src="/softdev2-resources/images/agile/agilestatus-success.png" width="600" >}}
+{{< figure src="/softdev2-resources/images/agile/agilestatus-success.png" width="600" alt="agile status success">}}
  
 {{% reveal-prevnext-links %}} 

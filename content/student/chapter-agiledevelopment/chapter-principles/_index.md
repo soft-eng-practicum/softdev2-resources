@@ -5,13 +5,13 @@ weight = 2
 
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/agile/agileprinciples.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/agile/agileprinciples.png" alt="agile principles"%}}
     
 ---
 
 ### What is "AGILITY"?
 
-{{< figure src="/softdev2-resources/images/agile/agility.jpg" height="300" >}}
+{{< figure src="/softdev2-resources/images/agile/agility.jpg" height="300" alt="agility">}}
 
 What does it mean to be AGILE?
 
@@ -153,7 +153,7 @@ At regular intervals, the team reflects on how to become more effective, then tu
 
 ### Agile means
 
-{{< figure src="/softdev2-resources/images/teamwork.jpg" >}}
+{{< figure src="/softdev2-resources/images/teamwork.jpg" alt="teamwork">}}
 
 ---
 
@@ -187,7 +187,7 @@ There are many Agile process models proposed by various groups...
 
 Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
-{{< figure src="/softdev2-resources/images/agile/extremeprogramming.png" width=500 >}}
+{{< figure src="/softdev2-resources/images/agile/extremeprogramming.png" width=500 alt="Extreme Programming">}}
 
 ---
 
@@ -238,7 +238,7 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 * Various Techniques with differing process maps
 * In reality few people strictly adhere to one method
 
-{{< figure src="/softdev2-resources/images/agile/agileflavors.jpg" width=500 >}}
+{{< figure src="/softdev2-resources/images/agile/agileflavors.jpg" width=500 alt="agile flavors">}}
 
 ---
 
@@ -268,7 +268,7 @@ Originally proposed by Kent Beck, and used in industry often in a hybrid format
 
 <a href="https://toggl.com/track/developer-methods-infographic/">
     <img src="/softdev2-resources/images/agile/agile-explained-with-cars-toggl.avif" 
-         style="width: 100%; max-height: initial; ">
+         style="width: 100%; max-height: initial; " alt="agile explained with cars toggle">
     </a>
 </div>
 

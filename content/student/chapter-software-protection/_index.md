@@ -5,7 +5,7 @@ outputs = ["Reveal"]
 weight = 12
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/protection/softprotection.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/protection/softprotection.png" alt="Software protection illustration" %}}
 
 ---
 
@@ -89,13 +89,13 @@ organization and computer-user interface
 
 #### Source Code and Object Code Are Protected
 
-{{< figure src="/softdev2-resources/images/protection/binary-code.png" >}}
+{{< figure src="/softdev2-resources/images/protection/binary-code.png" alt="Binary source and object code" >}}
 
 ---
 
 #### But What About the GUI? 
 
-{{< figure src="/softdev2-resources/images/protection/excel-gui.png" >}}
+{{< figure src="/softdev2-resources/images/protection/excel-gui.png" alt="Microsoft Excel graphical user interface" >}}
 
 ---
 
@@ -191,7 +191,7 @@ The Patent Act requires that an inventions satisfy four conditions:
 
 #### Software Patents Are Controversial
 
-{{< figure src="/softdev2-resources/images/protection/software-patents-protest.png" >}}
+{{< figure src="/softdev2-resources/images/protection/software-patents-protest.png" alt="Protest against software patents" >}}
 
 ---
 
@@ -206,19 +206,19 @@ The Patent Act requires that an inventions satisfy four conditions:
 
 #### Patent #6,293,874 “User-operated amusement apparatus for kicking the user's buttocks” 
 
-{{< figure src="/softdev2-resources/images/protection/patent-example-6,293,874.png" height="500px">}}
+{{< figure src="/softdev2-resources/images/protection/patent-example-6,293,874.png" height="500px" alt="Illustration from patent 6,293,874" >}}
 
 ---
 
 #### #4,022,227: A method of concealing partial baldness
 
-{{< figure src="/softdev2-resources/images/protection/patent-example-4,022,227.png" height="500px">}}
+{{< figure src="/softdev2-resources/images/protection/patent-example-4,022,227.png" height="500px" alt="Illustration from patent 4,022,227" >}}
 
 ---
 
 #### #6,004,596
 
-{{< figure src="/softdev2-resources/images/protection/patent-example-6,004,596.png" height="500px">}}
+{{< figure src="/softdev2-resources/images/protection/patent-example-6,004,596.png" height="500px" alt="Illustration from patent 6,004,596" >}}
 
 ---
 
@@ -274,7 +274,8 @@ Patents are granted to limited categories:
 #### Meanwhile in US…
 
 {{< figure src="/softdev2-resources/images/protection/us-software-patents-chart.png" height="500px" 
-    caption="Software Patents (USA, 1985-2005)">}}
+  alt="Chart of software patents in the United States from 1985 to 2005"
+  caption="Software Patents (USA, 1985-2005)">}}
     
 ---
 

@@ -5,7 +5,7 @@ outputs = ["Reveal"]
 weight = 4
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/comics/version-control-comic-return-to-zero.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/comics/version-control-comic-return-to-zero.png" alt="Comic about version control" %}}
 
 ---
 
@@ -38,31 +38,36 @@ Advantages:
 
 ### Teamwork: No control? Overwrite chaos!
 
-{{< figure src="/softdev2-resources/images/version-control/version-control-why-cm-0.png" >}}
+{{< figure src="/softdev2-resources/images/version-control/version-control-why-cm-0.png" alt="Team members overwriting each other's code without version control" >}}
 
 ---
 
 ### Teamwork: Locking
 
-{{< figure src="/softdev2-resources/images/version-control/version-control-why-cm-1.png" >}}
+{{< figure src="/softdev2-resources/images/version-control/version-control-why-cm-1.png" alt="Team members using file locking for version control" >}}
 
 ---
 
 ### Teamwork: Merging
 
-{{< figure src="/softdev2-resources/images/version-control/version-control-why-cm-2.png" >}}
+{{< figure src="/softdev2-resources/images/version-control/version-control-why-cm-2.png" alt="Team members merging code changes" >}}
 
 ---
 
 ### Merging example
 
-{{< figure src="/softdev2-resources/images/version-control/version-control-merge-example2.png" >}}
+{{< figure src="/softdev2-resources/images/version-control/version-control-merge-example2.png" alt="Example of merging version-controlled changes" >}}
 
 ---
 
 ### Each commit increments version
 
-[{{< figure src="/softdev2-resources/images/version-control/version-control-basic-numbering.png" height="400px">}}](http://betterexplained.com/articles/a-visual-guide-to-version-control/)
+{{< figure
+    src="/softdev2-resources/images/version-control/version-control-basic-numbering.png"
+    height="400px"
+    alt="Diagram illustrating basic version control numbering and how revisions are tracked."
+    link="http://betterexplained.com/articles/a-visual-guide-to-version-control/"
+>}}
 
 ---
 
@@ -75,7 +80,7 @@ Advantages:
 
 ---
 
-[{{< figure src="/softdev2-resources/images/version-control/github-linguist.png" height="100%">}}](http://git-scm.com/documentation)
+{{< figure src="/softdev2-resources/images/version-control/github-linguist.png" height="100%" alt="GitHub Linguist language statistics" link="http://git-scm.com/documentation">}}
 
 ---
 

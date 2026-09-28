@@ -127,6 +127,7 @@ isHTML = true
     slide_number = true
     #transition = 'zoom'
     #transition_speed = 'fast'
+    highlight_theme = "ir-black"
 
 [params.algolia]
     vars = [
@@ -144,3 +145,6 @@ isHTML = true
         "tags",
         "categories",
     ]
+
+[markup.highlight]
+codeFences = false

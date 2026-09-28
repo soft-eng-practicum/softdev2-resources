@@ -7,7 +7,7 @@ date = 2021-02-03T12:25:00-05:00
 video = "2_pJQNVwgFg"
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" >}}
+{{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" alt="Angular logo">}}
   
 ---
 
@@ -49,7 +49,7 @@ video = "2_pJQNVwgFg"
 </ul>
   </section>
 
-<section data-visibility="uncounted"><b>My Repository</b><br><img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" height="500" width="700">
+<section data-visibility="uncounted"><b>My Repository</b><br><img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" height="500" width="700" alt="GitHub Repository">
 </section>
  
 
@@ -69,8 +69,8 @@ video = "2_pJQNVwgFg"
     </ul>
 </ul>
 </section>
-<section><img src="/softdev2-resources/images/angular/Student-Details Component.png" height="550" width="600">
-         <img src="/softdev2-resources/images/angular/Student-List Component.png" height="550" width="600">
+<section><img src="/softdev2-resources/images/angular/Student-Details Component.png" height="550" width="600" alt="Wrong code shown in IDE">
+         <img src="/softdev2-resources/images/angular/Student-List Component.png" height="550" width="600" alt="Wrong code shown in IDE">
 </section>
 
 ---
@@ -100,7 +100,7 @@ video = "2_pJQNVwgFg"
 </ul>
   </section>
 
-<section><b>How it works</b><br><img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900"><br>     
+<section><b>How it works</b><br><img src="/softdev2-resources/images/angular/letsGetStartedSlide.PNG" height="400" width="900" alt="Http request between client and server."><br>     
 </section>
 
 
@@ -113,7 +113,7 @@ video = "2_pJQNVwgFg"
   <li>Add <b>StudentService</b> under <em>providers</em></li>
 </ul>
 </section>
-<section><b>How it works</b><br><img src="/softdev2-resources/images/angular/httpSlide.PNG" height="400" width="900"><br>
+<section><b>How it works</b><br><img src="/softdev2-resources/images/angular/httpSlide.PNG" height="400" width="900" alt="angular code"><br>
 </section>
 
 
@@ -129,7 +129,7 @@ video = "2_pJQNVwgFg"
                don't have a server we will make one in Angualr using JSON.</ul></li>
 </ul>
 </section>
-<section><br><br><br><br><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="500" width="700"></section>
+<section><br><br><br><br><img src="/softdev2-resources/images/angular/declaringDepForServiceSlide.PNG" height="500" width="700" alt="Declaring Dependencies for Service"></section>
 
 ---
 ## Data Folder
@@ -155,7 +155,7 @@ video = "2_pJQNVwgFg"
 </ul>
 </section>
 
-<section><b>location to add the json data</b><br><img src="/softdev2-resources/images/angular/dataFolderSlide.PNG" height="400" width="400"></section>
+<section><b>location to add the json data</b><br><img src="/softdev2-resources/images/angular/dataFolderSlide.PNG" height="400" width="400" alt="location to add the json data"></section>
 
 
 ---
@@ -166,7 +166,7 @@ video = "2_pJQNVwgFg"
   <li>If there is a URL that actually works, or another place in your code that needs to be called, add it into the single quotes</li>
 </ul>
 </section>
-<section><img src="/softdev2-resources/images/angular/makeAUrlSlide.PNG" height="550" width="400"></section>
+<section><img src="/softdev2-resources/images/angular/makeAUrlSlide.PNG" height="550" width="400" alt="Making a URL"></section>
 
 ---
 ## Observable
@@ -193,7 +193,7 @@ export interface StuInterface {
 </ul>
 <br>
 </section>
-<section><br><img src="/softdev2-resources/images/angular/observableSlide.PNG" height="400" width="500"><br>     
+<section><br><img src="/softdev2-resources/images/angular/observableSlide.PNG" height="400" width="500" alt="Angular's Observable"><br>     
 </section>
 
 
@@ -210,7 +210,7 @@ export interface StuInterface {
   </ul>
 </ul>
 </section>
-<section><br><img src="/softdev2-resources/images/angular/subscribeSlide.PNG" height="400" width="500"><br></section>
+<section><br><img src="/softdev2-resources/images/angular/subscribeSlide.PNG" height="400" width="500" alt="subscribe"><br></section>
 
 
 ---

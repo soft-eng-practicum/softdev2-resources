@@ -12,7 +12,7 @@ weight = 1
 outputs = ["Reveal"]
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/azure/Azure.png" height="100px">}}
+{{< reveal-titlepage figure="/softdev2-resources/images/azure/Azure.png" height="100px" alt="Azure logo">}}
 
 ---
 

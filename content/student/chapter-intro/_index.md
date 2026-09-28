@@ -5,7 +5,7 @@ weight = 1 # chapter number
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-plan-software.png" 
-    link="https://dilbert.com/strip/1998-11-10" >}}
+    link="https://dilbert.com/strip/1998-11-10" alt="dilbert plan software">}}
   
 ---
 
@@ -84,9 +84,9 @@ Phone: 678-951-9621 (also GroupMe)
 ### About the instructor: Dr Cengiz Gunay
 
 - Self-taught programmer
-- In elementary school, started programming with an [Atari 800XL](http://www.atarimuseum.com/computers/8BITS/XL/800xl/800xl.htm) <img src="/softdev2-resources/images/Atari_800XL_System.jpg" width="100px" style="float: right;">
+- In elementary school, started programming with an [Atari 800XL](http://www.atarimuseum.com/computers/8BITS/XL/800xl/800xl.htm) <img src="/softdev2-resources/images/Atari_800XL_System.jpg" width="100px" style="float: right;" alt="Atari 800XL">
 - In high school, won programming competition with word puzzle game
-- In college ('96), published PC video game called [“Legends of Istanbul”](https://www.gamedeveloper.com/design/digital-tulip-warriors-the-story-of-turkey-s-video-game-pioneers) <img src="/softdev2-resources/images/ist-efs-menu.jpg" width="100px" style="float: right;">
+- In college ('96), published PC video game called [“Legends of Istanbul”](https://www.gamedeveloper.com/design/digital-tulip-warriors-the-story-of-turkey-s-video-game-pioneers) <img src="/softdev2-resources/images/ist-efs-menu.jpg" width="100px" style="float: right;" alt="Legends of Istanbul">
 - In 2003, got a PhD in Computer Science on neural networks
 - 2004–15, worked as [post-doctoral fellow](http://www.biology.emory.edu/research/Prinz/Cengiz/) at Emory Univ. on simulating models of biological neurons and large-scale biological data mining (e.g., SQL, neural nets, genetic algos)
 - 2012–15, Visiting Faculty teaching at Emory Univ., Math & CS Dept.
@@ -127,19 +127,19 @@ Time to work on:
 
 ### Communication!!! (1)
 
-{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-1.png" height=500 >}}
+{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-1.png" height=500 alt="schommel tree analogy">}}
 
 ---
 
 ### Communication!!! (2)
 
-{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-2.png" height=500 >}}
+{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-2.png" height=500 alt="schommel tree analogy">}}
 
 ---
 
 ### Communication!!! (3)
 
-{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-3.png" height=500 >}}
+{{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-3.png" height=500 alt="schommel tree analogy">}}
 
 ---
 

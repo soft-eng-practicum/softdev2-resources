@@ -5,4 +5,4 @@ outputs = ["Reveal"]
 weight = 2
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/security/owasp-logo.png" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/security/owasp-logo.png" alt="OWASP logo"%}}

@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 weight = 3 # chapter number
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/technology.jpg" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/technology.jpg" alt="technology"%}}
 
 ---
 
@@ -29,7 +29,7 @@ At least for now. Why?
 
 - Classical web architecture:
 
-{{< figure src="/softdev2-resources/images/intro/web-arch-classic.svg" height=200 >}}
+{{< figure src="/softdev2-resources/images/intro/web-arch-classic.svg" height=200 alt="Classical web architecture">}}
 
 {{% /fragment %}} 
 
@@ -37,7 +37,7 @@ At least for now. Why?
 
 - Javascript web architecture:
 
-{{< figure src="/softdev2-resources/images/intro/web-arch-javascript.svg" height=200 >}}
+{{< figure src="/softdev2-resources/images/intro/web-arch-javascript.svg" height=200 alt="Javascript web architecture">}}
 
 {{% /fragment %}} 
 

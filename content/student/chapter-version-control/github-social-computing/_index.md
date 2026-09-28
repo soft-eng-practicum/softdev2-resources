@@ -5,7 +5,7 @@ outputs = ["Reveal"]
 weight = 3
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/version-control/githubsocial.jpg" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/version-control/githubsocial.jpg" alt="GitHub social computing illustration" %}}
 
 ---
 
@@ -13,17 +13,17 @@ weight = 3
 
 ### GitHub usage pattern example: 2048
 
-[{{< figure src="/softdev2-resources/images/version-control/github-2048-orig.png" height=600 >}}](http://gabrielecirulli.github.io/2048/)
+[{{< figure src="/softdev2-resources/images/version-control/github-2048-orig.png" height=600 alt="Original 2048 game GitHub project" link="http://gabrielecirulli.github.io/2048/">}}]
 
 ---
 
 ### So many variants!
 
-[{{< figure src="/softdev2-resources/images/version-control/github-2048-doge.png" height=600 >}}](http://doge2048.com/)
+[{{< figure src="/softdev2-resources/images/version-control/github-2048-doge.png" height=600 alt="Doge 2048 game variant" link="http://doge2048.com/">}}]
 
 ---
 
-[{{< figure src="/softdev2-resources/images/version-control/github-2048-3D2.png" height=600 >}}](http://baiqiang.github.io/2048-3d/)
+[{{< figure src="/softdev2-resources/images/version-control/github-2048-3D2.png" height=600 alt="3D 2048 game variant" link="http://baiqiang.github.io/2048-3d/">}}]
 
 </section>
 
@@ -33,25 +33,25 @@ weight = 3
 
 ### 2048 GitHub page
 
-[{{< figure src="/softdev2-resources/images/version-control/github-2048-gabri-0.png" height=600 >}}](https://github.com/gabrielecirulli/2048)
+[{{< figure src="/softdev2-resources/images/version-control/github-2048-gabri-0.png" height=600 alt="2048 GitHub repository page" link="https://github.com/gabrielecirulli/2048">}}]
 
 ---
 
 ### 2048 GitHub page
 
-[{{< figure src="/softdev2-resources/images/version-control/github-2048-gabri-1.png" height=600 >}}](https://github.com/gabrielecirulli/2048)
+[{{< figure src="/softdev2-resources/images/version-control/github-2048-gabri-1.png" height=600 alt="2048 GitHub repository page details" link="https://github.com/gabrielecirulli/2048">}}]
 
 ---
 
 ### What's *forking* ??
 
 {{% fragment %}}
-{{< figure src="/softdev2-resources/images/version-control/fork-plate-spagetti.jpg" height=200 >}}
+{{< figure src="/softdev2-resources/images/version-control/fork-plate-spagetti.jpg" height=200 alt="Fork on a plate of spaghetti" >}}
 Stealing from their plate?
 {{% /fragment %}}
 
 {{% fragment %}}
-{{< figure src="/softdev2-resources/images/version-control/forkintheroad.jpg" height=200 >}}
+{{< figure src="/softdev2-resources/images/version-control/forkintheroad.jpg" height=200 alt="Fork in a road" >}}
 More like a fork in the road.
 {{% /fragment %}}
 
@@ -85,7 +85,7 @@ Our GitHub usage pattern: **push & pull**
 
 ### Our Git workflow is *centralized*
 
-{{< figure src="/softdev2-resources/images/version-control/git-scm-workflow-centralized.png" height=400 >}}
+{{< figure src="/softdev2-resources/images/version-control/git-scm-workflow-centralized.png" height=400 alt="Centralized Git workflow diagram" >}}
 [Chacon & Straub's Pro Git book: 5.1 Distributed Git - Distributed Workflows](http://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 
 </section>
@@ -96,7 +96,7 @@ Our GitHub usage pattern: **push & pull**
 
 ### An improved Git workflow: Integration Manager
 
-{{< figure src="/softdev2-resources/images/version-control/git-scm-workflow-integ-mgr.png" height=400 >}}
+{{< figure src="/softdev2-resources/images/version-control/git-scm-workflow-integ-mgr.png" height=400 alt="Git workflow with an integration manager" >}}
 
 ---
 
@@ -118,7 +118,7 @@ Yes!
 
 ### Ultimate Git workflow: Benevolent Dictator
 
-{{< figure src="/softdev2-resources/images/version-control/git-scm-workflow-benevolent-dictator.png" height=400 >}}
+{{< figure src="/softdev2-resources/images/version-control/git-scm-workflow-benevolent-dictator.png" height=400 alt="Git workflow with a benevolent dictator" >}}
 
 ---
 
@@ -129,6 +129,7 @@ Yes!
 ### A branching model: *gitflow*
 
 [<img src="/softdev2-resources/images/version-control/git-branching-model-1.png" 
+         alt="Gitflow branching model diagram"
          style="width: 100%; max-height: initial; ">](http://nvie.com/posts/a-successful-git-branching-model/)
 </div>
 

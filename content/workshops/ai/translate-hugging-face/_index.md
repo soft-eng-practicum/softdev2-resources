@@ -16,7 +16,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-{{< reveal-titlepage figure="/softdev2-resources/images/ai/huggingface-logo.svg" width="100px" >}}
+{{< reveal-titlepage figure="/softdev2-resources/images/ai/huggingface-logo.svg" width="100px" alt="huggingface logo">}}
 
 ---
 
@@ -27,7 +27,7 @@ margin = 0.1
 One stop shop for all AI tasks simplified: https://huggingface.co
 
 {{% figure src="/softdev2-resources/images/ai/hugging-face-home-screenshot_20250315.png" height="500" 
-    style="" %}}
+    style="" alt="huggingface home screenshot"%}}
 
 **Create an account now!**
 
@@ -40,7 +40,7 @@ Crowd-sourced resources:
 - **Spaces**: Cloud-hosted AI apps, ready to use.
 
 {{% figure src="/softdev2-resources/images/ai/hugging-face-home-screenshot_20250315.png" height="500" 
-    style="" %}}
+    style="" alt="huggingface home screenshot"%}}
 
 {{% /section %}}
 
@@ -59,6 +59,7 @@ https://huggingface.co/spaces/gradio-tests/english_to_spanish
 	frameborder="0"
 	width="850"
 	height="450"
+    alt="A English-to-Spanish Translator App on HuggingFace"
 ></iframe>
 
 ---
@@ -68,7 +69,7 @@ https://huggingface.co/spaces/gradio-tests/english_to_spanish
 Click on "Use via API" to get Python code.
 
 {{% figure src="/softdev2-resources/images/ai/hugging-face-translate-api-screenshot_20250315.png" height="500" 
-    style="" %}}
+    style="" alt="huggingface translate api screenshot"%}}
     
 ---
 
@@ -77,7 +78,7 @@ Click on "Use via API" to get Python code.
 Select Javascript.
 
 {{% figure src="/softdev2-resources/images/ai/hugging-face-translate-api-javascript.png" height="500" 
-    style="" %}}
+    style="" alt="hugging face translate api javascript"%}}
 
 
 {{% /section %}}
@@ -89,14 +90,14 @@ Select Javascript.
 ### How does it work?
 
 {{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-gradio.png" height="600" 
-    class="" %}}
+    class="" alt="hugging face translate space gradio"%}}
 
 ---
 
 ### Connects to a model
 
 {{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-linked-model.png" 
-    height="300" class="" %}}
+    height="300" class="" alt="hugging face translate space linked model"%}}
 
 Model page:
 https://huggingface.co/Helsinki-NLP/opus-mt-en-es
@@ -120,9 +121,9 @@ Select any model and we can build a new translator!
 
 <div class="side-by-side">
 {{% figure src="/softdev2-resources/images/ai/hugging-face-model-menu-space.png" 
-    height="350" class="" %}}
+    height="350" class="" alt="hugging face model menu space"%}}
 {{% figure src="/softdev2-resources/images/ai/hugging-face-model-deploy-modal.png" 
-    height="350" class="" %}}
+    height="350" class="" alt="hugging face model deploy modal"%}}
 </div>
 
 - or select an existing space and duplicate it
@@ -159,10 +160,10 @@ See code here: https://github.com/grizzlyhacks/workshop-hugging-face-translate
 
 <div class="side-by-side">
 {{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-local.png" 
-    height="350" class="" %}}
+    height="350" class="" alt="hugging face translate space local"%}}
 {{% fragment %}}
 {{% figure src="/softdev2-resources/images/ai/hugging-face-translate-space-local-options.png" 
-    height="350" style="" %}}
+    height="350" style="" alt="hugging face translate space local options"%}}
 {{% /fragment %}}
 </div>
 

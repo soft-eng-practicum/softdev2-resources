@@ -16,7 +16,7 @@ custom_css = "css/docker.css"
 margin = 0.1
 +++
 
-## Welcome to the jQuery Workshop
+# Welcome to the jQuery Workshop
 
 Ryan Cosentino
 
@@ -162,7 +162,7 @@ Now we'll start using jQuery to add elements to the page. First add a table to t
 {{% fragment %}}
 After pressing "Run", you should see the table with a single header row:
 
-<img src="/softdev2-resources/images/jquery/table-1-header.png" width="400" style="border: none;"/>
+<img src="/softdev2-resources/images/jquery/table-1-header.png" width="400" aria-label="table with a single header row" style="border: none;"/>
 {{% /fragment %}}
 
 ---
@@ -232,7 +232,7 @@ For example, `` `hello ${name}!` `` is equivalent to `"hello " + name + "!"`.
 
 After pressing "Run", we should have a table like:
 
-<img src="/softdev2-resources/images/jquery/table-2-append.png" width="400" style="border: none;"/>
+<img src="/softdev2-resources/images/jquery/table-2-append.png" width="400" aria-label="Table with added rows" style="border: none;"/>
 
 ---
 
@@ -246,7 +246,7 @@ To apply a left border to all children of the body tag:
 $("body").children().css("border-left", "4px solid green");
 ```
 
-<img src="/softdev2-resources/images/jquery/table-3-border.png" width="400" style="border: none;"/>
+<img src="/softdev2-resources/images/jquery/table-3-border.png" width="400" aria-label="Table with a green left border" style="border: none;"/>
 
 **Note:** `children()` only traverse one level down.
 
@@ -260,7 +260,7 @@ $("body").children().css("border-left", "4px solid green");
 $("tr").eq(3).css("font-weight", "bold");
 ```
 
-<img src="/softdev2-resources/images/jquery/table-4-eq.png" width="400" style="border: none;"/>
+<img src="/softdev2-resources/images/jquery/table-4-eq.png" width="400" style="border: none;" aria-label="Third row put in bold"/>
 
 **Note:** The `eq(index)` method, like array access, is zero indexed.
 
@@ -305,7 +305,7 @@ The `.click(function)` method executes `function` whenever the selected elements
 
 After pressing the button, your table should turn gray, and pressing it again should restore the original background:
 
-<img src="/softdev2-resources/images/jquery/table-5-click.png" width="400" style="border: none;"/>
+<img src="/softdev2-resources/images/jquery/table-5-click.png" width="400" style="border: none;" aria-label="Table with a button a the bottom"/>
 
 ---
 

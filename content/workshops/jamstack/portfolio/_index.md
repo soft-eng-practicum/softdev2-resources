@@ -41,13 +41,16 @@ margin = 0.1
 		border-radius: .25rem;
 		padding: 15px 0;
 	}
+	.reveal h1{
+		font-size: 50pt;
+	}
 </style>
 
 <img src="/softdev2-resources/images/jamstack/portfolio-workshop.svg" alt="Portfolio site QR code" 
      width="300" class="plain"
      style="float: right" />
 
-### Building a personal portfolio<br> using a static site builder
+# Building a personal portfolio<br> using a static site builder
 
 Cengiz Gunay
 
@@ -59,9 +62,9 @@ add logos here
 
 ## What is a static site???
 
-From [JAMstack.WTF](https://JAMstack.WTF) :
+From [JAMstack.org](https://jamstack.org/) :
 
-<iframe src="https://jamstack.wtf/" style="" width="100%" height="400">
+<iframe src="https://jamstack.org/" style="" width="100%" height="400">
 </iframe>
 
 {{% fragment %}}

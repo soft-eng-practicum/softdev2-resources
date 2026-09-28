@@ -5,7 +5,7 @@ weight = 2
 
 +++
 
-{{% reveal-titlepage figure="/softdev2-resources/images/kanban/kanbanflow6.jpg" %}}
+{{% reveal-titlepage figure="/softdev2-resources/images/kanban/kanbanflow6.jpg" alt="Kanban flow board" %}}
 
 ---
 
@@ -47,9 +47,9 @@ weight = 2
 
 ### Examples of User Story
 
-| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex1.png" width=300 >}}     | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex2.png" width=300 >}}        |
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex1.png" width=300 alt="User story example one" >}}     | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex2.png" width=300 alt="User story example two" >}}        |
 | ------------- |:-------------:|
-| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex3.png" width=300 >}}     | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex4.png" width=300 >}} | 
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex3.png" width=300 alt="User story example three" >}}     | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryex4.png" width=300 alt="User story example four" >}} |
 
 
 Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
@@ -61,7 +61,7 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
 
 | Initial | Final |
 |:-------------:|:-------------:|
-| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryinitial.png" width=300 >}} | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryfinal.png" width=300 >}} |
+| {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryinitial.png" width=300 alt="Initial user story" >}} | {{< figure src="/softdev2-resources/images/requirements/userstory/userstoryfinal.png" width=300 alt="Final user story" >}} |
 
 ---
 

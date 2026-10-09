@@ -5,11 +5,62 @@
   .reveal strong {
     color: blue;
   }
-  .home-link {
-    position: absolute;
-    font-size: 150%;
+  .home-controls {
+    position: fixed;
     left: 20px;
-    bottom: 20px;          
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    z-index: 100;
+  }
+  .home-controls a {
+    position: relative;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    color: blue;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .home-controls a:hover,
+  .home-controls a:focus-visible {
+    color: dodgerblue;
+  }
+  .control-label {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px);
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #222;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    line-height: 1.3;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-8px, -50%);
+    transition: opacity 180ms ease, transform 180ms ease, visibility 0s linear 180ms;
+    pointer-events: none;
+  }
+  .home-controls a:hover .control-label,
+  .home-controls a:focus-visible .control-label {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%);
+    transition-delay: 0s;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .control-label {
+      transition: none;
+    }
   }
   .reveal div.side-by-side figure {
     display: inline;
@@ -27,7 +78,8 @@
   .reveal div.left-float ul {
     display: inline-block;
     margin-left: 0em;
-    //float: left;
+    float: left;
   }
 </style>
+<script defer src="{{ absURL "js/fontawesome6/all.min.js" }}"></script>
 {{ template "_internal/google_analytics.html" . }} 

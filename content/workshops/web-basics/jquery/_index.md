@@ -24,6 +24,10 @@ Ryan Cosentino
 
 ---
 
+# Introduction
+
+---
+
 ## What is jQuery?
 
 **jQuery** is a widely used JavaScript library that provides easy DOM and CSS manipulation, event handling, AJAX requests, animation, and more. As of May 2019, jQuery is used by 73% of the 10 million most viewed websites.
@@ -39,6 +43,9 @@ While most features available in jQuery are also available with standard JavaScr
 
 One additional benefit of using jQuery methods is that they take subtle browser differences into account. Specifically, a jQuery method might be implemented differently on Chrome vs IE 11 in order to achieve the same effect. If you use plain JavaScript you would need to take these browser differences into account yourself in order to achieve the same level of cross browser compatibility.
 
+---
+
+# Installation
 ---
 
 ## "Installing" jQuery

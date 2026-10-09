@@ -6,7 +6,7 @@ publishdate: 2019-11-23T15:26:15Z
 title: Project Design and Management
 description: Project Design and Management
 
-weight: 11
+weight: 6
 ---
 
 ## Team Roles and Presentation Checklist

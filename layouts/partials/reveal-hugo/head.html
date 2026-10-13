@@ -15,7 +15,8 @@
     gap: 8px;
     z-index: 100;
   }
-  .home-controls a {
+  .home-controls a,
+  .exit-slides {
     position: relative;
     display: flex;
     width: 44px;
@@ -23,14 +24,24 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.9);
-    color: blue;
+    color: #0000ff;
     font-size: 22px;
     text-decoration: none;
+    border: 0;
+    cursor: pointer;
+  }
+  .exit-slides {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
   }
   .home-controls a:hover,
-  .home-controls a:focus-visible {
-    color: dodgerblue;
+  .home-controls a:focus-visible,
+  .exit-slides:hover,
+  .exit-slides:focus-visible {
+    color: #1e90ff;
+    transform: scale(1.1);
   }
   .control-label {
     position: absolute;

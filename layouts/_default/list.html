@@ -1,6 +1,6 @@
 {{- define "main" -}}
 <h1>{{ .Title }}</h1>
-{{- if eq .Type "workshops" -}}
+{{- if in (slice "workshops" "student" "instructor") .Type -}}
 {{- with .Sections -}}
 <p>Contents:</p>
 <ul>

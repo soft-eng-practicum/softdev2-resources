@@ -1,7 +1,7 @@
 +++
 title = "Career Advancement Tips"
 outputs = ["Reveal"]
-weight = 1 # chapter number
+weight = 2 # chapter number
 +++
 
 {{< reveal-titlepage  >}}

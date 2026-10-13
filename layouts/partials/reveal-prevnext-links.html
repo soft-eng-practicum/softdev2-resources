@@ -1,6 +1,16 @@
 {{- $currentNode := $.Page -}}
-<p>
-  {{- template "pagination" dict "menu" $.Page.Site.Home "currentnode" $currentNode "menu_exclusion" $.Page.Site.Params.menu_exclusion -}}
+{{- $menu := $.Page.Site.Home -}}
+{{- $currentNode.Scratch.Set "NextPageOK" nil -}}
+{{- $currentNode.Scratch.Set "prevPage" nil -}}
+{{- $currentNode.Scratch.Set "nextPage" nil -}}
+{{- $currentNode.Scratch.Set "prevPageTmp" nil -}}
+{{- if eq $.Page.Section "student" -}}
+  {{- with $.Page.Site.GetPage "/student" -}}
+    {{- $menu = . -}}
+  {{- end -}}
+{{- end -}}
+<p style="display: none;">
+  {{- template "pagination" dict "menu" $menu "currentnode" $currentNode "menu_exclusion" $.Page.Site.Params.menu_exclusion -}}
   {{- with ($currentNode.Scratch.Get "prevPage") -}}
   <a class="nav nav-prev" href="{{ .Permalink }}" title="{{ .Title }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - {{ .Title }}</a>
   {{- if $currentNode.Scratch.Get "nextPage" -}}, <span></span>{{- end -}}
@@ -23,7 +33,7 @@
     {{- $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") -}}
   {{- end -}}
 {{- else -}}
-  {{- if and (eq ($currentNode.Scratch.Get "NextPageOK") "OK") (in (printf "%s" .menu.Params.outputs) "reveal") -}}
+  {{- if and (eq ($currentNode.Scratch.Get "NextPageOK") "OK") (in (printf "%s" .menu.Params.outputs) "Reveal") -}}
     {{- $currentNode.Scratch.Set "NextPageOK" nil -}}
     {{ if in $menu_exclusion .menu.Section }}
     {{- else -}}
@@ -32,7 +42,7 @@
   {{- end -}}
 {{- end -}}
 {{/* only if it's a Reveal page */}}
-{{- if  (in (printf "%s" (.menu.Params.outputs)) "reveal") -}}
+{{- if  (in (printf "%s" (.menu.Params.outputs)) "Reveal") -}}
   {{- $currentNode.Scratch.Set "prevPageTmp" .menu -}}
 {{- end -}}
 {{- $currentNode.Scratch.Set "pages" .menu.Pages -}}

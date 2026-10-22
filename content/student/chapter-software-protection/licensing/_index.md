@@ -2,7 +2,7 @@
 title = "Licensing Software"
 outputs = ["Reveal"]
 # chapter number
-weight = 2
+weight = 3
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/protection/licenseagreement.png" alt="license agreement"%}}

@@ -1,1 +1,22 @@
-<a class="home-link" href="{{ .Site.BaseURL }}">Home</a>
+{{- $_ := partial "reveal-prevnext-links.html" . -}}
+<nav class="home-controls" aria-label="Chapter navigation">
+  {{- with (.Scratch.Get "prevPage") }}
+  <a class="chapter-nav-link" href="{{ .Permalink }}" aria-label="Previous chapter: {{ .Title }}">
+    <i class="fa-solid fa-backward" aria-hidden="true"></i>
+    <span class="control-label" aria-hidden="true">Previous chapter: {{ .Title }}</span>
+  </a>
+  {{- end }}
+  <a class="home-link" href="{{ .Site.BaseURL }}" aria-label="Home">
+    <i class="fas fa-home" aria-hidden="true"></i>
+    <span class="control-label" aria-hidden="true">Home</span>
+  </a>
+  {{- with (.Scratch.Get "nextPage") }}
+  <a class="chapter-nav-link" href="{{ .Permalink }}" aria-label="Next chapter: {{ .Title }}">
+    <i class="fa-solid fa-forward" aria-hidden="true"></i>
+    <span class="control-label" aria-hidden="true">Next chapter: {{ .Title }}</span>
+  </a>
+  {{- end }}
+</nav>
+  <a class="exit-slides" href="{{ .Parent.RelPermalink }}" aria-label="Exit slideshow">
+    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+  </a>

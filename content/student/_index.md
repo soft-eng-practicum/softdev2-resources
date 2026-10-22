@@ -6,7 +6,8 @@ publishdate: 2019-11-23T15:26:15Z
 title: Chapters
 description: Student Materials
 
-weight: 2
+weight: 1
 ---
 
 Select a chapter from the menu.
+

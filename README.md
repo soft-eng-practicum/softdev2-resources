@@ -107,4 +107,6 @@ that we defined:
 
 - `reveal-prevnext-links`: Inserts links to previous and next Reveal
   chapters, which are automatically determined by following the pages
-  in the folders. It has no additional options.
+  in the folders. Reveal slides also include a close button that returns
+  to the page visited before opening the slideshow. It has no additional
+  options.

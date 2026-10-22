@@ -2,7 +2,7 @@
 title = "Github Social Computing"
 outputs = ["Reveal"]
 # chapter number
-weight = 3
+weight = 2
 +++
 
 {{% reveal-titlepage figure="/softdev2-resources/images/version-control/githubsocial.jpg" alt="GitHub social computing illustration" %}}

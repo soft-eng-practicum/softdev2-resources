@@ -24,7 +24,7 @@ Ryan Cosentino
 
 ---
 
-# Introduction
+# Introduction to jQuery
 
 ---
 
@@ -45,7 +45,7 @@ One additional benefit of using jQuery methods is that they take subtle browser 
 
 ---
 
-# Installation
+# Setting Up jQuery
 ---
 
 ## "Installing" jQuery
@@ -73,6 +73,10 @@ Visit the following [link](https://www.w3schools.com/tryit/tryit.asp?filename=tr
 </html>
 ```
 Then click the "Run" button. The first `<script>` tag loads jQuery.
+
+---
+
+# Selecting and Manipulating Page Elements
 
 ---
 
@@ -151,6 +155,10 @@ $("h1").addClass("lightgray");
 ```
 
 After pressing "Run" the header should be displayed with a light gray background.
+
+---
+
+# Updating Page Content Dynamically
 
 ---
 
@@ -243,6 +251,10 @@ After pressing "Run", we should have a table like:
 
 ---
 
+# Traversing the Document Object Model
+
+---
+
 ## DOM Traversal
 
 Another important and useful feature of jQuery is DOM traversal. By traversing the DOM, you can find and select elements based on their relative position to other elements. Many methods relate to children, siblings, and parents.
@@ -280,6 +292,10 @@ Other useful methods include
 - `prev()` gets the immediately preceding siblings of each matched element.
 - `siblings()` gets the siblings of each matched element.
 - `find(selector)` gets the descendants of each matched element, filtered by a selector.
+
+---
+
+# Responding to User Events
 
 ---
 

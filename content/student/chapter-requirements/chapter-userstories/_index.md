@@ -9,6 +9,10 @@ weight = 2
 
 ---
 
+# User Stories in Agile Planning
+
+---
+
 ## User Stories in Agile
 
 {{% fragment %}} <p align='left'> * The Agile process is driven by customer descriptions of what is required (user scenarios) </p> {{% /fragment %}}
@@ -42,6 +46,10 @@ weight = 2
 {{% fragment %}} <p align='left'> * A commitment is made on a <b>delivery date</b> for all the stories of the deliverable increment </p> {{% /fragment %}}
 
 {{% fragment %}} <p align='left'> * User stories should be recorded in virtual or physical <b>cards</b> placed on the team's working board </p> {{% /fragment %}}
+
+---
+
+# Writing and Estimating User Stories
 
 ---
 
@@ -80,6 +88,10 @@ Examples taken from http://www.westborosystems.com/2010/02/user-story-examples/
     <b>T</b> – testable, stories need to have a means of verifying functionality
 </p> 
 {{% /fragment %}}
+
+---
+
+# From User Stories to Development Tasks
 
 ---
 

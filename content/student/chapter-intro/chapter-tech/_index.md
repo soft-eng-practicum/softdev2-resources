@@ -8,6 +8,10 @@ weight = 3 # chapter number
 
 ---
 
+# Exploring the Modern Technology Landscape
+
+---
+
 #### Getting out of your comfort zone
 
 Forget: **Java**
@@ -20,6 +24,10 @@ At least for now. Why?
 - Java is not on the rise, but it's still very popular
 - Web frameworks and languages have transformed application development landscape, especially **Javascript** (not Java)
 {{% /fragment %}} 
+
+---
+
+# JavaScript and Web Development
 
 ---
 
@@ -40,6 +48,10 @@ At least for now. Why?
 {{< figure src="/softdev2-resources/images/intro/web-arch-javascript.svg" height=200 alt="Javascript web architecture">}}
 
 {{% /fragment %}} 
+
+---
+
+# Modern JavaScript Frameworks
 
 ---
 

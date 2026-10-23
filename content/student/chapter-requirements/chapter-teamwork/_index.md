@@ -11,6 +11,10 @@ weight = 3
 
 ---
 
+# Building Effective Agile Teams
+
+---
+
 ### Agile Principles lead to Teamwork
 
 **The agile process molds to the needs of the people and team**
@@ -111,6 +115,10 @@ Our Scrum Team includes three roles:
 {{% /fragment %}}
 
 </section>
+
+---
+
+# Team Communication and Client Collaboration
 
 ---
 

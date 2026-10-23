@@ -9,6 +9,10 @@ weight = 3
 
 ---
 
+# Introduction to Scrum
+
+---
+
 ## Scrum
 
 {{% fragment %}} <p align='left'> * Originally proposed by Jeff Sutherland in 90s, then improved by Schwaber and Beedle </p> {{% /fragment %}}
@@ -70,6 +74,10 @@ See original article from [Scrum Alliance](https://www.scrumalliance.org/why-scr
  
 ---
 
+# The Scrum Framework
+
+---
+
 ### Scrum Framework
 
 **People are the focus of Scrum.**
@@ -111,6 +119,10 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
  
 ---
 
+# Scrum Values and Artifacts
+
+---
+
 ### Scrum Values
 
 {{% fragment %}} **Commitment**: Scrum teams work together as a unit, members trust each other to follow through on what they say they are going to do. 
@@ -143,6 +155,10 @@ Scrum Team includes three roles: **Scrum Master, Product Owner, and Development 
 
 ---
 
+# Tracking Sprint Progress
+
+---
+
 ### Tracking Progress
 
 **Burndown Chart** Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours.
@@ -156,6 +172,10 @@ As the work progresses, the amount of work remaining should steadily decrease an
 </div>
 
 {{% /fragment %}}
+
+---
+
+# The Daily Scrum in Practice
 
 ---
 
@@ -212,4 +232,3 @@ Bonus scrum meeting [Sillicon Valey]:
 <section>
 
 {{% reveal-prevnext-links %}}
-

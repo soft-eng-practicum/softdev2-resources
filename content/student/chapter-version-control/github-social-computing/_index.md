@@ -9,6 +9,10 @@ weight = 2
 
 ---
 
+# Exploring Projects on GitHub
+
+---
+
 <section>
 
 ### GitHub usage pattern example: 2048
@@ -26,6 +30,10 @@ weight = 2
 [{{< figure src="/softdev2-resources/images/version-control/github-2048-3D2.png" height=600 alt="3D 2048 game variant" link="http://baiqiang.github.io/2048-3d/">}}]
 
 </section>
+
+---
+
+# Forking and Reusing Projects
 
 ---
 
@@ -56,6 +64,10 @@ More like a fork in the road.
 {{% /fragment %}}
 
 </section>
+
+---
+
+# Collaborating Through GitHub Workflows
 
 ---
 

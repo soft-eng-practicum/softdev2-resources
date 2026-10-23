@@ -9,7 +9,7 @@ weight = 1 # chapter number
 
 ---
 
-## Introduction
+## Introduction to Agile Software Development
 
 ---
 ### What is AGILITY? 
@@ -19,7 +19,6 @@ weight = 1 # chapter number
 What does it mean to be AGILE?
 
 ---
-
 ### Agile Process
 
 **The current standard for software development**
@@ -34,6 +33,10 @@ What does it mean to be AGILE?
 
 {{% fragment %}} In 1990s, software industry abandoned waterfall-style development and introduced 
 **AGILE**{{% /fragment %}} 
+
+---
+
+# The Agile Manifesto and Its Principles
 
 ---
 

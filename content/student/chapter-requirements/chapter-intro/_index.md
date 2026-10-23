@@ -10,6 +10,10 @@ Some slides courtesy of Joan Smith, Eugene Agichstein, and the Internets.
 
 ---
 
+# Introduction to Software Requirements
+
+---
+
 ## What is a Requirement? 
 
 {{% fragment %}} **Requirements are the descriptions of the services provided by a system and its operational constraints** {{% /fragment %}}
@@ -217,6 +221,10 @@ Example: Interoperability, legislation, ethics
     
 ---
 
+# The Requirements Engineering Process
+
+---
+
 ### Requirement engineering
 
 {{< figure src="/softdev2-resources/images/requirements/reqengineering.png" width=700 alt="Requirements engineering process diagram" >}}
@@ -280,6 +288,10 @@ Should be short (2-3 weeks)
 and more
 
 </section>
+
+---
+
+# From Requirements to User Stories
 
 ---
 

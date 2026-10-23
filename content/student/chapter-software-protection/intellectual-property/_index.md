@@ -9,6 +9,10 @@ weight = 2
 
 ---
 
+# Establishing Ownership of Intellectual Property
+
+---
+
 #### Establishing Ownership of Intellectual Property
 
 > As you create software, it becomes intellectual property
@@ -44,5 +48,4 @@ weight = 2
   - Guidance
 
 {{% reveal-prevnext-links %}}
-
 

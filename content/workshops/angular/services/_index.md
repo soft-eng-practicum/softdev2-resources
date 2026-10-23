@@ -8,7 +8,11 @@ video = "2_pJQNVwgFg"
 +++
 
 {{< reveal-titlepage figure="/softdev2-resources/images/angular/angular-icon-logo.png" width="100" height="100" alt="Angular logo">}}
-  
+
+---
+
+# Preparing the Angular Services Project
+
 ---
 
 ## Prerequisites
@@ -52,6 +56,10 @@ video = "2_pJQNVwgFg"
 <section data-visibility="uncounted"><b>My Repository</b><br><img src="/softdev2-resources/images/angular/downloadContentSlide.PNG" height="500" width="700" alt="GitHub Repository">
 </section>
  
+
+---
+
+# Understanding Angular Services
 
 ---
 
@@ -105,6 +113,11 @@ video = "2_pJQNVwgFg"
 
 
 ---
+
+# Retrieving Data with HTTP
+
+---
+
 ## HTTP
 <section>
 <ul>
@@ -169,6 +182,11 @@ video = "2_pJQNVwgFg"
 <section><img src="/softdev2-resources/images/angular/makeAUrlSlide.PNG" height="550" width="400" alt="Making a URL"></section>
 
 ---
+
+# Working with Observables
+
+---
+
 ## Observable
 <section>
 <ul>
@@ -217,4 +235,3 @@ export interface StuInterface {
 ## Conclusion
 <ul><li>As we see if we add something to the json file, it should add it to both pages and there is no need for repeating code.</li>
 </ul>
-

@@ -9,6 +9,11 @@ outputs = ["Reveal"]
 {{% reveal-titlepage figure="/softdev2-resources/images/comics/dilbert-pm.png" alt="Comic about project management" %}}
 
 ---
+
+# Project Management Fundamentals
+
+---
+
 ### Project Management (PM)
 
 What is Project Management?
@@ -94,6 +99,11 @@ After the goals have been achieved, it is good practice to evaluate the performa
 {{% /fragment %}}
 
 ---
+
+# Applying Project Management with Jira
+
+---
+
 ### Project Management in Our Case
 
 {{% fragment %}} * We are using AGILE during the semester, with the project being split int 3 main phases ([see](../chapter-project-design/) for details on each phase). Thus, Steps 1-7 need to be implemented for each of these phases. {{% /fragment %}}

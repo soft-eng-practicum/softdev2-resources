@@ -9,6 +9,10 @@ weight = 1
 
 ---
 
+# Why Version Control Matters
+
+---
+
 ## Why Version Control?
 
 - It's a **must** in today's computing industry
@@ -68,6 +72,10 @@ Advantages:
     alt="Diagram illustrating basic version control numbering and how revisions are tracked."
     link="http://betterexplained.com/articles/a-visual-guide-to-version-control/"
 >}}
+
+---
+
+# Using Git and GitHub for Collaboration
 
 ---
 
@@ -153,6 +161,10 @@ Common usage scenario:
 
 ---
 
+# Managing Branches and Merges
+
+---
+
 ### Parallel development: branches and merging
 
 Many ways to do it, but recommended way:
@@ -166,6 +178,10 @@ Relevant Git commands:
 - `git merge xyz` for merging all the changes in branch `xyz` onto current branch
 - resolve conflicts (see your assignment)
 {{% /fragment %}}
+
+---
+
+# Maintaining a Reliable Git Workflow
 
 ---
 

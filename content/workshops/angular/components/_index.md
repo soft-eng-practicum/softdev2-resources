@@ -20,6 +20,10 @@ margin = 0.1
 
 ---
 
+# Understanding Angular Components
+
+---
+
 ## What are Angular Components?
 
 Angular Components can be describe as a the most basic building blocks of an Angular application. In simple technical terms a component is just controller for the user interface.
@@ -68,6 +72,10 @@ We can open our project in Visual code using the following command in the Termin
 ```sh
 $ code .
 ```
+
+---
+
+# Creating Angular Components
 
 ---
 

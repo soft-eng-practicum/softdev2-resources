@@ -12,6 +12,10 @@ outputs = ["Reveal"]
   
 ---
 
+# Course Structure and Expectations
+
+---
+
 ## Welcome
 
 - What's better than to start the semester with a **quiz**?
@@ -48,6 +52,10 @@ Welcome Soft Dev 1 students
 - Few small assignments
 - Few team presentations
 - Individual presentations for team role, article, and/or software tool
+
+---
+
+# Course Community and Learning Activities
 
 ---
 
@@ -97,6 +105,10 @@ Phone: 678-951-9621 (also GroupMe)
 
 ---
 
+# Getting Started in the Course
+
+---
+
 ### Your turn!
 
 - Login/register on discussion and respond to the “Introductions” topic; **create an inline resume**
@@ -128,6 +140,10 @@ Time to work on:
 
 ---
 
+# Communicating Effectively
+
+---
+
 ### Communication!!! (1)
 
 {{< figure src="/softdev2-resources/images/intro/schommel-tree-analogy-softeng-1.png" height=500 alt="schommel tree analogy">}}
@@ -149,4 +165,3 @@ Time to work on:
 ### That's all folks!
 
 {{% reveal-prevnext-links %}}
-

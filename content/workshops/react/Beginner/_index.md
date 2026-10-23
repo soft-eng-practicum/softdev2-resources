@@ -9,9 +9,10 @@ author = "Alex Abraham and Cengiz Gunay"
 
 ---
 
-## Introduction
+## Introduction to React
 
 ---
+
 ### What is React Js?
 
 <img src="/softdev2-resources/images/react/Facebook_icon.svg" width="100" height="100" style="float: right;" alt="Facebook logo"/>
@@ -24,7 +25,11 @@ author = "Alex Abraham and Cengiz Gunay"
 - As of 2022, it is [one of the most popular](https://www.komododigital.co.uk/insights/9-reasons-why-react-is-still-popular-in-2021/) libraries for building Javascript libraries.
   
 ---
-  
+
+# Building React Components
+
+---
+
 {{% section %}}
 
 ### Components
@@ -87,7 +92,7 @@ This component represents the entire application and is where all the child comp
 
 ---
 
-## Installing
+## Getting Started with React
 
 ---
 
@@ -216,6 +221,10 @@ Now you can save and observe the output.
 
 ---
 
+# Managing Data with Props and State
+
+---
+
 {{% section %}}
 
 ### Diving Into Props
@@ -329,6 +338,10 @@ Clicking the button will flip the coin value between 0 and 1.
 
 ---
 
+# Adding Navigation with React Router
+
+---
+
 ### Routing
 
 First install the [React Router](https://reactrouter.com/) in the console/terminal:
@@ -373,4 +386,3 @@ Then, follow [tutorial](https://reactrouter.com/en/main/start/tutorial). Some ex
 	</div>
 </Router>
 ```
-

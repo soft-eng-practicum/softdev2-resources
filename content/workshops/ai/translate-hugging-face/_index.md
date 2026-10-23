@@ -20,6 +20,10 @@ margin = 0.1
 
 ---
 
+# Exploring Hugging Face
+
+---
+
 {{% section %}}
 
 ### What is Hugging Face?
@@ -43,6 +47,10 @@ Crowd-sourced resources:
     style="" alt="huggingface home screenshot"%}}
 
 {{% /section %}}
+
+---
+
+# Using a Prebuilt Translation App
 
 ---
 
@@ -85,6 +93,10 @@ Select Javascript.
 
 ---
 
+# How Hugging Face Spaces Use Models
+
+---
+
 {{% section %}}
 
 ### How does it work?
@@ -111,6 +123,10 @@ https://huggingface.co/Helsinki-NLP
 Select any model and we can build a new translator!
 
 {{% /section %}}
+
+---
+
+# Creating and Running a Translation Space
 
 ---
 
@@ -170,4 +186,3 @@ See code here: https://github.com/grizzlyhacks/workshop-hugging-face-translate
 {{% fragment %}}
 Takes much longer and requires resources on your machine!
 {{% /fragment %}}
-

@@ -60,6 +60,10 @@ The goal of this workshop is to use Bootstrap and jQuery to create a form that c
 
 ---
 
+# Bootstrap Foundations
+
+---
+
 ## What is Bootstrap?
 
 **Bootstrap** is a widely used CSS framework that can be used to easily and consistently style HTML elements using CSS and (optionally) JavaScript. Bootstrap contains styled components for buttons, cards, dropdowns, input groups, navigation bars, tooltips, and many others, along with utility classes for common CSS properties.
@@ -107,6 +111,10 @@ Visit the following [link](https://www.w3schools.com/tryit/tryit.asp?filename=tr
 Clicking the "Run" button will load your HTML.
 
 The `<link>` tag downloads the Bootstrap CSS styles. Note that some components need JavaScript and require an additional script tag, however we won't we using those components here.
+
+---
+
+# Styling with Bootstrap Utilities
 
 ---
 
@@ -242,6 +250,10 @@ A **card** is a flexible and extensible container with rounded borders. Add the 
 
 ---
 
+# Building with Bootstrap Components
+
+---
+
 ## Cards
 
 After pressing Run, you should see something like this:
@@ -270,6 +282,10 @@ In this card we'll make a form that creates courses. Replace the text `hello` wi
 ```
 
 Here, the `legend` tag acts like a title and we're giving it a bottom border and large bottom margin. The `input` element will be stylized since it has the `form-control` Bootstrap class.
+
+---
+
+# Creating Forms and Tables
 
 ---
 
@@ -375,6 +391,10 @@ Now lets create a table under the form which will list our courses:
 ```
 
 Here, the `table` class activates the Bootstrap styles and the `table-striped` class makes the rows alternate between a white and gray background. 
+
+---
+
+# Adding Interactivity with JavaScript and jQuery
 
 ---
 

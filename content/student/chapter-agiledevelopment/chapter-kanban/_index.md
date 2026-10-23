@@ -9,6 +9,10 @@ weight = 4
 
 ---
 
+# Introduction to Kanban
+
+---
+
 ## Kanban
 
 **Kanban is a management method helping teams to visualize their work to understand it better, which helps to identify and eliminate bottlenecks, and maximise efficiency (flow).**
@@ -21,6 +25,10 @@ weight = 4
 
 {{< figure src="/softdev2-resources/images/kanban/kanbansimpleboard.jpg" width=600 alt="kanban simple board">}}
 {{% /fragment %}}
+
+---
+
+# Visualizing and Managing Work
 
 ---
 
@@ -63,6 +71,10 @@ Work flow: cards moving from left to right
 
 {{% fragment %}} - a visual assurance that the work is done
 {{% /fragment %}}
+
+---
+
+# Measuring and Improving Flow
 
 ---
 

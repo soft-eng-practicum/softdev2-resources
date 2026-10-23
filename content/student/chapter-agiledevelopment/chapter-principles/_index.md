@@ -9,6 +9,10 @@ weight = 2
     
 ---
 
+# Understanding Agile
+
+---
+
 ### What is "AGILITY"?
 
 {{< figure src="/softdev2-resources/images/agile/agility.jpg" height="300" alt="agility">}}
@@ -56,6 +60,10 @@ What does it mean to be AGILE?
 
 ---
 
+# Agile Values and Principles
+
+---
+
 ### Agile Values
 
 {{% fragment %}} 1. **Individuals and interactions** over processes and tools{{% /fragment %}}
@@ -66,6 +74,10 @@ What does it mean to be AGILE?
 
 {{% fragment %}} 4. **Responding to change** over following a plan{{% /fragment %}}
  
+---
+
+# Agile Principles and Practices
+
 ---
 
 <section>

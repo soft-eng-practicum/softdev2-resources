@@ -28,6 +28,10 @@ margin = 0.1
 
 ---
 
+# Docker and Container Fundamentals
+
+---
+
 ## What is Docker?
 
 Docker is an OS-level virtualization software that is used to build and run isolated software environments called containers.
@@ -63,6 +67,10 @@ The output should contain a section for
 
 ---
 
+# Running Containers
+
+---
+
 ## Images and Containers
 
 **Images** are read only templates containing libraries, programs, data etc. that are used to create docker containers. A **container** is a runnable instance of an image. To use an OOP analogy, you can think of an image as a class and a container as an instance.
@@ -75,6 +83,10 @@ The output should contain a section for
 
 If a tag isn't supplied, Docker will use the `:latest` tag.
 {{% /fragment %}}
+
+---
+
+# Running Applications in Containers
 
 ---
 
@@ -168,6 +180,10 @@ ubuntu            latest        f63181f19b2f   12 days ago   72.9MB
 
 ---
 
+# Running Python in a Container
+
+---
+
 ## Running Python
 
 As another example, you can also try running Python instead of bash:
@@ -203,6 +219,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 >>> exit()
 ```
+
+---
+
+# Building Images with Dockerfiles
 
 ---
 
@@ -292,6 +312,10 @@ adios
 ```
 
 After entering your name, the container should print a greeting, a closing, and then exit. Because of the ` --rm` option, the container should be deleted.
+
+---
+
+# Understanding Docker Architecture
 
 ---
 

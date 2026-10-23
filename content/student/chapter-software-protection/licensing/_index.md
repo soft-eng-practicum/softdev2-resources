@@ -9,6 +9,10 @@ weight = 3
 
 ---
 
+# Licensing Software
+
+---
+
 #### Enforcing Copyright Requires Licensing
 
 - Software can be license by owners to:

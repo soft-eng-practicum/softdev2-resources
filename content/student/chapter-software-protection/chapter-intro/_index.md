@@ -9,6 +9,10 @@ weight = 1
 
 ---
 
+# Legal Protection for Software
+
+---
+
 #### Your rights for protecting<br> your software creations
 
 We are not here to teach details of the legal code, but these basics
@@ -40,6 +44,10 @@ Two major forms of IP protection for software:
 2. Patent
 
 {{% /fragment %}}
+
+---
+
+# Copyright Protection for Software
 
 ---
 
@@ -147,6 +155,10 @@ If you want official recognition:
 {{% /fragment %}}
 
 </section>
+
+---
+
+# Patent Protection for Software
 
 ---
 
@@ -333,4 +345,3 @@ https://www.ipwatchdog.com/
 - Dr Anca Doloc-Mihu supervised students Jamaima Endres and Zachary A Moore for constructing the resource website
 
 {{% reveal-prevnext-links %}}
-

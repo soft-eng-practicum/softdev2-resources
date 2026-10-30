@@ -21,6 +21,10 @@ margin = 0.1
 
 ---
 
+# Understanding Angular Routing
+
+---
+
 ## Overview
 
 Introduction, What is routing in Angular?
@@ -43,6 +47,10 @@ Configure Route Module Check
 
 Routing in Angular is basically navigating between pages. The Router Module consists of directives and service to implement navigation. In more simple words you could describe it as the function behind the application that lets users move between different screen views.
 
+
+---
+
+# Creating the Angular Routing Project
 
 ---
 
@@ -96,6 +104,10 @@ And
 ```sh
 $ ng generate component studentList
 ```
+
+---
+
+# Configuring Application Routes
 
 ---
 
@@ -225,6 +237,10 @@ After *component:* we would type the name of the component we want the user to g
 ---
 
 {{% section %}}
+
+# Handling Unmatched Routes
+
+---
 
 ## Displaying a 404 page
 

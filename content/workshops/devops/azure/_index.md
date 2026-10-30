@@ -16,12 +16,20 @@ outputs = ["Reveal"]
 
 ---
 
+# Cloud Hosting with Azure
+
+---
+
 ### Azure has a student pack
 
 - $100 credit
 - Also monthly free allotment for many services
 - Including virtual machines, database, app service, and functions
 - Sign up at [Azure for Students](https://azure.microsoft.com/en-us/free/students/)
+
+---
+
+# Provisioning and Using a Virtual Machine
 
 ---
 
@@ -116,6 +124,10 @@ outputs = ["Reveal"]
 
 ---
 
+# Deploying an Application with Azure App Service
+
+---
+
 {{% section %}}
 
 ### Tutorial #2 Azure App Service: 
@@ -137,6 +149,10 @@ outputs = ["Reveal"]
 - Connect your Github account or simply initialize an empty project
 
 {{% /section %}}
+
+---
+
+# Hosting a Frontend with Azure Static Web Apps
 
 ---
 
@@ -163,6 +179,10 @@ outputs = ["Reveal"]
 - For Angular, you can select one of [these examples](https://angular.io/guide/example-apps-list)
 
 {{% /section %}}
+
+---
+
+# Creating a Serverless Backend with Azure Functions
 
 ---
 

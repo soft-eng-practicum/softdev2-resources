@@ -8,6 +8,10 @@ weight = 2 # chapter number
 
 ---
 
+# Building Your Professional Experience
+
+---
+
 ### Be more proactive to advance your career
 
 - Technology world is very competitive
@@ -19,6 +23,10 @@ weight = 2 # chapter number
 - Public project activity, 
 - Community involvement, etc
 {{% /fragment %}}
+
+---
+
+# Learning and Networking Through Hackathons
 
 ---
 
@@ -41,6 +49,10 @@ Pros:
 Cons:
 - Usually involves 24–48 hours straight, with bare floors as sleeping area
 - Takes away your weekend (but it's still a great value!)
+
+---
+
+# Regional Hackathon Opportunities
 
 ---
 

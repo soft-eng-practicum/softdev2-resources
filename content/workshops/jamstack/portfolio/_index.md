@@ -60,6 +60,10 @@ add logos here
 
 ---
 
+# Understanding Static Sites
+
+---
+
 ## What is a static site???
 
 From [JAMstack.org](https://jamstack.org/) :
@@ -84,6 +88,10 @@ This presentation was also built on a static site.
 
 **First let's select a template!**
 
+
+---
+
+# Selecting a Portfolio Template
 
 ---
 
@@ -119,6 +127,10 @@ From [https://jamstackthemes.dev](https://jamstackthemes.dev/#ssg=jekyll&archety
 {{% /section %}}
 
 --- 
+
+# Publishing and Customizing Your Site
+
+---
 
 {{% section %}}
 

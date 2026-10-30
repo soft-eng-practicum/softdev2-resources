@@ -21,6 +21,10 @@ margin = 0.1
 
 ---
 
+# React and Firebase Fundamentals
+
+---
+
 ## Note:
 
 **Video is outdated**. To follow instructions, clone this [starter
@@ -87,6 +91,10 @@ npm start
 
 ---
 
+# Setting Up Firebase
+
+---
+
 {{% section %}}
 
 ## Let's set up a firebase project
@@ -116,6 +124,10 @@ Mac and Linux users would need to prepend this command with `sudo`.
 - If you see the project you just created, then you are ready to go
 
 {{% /section %}}
+
+---
+
+# Connecting the React App to Firebase
 
 ---
 
@@ -163,6 +175,10 @@ const app = initializeApp(firebaseConfig);
 
 ---
 
+# Implementing User Authentication
+
+---
+
 ## Firebase Authentication Setup
 - In firebase website, click on "Authentication"
 - then click on "Sign-in method" and enable "Email/Password"
@@ -197,6 +213,10 @@ npm install semantic-ui --save
 ---
 
 {{% section %}}
+
+# Building the Registration Experience
+
+---
 
 ## Signup component
 - Let's create a signup component so the user can sign up
@@ -456,6 +476,12 @@ browser console for errors!
 ---
 
 {{% section %}}
+
+---
+
+# Managing the Authenticated User Experience
+
+---
 
 ## Displaying the users data
 - Now that we have a user, it is time to create a profile page and display their information.
@@ -806,6 +832,12 @@ import ProfileRedirect from './router/ProfileRedirect';
 
 {{% section %}}
 
+---
+
+# Securing User Profiles
+
+---
+
 ## Securing users profile
 
 - Even though we have a secure authentication system now, there is still one last issue that we need to fix. Currently if a user is logged in, they are able to navigate to another user's profile page as long as they have a user's UID. In order to fix this issue, we need to create a new file called "PrivateRoute.js" inside the router folder.
@@ -857,6 +889,3 @@ This bring us to the end of Authentication with React and Firebase, I hope this 
 The code for this tutorial can be found in my **[Github](https://github.com/keyvan1996)**
 
 Created by: [Keyvan Shabani](https://www.linkedin.com/in/keyvan-shabani/)
-
-
-

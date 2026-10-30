@@ -16,6 +16,10 @@ outputs = ["Reveal"]
 
 ---
 
+# Understanding REST APIs
+
+---
+
 ### REST APIs are universal
 
 - [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) stands for "Representational State Transfer"
@@ -25,6 +29,9 @@ outputs = ["Reveal"]
 - Many resources on web are offered as APIs: [Todmotto's list](https://github.com/toddmotto/public-apis)
 - Before creating an API, we will set a backend service
 
+---
+
+# Creating an Express Server
 ---
 
 {{% section %}}
@@ -121,6 +128,10 @@ outputs = ["Reveal"]
 ---
 
 {{% section %}}
+
+# Building a RESTful API
+
+---
 
 ### A RESTful API in Express.JS
 

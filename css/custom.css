@@ -21,9 +21,3 @@ p.powered{
 blockquote p {
     color: #525252 !important;
 }
-.pagination a{
-    color: #20597E !important;
-}
-.nav.nav-prev a, .nav.nav-next a{
-    color: #20597E !important;
-}

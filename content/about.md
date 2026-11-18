@@ -18,8 +18,8 @@ Other contributors (in alphabetical order of last name):
 - Safiyullah Khan
 - Christopher Martinez
 - Shaun Mitchell
+- [Daniel Musau](https://github.com/dmusau23) - Improved presentation navigation and accessibility, and slide organization.
 - Roberto Salas Montoya
 - Keyvan Shabani
 
 Slides are offered with the license: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/). To modify and use these materials in your classes, fork the [Github repository]({{< param github_repository >}}) or use the edit link at the bottom right of each page.
-
